@@ -1,5 +1,5 @@
-import riotcontrol from 'riotcontrol'
-import purebem from 'purebem'
+let riotcontrol = require('riotcontrol')
+let purebem = require('purebem')
 
 <site-header>
     <header class={ block() }>

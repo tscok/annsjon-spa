@@ -1,5 +1,3 @@
-require('./download-pdf')
-
 <layout-page>
     <section class="page">
         <div class="container">
@@ -13,9 +11,5 @@ require('./download-pdf')
         riotcontrol.on('SET_PAGE_CONTENT', (content) => {
             this.content.innerHTML = content
         })
-
-        // riotcontrol.on('MOUNT_PAGE_TAG', () => {
-        //     riot.mount('download-pdf')
-        // })
     </script>
 </layout-page>

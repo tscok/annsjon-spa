@@ -23,23 +23,6 @@ var volunteerFaq = require('../../md/volunteer-faq');
 var page404 = require('../../md/404');
 
 
-// const pageContent = riot.observable();
-
-// pageContent.scrollUp = () => {
-
-// };
-
-// pageContent.setContent = () => {
-
-// };
-
-// pageContent.routes = () => {
-//     // routes and sub routes
-// };
-
-// module.exports = pageContent.routes;
-
-
 var pageContent = function() {
     riot.observable(this);
 
@@ -54,10 +37,6 @@ var pageContent = function() {
         self.trigger('SET_PAGE_CONTENT', data);
         scrollUp();
     }
-
-    // function mountPageTag(args) {
-    //     self.trigger('MOUNT_PAGE_TAG');
-    // }
     
     this.on('route', function(route) {
         switch(route) {
