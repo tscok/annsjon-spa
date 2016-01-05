@@ -1,23 +1,85 @@
 .site-navigation {
     @height: 80px;
-    height: @height;
-    line-height: @height;
+    min-height: @height;
     border-bottom: 1px solid @color-gray;
     background-color: @navigation-bg;
 
     &__logo {
+        width: 60px;
+        height: 80px;
         display: block;
-        text-indent: -1000px;
         overflow: hidden;
+        text-indent: -1000px;
+        position: absolute;
 
         background-image: url('../images/faf_logo.svg');
         background-repeat: no-repeat;
         background-position: 0 50%;
-        background-size: 80px;
+        background-size: 60px;
+    }
+
+    &__burger {
+        width: 60px;
+        height: 60px;
+        float: right;
+        position: relative;
+        top: 10px;
+
+        @media screen and (min-width: 960px) {
+            display: none;
+        }
+    }
+    &__burger-bar {
+        top: 30px;
+        left: 15px;
+
+        &, &:before, &:after {
+            content: "";
+            width: 30px;
+            height: 3px;
+            border-radius: 2px;
+            display: block;
+            position: absolute;
+            background-color: @color-black;
+        }
+
+        &:before {
+            top: -10px;
+        }
+        &:after {
+            bottom: -10px;
+        }
+
+        &--close {
+            background-color: transparent;
+
+            &:before {
+                top: 0;
+                -webkit-transform: rotate(45deg);
+            }
+            &:after {
+                bottom: 0;
+                -webkit-transform: rotate(-45deg);
+            }
+        }
     }
 
     &__menu {
-        float: right;
+        display: none;
+        padding: 20px 0;
+        line-height: 50px;
+
+        &--open {
+            display: block;
+            clear: both;
+        }
+
+        @media screen and (min-width: 960px) {
+            display: block;
+            float: right;
+            padding: 0;
+            line-height: 80px;
+        }
     }
 
     &__link {
@@ -26,44 +88,50 @@
         text-transform: uppercase;
         text-decoration: none;
         letter-spacing: .2rem;
-
-        margin-left: 2rem;
         position: relative;
         display: block;
-        float: left;
 
         &, &:hover {
             color: @text-color;
         }
 
-        &:after {
+        &--active:before {
             content: "";
-            width: 100%;
-            height: 2px;
-            position: absolute;
-            left: 0;
-            bottom: 0px;
-            background-color: transparent;
-            -webkit-transition: all 250ms;
-        }
-
-        &:hover:after {
-            background-color: @color-gray;
-        }
-
-        &--active:hover:after,
-        &--active:after {
-            height: 3px;
+            width: 8px;
+            height: 80%;
             background-color: @text-color;
+            position: absolute;
+            left: -20px;
+            top: 10%;
         }
 
-        &--iba, &--reports {
-            display: none;
-        }
+        @media screen and (min-width: 960px) {
+            float: left;
+            margin-left: 2rem;
 
-        @media screen and (min-width: 800px) {
-            &--iba, &--reports {
-                display: block;
+            &:after {
+                content: "";
+                width: 100%;
+                height: 2px;
+                position: absolute;
+                left: 0;
+                bottom: 0px;
+                background-color: transparent;
+                -webkit-transition: all 250ms;
+            }
+
+            &:hover:after {
+                background-color: @color-gray;
+            }
+
+            &--active:hover:after,
+            &--active:after {
+                height: 3px;
+                background-color: @text-color;
+            }
+
+            &--active:before {
+                display: none;
             }
         }
     }
