@@ -19,7 +19,7 @@ let purebem = require('purebem')
         
         this.menuOpen = false
 
-        this.block = purebem.of('site-navigation')
+        this.block = purebem.of('site-header')
         
         this.isActive = function() {
             return self.route === this._item.href ? 'active' : null
