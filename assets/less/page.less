@@ -1,0 +1,38 @@
+.page {
+    padding: 8rem 0 10rem;
+
+    &__content {
+        font-size: 1.6rem;
+        color: @color-black;
+
+        @media screen and (min-width: 1024px) {
+            max-width: 65%;
+            margin: 0 auto;
+        }
+    }
+
+    ol {
+        padding-left: 3rem;
+        list-style-position: initial;
+    }
+
+    blockquote {
+        padding: 12px;
+        border-left: 6px solid #ccc;
+        background-color: @color-gray6;
+
+        p {
+            margin: 0;
+        }
+
+        .author {
+            font-size: .875em;
+            font-style: italic;
+            color: @color-gray5;
+
+            &:before {
+                content: "\2014 ";
+            }
+        }
+    }
+}
