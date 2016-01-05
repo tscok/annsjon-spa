@@ -4,9 +4,11 @@ let purebem = require('purebem')
 <site-header>
     <header class={ block() }>
         <div class="container">
-            <a href="#" class={ block('logo') }>Ånnsjöns fågelstation</a>
-            <div id="burger" class={ block('burger') } onclick={ toggleMenu }>
-                <span class={ block('burger-bar', { 'close': menuOpen }) }></span>
+            <div class="row">
+                <a href="#" class={ block('logo') }>Ånnsjöns fågelstation</a>
+                <div id="burger" class={ block('burger') } onclick={ toggleMenu }>
+                    <span class={ block('burger-bar', { 'close': menuOpen }) }></span>
+                </div>
             </div>
             <nav class={ block('menu', { 'open': menuOpen }) }>
                 <a each="{ links }" href="#{ href }" class={ block('link', href, isActive()) }>{ label }</a>

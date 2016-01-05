@@ -1,8 +1,8 @@
-.site-navigation {
+.site-header {
     @height: 80px;
     min-height: @height;
     border-bottom: 1px solid @color-gray;
-    background-color: @navigation-bg;
+    background-color: @header-bg;
 
     &__logo {
         width: 60px;
@@ -67,23 +67,25 @@
     &__menu {
         display: none;
         padding: 20px 0;
+        margin-top: 20px;
         line-height: 50px;
+
 
         &--open {
             display: block;
-            clear: both;
         }
 
         @media screen and (min-width: 960px) {
             display: block;
             float: right;
             padding: 0;
+            margin: 0;
             line-height: 80px;
         }
     }
 
     &__link {
-        font-size: 1.1rem;
+        font-size: 1.4rem;
         font-weight: 600;
         text-transform: uppercase;
         text-decoration: none;
@@ -97,7 +99,7 @@
 
         &--active:before {
             content: "";
-            width: 8px;
+            width: 3px;
             height: 80%;
             background-color: @text-color;
             position: absolute;
@@ -106,6 +108,7 @@
         }
 
         @media screen and (min-width: 960px) {
+            font-size: 1.1rem;
             float: left;
             margin-left: 2rem;
 
