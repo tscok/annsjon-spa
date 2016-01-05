@@ -1,11 +1,15 @@
 .page {
-    padding: 8rem 0 10rem;
+    padding: 5rem 0 10rem;
+
+    @media screen and (min-width: 960px) {
+        padding-top: 8rem;
+    }
 
     &__content {
         font-size: 1.6rem;
         color: @color-black;
 
-        @media screen and (min-width: 1024px) {
+        @media screen and (min-width: 960px) {
             max-width: 65%;
             margin: 0 auto;
         }
