@@ -1,11 +1,12 @@
 ### Kontakta oss
 
-Vid frågor vänligen skicka ett mejl till [info@annsjon.org][info].
+Har du frågor om vår verksamhet kan du skicka ett mejl till [info@annsjon.org][info] så återkopplar vi så snart vi kan. Du kan även mejla direkt till någon av nedanstående styrelsemedlemmar, beroende på vad ärendet gäller.
 
-När stationen är bemannad (juni-september) kan du även ringa,
-tfn. 0647 - 722 10.
+När stationen är bemannad (juni-september) kan du nå oss på: 0647 - 722 10.
 
-#### Styrelsens medlemmar
+- - -
+
+#### Styrelsemedlemmar
 
 *Ordförande*
 Peter Bahlenberg, [peter.bahlenberg@annsjon.org][peter]
@@ -18,6 +19,8 @@ Ulla Falkdalen, [ulla.falkdalen@annsjon.org][ulla]
 
 *Webmaster*
 Mikael Carlsson, [webmaster@annsjon.org][mikael]
+
+##### Övriga
 
 Thomas Holmberg, Hans-Gunnar Nilsson, Hanna Eriksson, Benny Paulsson, Per&#8209;Anders Jämting, Johan Råghall, Peter Jonsson.
 

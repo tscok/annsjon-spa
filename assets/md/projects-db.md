@@ -27,10 +27,20 @@ Sökande efter nya spelplatser är vanligen mycket tids- och personalkrävande. 
 Här finns [litteraturuppgifter, iakttagelser, erfarenheter och förslag][1] från olika rapportörer.
 
 #### Resultatrapporter
-[2015][dbr15], [2014][dbr14], 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004
+[2015][rr15], [2014][rr14], [2013][rr13], [2012][rr12], [2011][rr11], [2010][rr10], [2009][rr09], [2008][rr08], [2007][rr07], [2006][rr06], [2005][rr05], [2004][rr04]
 
-[dbr15]: </pdf/great-snipe/results-2015.pdf>
-[dbr14]: </pdf/great-snipe/results-2014.pdf>
+[rr15]: </file/projects/great-snipe/results-2015.pdf>
+[rr14]: </file/projects/great-snipe/results-2014.pdf>
+[rr13]: </file/projects/great-snipe/results-2013.pdf>
+[rr12]: </file/projects/great-snipe/results-2012.pdf>
+[rr11]: </file/projects/great-snipe/results-2011.pdf>
+[rr10]: </file/projects/great-snipe/results-2010.pdf>
+[rr09]: </file/projects/great-snipe/results-2009.pdf>
+[rr08]: </file/projects/great-snipe/results-2008.pdf>
+[rr07]: </file/projects/great-snipe/results-2007.pdf>
+[rr06]: </file/projects/great-snipe/results-2006.pdf>
+[rr05]: </file/projects/great-snipe/results-2005.pdf>
+[rr04]: </file/projects/great-snipe/results-2004.pdf>
 
 [peter]: <mailto:peter.bahlenberg@annsjon.org>
 [1]: <#projects/great-snipe-background>
