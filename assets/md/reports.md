@@ -32,7 +32,7 @@ På hemsidan: [Jämtländsk fågel flyger till Afrika utan vila][press3], 2011-0
 
 - [Märkningar 1988 - 2011][stats1]
 
-[stats1]: </file/reports/statistics-1988-2011.excel>
+[stats1]: </file/reports/statistics-1988-2011.xls>
 
 - - -
 
