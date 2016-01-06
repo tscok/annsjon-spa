@@ -11,5 +11,17 @@
         riotcontrol.on('SET_PAGE_CONTENT', (content) => {
             this.content.innerHTML = content
         })
+
+        this.setLinkTarget = () => {
+            let elements = this.content.querySelectorAll('a[href$=".pdf"], a[href$=".xls"]')
+
+            if (elements.length) {
+                for (var i = 0; i < elements.length; i++) {
+                    elements[i].setAttribute('target', '_blank')
+                }
+            }
+        }
+
+        this.on('update', this.setLinkTarget)
     </script>
 </layout-page>
