@@ -20,7 +20,7 @@
                 <div class="one-third column">
                     <h5>Dubbelbeckasin</h5>
                     <div class="projects__placeholder"></div>
-                    <p>Nätfångst, radiopejling och inventering av dubbelbeckasin tillsammans med forskare från Lunds universitet.</p>
+                    <p>Tillsammans med forskare från Lunds universitet studerar vi dubbel&shy;beckasinens flyttningar.</p>
                 </div>
                 <div class="one-third column">
                     <h5>Inventering</h5>
@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="projects__actions">
-                <a href="#projects" class="button">Se alla projekt</a>
+                <a href="#projects" class="projects__button button">Se alla projekt</a>
             </div>
         </div>
     </section>

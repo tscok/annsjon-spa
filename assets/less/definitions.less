@@ -1,4 +1,5 @@
-// Color
+// --- COLOR ---
+
 @color-black: #444;
 @color-white: #fff;
 
@@ -11,8 +12,18 @@
 @color-blue: #4682B4; // steelblue
 @color-green: #3CB371; // mediumseagreen
 
-// Coloring
+
 @header-bg: @color-white;
 @footer-bg: @color-black;
-
 @text-color: @color-black;
+
+
+// --- MIXINS ---
+
+.section() {
+    padding: 5rem 0;
+
+    @media screen and (min-width: 550px) {
+        padding: 8rem 0;
+    }
+}
