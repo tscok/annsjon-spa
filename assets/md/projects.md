@@ -8,9 +8,7 @@ Om tillgången på personal är god genomför vi även Holkprojekt och Standardr
 
 Beståndet av dubbelbeckasin är en av de viktigaste anledningarna till att Ånnsjön- Storlien finns med på BirdLife International's lista över Important Bird Areas (IBA). Sedan 2004 har vi tillsammans med forskare från Lund bedrivit inventering, radiopejling och nätfångst samt märkning med ljusloggers.
 
-- [Projektbeskrivning](#projects/great-snipe)
-- [Bakgrundsinformation](#projects/great-snipe-background)
-- Resultatrapporter
+<a href="#projects/great-snipe" class="button">Till projektsidan</a>
 
 - - -
 
@@ -24,8 +22,11 @@ Sedan starten 1988 har vi bedrivit standardiserad ringmärkning av tättingar i 
 
 Femton fjällrutter i området Ånnsjön-Storlien samt ett antal rutter på Flatruet och i Stekenjokk inventeras årligen med linjetaxeringsmetodik. Syftet är att följa populationsutvecklingen hos fågelarter inom videbältet och kalfjällsregionen, i första hand arter med sin utbredning begränsad till denna region, tex alfågel, fjällpipare, skärsnäppa, kärrsnäppa, fjällabb, fjällripa, dalripa, fjällvråk, korp, stenskvätta, snösparv, lappsparv, och ringtrast. Att inventera fjällrutter är mycket enkelt, bara man kan läsa kartan!
 
-- Ruttbeskrivning
-- Metodbeskrivning
+- [Ruttbeskrivning][fjr1] (pdf)
+- [Metodbeskrivning][fjr2] (pdf)
+
+[fjr1]: </pdf/project/mountain/routes.pdf>
+[fjr2]: </pdf/project/mountain/method.pdf>
 
 - - -
 
@@ -33,8 +34,11 @@ Femton fjällrutter i området Ånnsjön-Storlien samt ett antal rutter på Flat
 
 Kvadratrutan är en halvkvantitativ fågelinventering av ett kvadratiskt område med storleken 1x1 km. Inventeringsrutorna överensstämmer med "Rikets nät", det svarta rutnät som finns inlagt på de flesta topografiska kartor. Med halvkvantitativ menas att det i huvudsak är artförekomsten som ska noteras, antalet individer noteras bara i begränsad omfattning.
 
-- Inventeringsområdet
-- Projektbeskrivning
+- [Projektbeskrivning][kvn1] (pdf)
+- [Inventeringsområdet][kvn2] (pdf)
+
+[kvn1]: </pdf/project/square/project-details.pdf>
+[kvn2]: </pdf/project/square/census-area.pdf>
 
 - - -
 

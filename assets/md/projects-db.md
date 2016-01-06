@@ -26,5 +26,11 @@ Sökande efter nya spelplatser är vanligen mycket tids- och personalkrävande. 
 
 Här finns [litteraturuppgifter, iakttagelser, erfarenheter och förslag][1] från olika rapportörer.
 
+#### Resultatrapporter
+[2015][dbr15], [2014][dbr14], 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004
+
+[dbr15]: </pdf/great-snipe/results-2015.pdf>
+[dbr14]: </pdf/great-snipe/results-2014.pdf>
+
 [peter]: <mailto:peter.bahlenberg@annsjon.org>
 [1]: <#projects/great-snipe-background>
