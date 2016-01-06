@@ -19,7 +19,7 @@ Ulla Falkdalen, [ulla.falkdalen@annsjon.org][ulla]
 *Webmaster*
 Mikael Carlsson, [webmaster@annsjon.org][mikael]
 
-Thomas Holmberg, Hans-Gunnar Nilsson, Hanna Eriksson, Benny Paulsson, Per-Anders Jämting, Johan Råghall, Peter Jonsson.
+Thomas Holmberg, Hans-Gunnar Nilsson, Hanna Eriksson, Benny Paulsson, Per&#8209;Anders Jämting, Johan Råghall, Peter Jonsson.
 
 
 [info]: <mailto:info@annsjon.org>

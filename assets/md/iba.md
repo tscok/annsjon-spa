@@ -1,4 +1,4 @@
-### Fågelskydd för viktiga områden
+### Fågelskydd
 
 Kalfjällets mycket speciella karaktär gör att bara ett fåtal starkt specialiserade arter klarar att leva och föröka sig här. Även i de fjällnära löv- och barrskogarna råder tidvis kärva förhållanden och många skogslevande fågelarter befinner sig här på gränsen av sitt utbredningsområde. Fåglarna lever här både bokstavligt och bildligt på marginalen och även små förändringar i livsbetingelserna kan få avsevärda konsekvenser.
 
@@ -13,7 +13,7 @@ Av de 58 fågelarter som vi någorlunda kan följa visar hälften (29 st) inga p
 Orsakerna är sällan uppenbara och observerade förändringar måste analyseras och verifieras med kompletterande undersökningar. När det gäller de insektsberoende tättingarna tror vi att orsaken är att temperaturen under maj var betydligt lägre i slutet av 90-talet än den var i början.
 
 #### Relaterade länkar
-- IBA sammanfattning (pdf)
+- [IBA sammanfattning](/file/iba/summary.pdf) (pdf)
 - [Ramsar om Ånnsjön](https://rsis.ramsar.org/ris/26)
 - [Fågelskydd (SOF)](http://www.sofnet.org/sveriges-ornitologiska-forening/fagelskydd/)
 

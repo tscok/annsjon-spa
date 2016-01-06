@@ -25,8 +25,8 @@ Femton fjällrutter i området Ånnsjön-Storlien samt ett antal rutter på Flat
 - [Ruttbeskrivning][fjr1] (pdf)
 - [Metodbeskrivning][fjr2] (pdf)
 
-[fjr1]: </pdf/project/mountain/routes.pdf>
-[fjr2]: </pdf/project/mountain/method.pdf>
+[fjr1]: </file/projects/mountain-routes.pdf>
+[fjr2]: </file/projects/mountain-routes-method.pdf>
 
 - - -
 
@@ -37,8 +37,8 @@ Kvadratrutan är en halvkvantitativ fågelinventering av ett kvadratiskt område
 - [Projektbeskrivning][kvn1] (pdf)
 - [Inventeringsområdet][kvn2] (pdf)
 
-[kvn1]: </pdf/project/square/project-details.pdf>
-[kvn2]: </pdf/project/square/census-area.pdf>
+[kvn1]: </file/projects/squarebox-details.pdf>
+[kvn2]: </file/projects/squarebox-census-area.pdf>
 
 - - -
 
