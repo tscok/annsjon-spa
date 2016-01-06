@@ -8,6 +8,7 @@
 
         @media screen and (min-width: 960px) {
             float: left;
+            padding: 0 0 3rem;
         }
     }
 
@@ -37,6 +38,15 @@
                 text-decoration: none;
             }
         }
+
+        @media screen and (min-width: 960px) {
+            font-size: 1rem;
+            line-height: inherit;
+
+            &:hover {
+                border-bottom: 1px solid @color-white;
+            }
+        }
     }
 
     &__logo {
@@ -53,7 +63,34 @@
         background-size: 60px;
 
         @media screen and (min-width: 960px) {
-            float: right;
+            position: absolute;
+            right: 0;
+            width: 100px;
+            background-size: 100px;
+            opacity: .5;
+        }
+    }
+
+    &__social {
+        font-size: 1.4rem;
+        font-weight: 400;
+        text-align: center;
+        color: #999;
+        margin: 0;
+        border-top: 1px dashed #666;
+        padding-top: 1rem;
+        margin-top: 1rem;
+
+        a, a:hover {
+            color: @color-gray;
+            text-decoration: none;
+        }
+
+        @media screen and (min-width: 960px) {
+            text-align: left;
+            border-top: 0;
+            margin-top: 0;
+            padding-top: 0;
         }
     }
 }

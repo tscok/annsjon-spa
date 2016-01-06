@@ -1,16 +1,31 @@
 .guides {
     .section;
+    .last-section-before-footer;
 
     &__header {
-        font-size: 1.4rem;
-        font-weight: 600;
-        letter-spacing: .2rem;
-        text-transform: uppercase;
-        text-align: center;
-        margin-bottom: 6rem;
+        .section-header;
     }
 
-    &__intro {
-        margin-bottom: 2rem;
+    &__brief {
+        margin-bottom: 1rem;
+
+        @media screen and (min-width: 550px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__title {
+        font-weight: 400;
+    }
+
+    &__body {}
+
+    &__actions {
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    &__button {
+        margin-bottom: 0;
     }
 }
