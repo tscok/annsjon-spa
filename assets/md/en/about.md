@@ -1,0 +1,3 @@
+### About us
+
+Lake Ånnsjön Bird Observatory is a non-profit organization working for a better understanding about the birdlife in the western part of Jämtland county. Since the beginning in 1988 many have visited the observatory in Handöl and many comes from other parts of Europe. Every summer we survey the occurrence of waders around mires, lakes and mountains in the region. Close to Handöl and in the Enan delta we annually ring 2000–4000 passerines.
