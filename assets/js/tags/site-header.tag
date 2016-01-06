@@ -14,6 +14,7 @@ let purebem = require('purebem')
                 <a each="{ links }" href="#{ href }" class={ block('link', href, isActive()) }>{ label }</a>
             </nav>
         </div>
+
     </header>
 
     <script>
@@ -40,7 +41,7 @@ let purebem = require('purebem')
             { href: 'contact', label: 'Kontakt' }
         ]
 
-        riotcontrol.on('route', (route) => {
+        riotcontrol.on('ROUTE', (route) => {
             this.update({route: route, menuOpen: false})
         })
     </script>

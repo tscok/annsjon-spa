@@ -38,7 +38,7 @@ var pageContent = function() {
         scrollUp();
     }
     
-    this.on('route', function(route) {
+    this.on('ROUTE', function(route) {
         switch(route) {
             case 'iba':
                 setPageContent(iba);

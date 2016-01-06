@@ -15,7 +15,7 @@ require('./layout-page')
     <script>
         var riotcontrol = require('riotcontrol')
 
-        riotcontrol.on('route', (route) => {
+        riotcontrol.on('ROUTE', (route) => {
             this.update({index: !route ? true : false })
         })
     </script>
