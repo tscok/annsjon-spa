@@ -35,7 +35,7 @@ Vi delar gärna med oss av vårt material, så att du som vill kan göra egna sa
 
 #### Årsrapporter
 
-- [Årsrapport 2013](/docs/design.sketch)
+- [Årsrapport 2013](/assets/images/faf_logo.svg)
 - Årsrapport 2012
 - Årsrapport 2011
 - Årsrapport 2010
