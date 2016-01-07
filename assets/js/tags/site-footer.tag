@@ -10,7 +10,7 @@ let purebem = require('purebem')
                 <a href="#" class={ block('logo') }>Ånnsjöns fågelstation</a>
             </div>
             <div class="row">
-                <p class={ block('social') }>Håll dig uppdaterad med oss på <a href="https://www.facebook.com/groups/174058694282/" target="_blank">Facebook</a>.</p>
+                <p class={ block('misc') }><a href="#cookies" class={ block('misc-link', 'separator') }>Cookies</a>Design och utveckling av <a href="http://twitter.com/tscok" target="_blank" class={ block('misc-link') }>@tscok</a></p>
             </div>
         </div>
     </footer>

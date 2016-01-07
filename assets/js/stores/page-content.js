@@ -21,6 +21,7 @@ var volunteer = require('../../md/volunteer');
 var volunteerFaq = require('../../md/volunteer-faq');
 
 var page404 = require('../../md/404');
+var cookies = require('../../md/cookies');
 
 
 var pageContent = function() {
@@ -60,6 +61,9 @@ var pageContent = function() {
                 break;
             case 'volunteer':
                 setPageContent(volunteer);
+                break;
+            case 'cookies':
+                setPageContent(cookies);
                 break;
             default:
                 setPageContent(page404);
