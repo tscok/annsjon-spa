@@ -7,7 +7,13 @@ When the observatory is staffed (June-September) you can call us at: +46 (0)647 
 
 - - -
 
-#### Board members
+#### Follow us on Facebook
+- <a href="https://www.facebook.com/Annsjon" target="_blank">Lake Ånnsjön Bird Observatory</a>
+- <a href="https://www.facebook.com/groups/174058694282/" target="_blank">Friends of Lake Ånnsjön Bird Observatory</a>
+
+- - -
+
+#### The Board
 
 *Chairman*
 Peter Bahlenberg, [peter.bahlenberg@annsjon.org][peter]
@@ -20,8 +26,6 @@ Ulla Falkdalen, [ulla.falkdalen@annsjon.org][ulla]
 
 *Webmaster*
 Mikael Carlsson, [webmaster@annsjon.org][mikael]
-
-##### Other
 
 Thomas Holmberg, Hans-Gunnar Nilsson, Hanna Eriksson, Benny Paulsson, Per&#8209;Anders Jämting, Johan Råghall, Peter Jonsson.
 
