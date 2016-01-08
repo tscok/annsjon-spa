@@ -10,9 +10,9 @@ module.exports = {
         se: 'English',
         en: 'Svenska'
     },
-    'development': {
-        se: 'Design och utveckling',
-        en: 'Design and development'
+    'credits': {
+        se: 'Design och utveckling av',
+        en: 'Design and development by'
     },
 
     // Buttons
