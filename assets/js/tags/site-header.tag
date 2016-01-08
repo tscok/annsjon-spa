@@ -11,7 +11,7 @@ let purebem = require('purebem')
                 </div>
             </div>
             <nav class={ block('menu', { 'open': menuOpen }) }>
-                <a each="{ links }" href="#{ href }" class={ block('link', href, isActive()) }>{ label }</a>
+                <a each="{ links }" href="#{ href }" class={ block('link', href, isActive(href)) }>{ label }</a>
             </nav>
         </div>
 
@@ -24,25 +24,20 @@ let purebem = require('purebem')
 
         this.block = purebem.of('site-header')
         
-        this.isActive = function() {
-            return self.route === this._item.href ? 'active' : null
+        this.isActive = (href) => {
+            return this.route === href ? 'active' : '';
         }
 
         this.toggleMenu = () => {
             this.update({menuOpen: this.menuOpen ? false : true})
         }
 
-        this.links = [
-            { href: 'iba', label: 'Fågelskydd' },
-            { href: 'guide', label: 'Skådarguide' },
-            { href: 'projects', label: 'Projekt' },
-            { href: 'reports', label: 'Rapporter' },
-            { href: 'about', label: 'Föreningen' },
-            { href: 'contact', label: 'Kontakt' }
-        ]
-
         riotcontrol.on('ROUTE', (route) => {
             this.update({route: route, menuOpen: false})
+        })
+
+        riotcontrol.on('SITE_NAVIGATION', (links) => {
+            this.links = links
         })
     </script>
 </site-header>

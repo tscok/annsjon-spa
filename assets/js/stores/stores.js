@@ -1,9 +1,13 @@
-var riotcontrol = require('riotcontrol');
+const riotcontrol = require('riotcontrol');
 
-var stores = function() {
-    var pageContent = require('./page-content');
+function Stores() {
+    let SiteLanguage = require('./site-language');
+    let SiteNavigation = require('./site-navigation');
+    let PageContent = require('./page-content');
 
-    riotcontrol.addStore(new pageContent());
+    riotcontrol.addStore(new SiteLanguage());
+    riotcontrol.addStore(new SiteNavigation());
+    riotcontrol.addStore(new PageContent());
 };
 
-module.exports = stores;
+module.exports = Stores();

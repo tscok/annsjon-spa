@@ -1,114 +1,72 @@
-var iba = require('../../md/iba');
+var Cookies = require('js-cookie');
 
-var guide = require('../../md/guide');
-var guideAnn = require('../../md/guide-ann');
-var guideHandol = require('../../md/guide-handol');
-var guideStorlien = require('../../md/guide-storlien');
-var guideStorulvan = require('../../md/guide-storulvan');
+var contents = {};
 
-var projects = require('../../md/projects');
+var req_en = require.context("../../md/en", false, /\.md$/);
+var req_se = require.context("../../md/se", false, /\.md$/);
 
-var projectsDb = require('../../md/projects-db');
-var projectsDbBackground = require('../../md/projects-db-background');
+function setContents(context, lang) {
+    contents[lang] = {};
 
-var reports = require('../../md/reports');
-var reportsDb = require('../../md/reports-db');
+    context.keys().forEach(function(key) {
+        contents[lang][key] = context(key);
+    });
+}
 
-var about = require('../../md/about');
-var contact = require('../../md/contact');
-
-var volunteer = require('../../md/volunteer');
-var volunteerFaq = require('../../md/volunteer-faq');
-
-var page404 = require('../../md/404');
-var cookies = require('../../md/cookies');
+setContents(req_en, 'en');
+setContents(req_se, 'se');
 
 
-var pageContent = function() {
+function PageContent() {
     riot.observable(this);
 
     var self = this;
     var subRoute = riot.route.create();
+    var lang, content;
 
     function scrollUp() {
         window.scrollTo(0,0);
     }
 
     function setPageContent(data) {
+        if (!data) {
+            data = contents[lang]['./404.md'];
+        }
+
         self.trigger('SET_PAGE_CONTENT', data);
         scrollUp();
     }
+
+    // Main routes
     
     this.on('ROUTE', function(route) {
-        switch(route) {
-            case 'iba':
-                setPageContent(iba);
-                break;
-            case 'guide':
-                setPageContent(guide);
-                break;
-            case 'projects':
-                setPageContent(projects);
-                break;
-            case 'reports':
-                setPageContent(reports);
-                break;
-            case 'about':
-                setPageContent(about);
-                break;
-            case 'contact':
-                setPageContent(contact);
-                break;
-            case 'volunteer':
-                setPageContent(volunteer);
-                break;
-            case 'cookies':
-                setPageContent(cookies);
-                break;
-            default:
-                setPageContent(page404);
-        }
+        lang = Cookies.get('language');
+
+        content = contents[lang]['./'+ route +'.md'];
+        setPageContent(content);
     });
 
     // Sub routes
 
     subRoute('guide/*', function(name) {
-        switch(name) {
-            case 'ann':
-                setPageContent(guideAnn);
-                break;
-            case 'handol':
-                setPageContent(guideHandol);
-                break;
-            case 'storlien':
-                setPageContent(guideStorlien);
-                break;
-            case 'storulvan':
-                setPageContent(guideStorulvan);
-        }
+        content = contents[lang]['./guide-'+ name +'.md'];
+        setPageContent(content);
     });
 
     subRoute('projects/*', function(name) {
-        switch(name) {
-            case 'great-snipe':
-                setPageContent(projectsDb);
-                break;
-            case 'great-snipe-background':
-                setPageContent(projectsDbBackground);
-        }
+        content = contents[lang]['./projects-'+ name +'.md'];
+        setPageContent(content);
     });
 
     subRoute('reports/*', function(name) {
-        if (name) {
-            setPageContent(reportsDb);
-        }
+        content = contents[lang]['./reports-'+ name +'.md'];
+        setPageContent(content);
     });
 
     subRoute('volunteer/*', function(name) {
-        if (name) {
-            setPageContent(volunteerFaq);
-        }
+        content = contents[lang]['./volunteer-'+ name +'.md'];
+        setPageContent(content);
     });
 }
 
-module.exports = pageContent;
+module.exports = PageContent;

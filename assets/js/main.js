@@ -2,7 +2,7 @@
 require('../less/main');
 
 // RiotControl Stores
-require('./stores/stores')();
+require('./stores/stores');
 
 // RiotJS tag(s)
 require('./tags/site-app');

@@ -1,3 +1,5 @@
+let riotcontrol = require('riotcontrol')
+
 require('./site-header')
 require('./site-footer')
 
@@ -17,6 +19,10 @@ require('./layout-page')
 
         riotcontrol.on('ROUTE', (route) => {
             this.update({index: !route ? true : false })
+        })
+
+        riotcontrol.on('SITE_LANGUAGE', () => {
+            this.update()
         })
     </script>
 </site-app>
