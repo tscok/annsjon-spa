@@ -17,13 +17,17 @@
 @footer-bg: @color-black;
 @text-color: @color-black;
 
+// --- SIZES ---
+
+@responsive-size-tablet: 550px;
+@responsive-size-desktop: 960px;
 
 // --- MIXINS ---
 
 .section() {
     padding: 5rem 0;
 
-    @media screen and (min-width: 550px) {
+    @media screen and (min-width: @responsive-size-tablet) {
         padding: 8rem 0;
     }
 }

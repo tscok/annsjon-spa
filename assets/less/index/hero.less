@@ -1,15 +1,12 @@
 .hero {
     .section;
 
-    // background-color: @color-blue;
-    // color: @color-white;
-
     &__title {
         font-size: 3.5rem;
         text-align: center;
         margin: 0;
         
-        @media screen and (min-width: 550px) {
+        @media screen and (min-width: @responsive-size-tablet) {
             font-size: 5rem;
         }
     }
@@ -23,11 +20,11 @@
         margin: 0 auto;
         text-align: center;
 
-        @media screen and (min-width: 550px) {
+        @media screen and (min-width: @responsive-size-tablet) {
             max-width: 80%;
         }
 
-        @media screen and (min-width: 960px) {
+        @media screen and (min-width: @responsive-size-desktop) {
             max-width: 65%;
         }
     }
