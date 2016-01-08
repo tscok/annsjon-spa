@@ -6,12 +6,12 @@ The idea was to create a new website for [Lake Ånnsjön Bird Observatory](http:
 With a lot of static content and text heavy pages I wanted to build something fast and lightweight, simple and easy to update. Yet using technologies that supports modern development and scalability.
 
 ## Technologies
-- [Node] (npm)
-- [Webpack] (transpiling and bundling)
-- [Riot] (templating and routing)
-- [Markdown] ("page" content)
-- [LESS] ([BEM] standard)
-- [Skeleton] (Responsive boilerplate)
+- [Node] - npm
+- [Webpack] - transpiling and bundling
+- [Riot] - templating and routing
+- [Markdown] - "page" content
+- [LESS] - [BEM] standard
+- [Skeleton] - Responsive boilerplate
 
 [Node]: <https://nodejs.org/en/>
 [Webpack]: <https://webpack.github.io/>
