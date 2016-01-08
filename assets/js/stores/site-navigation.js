@@ -11,6 +11,7 @@ const links = {
         { href: 'contact', label: 'Kontakt' }
     ],
     en: [
+        { href: 'volunteer', label: 'Volunteer' },
         { href: 'about', label: 'About' },
         { href: 'contact', label: 'Contact' }
     ]
