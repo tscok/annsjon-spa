@@ -9,8 +9,12 @@
     }
 
     &__brief {
-        margin-bottom: 1rem;
+        margin-bottom: 3.5rem;
         text-align: center;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
 
         @media screen and (min-width: 550px) {
             margin-bottom: 0;
@@ -31,11 +35,13 @@
         display: none;
     }
 
-    &__body {}
+    &__body {
+        margin-bottom: 0;
+    }
 
     &__actions {
         text-align: center;
-        margin-top: 3rem;
+        margin-top: 5rem;
     }
 
     &__button {
