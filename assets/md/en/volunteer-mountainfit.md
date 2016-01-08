@@ -1,6 +1,6 @@
 ### Mountainfit - a volunteer's tale
 
-*Published 9 October 2012*
+*by Meera Lee Sethi, published 9 October 2012*
 
 I'm a freelance science writer who's lived in cities all her life. When I became a birder a few years ago, I realized that I didn't just want to go out to the lake on a weekend morning and look at warblers and sparrows through my binoculars — I wanted a chance to actively rejoin the natural world, and to get much closer to the birds I was so interested in. I didn't have any experience in field techniques or handling live birds when I first contacted Lake Ånnsjön Bird Observatory back in the winter of 2010, but I was welcomed with open arms and assured that I would have every opportunity to be a part of whatever research was going on here. And that's just what happened. In 2011, I traveled from Chicago to Handöl and spent nine weeks as a volunteer here, mainly working on the Great Snipe inventory, migration, and radio-tracking project but also learning how to ring, walking census routes, and helping out on the observatory's nest-box project.
 
