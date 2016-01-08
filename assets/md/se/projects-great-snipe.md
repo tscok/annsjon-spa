@@ -27,7 +27,7 @@ Sökande efter nya spelplatser är vanligen mycket tids- och personalkrävande. 
 Här finns [litteraturuppgifter, iakttagelser, erfarenheter och förslag][1] från olika rapportörer.
 
 #### Resultatrapporter
-[2009][rr09], [2008][rr08], [2007][rr07], [2006][rr06], [2005][rr05], [2004][rr04]
+2015, 2014, 2013, 2012, 2011, 2010, [2009][rr09], [2008][rr08], [2007][rr07], [2006][rr06], [2005][rr05], [2004][rr04]
 
 [rr09]: <#projects/great-snipe-2009>
 [rr08]: <#projects/great-snipe-2008>

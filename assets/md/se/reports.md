@@ -11,8 +11,8 @@ På hemsidan: [Jämtländsk fågel flyger till Afrika utan vila][press3], 2011-0
 - [Förändringar i fågellivet kan vara tecken på växthuseffekten][press1], 2001-05-03
 
 [press3]: <#reports/jamtlandsk-fagel-flyger-till-afrika-utan-vila>
-[press2]: </file/reports/fler-domherrar-i-fjallen.pdf>
-[press1]: </file/reports/forandringar-i-fagellivet.pdf>
+[press2]: </file/reports/domherrar-fjallen.pdf>
+[press1]: </file/reports/forandringar-fagellivet.pdf>
 
 - - -
 
@@ -22,9 +22,9 @@ På hemsidan: [Jämtländsk fågel flyger till Afrika utan vila][press3], 2011-0
 - [Ringmärkarcentralens ringmärkarmöte][konf2], Göteborg, 2000
 - [Nordic Bird Observatory Conference][konf1], Skagen, 1999
 
-[konf3]: </file/reports/ringmarkarmote-hoor.pdf>
-[konf2]: </file/reports/rfc-mote-goteborg.pdf>
-[konf1]: </file/reports/nordic-bird-observatory-skagen.pdf>
+[konf3]: </file/reports/ringmote-hoor.pdf>
+[konf2]: </file/reports/rc-ringmote-goteborg.pdf>
+[konf1]: </file/reports/nordic-bird-observatory-conf-1999.pdf>
 
 - - -
 
@@ -32,7 +32,7 @@ På hemsidan: [Jämtländsk fågel flyger till Afrika utan vila][press3], 2011-0
 
 - [Märkningar 1988 - 2011][stats1]
 
-[stats1]: </file/reports/statistics-1988-2011.xls>
+[stats1]: </file/reports/statistik-1988-2011.xls>
 
 - - -
 
@@ -41,17 +41,16 @@ På hemsidan: [Jämtländsk fågel flyger till Afrika utan vila][press3], 2011-0
 - [Återfynd i Frankrike][af2], 2010-11-11
 - [Långdistansåterfynd 1988 - 1991][af1]
 
-[af2]: </file/reports/aterfynd-france.pdf>
+[af2]: </file/reports/aterfynd-frankrike.pdf>
 [af1]: </file/reports/aterfynd-1988-1991.pdf>
 
 - - -
 
 #### Årsrapporter
 
-[2014][ar14], [2013][ar13], [2012][ar12], [2011][ar11], [2010][ar10], [2009][ar09], [2008][ar08], [2007][ar07], [2006][ar06], [2005][ar05],
+2015, 2014, [2013][ar13], [2012][ar12], [2011][ar11], [2010][ar10], [2009][ar09], [2008][ar08], [2007][ar07], [2006][ar06], [2005][ar05],
 [2004][ar04], [2003][ar03], [2002][ar02], [2001][ar01], [2000][ar00], [1999][ar99]
 
-[ar14]: </file/reports/annual-report-2014.pdf>
 [ar13]: </file/reports/annual-report-2013.pdf>
 [ar12]: </file/reports/annual-report-2012.pdf>
 [ar11]: </file/reports/annual-report-2011.pdf>

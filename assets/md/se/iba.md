@@ -13,7 +13,7 @@ Av de 58 fågelarter som vi någorlunda kan följa visar hälften (29 st) inga p
 Orsakerna är sällan uppenbara och observerade förändringar måste analyseras och verifieras med kompletterande undersökningar. När det gäller de insektsberoende tättingarna tror vi att orsaken är att temperaturen under maj var betydligt lägre i slutet av 90-talet än den var i början.
 
 #### Relaterade länkar
-- [IBA sammanfattning](/file/iba/summary.pdf) (pdf)
+- [IBA sammanfattning](/file/iba/iba-sammanfattning.pdf) (pdf)
 - [Ramsar om Ånnsjön](https://rsis.ramsar.org/ris/26)
 - [Fågelskydd (SOF)](http://www.sofnet.org/sveriges-ornitologiska-forening/fagelskydd/)
 
