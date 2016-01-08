@@ -13,7 +13,7 @@
         })
 
         this.setLinkTarget = () => {
-            let elements = this.content.querySelectorAll('a[href$=".pdf"], a[href$=".xls"]')
+            let elements = this.content.querySelectorAll('a[href$=".pdf"], a[href$=".xls"], a[href^="http"]')
 
             if (elements.length) {
                 for (var i = 0; i < elements.length; i++) {

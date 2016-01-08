@@ -31,8 +31,8 @@ require('./raw')
                     <p class="projects__body"><raw content={ getText('projects_body-ringing') }/></p>
                 </div>
             </div>
-            <div class="projects__actions">
-                <a href="#projects" class="projects__button button" if={ language == 'se' }>{ getText('projects_button') }</a>
+            <div class="projects__actions" if={ language == 'se' }>
+                <a href="#projects" class="projects__button button">{ getText('projects_button') }</a>
             </div>
         </div>
     </section>
@@ -59,14 +59,19 @@ require('./raw')
                     <p class="guides__body"><raw content={ getText('guides_body-ann') }/></p>
                 </div>
             </div>
-            <div class="guides__actions">
-                <a href="#guide" class="guides__button button" if={ language == 'se' }>{ getText('guides_button') }</a>
+            <div class="guides__actions" if={ language == 'se' }>
+                <a href="#guide" class="guides__button button">{ getText('guides_button') }</a>
             </div>
         </div>
     </section>
 
     <script>
-        this.getText = mygettext
-        this.language = Cookies.get('language')
+        this.on('mount', () => {
+            this.getText = mygettext
+        })
+
+        this.on('update', () => {
+            this.language = Cookies.get('language')
+        })
     </script>
 </layout-index>
