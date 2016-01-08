@@ -3,8 +3,10 @@ let Cookies = require('js-cookie');
 function SiteLanguage() {
     riot.observable(this);
 
+    Cookies.set('language', 'se', { expires: 365 });
+
     this.setCookie = () => {
-        let oldCookie = Cookies.get('language') || 'se';
+        let oldCookie = Cookies.get('language');
         let newCookie = oldCookie === 'se' ? 'en' : 'se';
         
         Cookies.set('language', newCookie, { expires: 365 });
