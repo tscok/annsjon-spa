@@ -1,38 +1,36 @@
-### Contact us
+### Kontakta oss
 
+Har du frågor om vår verksamhet kan du skicka ett mejl till [info@annsjon.org][info] så återkopplar vi så snart vi kan. Du kan även mejla direkt till någon av nedanstående styrelsemedlemmar, beroende på vad ärendet gäller.
 
-If you have any questions please don't hesitate to contact us at [info@annsjon.org][info] and we'll get back to you as soon as possible. You can also contact someone on the Board directly depending on what the case concerns.
+**Telefon**
+När stationen är bemannad (juni-september) kan du nå oss på: 0647 - 722 10.
 
-**Phone**
-When the observatory is staffed (June-September) you can call us at: (+46)&nbsp;0647&nbsp;-&nbsp;722&nbsp;10.
-
-**Address**
+**Adress**
 Ånnsjöns fågelstation, Handöl 563, 830 15 Duved
 
 - - -
 
-#### Follow us on Facebook
+#### Följ oss på Facebook
 - <a href="https://www.facebook.com/Annsjon" target="_blank">Lake Ånnsjön Bird Observatory</a>
 - <a href="https://www.facebook.com/groups/174058694282/" target="_blank">Friends of Lake Ånnsjön Bird Observatory</a>
 
 - - -
 
-#### The Board
+#### Styrelsen
 
-*Chairman*
+*Ordförande*
 Peter Bahlenberg, [peter.bahlenberg@annsjon.org][peter]
 
-*Cashier*
+*Kassör*
 Lars Falkdalen Lindahl, [lars.falkdalen@annsjon.org][lars]
 
-*Staff Recruitment*
+*Rekrytering*
 Ulla Falkdalen, [ulla.falkdalen@annsjon.org][ulla]
 
 *Webmaster*
 Mikael Carlsson, [webmaster@annsjon.org][mikael]
 
 Thomas Holmberg, Hans-Gunnar Nilsson, Hanna Eriksson, Benny Paulsson, Per&#8209;Anders Jämting, Johan Råghall, Peter Jonsson.
-
 
 [info]: <mailto:info@annsjon.org>
 [peter]: <mailto:peter.bahlenberg@annsjon.org>

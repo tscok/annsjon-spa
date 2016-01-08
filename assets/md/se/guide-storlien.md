@@ -1,0 +1,10 @@
+### Skådarguide: Storlien
+
+Denna anrika skidmetropol har en hel del att erbjuda fågelskådaren. Cirka en kilometer öster om Storlien på södra sidan järnvägen finns en spångad led med två observationsgömslen och ett vindskydd. De ligger vid ett mindre våtmarksområde i anslutning till Storliens avloppsreningsanläggning. Våtmarksfåglarna är är i stort sett desamma som i Ånn. Myrsnäppa förekommer ibland på den myr som kan beskådas från vindskyddet. Blåhake har en pålitlig förekomst i björk- och videsnåren i våtmarksområdets kanter. Hela området är fågelskyddsområde och får endast avspanas från markerade leder.
+
+För den fågelintresserade är Storlien mest känt för den dubbelbeckasinspelplats som ligger på Skurdalshöjden. Den nås enklast om man följer den liftgata (Bånggårdsliften) som utgår från baksidan av Högfjällshotellet. Från den näst sista liftstolpen svänger man av snett uppåt vänster i sluttningen. Spelplatsen ligger 200-300 m från liftgatan ungefär mittemellan denna lift och en annan lift som slutar på ungefär samma nivå längre västerut. Lyssna noga när du närmar dig. Det svaga spellätet hörs bara något hundratal meter.
+
+Fåglarna är huvudsakligen aktiva under natten och före kl 23 är det ingen större mening att vara på plats. Ett gömsle finns på platsen, men det fungerar mer som raststuga än som observationsgömsle, då fåglarna sällan spelar framför gömslet. Även de övriga delarna av lågfjället Skurdalshöjden är av ornitologiskt intresse. Området mellan Vindarnas tempel och Åhlénstugan brukar kunna bjuda på lappsparv, blåhake, fjällabb och kärrsnäppa.
+
+**Obs!**
+För att denna spelplats ska kunna fortleva krävs en järnhård disciplin från besökarna! Lämna fåglarna i fred och gå inte närmare någon spelande fågel än 25 meter. Det här är inget ställe för fotografering! Eftersom den här platsen besöks av någon skådare nästan varje natt under säsongen gäller helt andra hänsynsregler än vid en spelplats, som få känner till. Var vänlig att respektera det.
