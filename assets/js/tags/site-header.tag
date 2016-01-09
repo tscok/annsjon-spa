@@ -2,20 +2,17 @@ let riotcontrol = require('riotcontrol')
 let purebem = require('purebem')
 
 <site-header>
-    <header class={ block() }>
-        <div class="container">
-            <div class="row">
-                <a href="#" class={ block('logo') }>Ånnsjöns fågelstation</a>
-                <div id="burger" class={ block('burger') } onclick={ toggleMenu }>
-                    <span class={ block('burger-bar', { 'close': menuOpen }) }></span>
-                </div>
+    <div class="container">
+        <div class="row">
+            <a href="#" class={ block('logo') }>Ånnsjöns fågelstation</a>
+            <div id="burger" class={ block('burger') } onclick={ toggleMenu }>
+                <span class={ block('burger-bar', { 'close': menuOpen }) }></span>
             </div>
-            <nav class={ block('menu', { 'open': menuOpen }) }>
-                <a each="{ links }" href="#{ href }" class={ block('link', href, isActive(href)) }>{ label }</a>
-            </nav>
         </div>
-
-    </header>
+        <nav class={ block('menu', { 'open': menuOpen }) }>
+            <a each="{ links }" href="#{ href }" class={ block('link', href, isActive(href)) }>{ label }</a>
+        </nav>
+    </div>
 
     <script>
         let self = this

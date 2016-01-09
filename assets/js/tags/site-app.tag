@@ -8,11 +8,11 @@ require('./layout-page')
 
 <site-app>
     <div class="site">
-        <site-header></site-header>
-        <layout-index if={ index }></layout-index>
-        <layout-page if={ !index }></layout-page>
+        <header riot-tag="site-header" class="site-header"></header>
+        <main riot-tag="layout-index" if={ index }></main>
+        <main riot-tag="layout-page" if={ !index } class="page"></main>
     </div>
-    <site-footer></site-footer>
+    <footer riot-tag="site-footer" class="site-footer"></footer>
 
     <script>
         var riotcontrol = require('riotcontrol')
