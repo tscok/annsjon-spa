@@ -26,6 +26,7 @@ module.exports = {
             { test: /\.js$|\.tag$/, exclude: /node_modules/, loader: 'babel-loader' },
             { test: /\.md$/, loader: 'html!markdown?breaks=true'},
             { test: /\.less$/, loader: 'style!css!less' },
+            { test: /\.json$/, loader: 'json' },
             {
                 test: /\.(jpe?g|png|gif|svg)$/i,
                 loaders: [
