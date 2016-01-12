@@ -16,7 +16,6 @@ function SiteLanguage() {
         this.trigger('SITE_LANGUAGE', Cookies.get('language'));
         
         riot.route('/');
-        window.scrollTo(0,0);
     };
 
     this.on('SET_SITE_LANGUAGE', this.setCookie);

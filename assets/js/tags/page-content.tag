@@ -1,9 +1,12 @@
+let utils = require('../utils');
+
 <page-content>
     <script>
         var riotcontrol = require('riotcontrol')
 
         riotcontrol.on('SET_PAGE_CONTENT', (content) => {
             this.root.innerHTML = content
+            utils.scrollUp();
         })
 
         this.setLinkTarget = () => {

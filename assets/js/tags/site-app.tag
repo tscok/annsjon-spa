@@ -1,4 +1,5 @@
 let riotcontrol = require('riotcontrol')
+let utils = require('../utils');
 
 require('./site-header')
 require('./site-footer')
@@ -23,6 +24,7 @@ require('./layout-page')
 
         riotcontrol.on('SITE_LANGUAGE', () => {
             this.update()
+            utils.scrollUp()
         })
     </script>
 </site-app>

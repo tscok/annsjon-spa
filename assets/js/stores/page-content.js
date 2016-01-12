@@ -24,17 +24,12 @@ function PageContent() {
     var subRoute = riot.route.create();
     var lang, content;
 
-    function scrollUp() {
-        window.scrollTo(0,0);
-    }
-
     function setPageContent(data) {
         if (!data) {
             data = contents[lang]['./404.md'];
         }
 
         self.trigger('SET_PAGE_CONTENT', data);
-        scrollUp();
     }
 
     // Main routes
