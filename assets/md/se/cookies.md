@@ -7,4 +7,5 @@ En permanent cookie ligger kvar på besökarens dator under en bestämd tid. En 
 Man kan neka användningen av cookies genom att välja vissa inställningar i webbläsaren. Att göra det brukar ofta resultera i att webbsidor slutar fungera normalt och även starkt begränsa dina valmöjligheter.
 
 #### Cookies på annsjon.org
-- lagrar språkval
+
+Vi använder en permanent cookie för att lagra inställningar för språk.
