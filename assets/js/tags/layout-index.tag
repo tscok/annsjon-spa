@@ -6,7 +6,7 @@ require('./raw')
 <layout-index>
     <section class="hero">
         <div class="container">
-            <h1 class="hero__title">{ getText('annsjons_fagelstation') }</h1>
+            <h1 class="hero__title">{ getText('site_title') }</h1>
             <hr class="hero__ruler">
             <h5 class="hero__body"><raw content={ getText('hero_body') }/></h5>
         </div>

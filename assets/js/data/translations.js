@@ -1,6 +1,6 @@
 module.exports = {
     // Title
-    'annsjons_fagelstation': {
+    'site_title': {
         se: 'Ånnsjöns fågelstation',
         en: 'Lake Ånnsjön Bird Observatory'
     },

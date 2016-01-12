@@ -4,7 +4,7 @@ let riotcontrol = require('riotcontrol')
 <site-footer>
     <div class="container">
         <div class="row">
-            <a href="#" class={ block('logo') }>{ getText('annsjons_fagelstation') }</a>
+            <a href="#" class={ block('logo') }>{ getText('site_title') }</a>
             <nav class={ block('links') }>
                 <a each="{ links }" href="#{ href }" class={ block('link') }>{ label }</a>
             </nav>
