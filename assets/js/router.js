@@ -1,22 +1,21 @@
 const riotcontrol = require('riotcontrol');
 
 
-const router = function() {
+function Router() {
 
-    let script = document.createElement('script');
+    function setPageToTrack(route, subroute) {
+        let page = '/';
+        page += route ? (subroute ? route + '/' + subroute : route) : 'index';
 
-    // function addBundle(route) {
-    //     if (route) {
-    //         script.src = 'build/Page.js'
-    //     } else {
-    //         script.src = 'build/Index.js'
-    //     }
-    //     document.body.appendChild(script);
-    // }
+        if (ga) {
+            ga('set', 'page', page);
+            ga('send', 'pageview');
+        }
+    }
 
-    function onRoute(route, id, action) {
+    function onRoute(route, subroute) {
         riotcontrol.trigger('ROUTE', route);
-        // addBundle(route);
+        setPageToTrack(route, subroute);
     }
 
     riot.route(onRoute);
@@ -25,4 +24,4 @@ const router = function() {
     riot.route.start(true);
 };
 
-module.exports = router();
+module.exports = Router();
