@@ -14,6 +14,10 @@ module.exports = {
         se: 'Design och utveckling av',
         en: 'Design and development by'
     },
+    'read-more': {
+        se: 'Läs&nbsp;mer',
+        en: 'Read&nbsp;more'
+    },
 
     // Buttons
     'projects_button': {
@@ -67,19 +71,19 @@ module.exports = {
         en: 'Our watcher\'s guide'
     },
     'guides_body-handol': {
-        se: 'Längs älven Handölans lopp genom Handöl sträcker sig ett lummigt, löv&shy;skogs&shy;dominerat område med ett rikt fågelliv. Här hittar man trädgårds&shy;sångare, svarthätta, härmsångare och…',
-        en: 'Along the river Handölan, through the village Handöl, there\'s a green, deciduous forest with a rich birdlife. Common species here are Garden Warbler, Blackcap, Icterine Warbler and…'
+        se: 'Längs älven Handölans lopp genom Handöl sträcker sig ett lummigt, löv&shy;skogs&shy;dominerat område med ett rikt fågelliv. Här hittar man trädgårds&shy;sångare, svarthätta…',
+        en: 'Along the river Handölan, through the village Handöl, there\'s a green, deciduous forest with a rich birdlife. Common species here are Garden Warbler, Blackcap, Icterine…'
     },
     'guides_body-storlien': {
-        se: 'Området mellan Vindarnas tempel och Åhlénstugan brukar kunna bjuda på lappsparv, blåhake, fjällabb och kärrsnäppa. På Skurdals&shy;höjden finns även en välkänd spelplats för…',
+        se: 'Området mellan Vindarnas tempel och Åhlénstugan brukar kunna bjuda på lappsparv, blåhake, fjällabb och kärrsnäppa. På Skurdals&shy;höjden finns även en välkänd…',
         en: 'The area between the Temple of Winds and the Åhléns cabin usually offers Lapland Bunting, Bluethroat, Long-tailed Skua and Dunlin. There\'s also a well known Great Snipe lek…'
     },
     'guides_body-storulvan': {
-        se: 'Här kan man se ripor av bägge arterna, blåhake och på högre höjd fjällpipare och snösparv. Både kungsörn och jaktfalk ses ibland vid Storulvån, men fjällvråk och stenfalk är betydligt…',
+        se: 'Här kan man se ripor av bägge arterna, blåhake och på högre höjd fjällpipare och snösparv. Både kungsörn och jaktfalk ses ibland vid Storulvån, men fjällvråk och sten…',
         en: 'Among the more common species are Willow Grouse, Ptarmigan, Bluethroat and at higher altitude Dotterel and Snow Bunting. Golden Eagle and Gyr Falcon are rare, while Merlin…'
     },
     'guides_body-ann': {
-        se: 'På myrarna vid sjön är småspov, ljungpipare, grönbena, rödbena och gulärla karaktärsfåglar. Storspov, gluttsnäppa och enkel&shy;beckasin förekommer också regelbundet…',
+        se: 'På myrarna vid sjön är småspov, ljungpipare, grönbena, rödbena och gulärla karaktärsfåglar. Storspov, gluttsnäppa och enkel&shy;beckasin förekommer också…',
         en: 'On the mires by Lake Ånnsjön typical species are Whimbrel, Golden Plover, Wood Sandpiper, Redshank and Yellow Wagtail. Other common species include Curlew, Greenshank…'
     }
 };
