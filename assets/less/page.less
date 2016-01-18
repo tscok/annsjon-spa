@@ -23,6 +23,19 @@
         }
     }
 
+    figure {
+        margin: 2em 0;
+
+        img {
+            width: 100%;
+        }
+
+        figcaption {
+            font-size: .875em;
+            color: @color-gray5;
+        }
+    }
+
     ol {
         padding-left: 3rem;
         list-style-position: initial;
@@ -33,17 +46,17 @@
     }
 
     blockquote {
-        padding: 12px;
-        border-left: 6px solid #ccc;
-        background-color: @color-gray6;
+        padding: 0 15px;
+        border-left: 4px solid @color-gray5;
 
         p {
             margin: 0;
+            font-size: 1.3em;
+            font-style: italic;
         }
 
         .author {
-            font-size: .875em;
-            font-style: italic;
+            font-size: .75em;
             color: @color-gray5;
 
             &:before {

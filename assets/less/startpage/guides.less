@@ -1,6 +1,7 @@
 .guides {
     .section;
     .last-section-before-footer;
+    background-color: @color-gray9;
 
     &__header {
         .section-header;
@@ -16,9 +17,23 @@
 
     &__title {
         font-weight: 400;
+        color: @color-green;
     }
 
-    &__body {}
+    &__body {
+        a {
+            text-decoration: none;
+            border-bottom: 1px dotted @text-color;
+
+            &:hover {
+                border-bottom-style: solid;
+            }
+
+            &, &:hover, &:visited {
+                color: @text-color;
+            }
+        }
+    }
 
     &__actions {
         text-align: center;
