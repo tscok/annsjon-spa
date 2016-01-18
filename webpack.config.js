@@ -9,6 +9,9 @@ module.exports = {
         path: './build',
         filename: 'bundle.js'
     },
+    node: {
+        fs: "empty"
+    },
     plugins: [
         new webpack.ProvidePlugin({
             riot: 'riot'

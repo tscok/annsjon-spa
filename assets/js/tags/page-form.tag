@@ -1,17 +1,37 @@
 <page-form>
     <form name="application" onsubmit={ onSubmit } if={ showForm }>
-        <label>Your name</label>
+        <label>Full name<span class="label-body">(first, last)</span></label>
         <input type="text" name="name" class="u-full-width" required>
         <label>Message<span class="label-body">Tell us about yourself and any previous experience with birds</span></label>
         <textarea name="message" class="u-full-width" required></textarea>
         <div class="row">
             <div class="six columns">
-                <label>Phone number</label>
-                <input type="text" name="phone" class="u-full-width">
+                <label>Birth year</label>
+                <select name="birthyear" class="u-full-width" required>
+                    <option value="">Select</option>
+                    <option each={ name, i in birthYears() } value={ name }>{ name }</option>
+                </select>
             </div>
             <div class="six columns">
-                <label>Email address</label>
+                <label>Gender</label>
+                <label class="u-pull-left">
+                    <input type="radio" name="gender" value="Female" checked>
+                    <span class="label-body">Female</span>
+                </label>
+                <label class="u-pull-left">
+                    <input type="radio" name="gender" value="Male">
+                    <span class="label-body">Male</span>
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="six columns">
+                <label>Email</label>
                 <input type="email" name="email" class="u-full-width" required>
+            </div>
+            <div class="six columns">
+                <label>Phone</label>
+                <input type="text" name="phone" class="u-full-width" required>
             </div>
         </div>
         <div class="row">
@@ -25,12 +45,21 @@
             </div>
         </div>
         <p if={ dates.misplaced } class="form-error-hint">Arrival date is later than or the same as departure.</p>
-        <div class="u-cf">
-            <label>Arrives with a car?</label>
-            <label class="u-pull-left">
-                <input type="checkbox" name="car" value="Yes">
-                <span class="label-body">Yes</span>
-            </label>
+        <div class="row">
+            <div class="six columns">
+                <label>Arrives by car?</label>
+                <label class="u-pull-left">
+                    <input type="checkbox" name="car" value="Yes">
+                    <span class="label-body">Yes</span>
+                </label>
+            </div>
+            <div class="six columns">
+                <label>Driving license?</label>
+                <label class="u-pull-left">
+                    <input type="checkbox" name="driver" value="Yes">
+                    <span class="label-body">Yes</span>
+                </label>
+            </div>
         </div>
         <hr>
         <p if={ dates.errors }>Please correct any errors to submit the form.</p>
@@ -52,6 +81,14 @@
         this.showThanks = false
         this.deliveryError = false
         this.dates = {}
+
+        this.birthYears = () => {
+            let arr = []
+            for (var i=2015; i>=1900; i--) {
+                arr.push(i)
+            }
+            return arr
+        }
 
         this.isFutureDate = (str) => {
             return new Date(str) > new Date()
