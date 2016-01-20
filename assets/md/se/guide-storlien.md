@@ -1,4 +1,4 @@
-### Skådarguide: Storlien
+### Storlien
 
 Denna anrika skidmetropol har en hel del att erbjuda fågelskådaren. Cirka en kilometer öster om Storlien på södra sidan järnvägen finns en spångad led med två observationsgömslen och ett vindskydd. De ligger vid ett mindre våtmarksområde i anslutning till Storliens avloppsreningsanläggning. Våtmarksfåglarna är är i stort sett desamma som i Ånn. Myrsnäppa förekommer ibland på den myr som kan beskådas från vindskyddet. Blåhake har en pålitlig förekomst i björk- och videsnåren i våtmarksområdets kanter. Hela området är fågelskyddsområde och får endast avspanas från markerade leder.
 

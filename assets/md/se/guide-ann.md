@@ -1,4 +1,4 @@
-### Skådarguide: Ånn
+### Ånn
 
 Från järnvägsstationen utgår en vandringsled ner mot myrarna vid sjön. Första anhalten är Lagunen, en liten göl, ett sk bräddavlopp med koppling till vattenreningsverket i Ånn. Tidigare var det ett säkert tillhåll för simsnäppor, men tyvärr är det ingalunda säkert att få se simsnäppor här längre, troligen pga att näringsinnehållet minskat. Här finns också en mindre plattform med utsikt över en vik av Ånnsjön, Vallaviken, som sträcker sig in mot Ånn. Sommaren 2005 häckade ett par svarthakedopping helt nära plattformen. När man fortsätter vidare når man först Nätaholmen, ett stort och rejält fågeltorn vid sjökanten, sedan följer i tur och ordning Dolparna, ett kombinerat torn och gömsle, och längst söderut, Halsenmossen, ett rejält fågeltorn igen.
 

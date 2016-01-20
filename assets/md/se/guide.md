@@ -5,10 +5,3 @@ I mitten av maj, eller någon vecka dessförinnan, om våren är tidig, startar 
 Under första halvan av juni är aktiviteten som högst med drillande småspovar och spelande brushanar på myrarna och smålom, storlom, svärta, sjöorre, bläsand, vigg, bergand och flera sjöfåglar på sjön.
 
 Redan efter midsommar mattas fågellivet, men fortfarande en bra bit in i juli kan sjön med omgivande myrområden och fjäll vara väl värda ett besök även för den fågelintresserade.
-
-##### Lokaler
-
-- [Handöl](#guide/handol)
-- [Storlien](#guide/storlien)
-- [Storulvån](#guide/storulvan)
-- [Ånn](#guide/ann)

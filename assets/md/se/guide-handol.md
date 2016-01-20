@@ -1,4 +1,4 @@
-### Skådarguide: Handöl
+### Handöl
 
 Handöl ligger strax väster om Ånnsjön och skiljs från sjön genom Enans och Handölans gemensamma deltaområde. Parkera vid Pensionat Handöl och gå genom stugbyn cirka 50 meter till fågeltornet vid Lomtjärnsmyren.
 

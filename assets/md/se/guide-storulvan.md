@@ -1,4 +1,4 @@
-### Skådarguide: Storulvån
+### Storulvån
 
 Om man vill upp på fjället är Storulvån och vägen mot Storulvån en lämplig utgångspunkt. Närmast Storulvån ligger Getryggen som är lätt att nå även om den branta stigningen kan vara kännbar. Ripor av bägge arterna, blåhake och på högre höjd fjällpipare och snösparv hör till de fåglar man kan få syn på. Både kungsörn och jaktfalk ses ibland vid Storulvån, men fjällvråk och stenfalk är betydligt vanligare.
 
