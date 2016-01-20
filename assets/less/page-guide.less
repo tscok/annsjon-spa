@@ -1,0 +1,39 @@
+.page-guide {
+    margin: 3em 0 0;
+
+    &__links {}
+
+    &__link {
+        display: block;
+        padding: 1em 1.5em;
+        margin-bottom: 1em;
+        border-radius: 2px;
+        font-weight: 500;
+        border: 1px solid @color-gray6 !important;
+        position: relative;
+        .transition(border-color, 250ms);
+
+        &:before, &:after {
+            content: "";
+            width: 15px;
+            height: 2px;
+            border-radius: 2px;
+            display: block;
+            background-color: @color-gray5;
+            position: absolute;
+            right: 1.5em;
+        }
+        &:before {
+            top: 1.425em;
+            .rotate(45deg);
+        }
+        &:after {
+            top: 2em;
+            .rotate(-45deg);
+        }
+
+        &:hover {
+            border-color: @color-gray5 !important;
+        }
+    }
+}
