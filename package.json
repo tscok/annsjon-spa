@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Simple SPA for annsjon.org",
   "main": "index.html",
-  "dependencies": {},
+  "dependencies": {
+    "sendgrid": "^2.0.0"
+  },
   "devDependencies": {
     "babel": "^6.3.26",
     "babel-core": "^6.3.26",
