@@ -18,15 +18,37 @@ module.exports = {
         se: 'Läs&nbsp;mer',
         en: 'Read&nbsp;more'
     },
-
-    // Buttons
-    'projects_button': {
-        se: 'Se alla projekt',
-        en: 'See all projects'
+    'thank-you': {
+        se: 'Tack',
+        en: 'Thank you'
     },
-    'guides_button': {
-        se: 'Till skådarguiden',
-        en: 'See the guide'
+    'yes': {
+        se: 'Ja',
+        en: 'Yes'
+    },
+    'no': {
+        se: 'Nej',
+        en: 'No'
+    },
+    'select': {
+        se: 'Välj',
+        en: 'Select'
+    },
+    'first-name': {
+        se: 'Förnamn',
+        en: 'First name'
+    },
+    'last-name': {
+        se: 'Efternamn',
+        en: 'Last name'
+    },
+    'email': {
+        se: 'Epost',
+        en: 'Email'
+    },
+    'phone': {
+        se: 'Telefon',
+        en: 'Phone'
     },
 
     // Hero
@@ -64,6 +86,10 @@ module.exports = {
         se: 'Varje år bedriver vi standardiserad ringmärkning av tättingar i Handöl och Enans delta i Ånnsjön.',
         en: 'We annually ring between 2000-4000 passerines in the area of Handöl and in the Enan river delta.'
     },
+    'projects_button': {
+        se: 'Se alla projekt',
+        en: 'See all projects'
+    },
 
     // Guides
     'guides_header': {
@@ -85,5 +111,79 @@ module.exports = {
     'guides_body-ann': {
         se: 'På myrarna vid sjön är småspov, ljungpipare, grönbena, rödbena och gulärla karaktärsfåglar. Storspov, gluttsnäppa och enkel&shy;beckasin förekommer också…',
         en: 'On the mires by Lake Ånnsjön typical species are Whimbrel, Golden Plover, Wood Sandpiper, Redshank and Yellow Wagtail. Other common species include Curlew, Greenshank…'
+    },
+    'guides_button': {
+        se: 'Till skådarguiden',
+        en: 'See the guide'
+    },
+
+    // Volunteer
+    'volunteer_gender': {
+        se: 'Kön',
+        en: 'Gender'
+    },
+    'volunteer_gender-f': {
+        se: 'Kvinna',
+        en: 'Female'
+    },
+    'volunteer_gender-m': {
+        se: 'Man',
+        en: 'Male'
+    },
+    'volunteer_birthyear': {
+        se: 'Födelseår',
+        en: 'Birthyear'
+    },
+    'volunteer_about': {
+        se: 'Presentation',
+        en: 'Presentation'
+    },
+    'volunteer_about-hint': {
+        se: 'Berätta om dig själv och tidigare erfarenheter med fåglar.',
+        en: 'Tell us about yourself and any previous experience with birds.'
+    },
+    'volunteer_arrival-date': {
+        se: 'Datum för ankomst',
+        en: 'Arrival date'
+    },
+    'volunteer_departure-date': {
+        se: 'Datum för avfärd',
+        en: 'Departure date'
+    },
+    'volunteer_invalid-date': {
+        se: 'Felaktigt datum',
+        en: 'Invalid date'
+    },
+    'volunteer_dates-misplaced': {
+        se: 'Ankomstdatum är senare än eller samma som avfärdsdatum.',
+        en: 'Arrival date is later than or same date as departure.'
+    },
+    'volunteer_car': {
+        se: 'Medför bil',
+        en: 'Arrives by car'
+    },
+    'volunteer_driving-license': {
+        se: 'Körkort',
+        en: 'Driving license'
+    },
+    'volunteer_errors': {
+        se: 'Vänligen korrigera eventuella fel för att skicka formuläret.',
+        en: 'Please correct any errors to submit the form.'
+    },
+    'volunteer_undelivered': {
+        se: '<strong>Formuläret skickades inte.</strong> Din ansökan kunde inte skickas på grund av tekniska problem. Vänligen skicka din ansökan till <a href="mailto:volunteer@annsjon.org">volunteer@annsjon.org</a> eller försök igen senare. Vi beklagar besväret!',
+        en: '<strong>Form submission failed.</strong> Your application could not be sent due to technical problems. Please consider applying to <a href="mailto:volunteer@annsjon.org">volunteer@annsjon.org</a> or try again later. We are sorry for the inconvenience!'
+    },
+    'volunteer_submit': {
+        se: 'Skicka',
+        en: 'Submit'
+    },
+    'volunteer_submitting': {
+        se: 'Skickar…',
+        en: 'Submitting…'
+    },
+    'volunteer_confirmation': {
+        se: 'Din ansökan har skickats.<br>Vi återkommer till dig så snart vi har behandlat ärendet.',
+        en: 'Your application has been sent.<br>We will process it and get back to you as soon as possible.'
     }
 };

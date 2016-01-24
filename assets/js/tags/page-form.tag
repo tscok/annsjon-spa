@@ -1,93 +1,105 @@
+require('./raw')
+
 <page-form>
-    <form name="application" onsubmit={ onSubmit } if={ showForm }>
-        <label>Full name<span class="label-body">(first, last)</span></label>
-        <input type="text" name="name" class="u-full-width" required>
-        <label>Message<span class="label-body">Tell us about yourself and any previous experience with birds</span></label>
-        <textarea name="message" class="u-full-width" required></textarea>
+    <form name="application" class="page-form__application" onsubmit={ onSubmit } if={ showForm }>
         <div class="row">
             <div class="six columns">
-                <label>Birth year</label>
-                <select name="birthyear" class="u-full-width" required>
-                    <option value="">Select</option>
-                    <option each={ name, i in birthYears() } value={ name }>{ name }</option>
-                </select>
+                <label>{ getText('first-name') }</label>
+                <input type="text" name="fname" class="u-full-width" required>
             </div>
             <div class="six columns">
-                <label>Gender</label>
-                <label class="u-pull-left">
-                    <input type="radio" name="gender" value="Female" checked>
-                    <span class="label-body">Female</span>
-                </label>
-                <label class="u-pull-left">
-                    <input type="radio" name="gender" value="Male">
-                    <span class="label-body">Male</span>
-                </label>
+                <label>{ getText('last-name') }</label>
+                <input type="text" name="lname" class="u-full-width" required>
             </div>
         </div>
         <div class="row">
             <div class="six columns">
-                <label>Email</label>
+                <label>{ getText('volunteer_gender') }</label>
+                <label class="u-pull-left">
+                    <input type="radio" name="gender" value="Female" required>
+                    <span class="label-body">{ getText('volunteer_gender-f') }</span>
+                </label>
+                <label class="u-pull-left" style="margin-left:20px;">
+                    <input type="radio" name="gender" value="Male" required>
+                    <span class="label-body">{ getText('volunteer_gender-m') }</span>
+                </label>
+            </div>
+            <div class="six columns">
+                <label>{ getText('volunteer_birthyear') }</label>
+                <select name="birth" class="u-full-width" required>
+                    <option value="" selected>{ getText('select') }</option>
+                    <option each={ year, i in birthYears() } value={ year }>{ year }</option>
+                </select>
+            </div>
+        </div>
+        <label>{ getText('volunteer_about') }<span class="label-body">{ getText('volunteer_about-hint') }</span></label>
+        <textarea name="about" class="u-full-width" required></textarea>
+        <div class="row">
+            <div class="six columns">
+                <label>{ getText('email') }</label>
                 <input type="email" name="email" class="u-full-width" required>
             </div>
             <div class="six columns">
-                <label>Phone</label>
+                <label>{ getText('phone') }</label>
                 <input type="text" name="phone" class="u-full-width" required>
             </div>
         </div>
         <div class="row">
             <div class="six columns">
-                <label>Arrival date<span class="label-body form-error-hint" if={ dates.arrive.error }>Invalid date</span></label>
-                <input type="date" name="arrive" class="u-full-width {form-error: dates.arrive.error}" onchange={ onInput } placeholder="yyyy-mm-dd" required>
+                <label>{ getText('volunteer_arrival-date') }<span class="label-body form-error-hint" if={ dates.arrive.error }>{ getText('volunteer_invalid-date') }</span></label>
+                <input type="date" name="arrive" class="u-full-width {form-error: dates.arrive.error}" onchange={ onDateInput } placeholder="yyyy-mm-dd" required>
             </div>
             <div class="six columns">
-                <label>Departure date<span class="label-body form-error-hint" if={ dates.depart.error }>Invalid date</span></label>
-                <input type="date" name="depart" class="u-full-width {form-error: dates.depart.error}" onchange={ onInput } placeholder="yyyy-mm-dd" required>
+                <label>{ getText('volunteer_departure-date') }<span class="label-body form-error-hint" if={ dates.depart.error }>{ getText('volunteer_invalid-date') }</span></label>
+                <input type="date" name="depart" class="u-full-width {form-error: dates.depart.error}" onchange={ onDateInput } placeholder="yyyy-mm-dd" required>
             </div>
         </div>
-        <p if={ dates.misplaced } class="form-error-hint">Arrival date is later than or the same as departure.</p>
+        <p if={ dates.misplaced } class="form-error-hint">{ getText('volunteer_dates-misplaced') }</p>
         <div class="row">
             <div class="six columns">
-                <label>Arrives by car?</label>
+                <label>{ getText('volunteer_car') }?</label>
                 <label class="u-pull-left">
                     <input type="checkbox" name="car" value="Yes">
-                    <span class="label-body">Yes</span>
+                    <span class="label-body">{ getText('yes') }</span>
                 </label>
             </div>
             <div class="six columns">
-                <label>Driving license?</label>
+                <label>{ getText('volunteer_driving-license') }?</label>
                 <label class="u-pull-left">
                     <input type="checkbox" name="driver" value="Yes">
-                    <span class="label-body">Yes</span>
+                    <span class="label-body">{ getText('yes') }</span>
                 </label>
             </div>
         </div>
         <hr>
-        <p if={ dates.errors }>Please correct any errors to submit the form.</p>
-        <p if={ deliveryError }><strong>Submission Error:</strong> Application was <em>not</em> sent! Please contact webmaste@annsjon.org if you keep getting this message.</p>
-        <button type="submit" class="button-primary" disabled={ dates.errors }>Send</button>
-        <button type="button" onclick={ onReset }>Reset</button>
+        <p if={ dates.errors }>{ getText('volunteer_errors') }</p>
+        <p if={ isUndelivered }><raw content={ getText('volunteer_undelivered') }/></p>
+        <button type="submit" name="submit" class="button-primary" disabled={ dates.errors || isSubmitting }>{ getText('volunteer_submit') }</button>
     </form>
-    <div if={ showThanks }>
-        <h3>Thank you!</h3>
-        <p>Your application has been sent. We will process it and get back to you as soon as possible.</p>
+    <div class="page-form__thank-you" if={ showThanks }>
+        <h4 class="page-form__tahnk-you--title">{ getText('thank-you') }<span if={ applyee }>, { applyee }</span>!</h4>
+        <p class="page-form__tahnk-you--body">{ getText('volunteer_confirmation') }</p>
     </div>
 
     <script>
         const riotcontrol = require('riotcontrol')
-        const serialize = require('form-serialize')
+        const mygettext = require('../data/mygettext')
         const subRoute = riot.route.create()
 
+        this.dates = {}
         this.showForm = false
         this.showThanks = false
-        this.deliveryError = false
-        this.dates = {}
+        this.isSubmitting = false
+        this.isUndelivered = false
 
         this.birthYears = () => {
-            let arr = []
-            for (var i=2015; i>=1900; i--) {
-                arr.push(i)
+            let minYear = new Date().getFullYear() - 15,
+                maxYear = new Date().getFullYear() - 85,
+                years = []
+            while ( minYear >= maxYear ) {
+                years.push(minYear--)
             }
-            return arr
+            return years
         }
 
         this.isFutureDate = (str) => {
@@ -102,7 +114,7 @@
             return new Date(this['arrive'].value) >= new Date(this['depart'].value)
         }
 
-        this.onInput = (ev) => {
+        this.onDateInput = (ev) => {
             this.dates[ev.target.name] = {
                 value: ev.target.value,
                 error: this.isInvalidDate(ev.target.value)
@@ -122,9 +134,7 @@
             if (this.dates.errors) {
                 return
             }
-
-            let form = serialize(this.application, { hash: true })
-            riotcontrol.trigger('FORM_APPLICATION', form)
+            riotcontrol.trigger('FORM_APPLICATION', this.application)
         }
 
         this.onReset = () => {
@@ -132,19 +142,39 @@
             this.dates = {}
         }
 
-        riotcontrol.on('FORM_APPLICATION_SENT', () => {
+        this.handleLoading = () => {
+            this.submit.innerHTML = getText('volunteer_submitting')
+            this.update({ isUndelivered: false, isSubmitting: true })
+        }
+
+        this.handleFailure = () => {
+            this.submit.innerHTML = getText('volunteer_submit')
+            this.update({ isUndelivered: true, isSubmitting: false })
+        }
+
+        this.handleSuccess = (name) => {
             this.onReset()
-            this.update({showForm: false, showThanks: true})
-        })
-        riotcontrol.on('FORM_APPLICATION_NOT_SENT', () => {
-            this.update({deliveryError: true})
-        })
+            this.update({ showForm: false, showThanks: true, applyee: name })
+        }
+
+        riotcontrol.on('FORM_APPLICATION_LOADING', this.handleLoading)
+        riotcontrol.on('FORM_APPLICATION_FAILURE', this.handleFailure)
+        riotcontrol.on('FORM_APPLICATION_SUCCESS', this.handleSuccess)
 
         riotcontrol.on('ROUTE', () => {
-            this.update({showForm: false})
+            this.update({ showForm: false })
         })
+
+        subRoute('volunteer', () => {
+            this.update({ showForm: false })
+        })
+
         subRoute('volunteer/apply', () => {
-            this.update({showForm: true})
+            this.update({ showForm: true })
+        })
+
+        this.on('mount', () => {
+            this.getText = mygettext
         })
     </script>
 </page-form>
