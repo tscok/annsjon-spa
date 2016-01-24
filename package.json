@@ -3,18 +3,14 @@
   "version": "1.0.0",
   "description": "Simple SPA for annsjon.org",
   "main": "index.html",
-  "dependencies": {
-    "sendgrid": "^2.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel": "^6.3.26",
     "babel-core": "^6.3.26",
     "babel-loader": "^6.2.0",
     "babel-preset-es2015-riot": "^1.0.1",
     "css-loader": "^0.23.1",
-    "dotenv": "^1.2.0",
     "file-loader": "^0.8.5",
-    "form-serialize": "^0.7.0",
     "html-webpack-plugin": "^1.7.0",
     "image-webpack-loader": "^1.6.2",
     "js-cookie": "^2.1.0",
@@ -29,8 +25,7 @@
     "riotjs-loader": "^1.2.0",
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",
-    "webpack": "^1.12.9",
-    "xhr": "^2.2.0"
+    "webpack": "^1.12.9"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
