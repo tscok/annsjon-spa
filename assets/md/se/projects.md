@@ -6,19 +6,26 @@ Om tillgången på personal är god genomför vi även Holkprojekt och Standardr
 
 #### Dubbelbeckasinprojektet
 
+<figure>![Dubbelbeckasiner](../../images/old/projects_great-snipe.jpg)<figcaption>Foto: Björn Isaksson</figcaption></figure>
+
 Beståndet av dubbelbeckasin är en av de viktigaste anledningarna till att Ånnsjön- Storlien finns med på BirdLife International's lista över Important Bird Areas (IBA). Sedan 2004 har vi tillsammans med forskare från Lund bedrivit inventering, radiopejling och nätfångst samt märkning med ljusloggers.
 
-<a href="#projects/great-snipe" class="button">Till projektsidan</a>
+<p style="text-align:center">
+    <a href="#projects/great-snipe" class="button">Till projektsidan</a></p>
 
 - - -
 
 #### Ringmärkning av tättingar
+
+<figure>![Ringmärkning](../../images/old/projects_ringing.jpg)<figcaption>Foto: Mikael Carlsson</figcaption></figure>
 
 Sedan starten 1988 har vi bedrivit standardiserad ringmärkning av tättingar i Handöl och Enans delta i Ånnsjön. Syftet är att följa populations- förändringar för ett stort antal arter, och framför allt ger projektet ett bra mått på häckningsframgången för tex lövsångare, blåhake, gulärla, bergfink och sävsparv.
 
 - - -
 
 #### Fjällrutter
+
+<figure>![Fjällrutter](../../images/old/projects_census.jpg)<figcaption>Foto: Malte Busch</figcaption></figure>
 
 Femton fjällrutter i området Ånnsjön-Storlien samt ett antal rutter på Flatruet och i Stekenjokk inventeras årligen med linjetaxeringsmetodik. Syftet är att följa populationsutvecklingen hos fågelarter inom videbältet och kalfjällsregionen, i första hand arter med sin utbredning begränsad till denna region, tex alfågel, fjällpipare, skärsnäppa, kärrsnäppa, fjällabb, fjällripa, dalripa, fjällvråk, korp, stenskvätta, snösparv, lappsparv, och ringtrast. Att inventera fjällrutter är mycket enkelt, bara man kan läsa kartan!
 
