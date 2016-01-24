@@ -42,16 +42,6 @@ function PageContent() {
     });
 
     // Subroutes
-    
-    /**
-     * Navigate to route in specified language.
-     * Example: #about/?lang=en
-     */
-    subRoute('*/..', function(name) {
-        let q = riot.route.query();
-        Cookies.set('language', q.lang ? q.lang : lang);
-        riot.route(name);
-    });
 
     subRoute('guide/*', function(name) {
         content = contents[lang]['./guide-'+ name +'.md'];
@@ -71,6 +61,18 @@ function PageContent() {
     subRoute('volunteer/*', function(name) {
         content = contents[lang]['./volunteer-'+ name +'.md'];
         setPageContent(content);
+    });
+
+    /**
+     * Navigate to route in specified language.
+     * Example: #about/?lang=en
+     */
+    subRoute('*/..', function(name) {
+        let q = riot.route.query();
+        if (q.lang) {
+            Cookies.set('language', q.lang);
+            riot.route(name);
+        }
     });
 }
 
