@@ -41,7 +41,17 @@ function PageContent() {
         setPageContent(content);
     });
 
-    // Sub routes
+    // Subroutes
+    
+    /**
+     * Navigate to route in specified language.
+     * Example: #about/?lang=en
+     */
+    subRoute('*/..', function(name) {
+        let q = riot.route.query();
+        Cookies.set('language', q.lang ? q.lang : lang);
+        riot.route(name);
+    });
 
     subRoute('guide/*', function(name) {
         content = contents[lang]['./guide-'+ name +'.md'];
