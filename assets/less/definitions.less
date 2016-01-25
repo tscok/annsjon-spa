@@ -33,7 +33,7 @@
     padding: 5rem 0;
 
     @media screen and (min-width: @responsive-size-tablet) {
-        padding: 8rem 0;
+        padding: 10rem 0;
     }
 }
 
@@ -57,7 +57,7 @@
     -o-transform:      rotate(@deg);
 }
 
-.transition (@parameter, @parameter2) {
-    -webkit-transition: @parameter, @parameter2;
-    transition: @parameter, @parameter2;
+.transition (@parameter) {
+    -webkit-transition: @parameter;
+    transition: @parameter;
 }

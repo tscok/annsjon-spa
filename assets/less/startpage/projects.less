@@ -23,13 +23,17 @@
 
     &__title {
         font-weight: 400;
-        color: @color-green;
+        color: @color-gray4;
+
+        @media screen and (min-width: @responsive-size-tablet) {
+            font-weight: inherit;
+        }
     }
 
     &__placeholder {
         height: 10rem;
         width: 10rem;
-        margin: 0 auto 2rem;
+        margin: 0 auto;
         border-radius: 50%;
 
         background-repeat: no-repeat;
@@ -57,13 +61,11 @@
 
     &__actions {
         text-align: center;
-        margin-top: 5rem;
+        margin-top: 6rem;
     }
 
     &__button {
         margin-bottom: 0;
-        -webkit-transition: all 250ms;
-
-        &, &:hover, &:focus {}
+        .transition(all 250ms);
     }
 }
