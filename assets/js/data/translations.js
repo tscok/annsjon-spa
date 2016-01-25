@@ -75,7 +75,7 @@ module.exports = {
         en: 'Census project'
     },
     'projects_body-census': {
-        se: 'Vi inventerar regelbundet Ånnsjön och omkringliggande myrar samt kalfjäll i området Ånnsjön-Storlien.',
+        se: 'Vi inventerar regelbundet Ånnsjön och omkring&shy;liggande myrar samt kalfjäll i området Ånnsjön-Storlien.',
         en: 'Every spring we conduct census projects on Lake Ånnsjön and the surrounding mires and mountains.'
     },
     'projects_title-ringing': {
@@ -83,7 +83,7 @@ module.exports = {
         en: 'Ringing'
     },
     'projects_body-ringing': {
-        se: 'Varje år bedriver vi standardiserad ringmärkning av tättingar i Handöl och Enans delta i Ånnsjön.',
+        se: 'Varje år bedriver vi standardiserad ring&shy;märkning av tättingar i Handöl och Enans delta.',
         en: 'We annually ring between 2000-4000 passerines in the area of Handöl and in the Enan river delta.'
     },
     'projects_button': {
