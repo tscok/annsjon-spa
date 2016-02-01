@@ -1,4 +1,4 @@
-### Volontär
+### Medarbetare
 
 Ånnsjöns fågelstation studerar sedan 1989 fågellivet i västra Jämtlandsfjällen. Syftet är miljöövervakning, dokumentation av klimatförändringar, och ekologisk grundforskning.
 
@@ -10,10 +10,8 @@ Vi söker *ringmärkare* och *assistenter* till våra nätfångstprojekt i juli 
 
 Ånnsjöns fågelstation erbjuder fri logi i vårt bekväma hus i Handöl, och en oslagbar upplevelse i Ånnsjönfjällen. Varmt välkommen!
 
-- - -
+#### Frågor och svar
 
-#### Vanliga frågor
+Vi har sammanställt vanliga [Frågor &amp; Svar](#volunteer/faq) som vi uppmuntrar våra medarbetare att läsa. Frågor som rör rekrytering hänvisar vi till [Ulla Falkdalen](mailto:ulla.falkdalen@annsjon.org).
 
-Vi har sammanställt en lista med vanliga [frågor och svar](#volunteer/faq) som kan vara bra att läsa innan du anländer till fågelstationen.
-
-Frågor som rör rekrytering hänvisar vi till [Ulla Falkdalen](mailto:ulla.falkdalen@annsjon.org).
+<a href="#volunteer/apply" class="button button-primary">Anmäl dig här</a>

@@ -158,6 +158,14 @@ module.exports = {
         se: 'Ankomstdatum är senare än eller samma som avfärdsdatum.',
         en: 'Arrival date is later than or same date as departure.'
     },
+    'volunteer_timeframe': {
+        se: 'Tidsram',
+        en: 'Timeframe'
+    },
+    'volunteer_timeframe-hint': {
+        se: 'Ange ungefär när du skulle vilja jobba hos oss och hur länge.',
+        en: 'Estimate when you would like to volunteer and for how long.'
+    },
     'volunteer_car': {
         se: 'Medför bil',
         en: 'Arrives by car'
@@ -165,6 +173,10 @@ module.exports = {
     'volunteer_driving-license': {
         se: 'Körkort',
         en: 'Driving license'
+    },
+    'volunteer_mandatory': {
+        se: 'Fält markerade med asterisk (<strong>*</strong>) är obligatoriska.',
+        en: 'Fields marked with asterisk (<strong>*</strong>) are mandatory.'
     },
     'volunteer_errors': {
         se: 'Vänligen korrigera eventuella fel för att skicka formuläret.',
