@@ -3,6 +3,7 @@ let mygettext = require('../data/mygettext')
 let purebem = require('purebem')
 
 require('./raw')
+require('./google-map')
 
 <layout-index>
     <section class="hero">
@@ -37,7 +38,7 @@ require('./raw')
             </div>
         </div>
     </section>
-    <section class="guides last-section-before-footer">
+    <section class="guides">
         <div class="container">
             <h6 class="guides__header">{ getText('guides_header') }</h6>
             <div class="row">
@@ -76,6 +77,15 @@ require('./raw')
                 <a href="#guide" class="guides__button button">{ getText('guides_button') }</a>
             </div>
         </div>
+    </section>
+    <section class="map">
+        <h6 class="map__header">
+            <span>{ getText('map_header') }</span>
+        </h6>
+        <p class="map__body">
+            <span>{ getText('map_body') }<a href="https://www.google.se/maps/place/63%C2%B015'30.5%22N+12%C2%B026'51.0%22E/@60.3825553,1.0879701,4.66z/data=!4m2!3m1!1s0x0:0x0" target="_blank">Google Maps</a></span>
+        </p>
+        <google-map />
     </section>
 
     <script>

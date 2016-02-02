@@ -54,7 +54,7 @@ module.exports = {
     // Hero
     'hero_body': {
         se: 'En ideell förening som arbetar för ökad kunskap om fågellivet i västra Jämtland.',
-        en: 'A non-profit organisation working for a better understanding about the birdlife in western Jämtland&nbsp;county.'
+        en: 'A non-profit organisation working for a better understanding about the birdlife in western Jämtland&nbsp;County in Sweden'
     },
 
     // Projects
@@ -197,5 +197,15 @@ module.exports = {
     'volunteer_confirmation': {
         se: 'Din ansökan har skickats.<br>Vi återkommer till dig så snart vi har behandlat ärendet.',
         en: 'Your application has been sent.<br>We will process it and get back to you as soon as possible.'
+    },
+
+    // Map
+    'map_header': {
+        se: 'Du hittar oss här',
+        en: 'Where to find us'
+    },
+    'map_body': {
+        se: 'Utforska platsen med ',
+        en: 'Explore the area in '
     }
 };
