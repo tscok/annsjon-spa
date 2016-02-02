@@ -27,7 +27,7 @@ let riotcontrol = require('riotcontrol')
             riotcontrol.trigger('SET_SITE_LANGUAGE')
         }
 
-        riotcontrol.on('SITE_NAVIGATION', (links) => {
+        riotcontrol.on('SITE_NAVIGATION_FOOTER', (links) => {
             this.links = links
         })
     </script>

@@ -7,6 +7,7 @@ const links = {
         { href: 'guide', label: 'Skådarguide' },
         { href: 'projects', label: 'Projekt' },
         { href: 'reports', label: 'Rapporter' },
+        { href: 'volunteer', label: 'Medarbetare' },
         { href: 'about', label: 'Föreningen' },
         { href: 'contact', label: 'Kontakt' }
     ],
@@ -17,20 +18,32 @@ const links = {
     ]
 };
 
+const header = ['guide','projects','volunteer','about','contact'];
+
 function SiteNavigation(args) {
     riot.observable(this);
 
     let lang;
+
+    this.isInHeader = (obj) => {
+        return header.some(elem => elem === obj.href);
+    };
+
+    this.getHeaderLinks = (lang) => {
+        return links[lang].filter(this.isInHeader);
+    }
     
     this.on('ROUTE', (route) => {
         lang = Cookies.get('language');
 
-        this.trigger('SITE_NAVIGATION', links[lang]);
+        this.trigger('SITE_NAVIGATION_HEADER', this.getHeaderLinks(lang));
+        this.trigger('SITE_NAVIGATION_FOOTER', links[lang]);
         this.trigger('SITE_LANGUAGE', lang);
     });
 
     riotcontrol.on('SITE_LANGUAGE', (newLang) => {
-        this.trigger('SITE_NAVIGATION', links[newLang]);
+        this.trigger('SITE_NAVIGATION_HEADER', this.getHeaderLinks(newLang));
+        this.trigger('SITE_NAVIGATION_FOOTER', links[newLang]);
     })
 }
 

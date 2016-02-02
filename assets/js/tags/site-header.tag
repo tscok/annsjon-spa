@@ -33,7 +33,7 @@ let purebem = require('purebem')
             this.update({route: route, menuOpen: false})
         })
 
-        riotcontrol.on('SITE_NAVIGATION', (links) => {
+        riotcontrol.on('SITE_NAVIGATION_HEADER', (links) => {
             this.links = links
         })
     </script>
