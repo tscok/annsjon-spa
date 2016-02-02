@@ -69,7 +69,7 @@ require('./raw')
     </form>
     <div class="page-form__thank-you" if={ showThanks }>
         <h4 class="page-form__tahnk-you--title">{ getText('thank-you') }<span if={ applyee }>, { applyee }</span>!</h4>
-        <p class="page-form__tahnk-you--body">{ getText('volunteer_confirmation') }</p>
+        <p class="page-form__tahnk-you--body"><raw content={ getText('volunteer_confirmation') }/></p>
     </div>
 
     <script>
@@ -136,15 +136,15 @@ require('./raw')
         riotcontrol.on('FORM_APPLICATION_SUCCESS', this.handleSuccess)
 
         riotcontrol.on('ROUTE', () => {
-            this.update({ showForm: false })
+            this.update({ showForm: false, showThanks: false })
         })
 
         subRoute('volunteer', () => {
-            this.update({ showForm: false })
+            this.update({ showForm: false, showThanks: false })
         })
 
         subRoute('volunteer/apply', () => {
-            this.update({ showForm: true })
+            this.update({ showForm: true, showThanks: false })
         })
 
         this.on('mount', () => {
