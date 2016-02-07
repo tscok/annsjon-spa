@@ -53,7 +53,7 @@ module.exports = {
 
     // Hero
     'hero_body': {
-        se: 'En ideell förening som arbetar för ökad kunskap om fågellivet i västra Jämtland.',
+        se: 'En ideell förening som arbetar för ökad kunskap om fågellivet i västra Jämtland',
         en: 'A non-profit organisation working for a better understanding about the birdlife in western Jämtland&nbsp;County in Sweden'
     },
 
