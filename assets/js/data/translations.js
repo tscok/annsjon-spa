@@ -166,6 +166,10 @@ module.exports = {
         se: 'Ange ungefär när du skulle vilja jobba hos oss och hur länge.',
         en: 'Estimate when you would like to volunteer and for how long.'
     },
+    'volunteer_nationality': {
+        se: 'Nationalitet',
+        en: 'Nationality'
+    },
     'volunteer_car': {
         se: 'Medför bil',
         en: 'Arrives by car'

@@ -12,6 +12,23 @@ require('./raw')
                 <input type="text" name="lname" class="u-full-width" required>
             </div>
         </div>
+        <div class="row">
+            <div class="six columns">
+                <label>{ getText('volunteer_gender') }*</label>
+                <label class="u-pull-left">
+                    <input type="radio" name="gender" value="Female" required>
+                    <span class="label-body">{ getText('volunteer_gender-f') }</span>
+                </label>
+                <label class="u-pull-left" style="margin-left:20px;">
+                    <input type="radio" name="gender" value="Male" required>
+                    <span class="label-body">{ getText('volunteer_gender-m') }</span>
+                </label>
+            </div>
+            <div class="six columns">
+                <label>{ getText('volunteer_birthyear') }*</label>
+                <input type="number" name="birth" class="u-full-width" required>
+            </div>
+        </div>
         <label>{ getText('volunteer_about') }*<span class="label-body label-body--block">{ getText('volunteer_about-hint') }</span></label>
         <textarea name="about" class="u-full-width" required></textarea>
         <label>{ getText('volunteer_timeframe') }*<span class="label-body label-body--block">{ getText('volunteer_timeframe-hint') }</span></label>
@@ -28,23 +45,13 @@ require('./raw')
         </div>
         <div class="row">
             <div class="six columns">
-                <label>{ getText('volunteer_birthyear') }*</label>
-                <select name="birth" class="u-full-width" required>
+                <label>{ getText('volunteer_nationality') }*</label>
+                <select name="nationality" class="u-full-width" required>
                     <option value="" selected>{ getText('select') }</option>
-                    <option each={ year, i in birthYears() } value={ year }>{ year }</option>
+                    <option each={ nationality, i in nationalities } value={ nationality }>{ nationality }</option>
                 </select>
             </div>
-            <div class="six columns">
-                <label>{ getText('volunteer_gender') }*</label>
-                <label class="u-pull-left">
-                    <input type="radio" name="gender" value="Female" required>
-                    <span class="label-body">{ getText('volunteer_gender-f') }</span>
-                </label>
-                <label class="u-pull-left" style="margin-left:20px;">
-                    <input type="radio" name="gender" value="Male" required>
-                    <span class="label-body">{ getText('volunteer_gender-m') }</span>
-                </label>
-            </div>
+            <div class="six columns"></div>
         </div>
         <div class="row">
             <div class="six columns">
@@ -75,6 +82,7 @@ require('./raw')
     <script>
         const riotcontrol = require('riotcontrol')
         const mygettext = require('../data/mygettext')
+        const nationality = require('../data/nationality');
         const serialize = require('form-serialize');
         const subRoute = riot.route.create()
 
@@ -84,20 +92,12 @@ require('./raw')
         this.isUndelivered = false
         this.isIncomplete = false
 
-        this.birthYears = () => {
-            let minYear = new Date().getFullYear() - 15,
-                maxYear = new Date().getFullYear() - 85,
-                years = []
-            while ( minYear >= maxYear ) {
-                years.push(minYear--)
-            }
-            return years
-        }
+        this.nationalities = nationality
 
         this.formIsComplete = () => {
             let valid = true
             let input = serialize(this.application, { hash: true })
-            let required = ['fname','lname','about','timeframe','email','gender','birth']
+            let required = ['fname','lname','gender','birth','about','timeframe','email','nationality']
             let isNotEmpty = (label) => {
                 return input[label] && input[label].trim() !== '';
             }
@@ -108,7 +108,6 @@ require('./raw')
             if (!this.formIsComplete()) {
                 return;
             }
-
             riotcontrol.trigger('FORM_APPLICATION', this.application)
         }
 
