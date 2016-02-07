@@ -205,11 +205,19 @@ module.exports = {
 
     // Map
     'map_header': {
-        se: 'Du hittar oss här',
+        se: 'Här hittar ni oss',
         en: 'Where to find us'
     },
     'map_body': {
         se: 'Utforska platsen med ',
         en: 'Explore the area in '
+    },
+    'map_lock': {
+        se: 'Inaktivera kartan',
+        en: 'Disable the map'
+    },
+    'map_unlock': {
+        se: 'Aktivera kartan',
+        en: 'Enable the map'
     }
 };
