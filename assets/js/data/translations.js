@@ -205,19 +205,19 @@ module.exports = {
 
     // Map
     'map_header': {
-        se: 'Här hittar ni oss',
-        en: 'Where to find us'
+        se: 'Här finns vi',
+        en: 'We are here'
+    },
+    'map_title': {
+        se: 'Var håller vi till?',
+        en: 'Where we are'
     },
     'map_body': {
+        se: 'Fågelstationen ligger i den lilla byn Handöl i västra Jämtland, inte långt ifrån norska gränsen. Hit tar man sig lättast med tåg, för vägbeskrivning se vår ',
+        en: 'The Observatory is situated in the tiny village of Handöl in Jämtland County, not far from the Norwegian border. The best way to get here is by train, for directions see our '
+    },
+    'map_link': {
         se: 'Utforska platsen med ',
-        en: 'Explore the area in '
+        en: 'Explore the area with '
     },
-    'map_lock': {
-        se: 'Inaktivera kartan',
-        en: 'Disable the map'
-    },
-    'map_unlock': {
-        se: 'Aktivera kartan',
-        en: 'Enable the map'
-    }
 };

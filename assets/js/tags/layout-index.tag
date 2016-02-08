@@ -30,7 +30,7 @@ require('./google-map')
                 </div>
             </div>
             <div class="projects__actions" if={ language == 'se' }>
-                <a href="#projects" class="projects__button button">{ getText('projects_button') }</a>
+                <a href="#projects" class="projects__button button button-primary">{ getText('projects_button') }</a>
             </div>
         </div>
     </section>
@@ -74,16 +74,22 @@ require('./google-map')
             </div>
         </div>
     </section>
-    <section class={ map({ 'enabled': mapEnabled }) }>
-        <h6 class={ map('header') }>
-            <span>{ getText('map_header') }</span>
-        </h6>
-        <p class={ map('body') }>
-            <a href onclick={ toggleMap } class="{ map('button') } button button-primary">{ getButtonText() }</a>
-            <!-- <span>{ getText('map_body') }<a href="https://www.google.se/maps/place/63%C2%B015'30.5%22N+12%C2%B026'51.0%22E/@60.3825553,1.0879701,4.66z/data=!4m2!3m1!1s0x0:0x0" target="_blank">Google Maps</a></span> -->
-        </p>
-        <google-map />
+    <section class={ location() }>
+        <div class="container">
+            <div class="row">
+                <div class="one-half column">
+                    <div class={ location('map') }>
+                        <google-map />
+                    </div>
+                </div>
+                <div class="one-half column">
+                    <h5 class={ location('title') }>{ getText('map_title') }</h5>
+                    <p class={ location('body') }>{ getText('map_body') }<a href="#faq">FAQ</a>.<span class={ location('link') }>{ getText('map_link') }<a href="https://www.google.se/maps/place/63%C2%B015'30.5%22N+12%C2%B026'51.0%22E/@60.3825553,1.0879701,4.66z/data=!4m2!3m1!1s0x0:0x0" target="_blank">Google Maps</a></span></p>
+                </div>
+            </div>
+        </div>
     </section>
+    
 
     <script>
         let Cookies = require('js-cookie')
@@ -91,17 +97,7 @@ require('./google-map')
         let purebem = require('purebem')
 
         this.projects = purebem.of('projects')
-        this.map = purebem.of('map')
-
-        this.mapEnabled = false
-
-        this.toggleMap = () => {
-            this.update({ mapEnabled: !this.mapEnabled })
-        }
-
-        this.getButtonText = () => {
-            return this.mapEnabled ? mygettext('map_lock') : mygettext('map_unlock')
-        }
+        this.location = purebem.of('location')
 
         this.on('mount', () => {
             this.getText = mygettext
