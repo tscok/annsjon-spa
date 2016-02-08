@@ -39,10 +39,10 @@ require('./google-map')
             <h6 class="guides__header">{ getText('guides_header') }</h6>
             <div class="row">
                 <div class="one-half column guides__brief">
-                    <h5 class="guides__title">Handöl</h5>
+                    <h5 class="guides__title">Högåsen</h5>
                     <p class="guides__body">
-                        <raw content={ getText('guides_body-handol') }/>
-                        <a href="#guide/handol" if={ language == 'se' }><raw content={ getText('read-more') }/></a>
+                        <raw content={ getText('guides_body-hogasen') }/>
+                        <a href="#guide/hogasen" if={ language == 'se' }><raw content={ getText('read-more') }/></a>
                     </p>
                 </div>
                 <div class="one-half column guides__brief">
