@@ -3,6 +3,7 @@
         <h4>Våra guider</h4>
         <nav class={ block('links') }>
             <a href="#guide/handol" class={ block('link') } if={ isNot('handol') }>Handöl</a>
+            <a href="#guide/hogasen" class={ block('link') } if={ isNot('hogasen') }>Högåsen</a>
             <a href="#guide/storulvan" class={ block('link') } if={ isNot('storulvan') }>Storulvån</a>
             <a href="#guide/storlien" class={ block('link') } if={ isNot('storlien') }>Storlien</a>
             <a href="#guide/ann" class={ block('link') } if={ isNot('ann') }>Ånn</a>

@@ -100,6 +100,10 @@ module.exports = {
         se: 'Längs älven Handölans lopp genom Handöl sträcker sig ett lummigt, löv&shy;skogs&shy;dominerat område med ett rikt fågelliv. Här hittar man trädgårds&shy;sångare, svarthätta…',
         en: 'Along the river Handölan, through the village Handöl, there\'s a green, deciduous forest with a rich birdlife. Common species here are Garden Warbler, Blackcap, Icterine…'
     },
+    'guides_body-hogasen': {
+        se: 'Dubbelbeckasinerna anländer till Ånnsjö&shy;fjällen omkring 15 maj, och börjar spela omedelbart. Spelet pågår intensivt någon vecka in i juni. Därefter är de flesta honor…',
+        en: 'The Greate snipe arrives to the mountains surrounding Lake Ånnsjön in mid May. They begin playing immediately and does so very intensively until mid June. After that most of…'
+    },
     'guides_body-storlien': {
         se: 'Området mellan Vindarnas tempel och Åhlénstugan brukar kunna bjuda på lappsparv, blåhake, fjällabb och kärrsnäppa. På Skurdals&shy;höjden finns även en välkänd…',
         en: 'The area between the Temple of Winds and the Åhléns cabin usually offers Lapland Bunting, Bluethroat, Long-tailed Skua and Dunlin. There\'s also a well known Great Snipe lek…'
