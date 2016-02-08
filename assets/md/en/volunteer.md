@@ -8,7 +8,7 @@ Lake Ånnsjön Bird Observatory is a non-profit organization run entirely by vol
 
 #### Questions and answers
 
-We have gathered common [Questions &amp; Answers](#volunteer/faq) that we encourage volunteers to read. For any questions regarding staff recruitment please contact [Ulla&nbsp;Falkdalen](mailto:ulla.falkdalen@annsjon.org).
+We have gathered common [Questions &amp; Answers](#faq) that we encourage volunteers to read. For any questions regarding staff recruitment please contact [Ulla&nbsp;Falkdalen](mailto:ulla.falkdalen@annsjon.org).
 
 <p style="text-align:center">
     <a href="#volunteer/apply" class="button button-primary">Apply here</a></p>

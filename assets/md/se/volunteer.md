@@ -12,7 +12,7 @@ Vi söker *ringmärkare* och *assistenter* till våra nätfångstprojekt i juli 
 
 #### Frågor och svar
 
-Vi har sammanställt vanliga [Frågor &amp; Svar](#volunteer/faq) som vi uppmuntrar våra medarbetare att läsa. Frågor som rör rekrytering hänvisar vi till [Ulla Falkdalen](mailto:ulla.falkdalen@annsjon.org).
+Vi har sammanställt vanliga [Frågor &amp; Svar](#faq) som vi uppmuntrar våra medarbetare att läsa. Frågor som rör rekrytering hänvisar vi till [Ulla Falkdalen](mailto:ulla.falkdalen@annsjon.org).
 
 <p style="text-align:center">
     <a href="#volunteer/apply" class="button button-primary">Anmäl dig här</a></p>
