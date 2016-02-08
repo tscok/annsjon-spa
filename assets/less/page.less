@@ -36,7 +36,24 @@
 
         figcaption {
             font-size: .875em;
-            color: @color-gray5;
+            font-style: italic;
+
+            .owner {
+                display: block;
+                color: @color-gray5;
+                font-size: 1.2rem;
+            }
+
+            @media screen and (min-width: @responsive-size-tablet) {
+                display: flex;
+
+                .description {
+                    flex: 1;
+                }
+                .owner {
+                    display: inherit;
+                }
+            }
         }
     }
 

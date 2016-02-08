@@ -4,7 +4,7 @@ Handöl ligger strax väster om Ånnsjön och skiljs från sjön genom Enans och
 
 Tornet syns inte från parkeringen. Tubkikare är bra att ha här. Fåglarna är ungefär desamma som i Ånn. Bara något trettiotal meter från fågeltornet ligger Ånnsjöns fågelstation, basen för de fortlöpande vetenskapliga undersökningarna av fågellivet i området. Här finns en informationslokal som är öppen när stationen är bemannad. Stationen är normalt bemannad från början av juni till slutet av augusti.
 
-<figure>![Bergfink](../../images/bergfink_steve-dahlfors.jpg)<figcaption>Foto: Steve Dahlfors</figcaption></figure>
+<figure>![Bergfink](../../images/bergfink_steve-dahlfors.jpg)<figcaption><span class="description">Bergfink / Fringilla montifringilla.</span><span class="owner">Foto:&nbsp;Steve&nbsp;Dahlfors</span></figcaption></figure>
 
 Längs älven Handölans lopp genom Handöl sträcker sig ett lummigt, lövskogsdominerat område med ett rikt fågelliv. Bland annat häckar här trädgårdssångare, svarthätta, härmsångare och bergfink. Lundsångare har häckat minst en gång på 1990-talet och dvärgsparv har hörts. Mindre hackspett ses regelbundet. Under juli och augusti bedriver fågelstationen ringmärkning i området.
 
