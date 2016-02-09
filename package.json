@@ -31,7 +31,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack-dev-server --inline --hot"
+    "dev": "webpack-dev-server --devtool eval --progress --colors --inline --hot",
+    "build": "webpack -p"
   },
   "author": "Mikael Carlsson",
   "license": "ISC"
