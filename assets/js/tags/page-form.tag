@@ -95,7 +95,6 @@ require('./raw')
         this.nationalities = nationality
 
         this.formIsComplete = () => {
-            let valid = true
             let input = serialize(this.application, { hash: true })
             let required = ['fname','lname','gender','birth','about','timeframe','email','nationality']
             let isNotEmpty = (label) => {

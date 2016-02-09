@@ -1,6 +1,3 @@
-let riotcontrol = require('riotcontrol')
-let utils = require('../utils');
-
 require('./site-header')
 require('./site-footer')
 
@@ -16,7 +13,8 @@ require('./layout-page')
     <footer riot-tag="site-footer" class="site-footer"></footer>
 
     <script>
-        var riotcontrol = require('riotcontrol')
+        const riotcontrol = require('riotcontrol')
+        const utils = require('../utils')
 
         riotcontrol.on('ROUTE', (route) => {
             this.update({index: !route ? true : false })

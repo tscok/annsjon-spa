@@ -1,6 +1,3 @@
-let riotcontrol = require('riotcontrol')
-let purebem = require('purebem')
-
 <site-header>
     <div class="container">
         <div class="row">
@@ -15,8 +12,9 @@ let purebem = require('purebem')
     </div>
 
     <script>
-        let self = this
-        
+        const riotcontrol = require('riotcontrol')
+        const purebem = require('purebem')
+
         this.menuOpen = false
 
         this.block = purebem.of('site-header')
