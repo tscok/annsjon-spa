@@ -4,7 +4,7 @@
 
 Ånnsjön är sedan 1974 ett Ramsarområde vilket innebär att här finns, ur internationellt perspektiv, ett skyddsvärt våtmarksområde. Sverige har genom att underteckna [Ramsarkonventionen][1] förbundit sig att skydda och bevara fågellivet i området. Ånnsjön-Storlien är dessutom ett av ca 70 IBA-områden i Sverige. IBA står för Important Bird Area, ungefär "Viktigt fågelområde", och är ett internationellt projekt som drivs av [Birdlife&nbsp;International][2].
 
-<figure>![Fågelskydd](../../images/fagelskydd_steve-dahlfors.jpg)<figcaption>Foto: Steve Dahlfors</figcaption></figure>
+<figure>![Fågelskydd](../../images/fagelskydd_steve-dahlfors.jpg)<figcaption><span class="owner">Foto: Steve Dahlfors</span></figcaption></figure>
 
 Att Ånnsjön finns upptagen i dessa två projekt visar hur värdefullt området är, inte bara lokalt utan också internationellt. Ånnsjöns fågelstations program för miljöövervakning innebär att vi årligen följer förekomsten hos för närvarande närmare sextio fågelarter som häckar i området. Det gör vi genom återkommande, standardiserade inventeringar, i myr- och fjällmiljöer samt fångst och ringmärkning av småfåglar i lövskogs- och buskområden runt Handöl, strax väster om Ånnsjön.
 
