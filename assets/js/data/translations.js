@@ -57,6 +57,24 @@ module.exports = {
         en: 'A non-profit organisation working for a better understanding about the birdlife in western Jämtland&nbsp;County in Sweden'
     },
 
+    // Volunteer
+    'volunteer_header': {
+        se: 'Medarbetare',
+        en: 'Volunteer'
+    },
+    'volunteer_title': {
+        se: 'Jobba med oss i sommar!',
+        en: 'Work with us this summmer!'
+    },
+    'volunteer_body': {
+        se: 'Inför säsongen 2016 söker vi vana fältornitologer till våra inventeringar, som väl känner till fjäll- och våtmarksarterna till utseende och läte. Till ringmärkningen söker vi erfarna ringmärkare och assistenter.<br>Vi erbjuder fri logi och en oslagbar upplevelse i Ånnsjöfjällen.',
+        en: 'For the season 2016 we are looking for experienced field ornithologists, that can determine mountain and wetland species by look and sound. For the ringing we are looking for experienced ringers and assistants.<br>We offer free accommodation for volunteers and an unique visit to Lake Ånnsjön.'
+    },
+    'volunteer_button-apply': {
+        se: 'Anmäl dig här',
+        en: 'Apply here'
+    },
+
     // Projects
     'projects_header': {
         se: 'Några av våra projekt',
