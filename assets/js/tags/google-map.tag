@@ -14,6 +14,7 @@
 
         this.initMap = () => {
             map = new google.maps.Map(this.mapCanvas, mapOpts)
+            this.setMarker()
         }
 
         this.setMarker = () => {
