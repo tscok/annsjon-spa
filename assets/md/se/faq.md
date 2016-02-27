@@ -26,12 +26,11 @@ En gemensamhetsanläggning finns i Handöl där man för en låg kostnad kan lå
 
 #### Mat och ekonomi
 
-Stationen erbjuder ett bassortiment (ris, pasta, mjöl, socker, kryddor, tepåsar, tomatkonserver, etc.) som får användas av stationspersonalen. övriga matvaror inhandlar du själv eller tas med hemifrån.
+Stationen erbjuder ett bassortiment (ris, pasta, mjöl, socker, kryddor, tepåsar, tomatkonserver, etc.) som får användas av stationspersonalen. Övriga matvaror inhandlar du själv eller tas med hemifrån.
 
-När du anländer till stationen är det bra om du har med dig en del matvaror (t.ex. frukostmat, frukt, etc.) som du kan behöva innan du får tillfälle att åka till mataffären. Coop finns i Storlien och Eurocash i Storvallen. En VW Polo finns tillgänglig på stationen så att bilturer till Storvallen eller Storlien kan anordnas för proviantering, någon gång i veckan.
+När du anländer till stationen är det bra om du har med dig en del matvaror (t.ex. frukostmat, frukt, etc.) som du kan behöva innan du får tillfälle att åka till mataffären. Coop finns i Storlien och Eurocash i Storvallen. Vanligtvis finns en bil tillgänglig på stationen så att turer till Storvallen eller Storlien kan anordnas för proviantering, någon gång i veckan.
 
-Coop Storlien
-**Öppettider**: Alla dagar, 09:00 - 19:00.
+Se [Storlien Turistbyrå](http://www.storlienturistbyra.se/shopping.html) för information om matvarubutiker och öppettider.
 
 Bankomat och bank saknas i Storlien men på Coop kan du använda de flesta betalningskorten.
 
