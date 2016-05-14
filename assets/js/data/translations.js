@@ -57,6 +57,20 @@ module.exports = {
         en: 'A non-profit organisation working for a better understanding about the birdlife in western Jämtland&nbsp;County in Sweden'
     },
 
+    // Open House
+    'openhouse_header': {
+        se: 'Öppet Hus - 6 juni',
+        en: 'Open House - June 6'
+    },
+    'openhouse_title': {
+        se: 'Välkommen till Ånnsjödagen 2016!',
+        en: 'Welcome to Lake Ånnsjön Day 2016!'
+    },
+    'openhouse_body': {
+        se: 'Ta med dina vänner till Ånnsjön när fågellivet är som mest sprudlande. Lördagen den 6 juni hjälper vi till med artbestämningen vid Ånnsjöns fågeltorn och gömslen under morgontimmarna, bjuder på bildvisning under kvällen och guidar er till en dubbelbeckasinlek vid midnatt.',
+        en: 'Bring your friends to Lake Ånnsjön when the birdlife is peaking. During the early hours we&#39;ll help you identify species at the observation towers by Lake Ånnsjön. During this day we arrange various activities and invites you to a guided tour of a Great Snipe lek at midnight!'
+    },
+
     // Volunteer
     'volunteer_header': {
         se: 'Medarbetare',
