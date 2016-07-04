@@ -9,18 +9,6 @@ require('./google-map')
             <h5 class="hero__body"><raw content={ getText('hero_body') }/></h5>
         </div>
     </section>
-    <section class={ openhouse() }>
-        <div class="container">
-            <h6 class={ openhouse('header') }>{ getText('openhouse_header') }</h6>
-            <div class={ openhouse('main') }>
-                <h5 class={ openhouse('title') }>{ getText('openhouse_title') }</h5>
-                <p class={ openhouse('body') }><raw content={ getText('openhouse_body') }/></p>
-            </div>
-            <div class={ openhouse('actions') }>
-                <a href="#open-house" class="button button-primary" riot-tag="raw" content={ getText('read-more') }></a>
-            </div>
-        </div>
-    </section>
     <section class={ volunteer() }>
         <div class="container">
             <h6 class={ volunteer('header') }>{ getText('volunteer_header') }</h6>
@@ -118,7 +106,6 @@ require('./google-map')
         let mygettext = require('../data/mygettext')
         let purebem = require('purebem')
 
-        this.openhouse = purebem.of('open-house')
         this.volunteer = purebem.of('volunteer')
         this.projects = purebem.of('projects')
         this.location = purebem.of('location')
