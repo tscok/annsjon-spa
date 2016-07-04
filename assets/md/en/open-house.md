@@ -1,4 +1,4 @@
-### Lake Ånnsjön Day - 6 June 2016
+### Lake Ånnsjön Day - June 4th 2016
 
 Bring your friends to Lake Ånnsjön when the birdlife is peaking. During the early hours we'll help you identify species at the observation towers by Lake Ånnsjön. During this day we arrange various activities and invites you to a guided tour of a Great Snipe lek at midnight!
 

@@ -1,6 +1,6 @@
-### Ånnsjödagen
+### Ånnsjödagen - 4 juni 2016
 
-Ta med dina vänner till Ånnsjön när fågellivet är som mest sprudlande. Lördagen den 6 juni hjälper vi till med artbestämningen vid Ånnsjöns fågeltorn och gömslen under morgontimmarna, bjuder på bildvisning under kvällen och guidar er till en dubbelbeckasinlek vid midnatt.
+Ta med dina vänner till Ånnsjön när fågellivet är som mest sprudlande. Vi hjälper till med artbestämningen vid Ånnsjöns fågeltorn och gömslen under morgontimmarna, bjuder på bildvisning under kvällen och guidar er till en dubbelbeckasinlek vid midnatt.
 
 #### Program
 
