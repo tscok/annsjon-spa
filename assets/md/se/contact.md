@@ -1,10 +1,10 @@
 ### Kontakta oss
 
 Har du frågor om vår verksamhet kan du skicka ett mejl till [info@annsjon.org][info] så återkopplar vi så snart vi kan. Du kan även mejla direkt till någon av nedanstående styrelsemedlemmar, beroende på vad ärendet gäller.
-
+<!---
 **Telefon**
 När stationen är bemannad (juni-september) kan du nå oss på: 0647 - 722 10.
-
+-->
 **Adress**
 Ånnsjöns fågelstation, Handöl 563, 830 15 Duved
 

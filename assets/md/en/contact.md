@@ -2,10 +2,10 @@
 
 
 If you have any questions please don't hesitate to contact us at [info@annsjon.org][info] and we'll get back to you as soon as possible. You can also contact someone on the Board directly depending on what the case concerns.
-
+<!---
 **Phone**
 When the observatory is staffed (June-September) you can call us at: (+46)&nbsp;0647&nbsp;-&nbsp;722&nbsp;10.
-
+-->
 **Address**
 Ånnsjöns fågelstation, Handöl 563, 830 15 Duved
 

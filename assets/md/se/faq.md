@@ -41,9 +41,9 @@ På stationen har vi trådlöst bredband och en stationsdator. Det finns även e
 *Ånnsjöns fågelstation
 Handöl 563
 830 15 Duved*
-
+<!---
 Telefonnumret till stationen är 0647 - 722 10.
-
+-->
 #### Vad ska jag ta med?
 
 - sänglinne
