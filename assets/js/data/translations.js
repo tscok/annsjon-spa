@@ -57,6 +57,20 @@ module.exports = {
         en: 'A non-profit organisation working for a better understanding about the birdlife in western Jämtland&nbsp;County in Sweden'
     },
 
+    // Annual Meeting
+    'annual-meeting_header': {
+        se: 'Årsmöte',
+        en: 'Annual Meeting'
+    },
+    'annual-meeting_title': {
+        se: 'Välkommen att delta vid årets årsmöte',
+        en: 'Join in on our annual meeting'
+    },
+    'annual-meeting_body': {
+        se: 'Styrelsen anordnar årsmöte i Handöl lördagen den 22 oktober kl 15-16. Medlemmar i föreningen och allmänheten är välkomna att delta.',
+        en: 'The Board of Lake Ånnsjön Bird Observatory invites members and the public community to our annual meeting in Handöl October 22nd at 3 pm.'
+    },
+
     // Open House
     'openhouse_header': {
         se: 'Öppet Hus - 4 juni',

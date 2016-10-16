@@ -9,16 +9,12 @@ require('./google-map')
             <h5 class="hero__body"><raw content={ getText('hero_body') }/></h5>
         </div>
     </section>
-    <section class={ volunteer() }>
+    <section class={ annualMeeting() }>
         <div class="container">
-            <h6 class={ volunteer('header') }>{ getText('volunteer_header') }</h6>
-            <div class={ volunteer('main') }>
-                <h5 class={ volunteer('title') }>{ getText('volunteer_title') }</h5>
-                <p class={ volunteer('body') }><raw content={ getText('volunteer_body') }/></p>
-            </div>
-            <div class={ volunteer('actions') }>
-                <a href="#volunteer/apply" class="button button-primary">{ getText('volunteer_button-apply') }</a>
-                <a href="#volunteer" class="button" riot-tag="raw" content={ getText('read-more') }></a>
+            <h6 class={ annualMeeting('header') }>{ getText('annual-meeting_header') }</h6>
+            <div class={ annualMeeting('main') }>
+                <h5 class={ annualMeeting('title') }>{ getText('annual-meeting_title') }</h5>
+                <p class={ annualMeeting('body') }><raw content={ getText('annual-meeting_body') }/></p>
             </div>
         </div>
     </section>
@@ -106,6 +102,7 @@ require('./google-map')
         let mygettext = require('../data/mygettext')
         let purebem = require('purebem')
 
+        this.annualMeeting = purebem.of('annual-meeting');
         this.volunteer = purebem.of('volunteer')
         this.projects = purebem.of('projects')
         this.location = purebem.of('location')
