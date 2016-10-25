@@ -9,15 +9,6 @@ require('./google-map')
             <h5 class="hero__body"><raw content={ getText('hero_body') }/></h5>
         </div>
     </section>
-    <section class={ annualMeeting() }>
-        <div class="container">
-            <h6 class={ annualMeeting('header') }>{ getText('annual-meeting_header') }</h6>
-            <div class={ annualMeeting('main') }>
-                <h5 class={ annualMeeting('title') }>{ getText('annual-meeting_title') }</h5>
-                <p class={ annualMeeting('body') }><raw content={ getText('annual-meeting_body') }/></p>
-            </div>
-        </div>
-    </section>
     <section class={ projects() }>
         <div class="container">
             <h6 class={ projects('header') }>{ getText('projects_header') }</h6>
@@ -102,8 +93,6 @@ require('./google-map')
         let mygettext = require('../data/mygettext')
         let purebem = require('purebem')
 
-        this.annualMeeting = purebem.of('annual-meeting');
-        this.volunteer = purebem.of('volunteer')
         this.projects = purebem.of('projects')
         this.location = purebem.of('location')
 
