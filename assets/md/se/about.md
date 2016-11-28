@@ -12,6 +12,18 @@ Resultatet från arbetet presenteras årligen i ett specialnummer av Fåglar i J
 
 - - -
 
+#### Köp vår T-shirt
+
+<figure>![T-shirt](../../images/tshirt2016.jpg)<figcaption><span class="description">Våra T-shirts finns även i vinrött.</span></figcaption></figure>
+
+Stöd vårt arbete genom att köpa en T-shirt! Beställning görs genom en inbetalning till Pg 85 45 51 -9. Ange ditt namn, adress, önskad storlek och färg. Intäkterna från försäljningen går oavkortat till fågelstationens verksamhet.
+
+**Medlemspris**: 120 kr (ord. 150 kr)
+**Frakt & porto**: 25 kr/tröja
+**Storlekar**: S – XXL
+
+- - -
+
 #### Medlemsavgift
 
 Ett stort tack till alla som stödjer Ånnsjöns fågelstation ekonomiskt!
@@ -20,14 +32,3 @@ Ett stort tack till alla som stödjer Ånnsjöns fågelstation ekonomiskt!
 **Organisation**: 500 kr
 
 Inbetalning sker på Plusgiro 85 45 51 -9
-
-- - -
-
-#### T-shirt
-
-Stöd vårt arbete genom att köpa vår t-shirt! Beställning görs genom en inbetalning till Pg 85 45 51 -9. Ange ditt namn, adress, önskad storlek och färg. Intäkterna från försäljningen går oavkortat till fågelstationens verksamhet.
-
-**Medlemspris**: 120 kr (ord. 150 kr)
-**Frakt & porto**: 25 kr/tröja
-**Storlekar**: S – XXL
-
