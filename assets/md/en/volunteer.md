@@ -7,7 +7,8 @@ We need volunteers from June 1 to August 31, and some years in May and September
 Lake Ånnsjön Bird Observatory is a non-profit organization run entirely by volunteers. No salaries are paid. In some specific projects, we may have an opportunity to reimburse expenses such as train tickets. Accommodation is free for all volunteers.
 
 <p style="text-align:center">
-    <a href="#volunteer/apply" class="button button-primary">Apply here</a></p>
+    <a href="#volunteer/apply" class="button button-primary">Apply here</a>
+</p>
 
 #### Questions and answers
 

@@ -1,4 +1,5 @@
-const riotcontrol = require('riotcontrol');
+import RiotRoute from 'riot-route';
+import RiotControl from 'riotcontrol';
 
 
 function Router() {
@@ -7,21 +8,21 @@ function Router() {
         let page = '/';
         page += route ? (subroute ? route + '/' + subroute : route) : 'index';
 
-        if (ga) {
-            ga('set', 'page', page);
-            ga('send', 'pageview');
+        if (window.ga) {
+            window.ga('set', 'page', page);
+            window.ga('send', 'pageview');
         }
     }
 
     function onRoute(route, subroute) {
-        riotcontrol.trigger('ROUTE', route);
+        RiotControl.trigger('ROUTE', route, subroute);
         setPageToTrack(route, subroute);
     }
 
-    riot.route(onRoute);
-    riot.route.base('/#');
-    riot.route.stop();
-    riot.route.start(true);
+    RiotRoute(onRoute);
+    RiotRoute.base('/#');
+    RiotRoute.stop();
+    RiotRoute.start(true);
 };
 
-module.exports = Router();
+export default Router;

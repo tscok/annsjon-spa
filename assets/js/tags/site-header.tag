@@ -12,8 +12,8 @@
     </div>
 
     <script>
-        const riotcontrol = require('riotcontrol')
-        const purebem = require('purebem')
+        import RiotControl from 'riotcontrol'
+        import purebem from 'purebem'
 
         this.menuOpen = false
 
@@ -27,11 +27,11 @@
             this.update({menuOpen: this.menuOpen ? false : true})
         }
 
-        riotcontrol.on('ROUTE', (route) => {
+        RiotControl.on('ROUTE', (route) => {
             this.update({route: route, menuOpen: false})
         })
 
-        riotcontrol.on('SITE_NAVIGATION_HEADER', (links) => {
+        RiotControl.on('SITE_NAVIGATION_HEADER', (links) => {
             this.links = links
         })
     </script>

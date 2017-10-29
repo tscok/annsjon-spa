@@ -11,32 +11,23 @@
     </div>
 
     <script>
-        const riotcontrol = require('riotcontrol')
-        const purebem = require('purebem')
-        const subRoute = riot.route.create()
+        import purebem from 'purebem'
+        import RiotControl from 'riotcontrol'
+        import RiotRoute from 'riot-route'
+
+        const subRoute = RiotRoute.create()
 
         this.block = purebem.of('page-guide')
         this.isVisible = false
 
         this.isNot = (name) => {
-            return this.guide !== name
+            return this.guide != name
         }
 
-        riotcontrol.on('ROUTE', (route) => {
-            this.update({isVisible: false})
-        })
-
-        subRoute('guide', () => {
+        RiotControl.on('ROUTE', (route, subroute) => {
             this.update({
-                isVisible: true,
-                guide: null
-            })
-        })
-
-        subRoute('guide/*', (name) => {
-            this.update({
-                isVisible: true,
-                guide: name
+                isVisible: route == 'guide',
+                guide: subroute
             })
         })
     </script>

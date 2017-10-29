@@ -80,11 +80,13 @@ require('./raw')
     </div>
 
     <script>
-        const riotcontrol = require('riotcontrol')
+        import RiotControl from 'riotcontrol'
+        import RiotRoute from 'riot-route'
+
         const mygettext = require('../data/mygettext')
         const nationality = require('../data/nationality');
         const serialize = require('form-serialize');
-        const subRoute = riot.route.create()
+        const subRoute = RiotRoute.create()
 
         this.showForm = false
         this.showThanks = false
@@ -107,7 +109,7 @@ require('./raw')
             if (!this.formIsComplete()) {
                 return;
             }
-            riotcontrol.trigger('FORM_APPLICATION', this.application)
+            RiotControl.trigger('FORM_APPLICATION', this.application)
         }
 
         this.onReset = () => {
@@ -129,11 +131,11 @@ require('./raw')
             this.update({ showForm: false, showThanks: true, applyee: name })
         }
 
-        riotcontrol.on('FORM_APPLICATION_LOADING', this.handleLoading)
-        riotcontrol.on('FORM_APPLICATION_FAILURE', this.handleFailure)
-        riotcontrol.on('FORM_APPLICATION_SUCCESS', this.handleSuccess)
+        RiotControl.on('FORM_APPLICATION_LOADING', this.handleLoading)
+        RiotControl.on('FORM_APPLICATION_FAILURE', this.handleFailure)
+        RiotControl.on('FORM_APPLICATION_SUCCESS', this.handleSuccess)
 
-        riotcontrol.on('ROUTE', () => {
+        RiotControl.on('ROUTE', () => {
             this.update({ showForm: false, showThanks: false })
         })
 

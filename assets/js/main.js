@@ -1,13 +1,15 @@
 // Styling
-require('../less/main');
+import '../less/main.less';
 
 // RiotControl Stores
-require('./stores/stores');
+import './stores/stores';
 
 // RiotJS tag(s)
-require('./tags/site-app');
-
-riot.mount('*');
+import './tags/site-app';
 
 // RiotJS routing
-require('./router');
+import Router from './router';
+
+
+riot.mount('*');
+Router();

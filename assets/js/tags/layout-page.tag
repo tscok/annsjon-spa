@@ -1,15 +1,15 @@
-require('./page-content')
-require('./page-guide')
-require('./page-form')
-require('./page-map')
+import './page-content'
+import './page-guide'
+import './page-form'
+import './page-map'
 
 <layout-page>
     <div class="container">
         <article class="page__content">
-            <section riot-tag="page-content" />
-            <section riot-tag="page-map" />
-            <section riot-tag="page-guide" />
-            <section riot-tag="page-form" />
+            <section data-is="page-content" />
+            <section data-is="page-map" />
+            <section data-is="page-guide" />
+            <section data-is="page-form" />
         </article>
     </div>
 </layout-page>

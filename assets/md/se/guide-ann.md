@@ -4,12 +4,12 @@ Från järnvägsstationen utgår en vandringsled ner mot myrarna vid sjön. För
 
 Mest givande ur fågelsynpunkt är utan tvekan Dolparna, som är en för Ånnsjöområdet typisk myrgöl med gott om småtuvor. Här häckar silvertärnor och skrattmåsar, brushanarna spelar på tuvorna och simsnäppor och änder brukar kunna beskådas på de fria vattenytorna. Dvärgmås har också häckat i Dolparna under senare år.
 
-<figure>![Storspov](../../images/storspov_steve-dahlfors.jpg)<figcaption><span class="description">Storspov / Numenius arquata.</span><span class="owner">Foto:&nbsp;Steve&nbsp;Dahlfors</span></figcaption></figure>
+<figure>![Storspov](/assets/images/storspov_steve-dahlfors.jpg)<figcaption><span class="description">Storspov / Numenius arquata.</span><span class="owner">Foto:&nbsp;Steve&nbsp;Dahlfors</span></figcaption></figure>
 
 Från både Nätaholmen och Halsen har man en fantastiskt fin utsikt över sjön och myren. Fåglarna är längre bort än vid Dolparna och mer utspridda. Tubkikare är bra att ha på dessa platser. Smålom, storlom, kricka, bläsand och sjöorre hör till de arter man brukar kunna få se på vattnet. På myrarna vid sjön är storspov, småspov, ljungpipare, grönbena, rödbena och gulärla karaktärsfåglar. Gluttsnäppa och enkelbeckasin förekommer också regelbundet.
 
 Ånnsjön ska avnjutas i lugn takt. Den som väntar sig stora fågelmängder och snabba kryss riskerar att bli besviken. Ta god tid på dig vid varje anhalt, stanna minst en halvtimme gärna en timme. Hela vandringen vid Ånn tar då drygt en halv dag. Den som är på genomresa och har tid bara för ett kort stopp bör i första hand gå ner till lagunen och ta en titt över Vallaviken från plattformen. Om man åtminstone har en timme eller två på sig rekommenderas ett besök vid Dolparna. Om man enbart ska dit är det enklast att gå ner vid FBU:s kursgård i västra delen av samhället Ånn. Skyltar finns.
 
-<figure>![Brushane](../../images/brushane_steve-dahlfors.jpg)<figcaption><span class="description">Brushane / Philomachus pugnax.</span><span class="owner">Foto:&nbsp;Steve&nbsp;Dahlfors</span></figcaption></figure>
+<figure>![Brushane](/assets/images/brushane_steve-dahlfors.jpg)<figcaption><span class="description">Brushane / Philomachus pugnax.</span><span class="owner">Foto:&nbsp;Steve&nbsp;Dahlfors</span></figcaption></figure>
 
 Bara några kilometer från Ånn ligger Klocka, en idyllisk liten by vid kanten av Ånnsjön. På fälten i byn kan man med lite tur få se både ljungpipare, småspov och brushane. Vid sjökanten finns en liten rastplats med härlig utsikt över sjön. En och annan sjöorre och bergand brukar man kunna få syn på. Här kan man också, liksom vid Halsen, beskåda de för Ånnsjön speciella torverosionsbranterna som uppstår när myren möter vattnet. Backsvalor häckar årligen i de flera meter höga torvbranterna.

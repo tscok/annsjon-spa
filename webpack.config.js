@@ -1,16 +1,47 @@
 var webpack = require('webpack');
-
-var HtmlWebpackPlugin = require('html-webpack-plugin')
+var path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 module.exports = {
     entry: './assets/js/main.js',
     output: {
-        path: './build',
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'build')
     },
-    node: {
-        fs: "empty"
+    module: {
+        rules: [
+            {
+                test: /\.tag$/,
+                exclude: /node_modules/,
+                enforce: 'pre',
+                use: 'riotjs-loader'
+            },
+            {
+                test: /\.js$|\.tag$/,
+                exclude: /node_modules/,
+                use: 'babel-loader'
+            },
+            {
+                test: /\.md$/,
+                use: [
+                    'html-loader',
+                    { loader: 'markdown-loader', options: { breaks: true } }
+                ]
+            },
+            {
+                test: /\.less$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'less-loader'
+                ]
+            },
+            {
+                test: /\.(jpg|jpeg|png|svg)$/i,
+                use: 'file-loader'
+            }
+        ]
     },
     plugins: [
         new webpack.ProvidePlugin({
@@ -19,27 +50,25 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './index.html',
             inject: false
-        })
+        }),
+        new webpack.HotModuleReplacementPlugin(),
     ],
-    module: {
-        preLoaders: [
-            { test: /\.tag$/, exclude: /node_modules/, loader: 'riotjs-loader', query: { type: 'babel' } }
-        ],
-        loaders: [
-            { test: /\.js$|\.tag$/, exclude: /node_modules/, loader: 'babel-loader' },
-            { test: /\.md$/, loader: 'html!markdown?breaks=true'},
-            { test: /\.less$/, loader: 'style!css!less' },
-            { test: /\.json$/, loader: 'json' },
-            {
-                test: /\.(jpe?g|png|gif|svg)$/i,
-                loaders: [
-                    'file?hash=sha512&digest=hex&name=[hash].[ext]',
-                    'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
-                ]
-            }
+    resolve: {
+        modules: [
+            path.resolve(__dirname, './'),
+            path.resolve(__dirname, 'assets'),
+            'node_modules'
         ]
     },
+    devServer: {
+        compress: true,
+        historyApiFallback: true,
+        host: '0.0.0.0',
+        hot: false,
+        inline: true,
+        publicPath: '/build/'
+    },
     resolve: {
-        extensions: ['', '.js', '.tag', '.md', '.less']
+        extensions: ['.js', '.tag', '.md', '.less']
     }
 };

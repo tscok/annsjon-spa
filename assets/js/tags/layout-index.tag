@@ -1,5 +1,9 @@
-require('./raw')
-require('./google-map')
+import Cookies from 'js-cookie'
+import mygettext from '../data/mygettext'
+import purebem from 'purebem'
+
+import './raw'
+import './google-map'
 
 <layout-index>
     <section class="hero">
@@ -89,12 +93,11 @@ require('./google-map')
     
 
     <script>
-        let Cookies = require('js-cookie')
-        let mygettext = require('../data/mygettext')
-        let purebem = require('purebem')
-
         this.projects = purebem.of('projects')
         this.location = purebem.of('location')
+
+        this.getText = (key) => { return key }
+        this.language = Cookies.get('language')
 
         this.on('mount', () => {
             this.getText = mygettext

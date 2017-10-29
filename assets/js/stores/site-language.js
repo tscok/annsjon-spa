@@ -1,3 +1,4 @@
+import riotRoute from 'riot-route';
 let Cookies = require('js-cookie');
 
 function SiteLanguage() {
@@ -15,7 +16,7 @@ function SiteLanguage() {
         Cookies.set('language', newCookie, { expires: 365 });
         this.trigger('SITE_LANGUAGE', Cookies.get('language'));
         
-        riot.route('/');
+        riotRoute('/');
     };
 
     this.on('SET_SITE_LANGUAGE', this.setCookie);

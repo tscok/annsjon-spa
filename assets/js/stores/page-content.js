@@ -1,3 +1,6 @@
+import RiotRoute from 'riot-route';
+import RiotControl from 'riotcontrol';
+
 var Cookies = require('js-cookie');
 
 var contents = {};
@@ -21,7 +24,7 @@ function PageContent() {
     riot.observable(this);
 
     var self = this;
-    var subRoute = riot.route.create();
+    var subRoute = RiotRoute.create();
     var lang, content;
 
     function setPageContent(data) {
@@ -29,7 +32,7 @@ function PageContent() {
             data = contents[lang]['./404.md'];
         }
 
-        self.trigger('SET_PAGE_CONTENT', data);
+        RiotControl.trigger('SET_PAGE_CONTENT', data);
     }
 
     // Main routes
@@ -68,10 +71,10 @@ function PageContent() {
      * Example: #about/?lang=en
      */
     subRoute('*/..', function(name) {
-        let q = riot.route.query();
+        let q = RiotRoute.query();
         if (q.lang) {
             Cookies.set('language', q.lang);
-            riot.route(name);
+            RiotRoute(name);
         }
     });
 }

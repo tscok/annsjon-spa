@@ -1,10 +1,11 @@
-let utils = require('../utils');
-
 <page-content>
     <script>
-        var riotcontrol = require('riotcontrol')
+        import RiotControl from 'riotcontrol'
+        import utils from '../utils'
 
-        riotcontrol.on('SET_PAGE_CONTENT', (content) => {
+        this.content = 'hepp'
+
+        RiotControl.on('SET_PAGE_CONTENT', (content) => {
             this.root.innerHTML = content
             utils.scrollUp();
         })

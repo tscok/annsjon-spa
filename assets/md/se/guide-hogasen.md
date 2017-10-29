@@ -2,7 +2,7 @@
 
 #### Dubbelbeckasinspel vid Ånnsjön
 
-<figure>![Dubbelbeckasin](../../images/dbeckasin3_steve-dahlfors.jpg)<figcaption><span class="description">Spelande dubbelbeckasin / Gallinago media.</span><span class="owner">Foto: Steve Dahlfors</span></figcaption></figure>
+<figure>![Dubbelbeckasin](/assets/images/dbeckasin3_steve-dahlfors.jpg)<figcaption><span class="description">Spelande dubbelbeckasin / Gallinago media.</span><span class="owner">Foto: Steve Dahlfors</span></figcaption></figure>
 
 **När?**
 Dubbelbeckasinerna anländer till Ånnsjöfjällen omkring 15 maj, och börjar omedelbart att spela. Spelet pågår med hög intensitet någon vecka in i juni. Därefter är de flesta honor parade och spelet mattas av. Enstaka spelande hanar kan dock höras i början av juli.
@@ -14,7 +14,7 @@ Vi rekommederar dig som vill njuta av dubbelbeckasinens spel att besöka leken p
 **Hur?**
 Högåsen når du via den spångade leden "Blå spåret" som utgår norr om Enafors jvstn. Alternativt kliver du på leden vid ställverket ca 1 km NO om Enafors (korsa stora kraftledningen, hitta blå markeringar under lilla kraftledningen). Blå spåret slutar vid raststugan "Grand Hotel" på toppen av Högåsen, efter 2-3km måttlig uppförsbacke. Från "Grand Hotel" går du 400m rakt österut. Spelplatsen ligger på den östligaste delen av Högåsens topp-platå.
 
-<figure>![Dubbelbeckasin](../../images/dbeckasin2_steve-dahlfors.jpg)<figcaption><span class="description">Dubbelbeckasin / Gallinago media.</span><span class="owner">Foto: Steve Dahlfors</span></figcaption></figure>
+<figure>![Dubbelbeckasin](/assets/images/dbeckasin2_steve-dahlfors.jpg)<figcaption><span class="description">Dubbelbeckasin / Gallinago media.</span><span class="owner">Foto: Steve Dahlfors</span></figcaption></figure>
 
 **_Visa hänsyn mot både dubbelbeckasiner och andra fågelskådare när du besöker leken!_**
 

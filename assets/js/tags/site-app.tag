@@ -6,21 +6,21 @@ require('./layout-page')
 
 <site-app>
     <div class="site">
-        <header riot-tag="site-header" class="site-header"></header>
-        <main riot-tag="layout-index" if={ index }></main>
-        <main riot-tag="layout-page" if={ !index } class="page"></main>
+        <header data-is="site-header" class="site-header" />
+        <main data-is="layout-index" if={ isIndex } />
+        <main data-is="layout-page" if={ !isIndex } class="page" />
     </div>
-    <footer riot-tag="site-footer" class="site-footer"></footer>
+    <footer data-is="site-footer" class="site-footer" />
 
     <script>
-        const riotcontrol = require('riotcontrol')
-        const utils = require('../utils')
+        import RiotControl from 'riotcontrol'
+        import utils from '../utils'
 
-        riotcontrol.on('ROUTE', (route) => {
-            this.update({index: !route ? true : false })
+        RiotControl.on('ROUTE', (route) => {
+            this.update({ isIndex: route == '' })
         })
 
-        riotcontrol.on('SITE_LANGUAGE', () => {
+        RiotControl.on('SITE_LANGUAGE', () => {
             this.update()
             utils.scrollUp()
         })

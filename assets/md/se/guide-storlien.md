@@ -4,6 +4,6 @@ Denna anrika skidmetropol har en hel del att erbjuda fågelskådaren. Cirka en k
 
 För den fågelintresserade är Storlien mest känt för den dubbelbeckasinspelplats som ligger på Skurdalshöjden. Den nås enklast om man följer den liftgata (Bånggårdsliften) som utgår från baksidan av Högfjällshotellet. Från den näst sista liftstolpen svänger man av snett uppåt vänster i sluttningen. Spelplatsen ligger 200-300 m från liftgatan ungefär mittemellan denna lift och en annan lift som slutar på ungefär samma nivå längre västerut. Lyssna noga när du närmar dig. Det svaga spellätet hörs bara något hundratal meter.
 
-<figure>![Dubbelbeckasin](../../images/dbeckasin_steve-dahlfors.jpg)<figcaption><span class="description">Dubbelbeckasin / Gallinago media.</span><span class="owner">Foto: Steve Dahlfors</span></figcaption></figure>
+<figure>![Dubbelbeckasin](/assets/images/dbeckasin_steve-dahlfors.jpg)<figcaption><span class="description">Dubbelbeckasin / Gallinago media.</span><span class="owner">Foto: Steve Dahlfors</span></figcaption></figure>
 
 Fåglarna är huvudsakligen aktiva under natten och före kl 23 är det ingen större mening att vara på plats. Ett gömsle finns på platsen, men det fungerar mer som raststuga än som observationsgömsle, då fåglarna sällan spelar framför gömslet. Även de övriga delarna av lågfjället Skurdalshöjden är av ornitologiskt intresse. Området mellan Vindarnas tempel och Åhlénstugan brukar kunna bjuda på lappsparv, blåhake, fjällabb och kärrsnäppa.

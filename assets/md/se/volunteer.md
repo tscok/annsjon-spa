@@ -11,7 +11,8 @@ Vi söker *ringmärkare* och *assistenter* till våra nätfångstprojekt i juli 
 Ånnsjöns fågelstation erbjuder fri logi i vårt bekväma hus i Handöl, och en oslagbar upplevelse i Ånnsjönfjällen. Varmt välkommen!
 
 <p style="text-align:center">
-    <a href="#volunteer/apply" class="button button-primary">Anmäl dig här</a></p>
+    <a href="#volunteer/apply" class="button button-primary">Anmäl dig här</a>
+</p>
 
 #### Frågor och svar
 

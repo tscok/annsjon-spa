@@ -1,6 +1,3 @@
-let purebem = require('purebem')
-let riotcontrol = require('riotcontrol')
-
 <site-footer>
     <div class="container">
         <div class="row">
@@ -11,7 +8,7 @@ let riotcontrol = require('riotcontrol')
         </div>
         <div class="row">
             <p class={ block('misc') }>
-                <a href="#" class={ block('misc-link', 'separator') } onclick={ setLanguage }>{ getText('language') }</a>
+                <a href="#" class={ block('misc-link', ['separator']) } onclick={ setLanguage }>{ getText('language') }</a>
                 <a href="#cookies" class={ block('misc-link') }>Cookies</a>
                 <span class={ block('credits') }>{ getText('credits') } <a href="http://twitter.com/tscok" target="_blank" class={ block('misc-link') }>Mikael Carlsson</a></span>
             </p>
@@ -19,15 +16,18 @@ let riotcontrol = require('riotcontrol')
     </div>
 
     <script>
+        import RiotControl from 'riotcontrol'
+        import purebem from 'purebem'
+
         this.getText = require('../data/mygettext')
 
         this.block = purebem.of('site-footer')
 
         this.setLanguage = () => {
-            riotcontrol.trigger('SET_SITE_LANGUAGE')
+            RiotControl.trigger('SET_SITE_LANGUAGE')
         }
 
-        riotcontrol.on('SITE_NAVIGATION_FOOTER', (links) => {
+        RiotControl.on('SITE_NAVIGATION_FOOTER', (links) => {
             this.links = links
         })
     </script>

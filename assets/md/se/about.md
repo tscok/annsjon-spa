@@ -14,7 +14,7 @@ Resultatet från arbetet presenteras årligen i ett specialnummer av Fåglar i J
 
 #### Köp vår T-shirt
 
-<figure>![T-shirt](../../images/tshirt2016.jpg)<figcaption><span class="description">Våra T-shirts finns även i vinrött.</span></figcaption></figure>
+<figure>![T-shirt](/assets/images/tshirt2016.jpg)<figcaption><span class="description">Våra T-shirts finns även i vinrött.</span></figcaption></figure>
 
 Stöd vårt arbete genom att köpa en T-shirt! Beställning görs genom en inbetalning till Pg 85 45 51 -9. Ange ditt namn, adress, önskad storlek och färg. Intäkterna från försäljningen går oavkortat till fågelstationens verksamhet.
 

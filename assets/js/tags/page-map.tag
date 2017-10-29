@@ -1,11 +1,13 @@
 <page-map>
     <div class="page-map">
-        <div id="mapCanvas" if={ showMap }></div>
+        <div id="mapCanvas" ref="mapCanvas" if={ showMap }></div>
     </div>
 
     <script>
-        const riotcontrol = require('riotcontrol')
-        const subRoute = riot.route.create()
+        import RiotControl from 'riotcontrol'
+        import RiotRoute from 'riot-route'
+
+        const subRoute = RiotRoute.create()
 
         const hogasen = new google.maps.LatLng(63.307583, 12.375260)
         const wayPoints = [
@@ -25,7 +27,7 @@
         let labelIndex = 0;
 
         this.initMap = () => {
-            this.map = new google.maps.Map(this.mapCanvas, mapOpts)
+            this.map = new google.maps.Map(this.refs.mapCanvas, mapOpts)
             this.setMarkers()
         }
 
@@ -52,7 +54,7 @@
 
         this.showMap = false
 
-        riotcontrol.on('ROUTE', () => {
+        RiotControl.on('ROUTE', () => {
             this.update({ showMap: false })
         })
 

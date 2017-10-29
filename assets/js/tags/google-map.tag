@@ -1,5 +1,5 @@
 <google-map>
-    <div id="mapCanvas"></div>
+    <div id="mapCanvas" ref="mapCanvas"></div>
     <script>
         const handol = new google.maps.LatLng(63.25847135123485, 12.447509765625)
         const mapOpts = {
@@ -13,7 +13,7 @@
         let map;
 
         this.initMap = () => {
-            map = new google.maps.Map(this.mapCanvas, mapOpts)
+            map = new google.maps.Map(this.refs.mapCanvas, mapOpts)
             this.setMarker()
         }
 
