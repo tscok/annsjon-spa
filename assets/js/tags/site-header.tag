@@ -15,24 +15,26 @@
         import RiotControl from 'riotcontrol'
         import purebem from 'purebem'
 
+        const self = this
+
         this.menuOpen = false
 
         this.block = purebem.of('site-header')
         
-        this.isActive = (href) => {
+        this.isActive = function(href) {
             return this.route === href ? 'active' : '';
         }
 
-        this.toggleMenu = () => {
-            this.update({menuOpen: this.menuOpen ? false : true})
+        this.toggleMenu = function() {
+            self.update({menuOpen: self.menuOpen ? false : true})
         }
 
-        RiotControl.on('ROUTE', (route) => {
-            this.update({route: route, menuOpen: false})
+        RiotControl.on('ROUTE', function(route) {
+            self.update({route: route, menuOpen: false})
         })
 
-        RiotControl.on('SITE_NAVIGATION_HEADER', (links) => {
-            this.links = links
+        RiotControl.on('SITE_NAVIGATION_HEADER', function(links) {
+            self.update({ links })
         })
     </script>
 </site-header>

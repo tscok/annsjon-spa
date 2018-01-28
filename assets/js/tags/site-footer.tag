@@ -19,16 +19,18 @@
         import RiotControl from 'riotcontrol'
         import purebem from 'purebem'
 
+        const self = this
+
         this.getText = require('../data/mygettext')
 
         this.block = purebem.of('site-footer')
 
-        this.setLanguage = () => {
+        this.setLanguage = function() {
             RiotControl.trigger('SET_SITE_LANGUAGE')
         }
 
-        RiotControl.on('SITE_NAVIGATION_FOOTER', (links) => {
-            this.links = links
+        RiotControl.on('SITE_NAVIGATION_FOOTER', function(links) {
+            self.update({ links })
         })
     </script>
 </site-footer>

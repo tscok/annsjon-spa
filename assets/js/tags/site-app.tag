@@ -1,8 +1,7 @@
-require('./site-header')
-require('./site-footer')
-
-require('./layout-index')
-require('./layout-page')
+import './layout-index.tag'
+import './layout-page.tag'
+import './site-footer.tag'
+import './site-header.tag'
 
 <site-app>
     <div class="site">
@@ -16,12 +15,14 @@ require('./layout-page')
         import RiotControl from 'riotcontrol'
         import utils from '../utils'
 
-        RiotControl.on('ROUTE', (route) => {
-            this.update({ isIndex: route == '' })
+        const self = this
+
+        RiotControl.on('ROUTE', function(route) {
+            self.update({ isIndex: route == '' })
         })
 
-        RiotControl.on('SITE_LANGUAGE', () => {
-            this.update()
+        RiotControl.on('SITE_LANGUAGE', function() {
+            self.update()
             utils.scrollUp()
         })
     </script>

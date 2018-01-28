@@ -1,7 +1,7 @@
 require('./raw')
 
 <page-form>
-    <form name="application" class="page-form__application" onsubmit={ onSubmit } if={ showForm }>
+    <form name="application" class="page-form__application" onsubmit={ onSubmit } show={ showForm }>
         <div class="row">
             <div class="six columns">
                 <label>{ getText('first-name') }*</label>
@@ -74,7 +74,7 @@ require('./raw')
         <p if={ isUndelivered }><raw content={ getText('volunteer_undelivered') }/></p>
         <button type="submit" name="submit" class="button-primary" disabled={ isSubmitting }>{ getText('volunteer_submit') }</button>
     </form>
-    <div class="page-form__thank-you" if={ showThanks }>
+    <div class="page-form__thank-you" show={ showThanks }>
         <h4 class="page-form__tahnk-you--title">{ getText('thank-you') }<span if={ applyee }>, { applyee }</span>!</h4>
         <p class="page-form__tahnk-you--body"><raw content={ getText('volunteer_confirmation') }/></p>
     </div>
@@ -88,67 +88,66 @@ require('./raw')
         const serialize = require('form-serialize');
         const subRoute = RiotRoute.create()
 
+        const self = this
+
         this.showForm = false
         this.showThanks = false
         this.isSubmitting = false
         this.isUndelivered = false
         this.isIncomplete = false
+        this.getText = mygettext
 
         this.nationalities = nationality
 
-        this.formIsComplete = () => {
-            let input = serialize(this.application, { hash: true })
-            let required = ['fname','lname','gender','birth','about','timeframe','email','nationality']
-            let isNotEmpty = (label) => {
+        this.formIsComplete = function() {
+            const input = serialize(this.application, { hash: true })
+            const required = ['fname','lname','gender','birth','about','timeframe','email','nationality']
+            const isNotEmpty = function(label) {
                 return input[label] && input[label].trim() !== '';
             }
             return required.every(isNotEmpty)
         }
 
-        this.onSubmit = () => {
+        this.onSubmit = function() {
             if (!this.formIsComplete()) {
                 return;
             }
             RiotControl.trigger('FORM_APPLICATION', this.application)
         }
 
-        this.onReset = () => {
+        this.onReset = function() {
             this.application.reset()
         }
 
-        this.handleLoading = () => {
+        this.handleLoading = function() {
             this.submit.innerHTML = getText('volunteer_submitting')
-            this.update({ isUndelivered: false, isSubmitting: true })
+            self.update({ isUndelivered: false, isSubmitting: true })
         }
 
-        this.handleFailure = () => {
+        this.handleFailure = function() {
             this.submit.innerHTML = getText('volunteer_submit')
-            this.update({ isUndelivered: true, isSubmitting: false })
+            self.update({ isUndelivered: true, isSubmitting: false })
         }
 
-        this.handleSuccess = (name) => {
+        this.handleSuccess = function(name) {
             this.onReset()
-            this.update({ showForm: false, showThanks: true, applyee: name })
+            self.update({ showForm: false, showThanks: true, applyee: name })
         }
 
         RiotControl.on('FORM_APPLICATION_LOADING', this.handleLoading)
         RiotControl.on('FORM_APPLICATION_FAILURE', this.handleFailure)
         RiotControl.on('FORM_APPLICATION_SUCCESS', this.handleSuccess)
 
-        RiotControl.on('ROUTE', () => {
-            this.update({ showForm: false, showThanks: false })
+        RiotControl.on('ROUTE', function() {
+            self.update({ showForm: false, showThanks: false })
         })
 
-        subRoute('volunteer', () => {
-            this.update({ showForm: false, showThanks: false })
+        subRoute('volunteer', function() {
+            self.update({ showForm: false, showThanks: false })
         })
 
-        subRoute('volunteer/apply', () => {
-            this.update({ showForm: true, showThanks: false })
-        })
-
-        this.on('mount', () => {
-            this.getText = mygettext
+        subRoute('volunteer/apply', function() {
+            self.update({ showForm: true, showThanks: false })
         })
     </script>
 </page-form>

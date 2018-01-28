@@ -10,14 +10,13 @@
             zoomControl: false,
             scaleControl: false
         }
-        let map;
 
-        this.initMap = () => {
-            map = new google.maps.Map(this.refs.mapCanvas, mapOpts)
-            this.setMarker()
+        this.initMap = function() {
+            const map = new google.maps.Map(this.refs.mapCanvas, mapOpts)
+            this.setMarker(map)
         }
 
-        this.setMarker = () => {
+        this.setMarker = function(map) {
             new google.maps.Marker({
                 position: handol,
                 map: map

@@ -1,6 +1,6 @@
 import './page-content'
-import './page-guide'
 import './page-form'
+import './page-guide'
 import './page-map'
 
 <layout-page>

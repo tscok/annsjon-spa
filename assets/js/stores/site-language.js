@@ -1,5 +1,5 @@
 import riotRoute from 'riot-route';
-let Cookies = require('js-cookie');
+import Cookies from 'js-cookie';
 
 function SiteLanguage() {
     riot.observable(this);
@@ -9,9 +9,9 @@ function SiteLanguage() {
         Cookies.set('language', 'se', { expires: 365 });
     }
 
-    this.setCookie = () => {
-        let oldCookie = Cookies.get('language');
-        let newCookie = oldCookie === 'se' ? 'en' : 'se';
+    this.setCookie = function() {
+        const oldCookie = Cookies.get('language');
+        const newCookie = oldCookie === 'se' ? 'en' : 'se';
         
         Cookies.set('language', newCookie, { expires: 365 });
         this.trigger('SITE_LANGUAGE', Cookies.get('language'));

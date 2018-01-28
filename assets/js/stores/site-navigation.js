@@ -1,5 +1,5 @@
-const Cookies = require('js-cookie');
-const riotcontrol = require('riotcontrol');
+import Cookies from 'js-cookie';
+import RiotControl from 'riotcontrol';
 
 const links = {
     se: [
@@ -23,25 +23,23 @@ const header = ['guide','projects','volunteer','about','contact'];
 function SiteNavigation(args) {
     riot.observable(this);
 
-    let lang;
-
-    this.isInHeader = (obj) => {
-        return header.some(elem => elem === obj.href);
+    this.isInHeader = function(obj) {
+        return header.some(function(elem) { return elem === obj.href });
     };
 
-    this.getHeaderLinks = (lang) => {
+    this.getHeaderLinks = function(lang) {
         return links[lang].filter(this.isInHeader);
     }
     
-    this.on('ROUTE', (route) => {
-        lang = Cookies.get('language');
+    this.on('ROUTE', function(route) {
+        const lang = Cookies.get('language');
 
         this.trigger('SITE_NAVIGATION_HEADER', this.getHeaderLinks(lang));
         this.trigger('SITE_NAVIGATION_FOOTER', links[lang]);
         this.trigger('SITE_LANGUAGE', lang);
     });
 
-    riotcontrol.on('SITE_LANGUAGE', (newLang) => {
+    RiotControl.on('SITE_LANGUAGE', (newLang) => {
         this.trigger('SITE_NAVIGATION_HEADER', this.getHeaderLinks(newLang));
         this.trigger('SITE_NAVIGATION_FOOTER', links[newLang]);
     })

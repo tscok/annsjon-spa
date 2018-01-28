@@ -1,7 +1,8 @@
 <raw>
     <script>
-        this.on('update', () => {
-            this.root.innerHTML = this.opts.content
+        const self = this
+        this.on('update', function() {
+            self.root.innerHTML = self.opts.content
         })
     </script>
 </raw>

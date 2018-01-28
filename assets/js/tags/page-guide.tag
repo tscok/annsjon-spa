@@ -1,12 +1,8 @@
 <page-guide>
-    <div class={ block() } if={ isVisible }>
+    <div class={ block() } show={ isVisible }>
         <h4>Våra guider</h4>
         <nav class={ block('links') }>
-            <a href="#guide/handol" class={ block('link') } if={ isNot('handol') }>Handöl</a>
-            <a href="#guide/hogasen" class={ block('link') } if={ isNot('hogasen') }>Högåsen</a>
-            <a href="#guide/storulvan" class={ block('link') } if={ isNot('storulvan') }>Storulvån</a>
-            <a href="#guide/storlien" class={ block('link') } if={ isNot('storlien') }>Storlien</a>
-            <a href="#guide/ann" class={ block('link') } if={ isNot('ann') }>Ånn</a>
+            <a each={ links } if={ isNot(path) } class={ block('link') } href="#guide/{ path }">{ name }</a>
         </nav>
     </div>
 
@@ -15,17 +11,28 @@
         import RiotControl from 'riotcontrol'
         import RiotRoute from 'riot-route'
 
-        const subRoute = RiotRoute.create()
+        const self = this
+        
+        const links = [
+            { name: 'Handöl', path: 'handol' },
+            { name: 'Högåsen', path: 'hogasen' },
+            { name: 'Storulvan', path: 'storulvan' },
+            { name: 'Storlien', path: 'storlien' },
+            { name: 'Ånn', path: 'ann' },
+        ]
 
-        this.block = purebem.of('page-guide')
-        this.isVisible = false
+        this.update({
+            block: purebem.of('page-guide'),
+            isVisible: false,
+            links: links,
+        })
 
-        this.isNot = (name) => {
+        this.isNot = function(name) {
             return this.guide != name
         }
 
-        RiotControl.on('ROUTE', (route, subroute) => {
-            this.update({
+        RiotControl.on('ROUTE', function(route, subroute) {
+            self.update({
                 isVisible: route == 'guide',
                 guide: subroute
             })

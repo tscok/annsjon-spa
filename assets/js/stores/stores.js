@@ -1,15 +1,16 @@
-const riotcontrol = require('riotcontrol');
+import RiotControl from 'riotcontrol';
+
+import SiteLanguage from './site-language';
+import SiteNavigation from './site-navigation';
+import PageContent from './page-content';
+import PageForm from './page-form';
+
 
 function Stores() {
-    let SiteLanguage = require('./site-language');
-    let SiteNavigation = require('./site-navigation');
-    let PageContent = require('./page-content');
-    let PageForm = require('./page-form');
-
-    riotcontrol.addStore(new SiteLanguage());
-    riotcontrol.addStore(new SiteNavigation());
-    riotcontrol.addStore(new PageContent());
-    riotcontrol.addStore(new PageForm());
+    RiotControl.addStore(new SiteLanguage());
+    RiotControl.addStore(new SiteNavigation());
+    RiotControl.addStore(new PageContent());
+    RiotControl.addStore(new PageForm());
 };
 
 module.exports = Stores();

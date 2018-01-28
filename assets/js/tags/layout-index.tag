@@ -20,7 +20,7 @@ import './google-map'
                 <div class="{ projects('brief') } one-third column">
                     <div class={ projects('placeholder', ['great-snipe']) }></div>
                     <h5 class={ projects('title') }>{ getText('projects_title-great-snipe') }</h5>
-                    <p class={ projects('body') }><raw content={ getText('projects_body-great-snipe') }/></p>
+                    <p class={ projects('body') }>{ getText('projects_body-great-snipe') }</p>
                 </div>
                 <div class="{ projects('brief') } one-third column">
                     <div class={ projects('placeholder', ['census']) }></div>
@@ -95,15 +95,15 @@ import './google-map'
     <script>
         this.projects = purebem.of('projects')
         this.location = purebem.of('location')
-
-        this.getText = (key) => { return key }
         this.language = Cookies.get('language')
 
-        this.on('mount', () => {
+        this.getText = function(key) { return key }
+
+        this.on('mount', function() {
             this.getText = mygettext
         })
 
-        this.on('update', () => {
+        this.on('update', function() {
             this.language = Cookies.get('language')
         })
     </script>
