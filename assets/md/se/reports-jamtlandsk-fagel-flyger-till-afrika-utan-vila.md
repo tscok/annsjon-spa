@@ -2,7 +2,7 @@
 
 *Publicerad 2011-05-24*
 
-<figure>![Dubbelbeckasiner](/assets/images/old/projects_great-snipe.jpg)<figcaption><span class="owner">Foto: Björn Isaksson</span></figcaption></figure>
+<figure>![Dubbelbeckasiner](../../images/old/projects_great-snipe.jpg)<figcaption><span class="owner">Foto: Björn Isaksson</span></figcaption></figure>
 
 Ånnsjöns fågelstation har i samarbete med forskare från Lunds Universitet avslöjat hittills okända vinterkvarter i tropiska Afrika för den gåtfulla dubbelbeckasinen. Studien visar också att fåglarna under höstflyttningen flyger 6000 km utan vila under fyra dygn, trots att det finns gott om lämpliga rastplatser längs vägen. Resultaten publiceras onsdagen 25 maj i den internationella vetenskapliga tidskriften Biology Letters.
 

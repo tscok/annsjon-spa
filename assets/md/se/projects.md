@@ -6,7 +6,7 @@ Utöver nedanstående standardprojekt genomför vi även holkprojekt om tillgån
 
 #### Dubbelbeckasinprojektet
 
-<figure>![Dubbelbeckasiner](/assets/images/old/projects_great-snipe.jpg)<figcaption><span class="owner">Foto: Björn Isaksson</span></figcaption></figure>
+<figure>![Dubbelbeckasiner](../../images/old/projects_great-snipe.jpg)<figcaption><span class="owner">Foto: Björn Isaksson</span></figcaption></figure>
 
 Beståndet av dubbelbeckasin är en av de viktigaste anledningarna till att Ånnsjön- Storlien finns med på BirdLife International's lista över Important Bird Areas (IBA). Sedan 2004 har vi tillsammans med forskare från Lund bedrivit inventering, radiopejling och nätfångst samt märkning med ljusloggers.
 
@@ -18,7 +18,7 @@ Beståndet av dubbelbeckasin är en av de viktigaste anledningarna till att Ånn
 
 #### Ringmärkning av tättingar
 
-<figure>![Ringmärkning](/assets/images/old/projects_ringing.jpg)<figcaption><span class="owner">Foto: Mikael Carlsson</span></figcaption></figure>
+<figure>![Ringmärkning](../../images/old/projects_ringing.jpg)<figcaption><span class="owner">Foto: Mikael Carlsson</span></figcaption></figure>
 
 Sedan starten 1988 har vi bedrivit standardiserad ringmärkning av tättingar i Handöl och Enans delta i Ånnsjön. Syftet är att följa populations- förändringar för ett stort antal arter, och framför allt ger projektet ett bra mått på häckningsframgången för tex lövsångare, blåhake, gulärla, bergfink och sävsparv.
 
@@ -26,7 +26,7 @@ Sedan starten 1988 har vi bedrivit standardiserad ringmärkning av tättingar i 
 
 #### Fjällrutter
 
-<figure>![Fjällrutter](/assets/images/old/projects_census.jpg)<figcaption><span class="owner">Foto: Malte Busch</span></figcaption></figure>
+<figure>![Fjällrutter](../../images/old/projects_census.jpg)<figcaption><span class="owner">Foto: Malte Busch</span></figcaption></figure>
 
 Femton fjällrutter i området Ånnsjön-Storlien inventeras årligen med linjetaxerings&shy;metodik. Syftet är att följa populationsutvecklingen hos fågelarter inom videbältet och kalfjällsregionen, i första hand arter med sin utbredning begränsad till denna region, tex alfågel, fjällpipare, skärsnäppa, kärrsnäppa, fjällabb, fjällripa, dalripa, fjällvråk, korp, stenskvätta, snösparv, lappsparv, och ringtrast. Att inventera fjällrutter är mycket enkelt, bara man kan läsa kartan!
 
