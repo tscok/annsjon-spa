@@ -1,8 +1,66 @@
-var webpack = require('webpack');
-var path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+const webpack = require('webpack');
+
+module.exports = {
+    entry: './assets/js/main.js',
+    output: {
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'build'),
+    },
+    module: {
+        rules: [
+            {
+                test: /\.tag?$/,
+                exclude: /node_modules/,
+                enforce: 'pre',
+                use: 'riotjs-loader'
+            },
+            {
+                test: /\.js?$/,
+                exclude: /node_modules/,
+                use: 'babel-loader',
+            },
+            {
+                test: /\.md?$/,
+                use: [
+                    'html-loader',
+                    { loader: 'markdown-loader', options: { breaks: true } },
+                ],
+            },
+            {
+                test: /\.less?$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'less-loader',
+                ],
+            },
+            {
+                test: /\.(jpg|jpeg|png|svg)?$/i,
+                use: 'file-loader',
+            },
+        ],
+    },
+    plugins: [
+        new webpack.ProvidePlugin({
+            riot: 'riot'
+        }),
+    ],
+    resolve: {
+        modules: [
+            path.resolve(__dirname, './'),
+            path.resolve(__dirname, 'assets'),
+            'node_modules',
+        ],
+        extensions: ['.js', '.tag', '.md', '.less'],
+    },
+};
+
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const webpack = require('webpack');
 
 
+/*
 module.exports = {
     entry: './assets/js/main.js',
     output: {
@@ -12,25 +70,25 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.tag$/,
+                test: /\.tag?$/,
                 exclude: /node_modules/,
                 enforce: 'pre',
                 use: 'riotjs-loader'
             },
             {
-                test: /\.js$|\.tag$/,
+                test: /\.js?$/,
                 exclude: /node_modules/,
                 use: 'babel-loader'
             },
             {
-                test: /\.md$/,
+                test: /\.md?$/,
                 use: [
                     'html-loader',
                     { loader: 'markdown-loader', options: { breaks: true } }
                 ]
             },
             {
-                test: /\.less$/,
+                test: /\.less?$/,
                 use: [
                     'style-loader',
                     'css-loader',
@@ -38,7 +96,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(jpg|jpeg|png|svg)$/i,
+                test: /\.(jpg|jpeg|png|svg)?$/i,
                 use: 'file-loader'
             }
         ]
@@ -72,3 +130,4 @@ module.exports = {
         extensions: ['.js', '.tag', '.md', '.less']
     }
 };
+*/

@@ -5,8 +5,8 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server",
-    "build": "webpack -p"
+    "dev": "webpack-dev-server --config webpack.config.dev.js",
+    "prod": "webpack -p --config webpack.config.prod.js"
   },
   "repository": {
     "type": "git",
@@ -16,10 +16,8 @@
     "form-serialize": "^0.7.0"
   },
   "devDependencies": {
-    "babel": "^6.23.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
-    "babel-preset-es2015": "^6.24.1",
     "babel-preset-es2015-riot": "^1.1.0",
     "css-loader": "^0.28.7",
     "file-loader": "^0.11.2",
@@ -34,14 +32,16 @@
     "markdown-loader": "^2.0.1",
     "purebem": "^1.0.0",
     "raw-loader": "^0.5.1",
-    "riot": "^3.7.2",
+    "riot": "^3.8.1",
     "riot-route": "^3.1.2",
     "riotcontrol": "0.0.3",
     "riotjs-loader": "^4.0.0",
     "style-loader": "^0.18.2",
+    "uglifyjs-webpack-plugin": "^1.1.6",
     "url-loader": "^0.5.9",
-    "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.8.2"
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.8.2",
+    "webpack-merge": "^4.1.1"
   },
   "author": "Mikael Carlsson",
   "license": "ISC"
