@@ -1,15 +1,12 @@
 <page-map>
     <div class="page-map">
-        <div id="mapCanvas" ref="mapCanvas" if={ showMap }></div>
+        <div id="mapCanvas" ref="mapCanvas" show={ showMap }></div>
     </div>
 
     <script>
         import RiotControl from 'riotcontrol'
-        import RiotRoute from 'riot-route'
 
         const self = this
-
-        const subRoute = RiotRoute.create()
 
         const hogasen = new google.maps.LatLng(63.307583, 12.375260)
         const waypoints = [
@@ -47,8 +44,8 @@
         }
 
         this.initMap = function() {
-            this.map = new google.maps.Map(this.refs.mapCanvas, mapOpts)
-            this.setMarkers()
+            self.map = new google.maps.Map(self.refs.mapCanvas, mapOpts)
+            self.setMarkers()
         }
 
         this.setMarkers = function() {
@@ -56,9 +53,9 @@
                 const marker = new google.maps.Marker({
                     position: waypoint.latlng,
                     label: waypoint.label,
-                    map: this.map
+                    map: self.map
                 })
-                this.setListener(marker, waypoint.text)
+                self.setListener(marker, waypoint.text)
             })
         }
 
@@ -67,19 +64,22 @@
 
             marker.addListener('click', function() {
                 infoWindow.setContent(text)
-                infoWindow.open(this.map, marker)
+                infoWindow.open(self.map, marker)
             })
         }
 
         this.showMap = false
 
-        RiotControl.on('ROUTE', function() {
-            self.update({ showMap: false })
-        })
+        RiotControl.on('ROUTE', function(route, subroute) {
+            const isHogasen = route == 'guide' && subroute == 'hogasen'
 
-        subRoute('guide/hogasen', function() {
-            self.update({ showMap: true })
-            this.initMap()
+            self.update({
+                showMap: isHogasen
+            })
+
+            if (isHogasen) {
+                self.initMap()
+            }
         })
     </script>
 </page-map>

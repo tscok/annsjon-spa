@@ -38,6 +38,13 @@ module.exports = {
             {
                 test: /\.(jpg|jpeg|png|svg)?$/i,
                 use: 'file-loader',
+                // use: {
+                //     loader: 'file-loader',
+                //     options: {
+                //         publicPath: 'assets/images/',
+                //         useRelativePath: true,
+                //     },
+                // },
             },
         ],
     },

@@ -21,6 +21,7 @@ Stöd vårt arbete genom att köpa en t-shirt! Beställning görs genom en inbet
 **Medlemspris**: 150 kr (ord. 180 kr)
 **Frakt & porto**: 50 kr/tröja
 **Storlekar**: S – XXL
+**Färger**: Antracit (mörkgrå), Vinröd och Mörkblå (se bilden ovan)
 
 - - -
 
