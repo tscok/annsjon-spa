@@ -1,34 +1,28 @@
-### Ånnsjödagen - 4 juni 2016
+### Ånnsjödagen - 2 juni 2018
 
 Ta med dina vänner till Ånnsjön när fågellivet är som mest sprudlande. Vi hjälper till med artbestämningen vid Ånnsjöns fågeltorn och gömslen under morgontimmarna, bjuder på bildvisning under kvällen och guidar er till en dubbelbeckasinlek vid midnatt.
 
+
 #### Program
 
-*07.00–11.00*
+*07.00 – 11.00*
 **Fågelskådning i Ånn**
-Fågelskådning längs den spångade leden i Ånn. Kom när det passar under morgonen. Fågelguider finns i fågeltornen. Länsstyrelsens naturvårdsenhet bjuder på kaffe och pratar om våtmarksrestaurering, friluftsliv med mera vid Nätaholmentornet.
+Utgångspunkt Ånns station. Följ markerade leder. Kom när det passar Dig! Vi har guider i tornen som kan informera och hjälpa till med artbestämning av fåglarna.
 
-*14.00-18.00*
+*14.00 - 18.00*
 **Öppet hus på fågelstationen i Handöl**
-Öppet hus på fågelstationen i Handöl. Fika, prata fåglar, gå en tipspromenad!
+Välkommen att besöka fågelstationen och prata fåglar och få veta mer om verksamheten. Tipsrunda. Fika
 
-*15.00*
-**Öppet hus på fågelstationen i Handöl**
-Länsstyrelsens naturvårdshandläggare informerar och svarar på frågor om nationalparksprocessen.
-
-*18.00*
+*19.00*
 **Middag på Enaforsholms fjällgård**
-Middag på Enaforsholm fjällgård för dem som önskar. Föranmälan på telefon 064-77 30 26 eller 070-527 30 26. Middagen kostar 170 kr.
+Middag för de som önskar på Enaforsholm. Föranmälan under dagen till fågelstationen. Efter middagen bildvisning.
 
-*19.30*
-**Bildvisning på Enaforsholm**
-Bildvisning, redovisning av dagens fågelobservationer, tipsfrågor mm.
-
-*22.30 – 01.00*
-**Dubbelbeckasinspel på Högåsen**
+*22.00 – ca 01.30*
+**Nattexkursion till dubbelbeckasinspel**
 Den överlägset största fågelattraktionen i ett internationellt perspektiv är de spelande dubbelbeckasinerna. Det hör till det märkligste man kan uppleva i fågelväg. Missa inte tillfället att bli guidad till rätt utkikspunkt! En värdig avslutning på en innehållsrik dag.
 
-Föranmälan senaste under middagen till Johan Råghall 0730449886. Samling vid Enaforsholm fjällgård.
+Föranmälningar och upplysningar, Thomas Holmberg 0730583630. Vi samlas på parkeringen vid Enaforsholm kl. 22 för gemensam avfärd mot dubbelbeckasinleken.
+
 
 #### Övernattning
 

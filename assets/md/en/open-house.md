@@ -1,34 +1,27 @@
-### Lake Ånnsjön Day - June 4th 2016
+### Lake Ånnsjön Day - June 2nd 2018
 
 Bring your friends to Lake Ånnsjön when the birdlife is peaking. During the early hours we'll help you identify species at the observation towers by Lake Ånnsjön. During this day we arrange various activities and invites you to a guided tour of a Great Snipe lek at midnight!
+
 
 #### Program
 
 *7 am – 11 am*
 **Bird watching in Ånn**
-Come when it suits you! Start at the train station in Ånn, then follow the boarded route. We have guides in the observation towers who can help you identify species. Talk to the Administrative Board of Jämtland County about the national park and have tea/coffee by the Nätaholmen tower.
+Come when it suits you! Start at the train station in Ånn, then follow the boarded route. We have guides in the observation towers who can help you identify species.
 
 *2 pm - 6 pm*
 **Open House at the observatory in Handöl**
-Feel free to visit the observatory to talk about birds and our activities in the area. Join our annual meeting or do the quiz walk. Tea/coffee on the house.
+Feel free to visit the observatory to talk about birds, our activities in the area or do the quiz walk. Tea/coffee on the house.
 
-*3 pm*
-**Jämtland County Administrative Board**
-Administrators talk about the national park process at the observatory in Handöl.
-
-*6 pm*
+*7 pm*
 **Supper at Enaforsholms fjällgård**
-Please make reservations directly to Enaforsholm, 064-77 30 26 or 070-527 30 26. The supper is 170 SEK.
+Please make reservations to our staff at the observatory. The supper is followed by a slideshow, summary of the observations of the day and awards to the quiz walk winners.
 
-*7.30 pm*
-**Slideshow ”Birds at Lake Ånnsjön” & Information**
-The supper at Enaforsholms fjällgård is followed by a slideshow, summary of the observations of the day and awards to the quiz walk winners.
-
-*10.30 pm - 1 am*
+*10.00 pm - ~ 1.30 am*
 **Guided Great Snipe tour**
 The playing Great Snipe is by far the greatest bird attraction from an international point of view. It is truely an extraordinary experience! Take the chance to be guided to the best outlook in the lek. A worthy finish to a grand day!
 
-Please contact Johan Råghall, 073-044 98 86, to reserve your spot no later than 6&nbsp;pm. We gather at Enaforsholms fjällgård.
+For questions and reservations, please contact Thomas Holmberg 0730583630 during the day. We gather at 10 pm on the parking lot of Enaforsholms fjällgård for a collective departure towards the lek.
 
 
 #### Lodging
