@@ -17,7 +17,7 @@ Feel free to visit the observatory to talk about birds, our activities in the ar
 **Supper at Enaforsholms fjällgård**
 Please make reservations to our staff at the observatory. The supper is followed by a slideshow, summary of the observations of the day and awards to the quiz walk winners.
 
-*10.00 pm - ~ 1.30 am*
+*10 pm - 1.30 am*
 **Guided Great Snipe tour**
 The playing Great Snipe is by far the greatest bird attraction from an international point of view. It is truely an extraordinary experience! Take the chance to be guided to the best outlook in the lek. A worthy finish to a grand day!
 
