@@ -18,7 +18,7 @@ import './google-map'
             <h6 class={ openHouse('header') }>{ getText('openhouse_header') }</h6>
             <div class={ openHouse('main') }>
                 <h5 class={ openHouse('title') }>{ getText('openhouse_title') }</h5>
-                <p class={ openHouse('body') }>{ getText('openhouse_body') }</p>
+                <p class={ openHouse('body') }><raw content={ getText('openhouse_body') }/></p>
             </div>
             <div class={ openHouse('actions') }>
                 <a href="#open-house" class="button button-primary"><raw content={ getText('read-more') }/></a>
