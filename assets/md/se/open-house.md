@@ -28,15 +28,19 @@ Föranmälningar och upplysningar, Thomas Holmberg 0730583630. Vi samlas på par
 
 Eftersom dubbelbeckasinspelet sker nattetid kan det var en god idé att ordna med övernattning. Vi kan tipsa om följande:
 
-- [Enaforsholm Fjällgård][1], tel. 0647 - 730 26
+- [Camp Ånn][6], tel. 070-209 02 31
+- [Enaforsholm Fjällgård][1], tel. 0647 - 730 26 eller 070 - 527 30 26
 - Jämtåsen, [fam.jamting@hotmail.com][2] tel. 0647 - 710 94 eller 070 - 646 11 30
 - [STF Storliens Fjällgård][3] tel. 0647 - 700 58
 
+<!--
 #### Arrangör
-Föreningen Ånnsjöns fågelstation (FÅF) i samarbete med [Länsstyrelsen][4] och [Studiefrämjandet][5].
+Föreningen Ånnsjöns fågelstation (FÅF) i samarbete med [Studiefrämjandet][5].
+-->
 
 [1]: <http://www.enaforsholm.se/>
 [2]: <mailto:fam.jamting@hotmail.com>
 [3]: <http://www.storliensfjallgard.se/>
 [4]: <http://www.lansstyrelsen.se/>
 [5]: <http://www.studieframjandet.se/>
+[6]: <http://campann.se/>

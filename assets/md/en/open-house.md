@@ -28,15 +28,19 @@ For questions and reservations, please contact Thomas Holmberg 0730583630 during
 
 Since the Great Snipe tour is taking place at night it may be a good idea to arrange with accommodation. We suggest the following:
 
-- [Enaforsholm Fjällgård][1], tel. 0647 - 730 26
+- [Camp Ånn][6], tel. 070-209 02 31
+- [Enaforsholm Fjällgård][1], tel. 0647 - 730 26 or 070 - 527 30 26
 - Jämtåsen, [fam.jamting@hotmail.com][2] tel. 0647 - 710 94 or 070 - 646 11 30
 - [STF Storliens Fjällgård][3] tel. 0647 - 700 58
 
+<!--
 #### Organizer
 Lake Ånnsjön Bird Observatory in cooperation with [Jämtland&nbsp;County&nbsp;Administrative&nbsp;Board][4] and [Studiefrämjandet][5].
+-->
 
 [1]: <http://www.enaforsholm.se/>
 [2]: <mailto:fam.jamting@hotmail.com>
 [3]: <http://www.storliensfjallgard.se/>
 [4]: <http://www.lansstyrelsen.se/jamtland/en/Pages/default.aspx>
 [5]: <http://www.studieframjandet.se/>
+[6]: <http://campann.se/>
