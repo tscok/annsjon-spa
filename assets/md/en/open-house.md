@@ -21,14 +21,14 @@ Please make reservations to our staff at the observatory. The supper is followed
 **Guided Great Snipe tour**
 The playing Great Snipe is by far the greatest bird attraction from an international point of view. It is truely an extraordinary experience! Take the chance to be guided to the best outlook in the lek. A worthy finish to a grand day!
 
-For questions and reservations, please contact Thomas Holmberg 0730583630 during the day. We gather at 10 pm on the parking lot of Enaforsholms fjällgård for a collective departure towards the lek.
+For questions and reservations, please contact Thomas Holmberg 073 - 058 36 30 during the day. We gather at 10 pm on the parking lot of Enaforsholms fjällgård for a collective departure towards the lek.
 
 
 #### Lodging
 
 Since the Great Snipe tour is taking place at night it may be a good idea to arrange with accommodation. We suggest the following:
 
-- [Camp Ånn][6], tel. 070-209 02 31
+- [Camp Ånn][6], tel. 070 - 209 02 31
 - [Enaforsholm Fjällgård][1], tel. 0647 - 730 26 or 070 - 527 30 26
 - Jämtåsen, [fam.jamting@hotmail.com][2] tel. 0647 - 710 94 or 070 - 646 11 30
 - [STF Storliens Fjällgård][3] tel. 0647 - 700 58

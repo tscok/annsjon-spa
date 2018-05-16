@@ -21,14 +21,14 @@ Middag för de som önskar på Enaforsholm. Föranmälan under dagen till fågel
 **Nattexkursion till dubbelbeckasinspel**
 Den överlägset största fågelattraktionen i ett internationellt perspektiv är de spelande dubbelbeckasinerna. Det hör till det märkligste man kan uppleva i fågelväg. Missa inte tillfället att bli guidad till rätt utkikspunkt! En värdig avslutning på en innehållsrik dag.
 
-Föranmälningar och upplysningar, Thomas Holmberg 0730583630. Vi samlas på parkeringen vid Enaforsholm kl. 22 för gemensam avfärd mot dubbelbeckasinleken.
+Föranmälningar och upplysningar, Thomas Holmberg 073 - 058 36 30. Vi samlas på parkeringen vid Enaforsholm kl. 22 för gemensam avfärd mot dubbelbeckasinleken.
 
 
 #### Övernattning
 
 Eftersom dubbelbeckasinspelet sker nattetid kan det var en god idé att ordna med övernattning. Vi kan tipsa om följande:
 
-- [Camp Ånn][6], tel. 070-209 02 31
+- [Camp Ånn][6], tel. 070 - 209 02 31
 - [Enaforsholm Fjällgård][1], tel. 0647 - 730 26 eller 070 - 527 30 26
 - Jämtåsen, [fam.jamting@hotmail.com][2] tel. 0647 - 710 94 eller 070 - 646 11 30
 - [STF Storliens Fjällgård][3] tel. 0647 - 700 58
