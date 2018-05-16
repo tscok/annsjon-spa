@@ -13,6 +13,18 @@ import './google-map'
             <h5 class="hero__body"><raw content={ getText('hero_body') }/></h5>
         </div>
     </section>
+    <section class={ openHouse() }>
+        <div class="container">
+            <h6 class={ openHouse('header') }>{ getText('openhouse_header') }</h6>
+            <div class={ openHouse('main') }>
+                <h5 class={ openHouse('title') }>{ getText('openhouse_title') }</h5>
+                <p class={ openHouse('body') }>{ getText('openhouse_body') }</p>
+            </div>
+            <div class={ openHouse('actions') }>
+                <a href="#open-house" class="button button-primary"><raw content={ getText('read-more') }/></a>
+            </div>
+        </div>
+    </section>
     <section class={ projects() }>
         <div class="container">
             <h6 class={ projects('header') }>{ getText('projects_header') }</h6>
@@ -95,6 +107,7 @@ import './google-map'
     <script>
         this.projects = purebem.of('projects')
         this.location = purebem.of('location')
+        this.openHouse = purebem.of('open-house')
         this.language = Cookies.get('language')
 
         this.getText = function(key) { return key }
