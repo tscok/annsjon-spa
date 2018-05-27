@@ -11,7 +11,11 @@ Utgångspunkt Ånns station. Följ markerade leder. Kom när det passar Dig! Vi 
 
 *14.00 - 18.00*
 **Öppet hus på fågelstationen i Handöl**
-Välkommen att besöka fågelstationen och prata fåglar och få veta mer om verksamheten. Tipsrunda. Fika
+Välkommen att besöka fågelstationen för att prata om fåglar, verksamheten i området eller gå vår tipsrunda. Vi bjuder på fika.
+
+*16.00*
+**Årsmöte**
+Styrelsen i föreningen håller årsmöte. Medlemmar i föreningen och allmänheten är välkomna att att delta.
 
 *19.00*
 **Middag på Enaforsholms fjällgård**

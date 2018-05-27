@@ -63,22 +63,22 @@ module.exports = {
         en: 'Annual Meeting'
     },
     'annual-meeting_title': {
-        se: 'Välkommen att delta vid årets årsmöte',
-        en: 'Join in on our annual meeting'
+        se: 'Kallelse till årsmöte',
+        en: 'Notice of Annual Meeting'
     },
     'annual-meeting_body': {
-        se: 'Styrelsen anordnar årsmöte i Handöl lördagen den 22 oktober kl 15-16. Medlemmar i föreningen och allmänheten är välkomna att delta.',
-        en: 'The Board of Lake Ånnsjön Bird Observatory invites members and the public community to our annual meeting in Handöl October 22nd at 3 pm.'
+        se: 'Lördagen den 2 juni, kl 16.00, anordnar styrelsen i Föreningen Ånnsjöns Fågelstation årsmöte i Handöl. Medlemmar i föreningen och allmänheten välkomnas att delta.',
+        en: 'The Board of Lake Ånnsjön Bird Observatory invites members and the public community to our Annual General Meeting in Handöl, June 2nd 2018 at 4 pm.'
     },
 
     // Open House
     'openhouse_header': {
-        se: 'Öppet Hus - 2 juni',
-        en: 'Open House - June 2'
+        se: 'Öppet Hus',
+        en: 'Open House'
     },
     'openhouse_title': {
-        se: 'Välkommen till Ånnsjödagen 2018!',
-        en: 'Welcome to Lake Ånnsjön Day 2018!'
+        se: 'Ånnsjödagen, 2 juni 2018',
+        en: 'Lake Ånnsjön Day, June 2nd 2018'
     },
     'openhouse_body': {
         se: 'Ta med dina vänner till Ånnsjön när fågellivet är som mest sprudlande. Vi hjälper till med artbestämningen vid Ånnsjöns fågeltorn och gömslen under morgontimmarna, bjuder på bildvisning under kvällen och guidar er till en dubbelbeckasinlek vid midnatt.',

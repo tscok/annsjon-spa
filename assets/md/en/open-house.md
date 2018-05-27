@@ -13,6 +13,10 @@ Come when it suits you! Start at the train station in Ånn, then follow the boar
 **Open House at the observatory in Handöl**
 Feel free to visit the observatory to talk about birds, our activities in the area or do the quiz walk. Tea/coffee on the house.
 
+*4 pm*
+**Annual General Meeting**
+Members of our organisation and the public community are welcome to attend our Annual General Meeting.
+
 *7 pm*
 **Supper at Enaforsholms fjällgård**
 Please make reservations to our staff at the observatory. The supper is followed by a slideshow, summary of the observations of the day and awards to the quiz walk winners.
