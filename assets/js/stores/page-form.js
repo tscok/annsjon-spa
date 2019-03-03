@@ -7,15 +7,17 @@ function PageForm() {
         xhr.open('POST', 'service.php', true);
 
         this.trigger('FORM_APPLICATION_LOADING');
+
+        const self = this
         
-        xhr.onload = function(e) {
-            if (e.target.status == 200) {
-                const name = e.target.responseText
-                this.trigger('FORM_APPLICATION_SUCCESS', name ? name : '');
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                const name = xhr.responseText;
+                self.trigger('FORM_APPLICATION_SUCCESS', name ? name : '');
             } else {
-                this.trigger('FORM_APPLICATION_FAILURE');
+                self.trigger('FORM_APPLICATION_FAILURE');
             }
-        };
+        }
 
         xhr.send(formData);
     }
