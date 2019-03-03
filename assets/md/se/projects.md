@@ -30,11 +30,11 @@ Sedan starten 1988 har vi bedrivit standardiserad ringmärkning av tättingar i 
 
 Femton fjällrutter i området Ånnsjön-Storlien inventeras årligen med linjetaxerings&shy;metodik. Syftet är att följa populationsutvecklingen hos fågelarter inom videbältet och kalfjällsregionen, i första hand arter med sin utbredning begränsad till denna region, tex alfågel, fjällpipare, skärsnäppa, kärrsnäppa, fjällabb, fjällripa, dalripa, fjällvråk, korp, stenskvätta, snösparv, lappsparv, och ringtrast. Att inventera fjällrutter är mycket enkelt, bara man kan läsa kartan!
 
-- [Ruttbeskrivning][fjr1] (pdf)
+- [Ruttkartor][fjr1] (pdf)
 - [Metodbeskrivning][fjr2] (pdf)
 
-[fjr1]: </file/projects/fjallrutter-beskrivning.pdf>
-[fjr2]: </file/projects/fjallrutter-metod.pdf>
+[fjr1]: </file/projects/fjallrutter-kartor.pdf>
+[fjr2]: </file/projects/fjallrutter-metodbeskrivning.pdf>
 
 - - -
 
