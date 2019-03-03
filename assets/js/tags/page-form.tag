@@ -1,7 +1,7 @@
 require('./raw')
 
 <page-form>
-    <form name="application" class="page-form__application" onsubmit={ onSubmit } show={ showForm }>
+    <form ref="application" class="page-form__application" show={ showForm }>
         <div class="row">
             <div class="six columns">
                 <label>{ getText('first-name') }*</label>
@@ -72,7 +72,7 @@ require('./raw')
         <hr>
         <p class="page-form__mandatory"><raw content={ getText('volunteer_mandatory') }/></p>
         <p if={ isUndelivered }><raw content={ getText('volunteer_undelivered') }/></p>
-        <button type="submit" name="submit" class="button-primary" disabled={ isSubmitting }>{ getText('volunteer_submit') }</button>
+        <button type="button" ref="submit" class="button-primary" onClick={ onSubmit } disabled={ isSubmitting }>{ getText('volunteer_submit') }</button>
     </form>
     <div class="page-form__thank-you" show={ showThanks }>
         <h4 class="page-form__tahnk-you--title">{ getText('thank-you') }<span if={ applyee }>, { applyee }</span>!</h4>
@@ -100,7 +100,7 @@ require('./raw')
         this.nationalities = nationality
 
         this.formIsComplete = function() {
-            const input = serialize(this.application, { hash: true })
+            const input = serialize(self.refs.application, { hash: true })
             const required = ['fname','lname','gender','birth','about','timeframe','email','nationality']
             const isNotEmpty = function(label) {
                 return input[label] && input[label].trim() !== '';
@@ -109,28 +109,28 @@ require('./raw')
         }
 
         this.onSubmit = function() {
-            if (!this.formIsComplete()) {
+            if (!self.formIsComplete()) {
                 return;
             }
-            RiotControl.trigger('FORM_APPLICATION', this.application)
+            RiotControl.trigger('FORM_APPLICATION', self.refs.application)
         }
 
         this.onReset = function() {
-            this.application.reset()
+            self.refs.application.reset()
         }
 
         this.handleLoading = function() {
-            this.submit.innerHTML = getText('volunteer_submitting')
+            self.refs.submit.innerHTML = self.getText('volunteer_submitting')
             self.update({ isUndelivered: false, isSubmitting: true })
         }
 
         this.handleFailure = function() {
-            this.submit.innerHTML = getText('volunteer_submit')
+            self.refs.submit.innerHTML = self.getText('volunteer_submit')
             self.update({ isUndelivered: true, isSubmitting: false })
         }
 
         this.handleSuccess = function(name) {
-            this.onReset()
+            self.onReset()
             self.update({ showForm: false, showThanks: true, applyee: name })
         }
 
