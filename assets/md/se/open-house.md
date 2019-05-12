@@ -1,4 +1,4 @@
-### Ånnsjödagen - 2 juni 2018
+### Ånnsjödagen - 1 juni 2019
 
 Ta med dina vänner till Ånnsjön när fågellivet är som mest sprudlande. Vi hjälper till med artbestämningen vid Ånnsjöns fågeltorn och gömslen under morgontimmarna, bjuder på bildvisning under kvällen och guidar er till en dubbelbeckasinlek vid midnatt.
 
@@ -7,25 +7,25 @@ Ta med dina vänner till Ånnsjön när fågellivet är som mest sprudlande. Vi 
 
 *07.00 – 11.00*
 **Fågelskådning i Ånn**
-Utgångspunkt Ånns station. Följ markerade leder. Kom när det passar Dig! Vi har guider i tornen som kan informera och hjälpa till med artbestämning av fåglarna.
+Utgångspunkt Ånns station. Följ markerade leder. Kom när det passar Dig! Vi har guider i tornen som kan informera och hjälpa till med artbestämning av fåglarna. Det finns även guider på fågelstationens tak, som har en utkiksplattform.
+
+*13.00 - 14.00*
+**Årsmöte**
+Styrelsen i föreningen håller årsmöte. Medlemmar i föreningen och allmänheten är välkomna att att delta.
 
 *14.00 - 18.00*
 **Öppet hus på fågelstationen i Handöl**
 Välkommen att besöka fågelstationen för att prata om fåglar, verksamheten i området eller gå vår tipsrunda. Vi bjuder på fika.
 
-*16.00*
-**Årsmöte**
-Styrelsen i föreningen håller årsmöte. Medlemmar i föreningen och allmänheten är välkomna att att delta.
-
-*19.00*
+*18.00*
 **Middag på Enaforsholms fjällgård**
-Middag för de som önskar på Enaforsholm. Föranmälan under dagen till fågelstationen. Efter middagen bildvisning.
+Middag för de som önskar på Enaforsholm. Priset är 150 kr/person (135 kr för medlemmar i föreningen). Föranmälan under dagen till fågelstationens personal eller på tel 070 - 528 40 21. Efter middagen bildvisning och genomgång av tipsrundan.
 
-*22.00 – ca 01.30*
+*22.00 – 01.00*
 **Nattexkursion till dubbelbeckasinspel**
 Den överlägset största fågelattraktionen i ett internationellt perspektiv är de spelande dubbelbeckasinerna. Det hör till det märkligste man kan uppleva i fågelväg. Missa inte tillfället att bli guidad till rätt utkikspunkt! En värdig avslutning på en innehållsrik dag.
 
-Föranmälningar och upplysningar, Thomas Holmberg 073 - 058 36 30. Vi samlas på parkeringen vid Enaforsholm kl. 22 för gemensam avfärd mot dubbelbeckasinleken.
+Föranmälningar och upplysningar, Thomas Holmberg 073 - 058 36 30. Vi samlas på parkeringen vid Enaforsholm kl. 22 för gemensam avfärd mot dubbelbeckasinleken. Spelplatsen är belägen ca 2,5 kilometer upp på fjället, så ta på vandringskängorna!
 
 
 #### Övernattning

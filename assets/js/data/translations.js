@@ -77,8 +77,8 @@ module.exports = {
         en: 'Open House'
     },
     'openhouse_title': {
-        se: 'Ånnsjödagen, 2 juni 2018',
-        en: 'Lake Ånnsjön Day, June 2nd 2018'
+        se: 'Ånnsjödagen, 1 juni 2019',
+        en: 'Lake Ånnsjön Day, June 1st 2019'
     },
     'openhouse_body': {
         se: 'Ta med dina vänner till Ånnsjön när fågellivet är som mest sprudlande. Vi hjälper till med artbestämningen vid Ånnsjöns fågeltorn och gömslen under morgontimmarna, bjuder på bildvisning under kvällen och guidar er till en dubbelbeckasinlek vid midnatt.',
