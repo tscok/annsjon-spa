@@ -29,6 +29,15 @@ import './google-map'
             </div>
         </div>
     </section>
+    <section class={ annualMeeting() }>
+        <div class="container">
+            <h6 class={ annualMeeting('header') }>{ getText('annual-meeting_header') }</h6>
+            <div class={ annualMeeting('main') }>
+                <h5 class={ annualMeeting('title') }>{ getText('annual-meeting_title') }</h5>
+                <p class={ annualMeeting('body') }><raw content={ getText('annual-meeting_body') }/></p>
+            </div>
+        </div>
+    </section>
     <section class={ projects() }>
         <div class="container">
             <h6 class={ projects('header') }>{ getText('projects_header') }</h6>
@@ -109,6 +118,7 @@ import './google-map'
     
 
     <script>
+        this.annualMeeting = purebem.of('annual-meeting')
         this.projects = purebem.of('projects')
         this.location = purebem.of('location')
         this.openhouse = purebem.of('open-house')

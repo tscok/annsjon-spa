@@ -60,15 +60,15 @@ module.exports = {
     // Annual Meeting
     'annual-meeting_header': {
         se: 'Årsmöte',
-        en: 'Annual Meeting'
+        en: 'Annual General Meeting'
     },
     'annual-meeting_title': {
         se: 'Kallelse till årsmöte',
-        en: 'Notice of Annual Meeting'
+        en: 'Notice of Annual General Meeting'
     },
     'annual-meeting_body': {
-        se: 'Lördagen den 2 juni, kl 16.00, anordnar styrelsen i Föreningen Ånnsjöns Fågelstation årsmöte i Handöl. Medlemmar i föreningen och allmänheten välkomnas att delta.',
-        en: 'The Board of Lake Ånnsjön Bird Observatory invites members and the public community to our Annual General Meeting in Handöl, June 2nd 2018 at 4 pm.'
+        se: 'Lördagen den 1 juni, kl 13.00, anordnar styrelsen i Föreningen Ånnsjöns Fågelstation årsmöte i Handöl. Medlemmar i föreningen och allmänheten välkomnas att delta.',
+        en: 'The Board of Lake Ånnsjön Bird Observatory invites members and the public community to our Annual General Meeting in Handöl, June 1st 2019 at 1 pm.'
     },
 
     // Open House
