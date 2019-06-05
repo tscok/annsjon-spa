@@ -1,8 +1,8 @@
 ### Handöl
 
-Handöl ligger strax väster om Ånnsjön och skiljs från sjön genom Enans och Handölans gemensamma deltaområde. Parkera vid Pensionat Handöl eller på fågelstationens parkering och gå cirka 50 meter till fågeltornet vid Lomtjärnsmyren.
+Handöl ligger strax väster om Ånnsjön och skiljs från sjön genom Enans och Handölans gemensamma deltaområde. Parkera vid f.d. Pensionat Handöl eller vid Ånnsjöns fågelstation, basen för de fortlöpande vetenskapliga undersökningarna av fågellivet i området.
 
-Tornet syns inte från parkeringen. Tubkikare är bra att ha här. Fåglarna är ungefär desamma som i Ånn. Bara något trettiotal meter från fågeltornet ligger Ånnsjöns fågelstation, basen för de fortlöpande vetenskapliga undersökningarna av fågellivet i området. Här finns en informationslokal som är öppen när stationen är bemannad. Stationen är normalt bemannad från början av juni till slutet av augusti.
+Stationsbyggnaden, vid kanten av Lomtjärnsmyren, är försedd med en plattform på taket som är tillgänglig för allmänheten. Tubkikare är bra att ha här. Fåglarna är ungefär desamma som i Ånn. Här finns även en informationslokal som är öppen när stationen är bemannad, normalt sett från början av juni till slutet av augusti.
 
 <figure>![Bergfink](../../images/bergfink_steve-dahlfors.jpg)<figcaption><span class="description">Bergfink / Fringilla montifringilla.</span><span class="owner">Foto:&nbsp;Steve&nbsp;Dahlfors</span></figcaption></figure>
 
