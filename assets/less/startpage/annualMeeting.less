@@ -7,9 +7,32 @@
         .section-header;
     }
 
-    &__main {
+    &__main,
+    &__actions {
         width: 80%;
         margin: 0 auto;
         text-align: center;
+    }
+
+    &__actions {
+        margin-top: 6rem;
+
+        .button {
+            display: block;
+            max-width: 165px;
+            margin: 0 auto 10px;
+        }
+
+        @media screen and (min-width: @responsive-size-tablet) {
+            .button {
+                display: inline-block;
+                max-width: auto;
+                margin: 0;
+
+                &:first-of-type {
+                    margin-right: 10px;
+                }
+            }
+        }
     }
 }
