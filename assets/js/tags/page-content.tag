@@ -1,8 +1,8 @@
+import RiotControl from 'riotcontrol'
+import utils from '../utils'
+
 <page-content>
     <script>
-        import RiotControl from 'riotcontrol'
-        import utils from '../utils'
-
         const self = this
 
         RiotControl.on('SET_PAGE_CONTENT', function(content) {

@@ -1,3 +1,10 @@
+import RiotControl from 'riotcontrol'
+import RiotRoute from 'riot-route'
+
+import mygettext from '../data/mygettext'
+import nationality from '../data/nationality'
+import serialize from 'form-serialize'
+
 require('./raw')
 
 <page-form>
@@ -80,12 +87,6 @@ require('./raw')
     </div>
 
     <script>
-        import RiotControl from 'riotcontrol'
-        import RiotRoute from 'riot-route'
-
-        const mygettext = require('../data/mygettext')
-        const nationality = require('../data/nationality');
-        const serialize = require('form-serialize');
         const subRoute = RiotRoute.create()
 
         const self = this

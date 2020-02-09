@@ -1,3 +1,6 @@
+import RiotControl from 'riotcontrol'
+import purebem from 'purebem'
+
 <site-header>
     <div class="container">
         <div class="row">
@@ -12,9 +15,6 @@
     </div>
 
     <script>
-        import RiotControl from 'riotcontrol'
-        import purebem from 'purebem'
-
         const self = this
 
         this.menuOpen = false

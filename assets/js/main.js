@@ -10,6 +10,5 @@ import './tags/site-app';
 // RiotJS routing
 import Router from './router';
 
-
 riot.mount('*');
 Router();

@@ -1,7 +1,7 @@
 // Source
 // https://github.com/samsargent/Useful-Autocomplete-Data/blob/master/data/nationalities.json
 
-module.exports = [
+const nationalities = [
    "Afghan",
    "Albanian",
    "Algerian",
@@ -196,3 +196,5 @@ module.exports = [
    "Zambian",
    "Zimbabwean"
 ];
+
+export default nationalities

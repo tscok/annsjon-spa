@@ -1,3 +1,6 @@
+import RiotControl from 'riotcontrol'
+import utils from '../utils'
+
 import './layout-index.tag'
 import './layout-page.tag'
 import './site-footer.tag'
@@ -12,9 +15,6 @@ import './site-header.tag'
     <footer data-is="site-footer" class="site-footer" />
 
     <script>
-        import RiotControl from 'riotcontrol'
-        import utils from '../utils'
-
         const self = this
 
         RiotControl.on('ROUTE', function(route) {

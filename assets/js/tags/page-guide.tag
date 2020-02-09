@@ -1,3 +1,7 @@
+import purebem from 'purebem'
+import RiotControl from 'riotcontrol'
+import RiotRoute from 'riot-route'
+
 <page-guide>
     <div class={ block() } show={ isVisible }>
         <h4>Våra guider</h4>
@@ -7,10 +11,6 @@
     </div>
 
     <script>
-        import purebem from 'purebem'
-        import RiotControl from 'riotcontrol'
-        import RiotRoute from 'riot-route'
-
         const self = this
         
         const links = [

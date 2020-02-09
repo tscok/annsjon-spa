@@ -25,4 +25,4 @@ function PageForm() {
     this.on('FORM_APPLICATION', this.sendApplication);
 }
 
-module.exports = PageForm;
+export default PageForm

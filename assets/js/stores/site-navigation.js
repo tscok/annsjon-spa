@@ -45,4 +45,4 @@ function SiteNavigation(args) {
     })
 }
 
-module.exports = SiteNavigation;
+export default SiteNavigation

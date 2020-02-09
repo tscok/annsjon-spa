@@ -1,3 +1,7 @@
+import RiotControl from 'riotcontrol'
+import purebem from 'purebem'
+import mygettext from '../data/mygettext'
+
 <site-footer>
     <div class="container">
         <div class="row">
@@ -16,12 +20,9 @@
     </div>
 
     <script>
-        import RiotControl from 'riotcontrol'
-        import purebem from 'purebem'
-
         const self = this
 
-        this.getText = require('../data/mygettext')
+        this.getText = mygettext
 
         this.block = purebem.of('site-footer')
 
