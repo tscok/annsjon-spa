@@ -13,12 +13,15 @@
     "url": "git+https://github.com/tscok/annsjon-spa.git"
   },
   "dependencies": {
-    "form-serialize": "^0.7.0"
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "form-serialize": "^0.7.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-es2015-riot": "^1.1.0",
     "css-loader": "^0.28.7",
     "file-loader": "^0.11.2",
     "form-serialize": "^0.7.2",

@@ -77,4 +77,4 @@ function PageContent() {
     });
 }
 
-module.exports = PageContent;
+export default PageContent

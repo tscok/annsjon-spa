@@ -13,4 +13,4 @@ function Stores() {
     RiotControl.addStore(new PageForm());
 };
 
-module.exports = Stores();
+export default Stores()

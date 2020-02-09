@@ -22,4 +22,4 @@ function SiteLanguage() {
     this.on('SET_SITE_LANGUAGE', this.setCookie);
 };
 
-module.exports = SiteLanguage;
+export default SiteLanguage

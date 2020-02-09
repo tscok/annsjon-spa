@@ -1,4 +1,4 @@
-module.exports = {
+const translations = {
     // Title
     'site_title': {
         se: 'Ånnsjöns fågelstation',
@@ -271,3 +271,5 @@ module.exports = {
         en: 'Explore the area with '
     },
 };
+
+export default translations

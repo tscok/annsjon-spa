@@ -1,11 +1,11 @@
+import RiotControl from 'riotcontrol'
+
 <page-map>
     <div class="page-map">
         <div id="mapCanvas" ref="mapCanvas" show={ showMap }></div>
     </div>
 
     <script>
-        import RiotControl from 'riotcontrol'
-
         const self = this
 
         const hogasen = new google.maps.LatLng(63.307583, 12.375260)

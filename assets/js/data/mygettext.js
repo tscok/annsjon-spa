@@ -11,4 +11,4 @@ function MyGetText(key) {
     return key;
 }
 
-module.exports = MyGetText;
+export default MyGetText
