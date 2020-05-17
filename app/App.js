@@ -1,8 +1,8 @@
 import React, { Fragment, useState } from 'react'
 import RiotControl from 'riotcontrol'
 
-import SiteFooter from './SiteFooter'
-import SiteHeader from './SiteHeader'
+import Footer from './site/Footer'
+import Header from './site/Header'
 import StartPage from './start-page/StartPage'
 
 import utils from '../assets/js/utils'
@@ -21,11 +21,11 @@ const App = ({ children }) => {
   return (
     <Fragment>
       <div className="site">
-        <SiteHeader />
+        <Header />
         {isStartPage && <StartPage language={language} />}
         {children}
       </div>
-      <SiteFooter />
+      <Footer />
     </Fragment>
   )
 }

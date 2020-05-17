@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import RiotControl from 'riotcontrol'
 import purebem from 'purebem'
 
-import getText from '../assets/js/data/mygettext'
+import getText from '../../assets/js/data/mygettext'
 
 const block = purebem.of('site-footer')
 
