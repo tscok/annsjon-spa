@@ -13,7 +13,7 @@ import Router from './assets/js/router'
 import React from 'react'
 import { render } from 'react-dom'
 
-import App from './components/App'
+import App from './app/App'
 
 const spaRoot = document.getElementById('spa-root')
 
