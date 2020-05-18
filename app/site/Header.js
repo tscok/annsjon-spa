@@ -1,16 +1,20 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import RiotControl from 'riotcontrol'
 import RiotRoute from 'riot-route'
 import purebem from 'purebem'
 
+import LanguageContext from './LanguageContext'
+import { getHeaderLinks } from './Links'
+
 const block = purebem.of('site-header')
 
 const SiteHeader = () => {
+  const { language } = useContext(LanguageContext)
+
   const [isExpaned, setExpanded] = useState(false)
-  const [links, setLinks] = useState([])
   const [route, setRoute] = useState('')
 
-  const onToggleExpanded = () => setExpanded(state => !state)
+  const onToggleExpanded = () => setExpanded((state) => !state)
 
   const onReroute = (event, href) => {
     event.preventDefault()
@@ -18,12 +22,10 @@ const SiteHeader = () => {
     setExpanded(false)
   }
 
-  RiotControl.on('ROUTE', newRoute => {
+  RiotControl.on('ROUTE', (newRoute) => {
     setRoute(newRoute)
     setExpanded(false)
   })
-
-  RiotControl.on('SITE_NAVIGATION_HEADER', setLinks)
 
   return (
     <header className={block()}>
@@ -37,12 +39,12 @@ const SiteHeader = () => {
           </div>
         </div>
         <nav className={block('menu', { open: isExpaned })}>
-          {links.map(({ href, label }) => (
+          {getHeaderLinks(language).map(({ href, label }) => (
             <a
               key={href}
               className={block('link', { active: href === route })}
               href={`#${href}`}
-              onClick={event => onReroute(event, href)}
+              onClick={(event) => onReroute(event, href)}
             >
               {label}
             </a>
