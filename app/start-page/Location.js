@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 import purebem from 'purebem'
 
 import LocationMap from './LocationMap'

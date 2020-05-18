@@ -1,19 +1,20 @@
-import React, { useState } from 'react'
-import RiotControl from 'riotcontrol'
+import React, { useContext } from 'react'
 import purebem from 'purebem'
 
 import getText from '../../assets/js/data/mygettext'
+import LanguageContext from './LanguageContext'
+import { getFooterLinks } from './Links'
 
 const block = purebem.of('site-footer')
 
+const LanguageLink = ({ label, onClick }) => (
+  <a href="#" className={block('misc-link', ['separator'])} onClick={onClick}>
+    {label}
+  </a>
+)
+
 const SiteFooter = () => {
-  const [links, setLinks] = useState([])
-  const [language, setLanguage] = useState('')
-
-  const changeLanguage = () => RiotControl.trigger('SET_SITE_LANGUAGE')
-
-  RiotControl.on('SITE_NAVIGATION_FOOTER', setLinks)
-  RiotControl.on('SITE_LANGUAGE', setLanguage)
+  const { language, changeLanguage } = useContext(LanguageContext)
 
   return (
     <footer className={block()}>
@@ -23,7 +24,7 @@ const SiteFooter = () => {
             {getText('site_title')}
           </a>
           <nav className={block('links')}>
-            {links.map(({ href, label }) => (
+            {getFooterLinks(language).map(({ href, label }) => (
               <a key={href} className={block('link')} href={`#${href}`}>
                 {label}
               </a>
@@ -32,9 +33,11 @@ const SiteFooter = () => {
         </div>
         <div className="row">
           <p className={block('misc')}>
-            <a href="#" className={block('misc-link', ['separator'])} onClick={changeLanguage}>
-              {getText('language')}
-            </a>
+            {language === 'en' ? (
+              <LanguageLink label="Svenska" onClick={() => changeLanguage('se')} />
+            ) : (
+              <LanguageLink label="English" onClick={() => changeLanguage('en')} />
+            )}
             <a href="#cookies" className={block('misc-link')}>
               Cookies
             </a>

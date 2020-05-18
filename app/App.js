@@ -3,30 +3,30 @@ import RiotControl from 'riotcontrol'
 
 import Footer from './site/Footer'
 import Header from './site/Header'
+import { LanguageProvider } from './site/LanguageContext'
 import StartPage from './start-page/StartPage'
 
 import utils from '../assets/js/utils'
 
 const App = ({ children }) => {
   const [isStartPage, setStartPage] = useState(true)
-  const [language, setLanguage] = useState('')
 
-  RiotControl.on('ROUTE', route => setStartPage(route === ''))
-
-  RiotControl.on('SITE_LANGUAGE', lang => {
-    setLanguage(lang)
+  RiotControl.on('ROUTE', (route) => {
+    setStartPage(route === '')
     utils.scrollUp()
   })
 
   return (
-    <Fragment>
-      <div className="site">
-        <Header />
-        {isStartPage && <StartPage language={language} />}
-        {children}
-      </div>
-      <Footer />
-    </Fragment>
+    <LanguageProvider>
+      <Fragment>
+        <div className="site">
+          <Header />
+          {isStartPage && <StartPage />}
+          {children}
+        </div>
+        <Footer />
+      </Fragment>
+    </LanguageProvider>
   )
 }
 
