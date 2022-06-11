@@ -1,33 +1,26 @@
-import React, { Fragment, useState } from 'react'
-import RiotControl from 'riotcontrol'
+import React from 'react'
+import { Router } from 'react-router-dom'
+import { createBrowserHistory } from 'history'
 
-import Footer from './site/Footer'
-import Header from './site/Header'
+import AppRouter from './AppRouter'
+import SiteFooter from './site/SiteFooter'
+import SiteHeader from './site/SiteHeader'
+import GlobalStyles from './site/GlobalStyles'
 import { LanguageProvider } from './site/LanguageContext'
-import StartPage from './start-page/StartPage'
 
-import utils from '../assets/js/utils'
+const history = createBrowserHistory()
 
-const App = ({ children }) => {
-  const [isStartPage, setStartPage] = useState(true)
-
-  RiotControl.on('ROUTE', (route) => {
-    setStartPage(route === '')
-    utils.scrollUp()
-  })
-
-  return (
-    <LanguageProvider>
-      <Fragment>
-        <div className="site">
-          <Header />
-          {isStartPage && <StartPage />}
-          {children}
-        </div>
-        <Footer />
-      </Fragment>
-    </LanguageProvider>
-  )
-}
+const App = (props) => (
+  <LanguageProvider>
+    <GlobalStyles />
+    <Router history={history}>
+      <SiteHeader />
+      <main>
+        <AppRouter {...props} />
+      </main>
+      <SiteFooter />
+    </Router>
+  </LanguageProvider>
+)
 
 export default App
