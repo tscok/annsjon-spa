@@ -60,7 +60,8 @@ const layout = css`
 `
 
 const section = css`
-  background-image: url('/app/assets/IMG_20171007_141541.jpg');
+  background-color: lightsteelblue;
+  // background-image: url('/app/assets/IMG_20171007_141541.jpg');
   background-size: auto;
   background-position: 38% 18%;
   background-repeat: no-repeat;
