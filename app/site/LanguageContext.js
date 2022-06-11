@@ -1,5 +1,4 @@
-import Cookies from 'js-cookie'
-import React, { createContext, useEffect, useState } from 'react'
+import React, { createContext, useCallback, useEffect, useState } from 'react'
 
 const LANGUAGES = {
   EN: 'en',
@@ -13,19 +12,33 @@ const LanguageContext = createContext({
   setLanguage: () => {},
 })
 
-const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState(Cookies.get('language'))
+function useLocalStorage(key) {
+  const get = () => window.localStorage.getItem(key)
+  const set = (value) => window.localStorage.setItem(key, value)
+  return [get, set]
+}
 
-  const updateLanguage = (code) => {
-    setLanguage(code)
-    Cookies.set('language', code, { expires: 365 })
-  }
+const LanguageProvider = ({ children }) => {
+  const [getStored, setStored] = useLocalStorage('language')
+  const [language, setLanguage] = useState(getStored())
+
+  const updateLanguage = useCallback(
+    (newLanguage = LANGUAGES.SE) => {
+      setStored(newLanguage)
+      setLanguage(newLanguage)
+    },
+    [setStored, setLanguage],
+  )
 
   useEffect(() => {
     if (!language) {
-      updateLanguage(LANGUAGES.SE)
+      updateLanguage()
     }
-  })
+  }, [language, updateLanguage])
+
+  if (!language) {
+    return null
+  }
 
   return (
     <LanguageContext.Provider
