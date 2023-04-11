@@ -3,8 +3,15 @@ import React, { Fragment } from 'react'
 import Email from 'app/components/Email'
 import Label from 'app/components/Label'
 
-import { LARS, MIKAEL, PETER, ULLA } from 'app/utils/contacts'
+import { LARS, MIKAEL, THOMAS, ULLA } from 'app/utils/contacts'
 import useText from 'app/utils/useText'
+
+const BoardMember = ({ email, name, role }) => (
+  <p>
+    <Label>{role}</Label>
+    {name}, <Email to={email} />
+  </p>
+)
 
 const BoardMembers = () => {
   const getText = useText()
@@ -12,14 +19,12 @@ const BoardMembers = () => {
   return (
     <Fragment>
       <h4>{getText('roles_title')}</h4>
-      {[PETER, LARS, ULLA, MIKAEL].map(({ email, name, role }) => (
-        <p key={role}>
-          <Label>{getText(`roles_${role}`)}</Label>
-          {name}, <Email to={email} />
-        </p>
-      ))}
+      <BoardMember email={THOMAS.email} name={THOMAS.name} role={getText(`roles_${THOMAS.role}`)} />
+      <BoardMember email={LARS.email} name={LARS.name} role={getText(`roles_${LARS.role}`)} />
+      <BoardMember email={ULLA.email} name={ULLA.name} role={getText(`roles_${ULLA.role}`)} />
+      <BoardMember email={MIKAEL.email} name={MIKAEL.name} role={getText(`roles_${MIKAEL.role}`)} />
       <p>
-        Thomas&nbsp;Holmberg, Peter&nbsp;Jonsson, Jakob&nbsp;Lindwall,
+        Peter&nbsp;Bahlenberg, Peter&nbsp;Jonsson, Jakob&nbsp;Lindwall,
         Hans&#8209;Gunnar&nbsp;Nilsson, Benny&nbsp;Paulsson, Erik&nbsp;Jonsson
       </p>
     </Fragment>

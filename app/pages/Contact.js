@@ -5,7 +5,7 @@ import Email from '../components/Email'
 import Page from '../components/Page'
 
 import LanguageContext from '../site/LanguageContext'
-import { INFO, LARS, MIKAEL, PETER, ULLA } from '../utils/contacts'
+import { INFO } from '../utils/contacts'
 
 import Address from './contact/Address'
 import BoardMembers from './contact/BoardMembers'

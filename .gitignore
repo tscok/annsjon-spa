@@ -1,6 +1,10 @@
 # ENV variables
 env.js
 
+# Dev
+.yarn
+.yarnrc.yml
+
 # Build
 build
 
