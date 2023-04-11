@@ -1,5 +1,7 @@
 import React, { useContext } from 'react'
 
+import Email from 'app/components/Email'
+import { INFO } from 'app/utils/contacts'
 import DefinitionList, { Definition } from '../components/DefinitionList'
 import Figure from '../components/Figure'
 import Image from '../components/Image'
@@ -78,11 +80,9 @@ const About = () => {
           <Figure caption="Våra tröjor finns även i vinrött och antracit (mörkgrå).">
             <Image source={imageSource} />
           </Figure>
-          <p>
-            Stöd vårt arbete genom att köpa en tröja! Beställning görs genom en inbetalning till Pg
-            85 45 51 -9. Ange ditt namn, adress, önskad storlek och färg. Intäkterna från
-            försäljningen går oavkortat till fågelstationens verksamhet.
-          </p>
+          <h5>Stöd vårt arbete genom att köpa en tröja!</h5>
+          <p>T-shirts kan beställas genom att skicka e-post med adress och önskemål om antal, färg och storlek till <Email to={INFO.email} />. När vi bekräftat din beställning betalar du in summa + frakt till plusgiro 85 45 51-9.</p>
+          <p>Observera att leveranstiden för tröjor ibland kan vara lång, särskilt utanför sommarsäsongen. Intäkterna från försäljningen går oavkortat till fågelstationens verksamhet.</p>
           <DefinitionList columns="150px auto">
             <Definition term="Medlemspris">180 kr vuxenstorlek, 150 kr barnstorlek</Definition>
             <Definition term="Frakt & porto">80 kr/tröja</Definition>

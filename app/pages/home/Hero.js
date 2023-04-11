@@ -1,8 +1,6 @@
 import React from 'react'
 import { css } from '@emotion/core'
 
-import Divider from '../../components/Divider'
-import Heading from '../../components/Heading'
 import PageSection from '../../components/PageSection'
 
 import { media } from '../../site/GlobalStyles'
@@ -13,10 +11,10 @@ const copy = css`
     font-family: sans-serif;
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     letter-spacing: initial;
     line-height: 1;
-    color: #fff;
+    text-align: center;
 
     ${media.small} {
       font-size: 52px;
@@ -30,6 +28,7 @@ const copy = css`
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 0;
+    text-align: center;
 
     ${media.small} {
       font-size: 24px;
@@ -45,27 +44,11 @@ const copy = css`
   }
 `
 
-const layout = css`
-  display: grid;
-  gap: 40px;
-  grid-template-columns: 80% 1fr;
-
-  ${media.small} {
-    grid-template-columns: 70% 1fr;
-  }
-
-  ${media.medium} {
-    grid-template-columns: 5% 60% 1fr;
-  }
-`
-
 const section = css`
-  background-color: lightsteelblue;
-  // background-image: url('/app/assets/IMG_20171007_141541.jpg');
   background-size: auto;
   background-position: 38% 18%;
   background-repeat: no-repeat;
-  padding: 100px 0 60px;
+  padding: 60px 0 40px;
   transition: all 250ms;
 
   ${media.small} {
@@ -84,15 +67,13 @@ const Hero = () => {
 
   return (
     <PageSection styles={section}>
-      <div css={layout}>
-        <div css={copy}>
-          <h1>
-            {getText('hero_title_part1')}
-            <br />
-            {getText('hero_title_part2')}
-          </h1>
-          <h2>{getText('hero_body')}</h2>
-        </div>
+      <div css={copy}>
+        <h1>
+          {getText('hero_title_part1')}
+          {' '}
+          {getText('hero_title_part2')}
+        </h1>
+        <h2>{getText('hero_body')}</h2>
       </div>
     </PageSection>
   )

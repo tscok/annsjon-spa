@@ -4,6 +4,7 @@ const EMAILS = {
   MIKAEL: 'webmaster@annsjon.org',
   PETER: 'peter.bahlenberg@annsjon.org',
   ULLA: 'ulla.falkdalen@annsjon.org',
+  THOMAS: 'thomas.holmberg@annsjon.org',
 }
 
 const NAMES = {
@@ -12,19 +13,21 @@ const NAMES = {
   MIKAEL: 'Mikael Carlsson',
   PETER: 'Peter Bahlenberg',
   ULLA: 'Ulla Falkdalen',
+  THOMAS: 'Thomas Holmberg',
 }
 
 const ROLES = {
-  LARS: 'cashier',
-  MIKAEL: 'webmaster',
-  PETER: 'chairman',
-  ULLA: 'recruiter',
+  CASHIER: 'cashier',
+  CHAIRMAN: 'chairman',
+  RECRUITER: 'recruiter',
+  WEBMASTER: 'webmaster',
 }
 
 export const INFO = { email: EMAILS.INFO, name: NAMES.INFO }
-export const LARS = { email: EMAILS.LARS, name: NAMES.LARS, role: ROLES.LARS }
-export const MIKAEL = { email: EMAILS.MIKAEL, name: NAMES.MIKAEL, role: ROLES.MIKAEL }
-export const PETER = { email: EMAILS.PETER, name: NAMES.PETER, role: ROLES.PETER }
-export const ULLA = { email: EMAILS.ULLA, name: NAMES.ULLA, role: ROLES.ULLA }
+export const LARS = { email: EMAILS.LARS, name: NAMES.LARS, role: ROLES.CASHIER }
+export const MIKAEL = { email: EMAILS.MIKAEL, name: NAMES.MIKAEL, role: ROLES.WEBMASTER }
+export const PETER = { email: EMAILS.PETER, name: NAMES.PETER, role: '' }
+export const ULLA = { email: EMAILS.ULLA, name: NAMES.ULLA, role: ROLES.RECRUITER }
+export const THOMAS = { email: EMAILS.THOMAS, name: NAMES.THOMAS, role: ROLES.CHAIRMAN }
 
-export default { INFO, LARS, MIKAEL, PETER, ULLA }
+export default { INFO, LARS, MIKAEL, PETER, ULLA, THOMAS }
