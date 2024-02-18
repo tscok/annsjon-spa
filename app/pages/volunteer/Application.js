@@ -8,9 +8,11 @@ import ApplicationSent from './ApplicationSent'
 const Application = () => {
   const [error, loading, postRequest, responseText] = useXhr()
 
-  return !error && !loading && responseText ? (
-    <ApplicationSent applicant={responseText} />
-  ) : (
+  if (responseText !== undefined) {
+    return <ApplicationSent applicant={responseText} />
+  }
+
+  return (
     <ApplicationForm error={error} loading={loading} onSubmit={postRequest} />
   )
 }
