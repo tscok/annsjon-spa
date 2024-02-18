@@ -8,7 +8,7 @@ const useXhr = () => {
   const postRequest = (data) => {
     const xhr = new XMLHttpRequest()
 
-    xhr.open('POST', 'service.php', true)
+    xhr.open('POST', '/service.php', true)
     setLoading(true)
 
     xhr.onreadystatechange = () => {
