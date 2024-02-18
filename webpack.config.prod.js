@@ -7,6 +7,9 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 module.exports = function() {
   return webpackMerge(baseConfig, {
+    output: {
+      publicPath: '/',
+    },
     plugins: [
       new webpack.LoaderOptionsPlugin({
         minimize: true,
