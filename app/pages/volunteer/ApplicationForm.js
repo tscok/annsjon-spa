@@ -65,7 +65,7 @@ const ApplicationForm = ({ error, loading, onSubmit }) => {
       return
     }
 
-    const formData = new FormData(event.target.value)
+    const formData = new FormData(event.target)
     onSubmit(formData)
   }
 
@@ -76,10 +76,20 @@ const ApplicationForm = ({ error, loading, onSubmit }) => {
       </h3>
       <form css={styles} onSubmit={handleSubmit}>
         <FormField label={getText('first-name')} required>
-          <TextField name="fname" onChange={handleInput} required value={input.fname} />
+          <TextField
+            name="fname"
+            onChange={handleInput}
+            required
+            value={input.fname}
+          />
         </FormField>
         <FormField label={getText('last-name')} required>
-          <TextField name="lname" onChange={handleInput} required value={input.lname} />
+          <TextField
+            name="lname"
+            onChange={handleInput}
+            required
+            value={input.lname}
+          />
         </FormField>
         <FormField label={getText('volunteer_gender')} required>
           <RadioButton
@@ -108,7 +118,12 @@ const ApplicationForm = ({ error, loading, onSubmit }) => {
           />
         </FormField>
         <FormField label={getText('volunteer_birthyear')} required>
-          <TextField name="birth" onChange={handleInput} required value={input.birth} />
+          <TextField
+            name="birth"
+            onChange={handleInput}
+            required
+            value={input.birth}
+          />
         </FormField>
         <FormField
           className="colspan"
@@ -116,7 +131,12 @@ const ApplicationForm = ({ error, loading, onSubmit }) => {
           label={getText('volunteer_about')}
           required
         >
-          <TextArea name="about" onChange={handleInput} required value={input.about} />
+          <TextArea
+            name="about"
+            onChange={handleInput}
+            required
+            value={input.about}
+          />
         </FormField>
         <FormField
           className="colspan"
@@ -124,10 +144,20 @@ const ApplicationForm = ({ error, loading, onSubmit }) => {
           label={getText('volunteer_timeframe')}
           required
         >
-          <TextField name="timeframe" onChange={handleInput} required value={input.timeframe} />
+          <TextField
+            name="timeframe"
+            onChange={handleInput}
+            required
+            value={input.timeframe}
+          />
         </FormField>
         <FormField label={getText('email')} required>
-          <TextField name="email" onChange={handleInput} required value={input.email} />
+          <TextField
+            name="email"
+            onChange={handleInput}
+            required
+            value={input.email}
+          />
         </FormField>
         <FormField label={getText('phone')}>
           <TextField name="phone" onChange={handleInput} value={input.phone} />
@@ -168,11 +198,17 @@ const ApplicationForm = ({ error, loading, onSubmit }) => {
         </FormField>
         <div className="colspan">
           <Divider color="gray" slim />
-          <p>{interpolate(getText('volunteer_mandatory'), { $1: <strong>*</strong> })}</p>
+          <p>
+            {interpolate(getText('volunteer_mandatory'), {
+              $1: <strong>*</strong>,
+            })}
+          </p>
         </div>
         <div>
           <button disabled={error || loading} type="submit">
-            {loading ? getText('volunteer_submitting') : getText('volunteer_submit')}
+            {loading
+              ? getText('volunteer_submitting')
+              : getText('volunteer_submit')}
           </button>
         </div>
       </form>
