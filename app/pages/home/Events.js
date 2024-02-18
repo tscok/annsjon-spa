@@ -1,6 +1,6 @@
 import React, { Fragment, useContext } from 'react'
 
-import { THOMAS } from 'app/utils/contacts'
+import { INFO } from 'app/utils/contacts'
 import LanguageContext from '../../site/LanguageContext'
 import useText from '../../utils/useText'
 
@@ -36,15 +36,33 @@ const Events = () => {
         title="Nya fågelholkar"
         withBGColor
       /> */}
-      <PageSection styles={{ backgroundColor: '#f5f5f5' }} title="Aktuellt">
+      <PageSection
+        styles={{ backgroundColor: '#f5f5f5' }}
+        title="Aktuellt 2024"
+      >
         <Grid columns="repeat(2, 1fr)">
           <Figure caption="Brushane. Foto: Thomas Holmberg">
-            <Background height="300px" position="50% 100%" source={imageBrushane} />
+            <Background
+              height="300px"
+              position="50% 100%"
+              source={imageBrushane}
+            />
           </Figure>
           <article>
-            <Heading level="h5">Årets myrinventering genomförs 4-11 juni 2023</Heading>
-            <p>Vi söker fågelintresserade som är välbekanta med de vanligt förekommande myrfåglarna i det fjällnära området. Ingen tidigare inventeringsvana behövs. Vi bor på fågelstationen i Handöl och inventerar våtmarker i omgivningarna.</p>
-            <p>För mer information, kontakta Thomas Holmberg, <Email to={THOMAS.email} /> eller 073 - 058 36 30</p>
+            <Heading level="h4">Personal sökes till årets säsong</Heading>
+            <Heading level="h5">Våtmarksinventering 2-16 juni</Heading>
+            <p>
+              Vi söker fågelintresserade som är välbekanta med de vanligt
+              förekommande myrfåglarna i det fjällnära området. Ingen tidigare
+              inventeringsvana behövs. Vi bor på fågelstationen i Handöl och
+              inventerar våtmarker i omgivningarna.
+            </p>
+            <Heading level="h5">Ringmärkning 1 juli - 31 augusti</Heading>
+            <p>Ringmärkare med vana vid nätfångst sökes.</p>
+            <p>
+              För mer information om dessa projekt, skriv till{' '}
+              <Email to={INFO.email} />
+            </p>
           </article>
         </Grid>
       </PageSection>
