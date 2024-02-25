@@ -2,7 +2,6 @@ import React, { Fragment, useContext } from 'react'
 
 import { INFO } from 'app/utils/contacts'
 import LanguageContext from '../../site/LanguageContext'
-import useText from '../../utils/useText'
 
 import Email from 'app/components/Email'
 import Heading from '../../components/Heading'
@@ -12,58 +11,69 @@ import Background from '../../components/Background'
 import imageBrushane from '../../../assets/images/brushane_thomas-holmberg.jpg'
 import Grid from '../../components/Grid'
 
-const Events = () => {
-  const { isEnglish } = useContext(LanguageContext)
-  const getText = useText()
+const dict = {
+  section_title: {
+    se: 'Aktuellt',
+    en: 'Events',
+  },
+  caption: {
+    se: 'Brushane. Foto:',
+    en: 'Ruff. Photo:',
+  },
+}
 
-  if (isEnglish) {
-    return null
-  }
+const Events = () => {
+  const { isEnglish, currentLanguage } = useContext(LanguageContext)
 
   return (
     <Fragment>
-      {/* <Event
-        body={getText('annual-meeting_body')}
-        category={getText('annual-meeting_header')}
-        title={getText('annual-meeting_title')}
-      /> */}
-      {/* <Event
-        body="Många av våra fågelholkar börjar bli till åren och behöver bytas ut. För att kunna köpa in
-          nya holkar till våra holkprojekt ansökte vi om bidrag från Strangells stiftelse och vår
-          ansökan har nu beviljats!"
-        category="Strangells Stiftelse"
-        link="/sponsors"
-        title="Nya fågelholkar"
-        withBGColor
-      /> */}
       <PageSection
         styles={{ backgroundColor: '#f5f5f5' }}
-        title="Aktuellt 2024"
+        title={`${dict.section_title[currentLanguage]} 2024`}
       >
         <Grid columns="repeat(2, 1fr)">
-          <Figure caption="Brushane. Foto: Thomas Holmberg">
+          <Figure caption={`${dict.caption[currentLanguage]} Thomas Holmberg`}>
             <Background
               height="300px"
               position="50% 100%"
               source={imageBrushane}
             />
           </Figure>
-          <article>
-            <Heading level="h4">Personal sökes till årets säsong</Heading>
-            <Heading level="h5">Våtmarksinventering 2-16 juni</Heading>
-            <p>
-              Vi söker fågelintresserade som är välbekanta med de vanligt
-              förekommande myrfåglarna i det fjällnära området. Ingen tidigare
-              inventeringsvana behövs. Vi bor på fågelstationen i Handöl och
-              inventerar våtmarker i omgivningarna.
-            </p>
-            <Heading level="h5">Ringmärkning 1 juli - 31 augusti</Heading>
-            <p>Ringmärkare med vana vid nätfångst sökes.</p>
-            <p>
-              För mer information om dessa projekt, skriv till{' '}
-              <Email to={INFO.email} />
-            </p>
-          </article>
+          {isEnglish ? (
+            <article>
+              <Heading level="h4">Staff wanted for this year's season</Heading>
+              <Heading level="h5">Wetland bird survey June 2-16</Heading>
+              <p>
+                We are looking for bird enthusiasts who are familiar with the
+                common marsh birds in the area near the mountains. No previous
+                survey experience is needed. Accomodation at the bird
+                observatory in Handöl.
+              </p>
+              <Heading level="h5">Bird ringing July 1 - August 31</Heading>
+              <p>Ringers experienced in net catching wanted.</p>
+              <p>
+                For more informtaion of either project, contact us at{' '}
+                <Email to={INFO.email} />
+              </p>
+            </article>
+          ) : (
+            <article>
+              <Heading level="h4">Personal sökes till årets säsong</Heading>
+              <Heading level="h5">Våtmarksinventering 2-16 juni</Heading>
+              <p>
+                Vi söker fågelintresserade som är välbekanta med de vanligt
+                förekommande myrfåglarna i det fjällnära området. Ingen tidigare
+                inventeringsvana behövs. Vi bor på fågelstationen i Handöl och
+                inventerar våtmarker i omgivningarna.
+              </p>
+              <Heading level="h5">Ringmärkning 1 juli - 31 augusti</Heading>
+              <p>Ringmärkare med vana vid nätfångst sökes.</p>
+              <p>
+                För mer information om dessa projekt, skriv till{' '}
+                <Email to={INFO.email} />
+              </p>
+            </article>
+          )}
         </Grid>
       </PageSection>
     </Fragment>
