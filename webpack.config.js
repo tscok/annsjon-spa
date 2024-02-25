@@ -10,23 +10,20 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.tag?$/,
-        exclude: /node_modules/,
-        enforce: 'pre',
-        use: 'riotjs-loader',
-      },
-      {
         test: /\.js$/,
         exclude: /node_modules/,
         use: ['babel-loader'],
       },
       {
         test: /\.md?$/,
-        use: ['html-loader', { loader: 'markdown-loader', options: { breaks: true } }],
+        use: [
+          'html-loader',
+          { loader: 'markdown-loader', options: { breaks: true } },
+        ],
       },
       {
-        test: /\.less?$/,
-        use: ['style-loader', 'css-loader', 'less-loader'],
+        test: /\.css?$/,
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.(jpg|jpeg|png|svg)?$/i,
@@ -40,7 +37,11 @@ module.exports = {
     }),
   ],
   resolve: {
-    modules: [path.resolve(__dirname, './'), path.resolve(__dirname, 'assets'), 'node_modules'],
+    modules: [
+      path.resolve(__dirname, './'),
+      path.resolve(__dirname, 'assets'),
+      'node_modules',
+    ],
     extensions: ['.js', '.tag', '.md', '.less'],
   },
 }
