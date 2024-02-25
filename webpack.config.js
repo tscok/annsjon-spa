@@ -15,13 +15,6 @@ module.exports = {
         use: ['babel-loader'],
       },
       {
-        test: /\.md?$/,
-        use: [
-          'html-loader',
-          { loader: 'markdown-loader', options: { breaks: true } },
-        ],
-      },
-      {
         test: /\.css?$/,
         use: ['style-loader', 'css-loader'],
       },
