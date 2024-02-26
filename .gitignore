@@ -8,6 +8,9 @@ env.js
 # Build
 build
 
+# Dist
+dist
+
 # Docs
 docs
 
