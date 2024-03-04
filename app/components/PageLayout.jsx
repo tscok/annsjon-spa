@@ -19,6 +19,10 @@ const base = css`
       grid-column-start: 2;
     }
   }
+
+  img {
+    width: 100%;
+  }
 `
 
 const main_aside = css`

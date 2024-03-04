@@ -6,9 +6,9 @@ const styles = {
     fontSize: '62.5%',
   },
   body: {
-    fontSize: '1.5em',
+    fontSize: '1.6em',
     lineHeight: 1.6,
-    fontWeight: 400,
+    fontWeight: 300,
     fontFamily:
       '"Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif',
     color: '#222',

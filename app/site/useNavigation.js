@@ -6,7 +6,7 @@ import LanguageContext, { LANGUAGES } from './LanguageContext'
 import { media } from './GlobalStyles'
 
 const ROUTES = {
-  fagelskydd: '/fagelskydd',
+  fagelskydd: '/iba',
   guide: '/guide',
   projects: '/projects',
   reports: '/reports',
@@ -33,7 +33,13 @@ const MENU = {
   ],
 }
 
-const MAIN_MENU = [ROUTES.guide, ROUTES.projects, ROUTES.volunteer, ROUTES.about, ROUTES.contact]
+const MAIN_MENU = [
+  ROUTES.guide,
+  ROUTES.projects,
+  ROUTES.volunteer,
+  ROUTES.about,
+  ROUTES.contact,
+]
 
 const useNavigation = () => {
   const { currentLanguage, isEnglish } = useContext(LanguageContext)
