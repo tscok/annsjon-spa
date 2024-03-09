@@ -12,9 +12,11 @@ With a lot of static content and text heavy pages I wanted to build something fa
 - [Node] - npm
 - [Vite] - transpiling and bundling
 - [React] - templating and routing
+- [MDX] - page content formatting
 - [Skeleton] - Responsive boilerplate
 
 [Node]: https://nodejs.org/en/
 [Vite]: https://vitejs.dev/
 [React]: https://react.dev/
+[MDX]: https://mdxjs.com/
 [Skeleton]: http://getskeleton.com/

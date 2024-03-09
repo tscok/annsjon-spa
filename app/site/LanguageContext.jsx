@@ -1,4 +1,4 @@
-import React, { createContext, useCallback, useEffect, useState } from 'react'
+import React, { createContext, useCallback, useContext, useEffect, useState } from 'react'
 
 const LANGUAGES = {
   EN: 'en',
@@ -52,6 +52,14 @@ const LanguageProvider = ({ children }) => {
       {children}
     </LanguageContext.Provider>
   )
+}
+
+export function useLanguageContext() {
+  const ctx = useContext(LanguageContext)
+  if (!ctx) {
+    throw new Error('useLanguageContext must be used with LanguageContext.Provider')
+  }
+  return ctx
 }
 
 export { LanguageProvider, LANGUAGES }
