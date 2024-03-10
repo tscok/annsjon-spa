@@ -14,5 +14,23 @@
     "volunteer.mountainfit": "En volontärs berättelse",
     "about": "Föreningen",
     "contact": "Kontakt"
+  },
+  "startpage": {
+    "hero.h1": "Ånnsjöns fågelstation",
+    "hero.h2": "Fåglar och människor i en unik miljö",
+    "title.events": "Events",
+    "title.guide": "Skådarguide",
+    "title.projects": "Projekt",
+    "hogasen.body": "Dubbelbeckasinerna anländer till Ånnsjö\u00adfjällen omkring 15 maj, och börjar spela omedelbart. Spelet pågår intensivt någon vecka in i juni. Därefter är de flesta honor…",
+    "storulvan.body": "Här kan man se ripor av bägge arterna, blåhake och på högre höjd fjällpipare och snösparv. Både kungsörn och jaktfalk ses ibland vid Storulvån, men fjällvråk…",
+    "handol.body": "Längs älven Handölans lopp genom Handöl sträcker sig ett lummigt, löv\u00adskogs\u00addominerat område med ett rikt fågelliv. Här hittar man bl.a. trädgårds\u00adsångare, svarthätta…",
+    "ann.body": "På myrarna vid sjön är småspov, ljungpipare, grönbena, rödbena och gulärla karaktärsfåglar. Storspov, gluttsnäppa och enkel\u00adbeckasin förekommer också…",
+    "great-snipe.title": "Dubbelbeckasin",
+    "great-snipe.body": "Tillsammans med forskare från Lunds universitet studerar vi dubbel\u00adbeckasinens flyttningar.",
+    "survey.title": "Inventering",
+    "survey.body": "Vi inventerar regelbundet Ånnsjön och omkring\u00adliggande myrar samt kalfjäll i området Ånnsjön-Storlien.",
+    "ringing.title": "Ringmärkning",
+    "ringing.body": "Varje år bedriver vi standardiserad ring\u00admärkning av tättingar i Handöl och Enans delta.",
+    "read-more": "Läs mer"
   }
 }

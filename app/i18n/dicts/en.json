@@ -14,5 +14,23 @@
     "volunteer.mountainfit": "A volunteer's tale",
     "about": "About",
     "contact": "Contact"
+  },
+  "startpage": {
+    "hero.h1": "Lake\u00a0Ånnsjön Bird\u00a0Observatory",
+    "hero.h2": "Birds and people in a unique environment",
+    "title.events": "Events",
+    "title.guide": "Watcher's Guide",
+    "title.projects": "Projects",
+    "hogasen.body": "The Greate snipe arrives to the mountains surrounding Lake Ånnsjön in mid May. They begin playing immediately and does so very intensively until mid June. After that most of…",
+    "storulvan.body": "Among the more common species are Willow Grouse, Ptarmigan, Bluethroat and at higher altitude Dotterel and Snow Bunting. Golden Eagle and Gyr Falcon are rare, while Merlin…",
+    "handol.body": "Along the river Handölan, through the village Handöl, there's a green, deciduous forest with a rich birdlife. Common species here are Garden Warbler, Blackcap, Icterine…",
+    "ann.body": "On the mires by Lake Ånnsjön typical species are Whimbrel, Golden Plover, Wood Sandpiper, Redshank and Yellow Wagtail. Other common species include Curlew, Greenshank…",
+    "great-snipe.title": "Great snipe",
+    "great-snipe.body": "Together with scientists from Lund University we study migratory movements of the Great snipe.",
+    "survey.title": "Surveys",
+    "survey.body": "Every spring we conduct survey projects on Lake Ånnsjön and the surrounding mires and mountains.",
+    "ringing.title": "Ringing",
+    "ringing.body": "We annually ring between 2000-4000 passerines in the area of Handöl and in the Enan river delta.",
+    "read-more": "Read more"
   }
 }

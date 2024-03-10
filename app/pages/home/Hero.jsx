@@ -2,9 +2,8 @@ import React from 'react'
 import { css } from '@emotion/react'
 
 import PageSection from '../../components/PageSection'
-
 import { media } from '../../site/GlobalStyles'
-import useText from '../../utils/useText'
+import { useTranslation } from '../../i18n'
 
 const copy = css`
   h1 {
@@ -62,21 +61,15 @@ const section = css`
   }
 `
 
-const Hero = () => {
-  const getText = useText()
+export const Hero = () => {
+  const t = useTranslation('startpage')
 
   return (
     <PageSection styles={section}>
       <div css={copy}>
-        <h1>
-          {getText('hero_title_part1')}
-          {' '}
-          {getText('hero_title_part2')}
-        </h1>
-        <h2>{getText('hero_body')}</h2>
+        <h1>{t('hero.h1')}</h1>
+        <h2>{t('hero.h2')}</h2>
       </div>
     </PageSection>
   )
 }
-
-export default Hero

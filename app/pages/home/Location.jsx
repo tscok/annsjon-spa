@@ -54,7 +54,7 @@ const article = css`
   justify-content: center;
 `
 
-const Location = () => {
+export const Location = () => {
   const getText = useText()
 
   return (
@@ -82,5 +82,3 @@ const Location = () => {
     </PageSection>
   )
 }
-
-export default Location
