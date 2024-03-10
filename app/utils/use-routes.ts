@@ -53,6 +53,7 @@ export const useRoutes = (): Route[] => {
       children: [
         { name: t('volunteer.information'), path: '/volunteer/information' },
         { name: t('volunteer.application'), path: '/volunteer/application' },
+        { name: t('volunteer.mountainfit'), path: '/volunteer/mountainfit' },
       ],
     },
     { name: t('about'), path: '/about' },
