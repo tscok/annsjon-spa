@@ -1,7 +1,5 @@
-import React, { Fragment, useContext } from 'react'
-
 import { INFO } from '../../utils/contacts'
-import LanguageContext from '../../site/LanguageContext'
+import { useLanguageContext } from '../../site/LanguageContext'
 
 import Email from '../../components/Email'
 import Heading from '../../components/Heading'
@@ -10,29 +8,26 @@ import Figure from '../../components/Figure'
 import Background from '../../components/Background'
 import imageBrushane from '../../../assets/images/brushane_thomas-holmberg.jpg'
 import Grid from '../../components/Grid'
+import { useTranslation } from '../../i18n'
 
-const dict = {
-  section_title: {
-    se: 'Aktuellt',
-    en: 'Events',
-  },
-  caption: {
-    se: 'Brushane. Foto:',
-    en: 'Ruff. Photo:',
-  },
-}
-
-const Events = () => {
-  const { isEnglish, currentLanguage } = useContext(LanguageContext)
+export const Events = () => {
+  const { isEnglish } = useLanguageContext()
+  const t = useTranslation('startpage')
 
   return (
-    <Fragment>
+    <>
       <PageSection
         styles={{ backgroundColor: '#f5f5f5' }}
-        title={`${dict.section_title[currentLanguage]} 2024`}
+        title={t('title.events')}
       >
         <Grid columns="repeat(2, 1fr)">
-          <Figure caption={`${dict.caption[currentLanguage]} Thomas Holmberg`}>
+          <Figure
+            caption={
+              isEnglish
+                ? 'Ruff. Photo Thomas Holmberg'
+                : 'Brushane. Foto Thomas Holmberg'
+            }
+          >
             <Background
               height="300px"
               position="50% 100%"
@@ -76,8 +71,6 @@ const Events = () => {
           )}
         </Grid>
       </PageSection>
-    </Fragment>
+    </>
   )
 }
-
-export default Events

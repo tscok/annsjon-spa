@@ -1,7 +1,7 @@
-import React, { Fragment, useContext } from 'react'
+import React, { Fragment } from 'react'
 
 import translations from './translations'
-import LanguageContext from '../site/LanguageContext'
+import {useLanguageContext} from '../site/LanguageContext'
 
 const getText = (language, key) => {
   if (translations[key] && translations[key][language]) {
@@ -11,7 +11,7 @@ const getText = (language, key) => {
 }
 
 const useText = () => {
-  const { currentLanguage } = useContext(LanguageContext)
+  const { currentLanguage } = useLanguageContext()
   return (key) => getText(currentLanguage, key)
 }
 

@@ -1,7 +1,7 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { css } from '@emotion/react'
 
-import LanguageContext from './LanguageContext'
+import {useLanguageContext} from './LanguageContext'
 
 const button = css`
   align-items: center;
@@ -19,7 +19,7 @@ const button = css`
 `
 
 const LanguageButton = () => {
-  const { isEnglish, languages, setLanguage } = useContext(LanguageContext)
+  const { isEnglish, languages, setLanguage } = useLanguageContext()
 
   const handleClick = (event) => {
     event.preventDefault()

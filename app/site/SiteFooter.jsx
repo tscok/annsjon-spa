@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { css } from '@emotion/react'
 import { Link } from 'react-router-dom'
 
@@ -6,7 +6,7 @@ import Anchor from '../components/Anchor'
 import Divider from '../components/Divider'
 import PageContent from '../components/PageContent'
 
-import LanguageContext from './LanguageContext'
+import {useLanguageContext} from './LanguageContext'
 import Logotype from './Logotype'
 import SiteFooterNavigation from './SiteFooterNavigation'
 import { media } from './GlobalStyles'
@@ -64,7 +64,7 @@ const styles = css`
 `
 
 const SiteFooter = () => {
-  const { isEnglish, languages, setLanguage } = useContext(LanguageContext)
+  const { isEnglish, languages, setLanguage } = useLanguageContext()
   const getText = useText()
 
   return (
