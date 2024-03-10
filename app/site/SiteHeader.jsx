@@ -10,8 +10,8 @@ import LanguageButton from './LanguageButton'
 import Logotype from './Logotype'
 import SiteHeaderBurger from './SiteHeaderBurger'
 import SiteHeaderNavItem from './SiteHeaderNavItem'
-import useNavigation from './useNavigation'
 import { media } from './GlobalStyles'
+import { useRoutes } from '../utils/use-routes'
 
 const header = css`
   background-color: #fff;
@@ -77,7 +77,7 @@ const navbar = css`
 const SiteHeader = () => {
   const [isExpanded, setExpanded] = useState(false)
   const { pathname } = useLocation()
-  const [items, filter] = useNavigation()
+  const routes = useRoutes().filter((route) => !['/', '/iba', '/reports'].includes(route.path))
 
   useEffect(() => {
     setExpanded(false)
@@ -91,8 +91,8 @@ const SiteHeader = () => {
     display: ${isExpanded ? 'block' : 'none'};
   `
 
-  const isActive = (route) => {
-    return pathname.slice(1).split('/')[0] === route.slice(1)
+  const isActive = (path) => {
+    return pathname.slice(1).split('/')[0] === path.slice(1)
   }
 
   return (
@@ -111,9 +111,9 @@ const SiteHeader = () => {
           </div>
           <Flex alignItems="center">
             <nav css={[navbar, navbarDisplay]}>
-              {items.filter(filter).map(({ label, route }) => (
-                <SiteHeaderNavItem key={route} route={route} isActive={isActive(route)}>
-                  {label}
+              {routes.map((route) => (
+                <SiteHeaderNavItem key={route.path} route={route.path} isActive={isActive(route.path)}>
+                  {route.name}
                 </SiteHeaderNavItem>
               ))}
             </nav>

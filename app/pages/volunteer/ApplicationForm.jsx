@@ -70,7 +70,7 @@ const ApplicationForm = ({ error, loading, onSubmit }) => {
   }
 
   return (
-    <article>
+    <>
       <h3>
         {getText('volunteer_header')} {getText('volunteer_application_title')}
       </h3>
@@ -220,7 +220,7 @@ const ApplicationForm = ({ error, loading, onSubmit }) => {
           })}
         </p>
       )}
-    </article>
+    </>
   )
 }
 

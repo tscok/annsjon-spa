@@ -1,0 +1,17 @@
+{
+  "pages": {
+    "home": "Home",
+    "iba": "IBA",
+    "guide": "Watcher's Guide",
+    "projects": "Projects",
+    "projects.great-snipe": "Great snipe",
+    "projects.great-snipe.background": "Background",
+    "reports": "Reports",
+    "reports.press-release": "Press release",
+    "volunteer": "Volunteer",
+    "volunteer.information": "FAQ",
+    "volunteer.application": "Application",
+    "about": "About",
+    "contact": "Contact"
+  }
+}

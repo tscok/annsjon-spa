@@ -5,13 +5,14 @@ import useXhr from '../../utils/useXhr'
 
 import ApplicationForm from './ApplicationForm'
 import ApplicationSent from './ApplicationSent'
+import { Layout } from '../layout'
 
 
 const Application = () => {
   const [error, loading, postRequest, responseText] = useXhr()
 
   return (
-    <Page>
+    <Layout>
       {responseText ? (
         <ApplicationSent applicant={responseText} />
       ) : (
@@ -21,7 +22,7 @@ const Application = () => {
           onSubmit={postRequest}
         />
       )}
-    </Page>
+    </Layout>
   )
 }
 
