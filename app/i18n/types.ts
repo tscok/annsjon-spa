@@ -10,6 +10,7 @@ type Pages = Keys<
   | 'volunteer'
   | 'volunteer.information'
   | 'volunteer.application'
+  | 'volunteer.mountainfit'
   | 'about'
   | 'contact'
 >
