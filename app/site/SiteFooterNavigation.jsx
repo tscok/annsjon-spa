@@ -2,8 +2,8 @@ import React from 'react'
 import { css } from '@emotion/react'
 import { Link } from 'react-router-dom'
 
-import useNavigation from './useNavigation'
 import { media } from './GlobalStyles'
+import { useRoutes } from '../utils/use-routes'
 
 const styles = css`
   font-size: 10px;
@@ -32,6 +32,7 @@ const styles = css`
     line-height: 50px;
     text-decoration: none;
     text-transform: uppercase;
+    white-space: nowrap;
 
     ${media.small} {
       padding: 0 20px;
@@ -52,13 +53,13 @@ const styles = css`
 `
 
 const SiteFooterNavigation = () => {
-  const [items] = useNavigation()
+  const routes = useRoutes().filter((route) => route.path !== '/')
 
   return (
     <nav css={styles}>
-      {items.map(({ label, route }) => (
-        <Link key={route} to={route}>
-          {label}
+      {routes.map((route) => (
+        <Link key={route.path} to={route.path}>
+          {route.name}
         </Link>
       ))}
     </nav>
