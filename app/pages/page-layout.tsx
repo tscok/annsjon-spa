@@ -1,11 +1,10 @@
-import { PropsWithChildren } from 'react'
-import { useLocation } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom'
 
 import Page from '../components/Page'
 import { Sidenav } from '../ui/sidenav'
 import { useRoutes } from '../utils/use-routes'
 
-export const Layout = ({ children }: PropsWithChildren) => {
+export const PageLayout = () => {
   const { pathname } = useLocation()
   const [rootpath] = pathname.split('/').filter(Boolean)
 
@@ -18,7 +17,9 @@ export const Layout = ({ children }: PropsWithChildren) => {
           <Sidenav route={route} />
         </aside>
       )}
-      <article>{children}</article>
+      <article>
+        <Outlet />
+      </article>
     </Page>
   )
 }

@@ -2,7 +2,6 @@ import { Suspense, lazy } from 'react'
 import { useLocation } from 'react-router-dom'
 import type { MDXProps } from 'mdx/types'
 import { useLanguageContext } from '../site/LanguageContext'
-import { Layout } from './layout'
 
 type MDXComponentType = (props: MDXProps) => JSX.Element
 
@@ -25,10 +24,8 @@ export const Page = () => {
   const Content = dynamic(modules[fileName] || modules[notFound])
 
   return (
-    <Layout>
-      <Suspense fallback="Loading…">
-        <Content />
-      </Suspense>
-    </Layout>
+    <Suspense fallback="Loading…">
+      <Content />
+    </Suspense>
   )
 }

@@ -34,7 +34,7 @@ export const useRoutes = (): Route[] => {
           children: [
             {
               name: t('projects.great-snipe.background'),
-              path: '/projects/great-snipe/history',
+              path: '/projects/great-snipe/background',
             },
           ],
         },
