@@ -1,13 +1,18 @@
-import React from 'react'
+import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
-import { App } from './app'
+import GlobalStyles from './site/GlobalStyles'
+import { LanguageProvider } from './site/LanguageContext'
+import { Router } from './router'
 
 const domNode = document.getElementById('root')
 const root = createRoot(domNode as HTMLElement)
 
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <StrictMode>
+    <LanguageProvider>
+      <GlobalStyles />
+      <Router />
+    </LanguageProvider>
+  </StrictMode>
 )

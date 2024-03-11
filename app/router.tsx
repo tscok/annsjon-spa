@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { RootLayout } from './root-layout'
 import { Application, Page, PageLayout, StartPage } from './pages'
 
-const router = createBrowserRouter([
+const config = createBrowserRouter([
   {
     element: <RootLayout />,
     children: [
@@ -28,4 +28,4 @@ const router = createBrowserRouter([
   },
 ])
 
-export const AppRouter = () => <RouterProvider router={router} />
+export const Router = () => <RouterProvider router={config} />
