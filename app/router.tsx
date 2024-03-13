@@ -1,11 +1,11 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-
-import { RootLayout } from './root-layout'
-import { Application, Page, PageLayout, StartPage } from './pages'
+import { Application, Page } from './pages'
+import { StartPage } from './startpage'
+import { PageLayout, SiteLayout } from './ui'
 
 const config = createBrowserRouter([
   {
-    element: <RootLayout />,
+    element: <SiteLayout />,
     children: [
       {
         path: '/',

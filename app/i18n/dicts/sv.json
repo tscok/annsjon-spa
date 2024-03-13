@@ -1,6 +1,6 @@
 {
   "pages": {
-    "home": "Hem",
+    "home": "Startsida",
     "iba": "Fågelskydd",
     "guide": "Skådarguide",
     "projects": "Projekt",
@@ -16,11 +16,10 @@
     "contact": "Kontakt"
   },
   "startpage": {
-    "hero.h1": "Ånnsjöns fågelstation",
-    "hero.h2": "Fåglar och människor i en unik miljö",
-    "title.events": "Events",
-    "title.guide": "Skådarguide",
-    "title.projects": "Projekt",
+    "tagline": "Fåglar och människor i en unik miljö",
+    "section-title.staff": "Personal sökes",
+    "section-title.guides": "Vår skådarguide",
+    "section-title.projects": "Våra projekt",
     "hogasen.body": "Dubbelbeckasinerna anländer till Ånnsjö\u00adfjällen omkring 15 maj, och börjar spela omedelbart. Spelet pågår intensivt någon vecka in i juni. Därefter är de flesta honor…",
     "storulvan.body": "Här kan man se ripor av bägge arterna, blåhake och på högre höjd fjällpipare och snösparv. Både kungsörn och jaktfalk ses ibland vid Storulvån, men fjällvråk…",
     "handol.body": "Längs älven Handölans lopp genom Handöl sträcker sig ett lummigt, löv\u00adskogs\u00addominerat område med ett rikt fågelliv. Här hittar man bl.a. trädgårds\u00adsångare, svarthätta…",
@@ -31,6 +30,12 @@
     "survey.body": "Vi inventerar regelbundet Ånnsjön och omkring\u00adliggande myrar samt kalfjäll i området Ånnsjön-Storlien.",
     "ringing.title": "Ringmärkning",
     "ringing.body": "Varje år bedriver vi standardiserad ring\u00admärkning av tättingar i Handöl och Enans delta.",
-    "read-more": "Läs mer"
+    "read-more": "Läs mer",
+    "directions.title": "Hitta hit",
+    "directions.body1": "Fågelstationen ligger i den lilla byn Handöl i västra Jämtland, inte långt ifrån norska gränsen. Hit tar man sig lättast med tåg, för vägbeskrivning se vår ",
+    "directions.body2": "Utforska platsen med "
+  },
+  "site": {
+    "title": "Ånnsjöns Fågelstation"
   }
 }

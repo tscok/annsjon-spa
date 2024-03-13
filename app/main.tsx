@@ -1,9 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
-import GlobalStyles from './site/GlobalStyles'
 import { LanguageProvider } from './site/LanguageContext'
 import { Router } from './router'
+import { ThemeProvider } from './ui/theme'
 
 const domNode = document.getElementById('root')
 const root = createRoot(domNode as HTMLElement)
@@ -11,8 +11,9 @@ const root = createRoot(domNode as HTMLElement)
 root.render(
   <StrictMode>
     <LanguageProvider>
-      <GlobalStyles />
-      <Router />
+      <ThemeProvider>
+        <Router />
+      </ThemeProvider>
     </LanguageProvider>
   </StrictMode>
 )

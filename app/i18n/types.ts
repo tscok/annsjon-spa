@@ -15,12 +15,13 @@ type Pages = Keys<
   | 'contact'
 >
 
+type Site = Keys<'title'>
+
 type Startpage = Keys<
-  | 'hero.h1'
-  | 'hero.h2'
-  | 'title.events'
-  | 'title.guide'
-  | 'title.projects'
+  | 'tagline'
+  | 'section-title.staff'
+  | 'section-title.guides'
+  | 'section-title.projects'
   | 'hogasen.body'
   | 'storulvan.body'
   | 'handol.body'
@@ -32,6 +33,9 @@ type Startpage = Keys<
   | 'ringing.title'
   | 'ringing.body'
   | 'read-more'
+  | 'directions.title'
+  | 'directions.body1'
+  | 'directions.body2'
 >
 
 type Keys<K extends string> = Record<K, string>
@@ -39,6 +43,7 @@ type Keys<K extends string> = Record<K, string>
 export type Dictionary = {
   pages: Pages
   startpage: Startpage
+  site: Site
 }
 
 export type TranslateFn<T> = <K extends keyof T>(key: K) => T[K]
