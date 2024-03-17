@@ -7,7 +7,7 @@ export const Projects = () => {
 
   return (
     <PageSection title={t('section-title.projects')}>
-      <Stack direction={{ sm: 'row' }} spacing={4}>
+      <Stack direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 2, sm: 4 }}>
         <article>
           <div style={{ marginBottom: '30px' }}>
             <BackgroundImage
