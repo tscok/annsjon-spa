@@ -11,8 +11,8 @@ import {
   Button,
   A,
   Select,
-} from '../../ui'
-import { Stack } from '../../ui/mui'
+} from 'app/ui'
+import { Stack } from 'app/ui/mui'
 
 const ApplicationForm = ({
   error,

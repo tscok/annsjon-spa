@@ -20,6 +20,8 @@ export const Page = () => {
   const fileName = `./mdx/${slug}-${lang}.mdx`
   const notFound = `./mdx/not-found-${lang}.mdx`
 
+  console.log({ modules, fileName })
+
   const Content = dynamic(modules[fileName] || modules[notFound])
 
   return (

@@ -1,7 +1,3 @@
-import imagehHogasen from '../../../assets/images/dbeckasin3_steve-dahlfors.jpg'
-import imageStorulvan from '../../../assets/images/blahake_steve-dahlfors.jpg'
-import imageHandol from '../../../assets/images/bergfink_steve-dahlfors.jpg'
-import imageAnn from '../../../assets/images/brushane_steve-dahlfors.jpg'
 import { useTranslation } from 'app/i18n'
 import { A, BackgroundImage, H5, P, PageSection } from 'app/ui'
 import { Grid } from 'app/ui/mui'
@@ -17,7 +13,7 @@ export const Guides = () => {
             <BackgroundImage
               height={200}
               position="50% 70%"
-              src={imagehHogasen}
+              src="/images/dbeckasin3_steve-dahlfors.jpg"
             />
           </div>
           <H5>Högåsen</H5>
@@ -30,7 +26,7 @@ export const Guides = () => {
             <BackgroundImage
               height={200}
               position="50% 30%"
-              src={imageStorulvan}
+              src="/images/blahake_steve-dahlfors.jpg"
             />
           </div>
           <H5>Storulvån</H5>
@@ -44,7 +40,7 @@ export const Guides = () => {
             <BackgroundImage
               height={200}
               position="50% 10%"
-              src={imageHandol}
+              src="/images/bergfink_steve-dahlfors.jpg"
             />
           </div>
           <H5>Handöl</H5>
@@ -54,7 +50,10 @@ export const Guides = () => {
         </Grid>
         <Grid sm={6}>
           <div style={{ marginBottom: '30px' }}>
-            <BackgroundImage height={200} src={imageAnn} />
+            <BackgroundImage
+              height={200}
+              src="/images/brushane_steve-dahlfors.jpg"
+            />
           </div>
           <H5>Ånn</H5>
           <P>

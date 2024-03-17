@@ -13,6 +13,7 @@ type Pages = Keys<
   | 'volunteer.mountainfit'
   | 'about'
   | 'contact'
+  | 'result'
 >
 
 type Site = Keys<'title'>

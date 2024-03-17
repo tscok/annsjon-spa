@@ -2,7 +2,7 @@ import { A, Image, PageSection } from '..'
 import { useRoutes } from 'app/utils'
 import { Avatar, Divider, Stack, Typography } from '../mui'
 
-import imageSrc from 'app/assets/svg/faf_logo_white.svg'
+import logotype from 'app/assets/faf_logo_white.svg'
 
 export const SiteFooter = () => {
   const routes = useRoutes()
@@ -90,7 +90,7 @@ export const SiteFooter = () => {
             mr: 8,
           }}
         >
-          <Image alt="FÅF logotype" src={imageSrc} />
+          <Image alt="FÅF logotype" src={logotype} />
         </Avatar>
       </Stack>
     </PageSection>
