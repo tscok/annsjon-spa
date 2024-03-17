@@ -21,7 +21,7 @@ export const Staff = () => {
   return (
     <PageSection title={t('section-title.staff')}>
       <Grid container columnSpacing={4}>
-        <Grid md={6}>
+        <Grid md={6} display={{ xs: 'none', md: 'flex' }}>
           <BackgroundImage
             height={280}
             position="50% 80%"

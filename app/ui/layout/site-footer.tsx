@@ -1,76 +1,71 @@
 import { A, Image, PageSection } from '..'
 import { useLanguage, useRoutes } from 'app/utils'
 import { Avatar, Divider, Stack, Typography } from '../mui'
+import { FooterNav } from '../navigation/footer-nav'
 
 import logotype from 'app/assets/faf_logo_white.svg'
 import { useTranslation } from 'app/i18n'
 
+const LanguageAndCookies = () => {
+  const { nextLanguage, setLanguage } = useLanguage()
+  return (
+    <>
+      <A
+        color="common.white"
+        underline="hover"
+        onClick={() => setLanguage(nextLanguage.locale)}
+      >
+        <Typography component="span" variant="body2" sx={{ fontWeight: 500 }}>
+          {nextLanguage.name}
+        </Typography>
+      </A>
+      <Divider
+        flexItem
+        orientation="vertical"
+        variant="middle"
+        sx={{
+          height: '1rem',
+          mx: 1,
+          alignSelf: 'center',
+          borderColor: 'common.white',
+          opacity: 0.5,
+        }}
+      />
+      <A color="common.white" href="/cookies" underline="hover">
+        <Typography component="span" variant="body2" sx={{ fontWeight: 500 }}>
+          Cookies
+        </Typography>
+      </A>
+    </>
+  )
+}
+
 export const SiteFooter = () => {
   const t = useTranslation('site')
-  const { nextLanguage, setLanguage } = useLanguage()
   const routes = useRoutes()
 
   return (
     <PageSection color="primary.dark">
-      <Stack direction="row" justifyContent="space-between">
+      <Stack
+        alignItems="center"
+        direction={{ xs: 'column', lg: 'row' }}
+        justifyContent="space-between"
+      >
         <Stack justifyContent="space-between">
-          <Stack component="nav" direction="row" spacing={2}>
-            {routes.map((route) => (
-              <A
-                key={route.path}
-                color="common.white"
-                href={route.path}
-                underline="hover"
-              >
-                <Typography
-                  variant="body2"
-                  sx={{
-                    fontSize: '0.75rem',
-                    fontWeight: 700,
-                    textTransform: 'uppercase',
-                  }}
-                >
-                  {route.name}
-                </Typography>
-              </A>
-            ))}
+          <Stack
+            alignItems="center"
+            component="nav"
+            direction={{ xs: 'column', md: 'row' }}
+            spacing={2}
+          >
+            <FooterNav routes={routes} />
           </Stack>
-          <Stack spacing={1}>
+          <Stack
+            spacing={1}
+            sx={{ mt: 4, alignItems: { xs: 'center', lg: 'start' } }}
+          >
             <Stack alignItems="center" direction="row">
-              <A
-                color="common.white"
-                underline="hover"
-                onClick={() => setLanguage(nextLanguage.locale)}
-              >
-                <Typography
-                  component="span"
-                  variant="body2"
-                  sx={{ fontWeight: 500 }}
-                >
-                  {nextLanguage.name}
-                </Typography>
-              </A>
-              <Divider
-                flexItem
-                orientation="vertical"
-                variant="middle"
-                sx={{
-                  height: '1rem',
-                  mx: 1,
-                  alignSelf: 'center',
-                  borderColor: 'common.white',
-                  opacity: 0.5,
-                }}
-              />
-              <A color="common.white" href="/cookies" underline="hover">
-                <Typography
-                  component="span"
-                  variant="body2"
-                  sx={{ fontWeight: 500 }}
-                >
-                  Cookies
-                </Typography>
-              </A>
+              <LanguageAndCookies />
             </Stack>
             <Typography
               color="rgba(255, 255, 255, 0.75)"
@@ -94,7 +89,7 @@ export const SiteFooter = () => {
             opacity: 0.25,
             width: 150,
             height: 150,
-            mr: 8,
+            mr: { xs: 0, lg: 8 },
           }}
         >
           <Image alt="FÅF logotype" src={logotype} />
