@@ -1,5 +1,5 @@
-import { Locale } from '../types'
-import { useLanguageContext } from '../site/LanguageContext'
+import { Locale } from 'app/types'
+import { useLanguage } from 'app/utils'
 import { Dictionary, TranslateFn } from './types'
 
 import en from './dicts/en.json'
@@ -8,8 +8,7 @@ import sv from './dicts/sv.json'
 const library: Record<Locale, Dictionary> = { en, sv }
 
 function useDictionary<N extends keyof Dictionary>(namespace: N) {
-  const { isEnglish } = useLanguageContext()
-  const locale: Locale = isEnglish ? 'en' : 'sv'
+  const { locale } = useLanguage()
   const dictionary = library[locale]
   return dictionary[namespace]
 }

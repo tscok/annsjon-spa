@@ -1,6 +1,6 @@
 import { Suspense, lazy } from 'react'
 import type { MDXContent } from 'mdx/types'
-import { useLanguageContext } from 'app/site/LanguageContext'
+import { useLanguage } from 'app/utils'
 import { useTranslation } from 'app/i18n'
 import { BackgroundImage, MdxComponents, PageSection } from 'app/ui'
 import { Grid } from 'app/ui/mui'
@@ -12,13 +12,10 @@ const modules = import.meta.glob('./mdx/**/*.mdx') as Glob<MDXContent>
 const dynamic = (fn: () => Promise<any>) => lazy<MDXContent>(fn)
 
 export const Staff = () => {
-  const { isEnglish } = useLanguageContext()
+  const { locale } = useLanguage()
   const t = useTranslation('startpage')
 
-  const lang = (isEnglish ? 'en' : 'sv') as string
-
-  const fileName = `./mdx/staff-${lang}.mdx`
-
+  const fileName = `./mdx/staff-${locale}.mdx`
   const Content = dynamic(modules[fileName])
 
   return (
