@@ -2,12 +2,10 @@ import { A, BackgroundImage } from 'app/ui'
 import { Box, Grid, Typography } from 'app/ui/mui'
 import { useTranslation } from 'app/i18n'
 
-import imageSrc from 'app/assets/road_mikael_carlsson.jpg'
-
 export const Directions = () => {
   const t = useTranslation('startpage')
   return (
-    <BackgroundImage position="50% 80%" src={imageSrc}>
+    <BackgroundImage position="50% 80%" src="/images/road_mikael-carlsson.jpg">
       <Box
         sx={{
           px: 6,

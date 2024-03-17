@@ -3,13 +3,13 @@ import { Link as RouterLink } from 'react-router-dom'
 import { Avatar, Link, Stack, Typography } from '../mui'
 import { Image } from '../misc/figure'
 
-import imageSrc from 'app/assets/svg/faf_logo.svg'
+import logotype from 'app/assets/faf_logo.svg'
 
 export const SiteTitle = ({ children }: PropsWithChildren) => (
   <Link component={RouterLink} to="/" underline="none">
     <Stack alignItems="center" direction="row" spacing={1}>
       <Avatar sx={{ backgroundColor: 'transparent', width: 56, height: 56 }}>
-        <Image alt="FÅF logotype" src={imageSrc} />
+        <Image alt="FÅF logotype" src={logotype} />
       </Avatar>
       <Typography
         sx={{

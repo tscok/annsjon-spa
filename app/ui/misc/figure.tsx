@@ -32,7 +32,7 @@ export const BackgroundImage = ({
   return (
     <Box
       sx={{
-        backgroundImage: `url('${src}')`,
+        backgroundImage: `url("${src}")`,
         backgroundPosition: position,
         backgroundRepeat: 'no-repeat',
         backgroundSize: size,

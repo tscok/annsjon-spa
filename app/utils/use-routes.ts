@@ -32,6 +32,12 @@ export const useRoutes = (): Route[] => {
           name: t('projects.great-snipe'),
           path: '/projects/great-snipe',
           children: [
+            { name: `${t('result')} 2009`, path: '/projects/great-snipe/2009' },
+            { name: `${t('result')} 2008`, path: '/projects/great-snipe/2008' },
+            { name: `${t('result')} 2007`, path: '/projects/great-snipe/2007' },
+            { name: `${t('result')} 2006`, path: '/projects/great-snipe/2006' },
+            { name: `${t('result')} 2005`, path: '/projects/great-snipe/2005' },
+            { name: `${t('result')} 2004`, path: '/projects/great-snipe/2004' },
             {
               name: t('projects.great-snipe.background'),
               path: '/projects/great-snipe/background',

@@ -5,8 +5,6 @@ import { useTranslation } from 'app/i18n'
 import { BackgroundImage, MdxComponents, PageSection } from 'app/ui'
 import { Grid } from 'app/ui/mui'
 
-import imageSrc from '../../../assets/images/brushane_thomas-holmberg.jpg'
-
 type Glob<T> = Record<string, () => Promise<T>>
 
 const modules = import.meta.glob('./mdx/**/*.mdx') as Glob<MDXContent>
@@ -27,7 +25,11 @@ export const Staff = () => {
     <PageSection title={t('section-title.staff')}>
       <Grid container columnSpacing={4}>
         <Grid md={6}>
-          <BackgroundImage height={280} position="50% 80%" src={imageSrc} />
+          <BackgroundImage
+            height={280}
+            position="50% 80%"
+            src="/images/brushane_thomas-holmberg.jpg"
+          />
         </Grid>
         <Grid md={6}>
           <Suspense>
