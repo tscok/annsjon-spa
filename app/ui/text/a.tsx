@@ -28,10 +28,10 @@ export const A = ({
       </Link>
     )
   }
-  if (href.startsWith('mailto')) {
+  if (href.startsWith('mailto:')) {
     return (
       <Link href={href} sx={styles}>
-        {children}
+        {href.replace('mailto:', '')}
       </Link>
     )
   }

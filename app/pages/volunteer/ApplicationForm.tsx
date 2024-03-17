@@ -1,6 +1,6 @@
 import { FormEvent } from 'react'
 import { useTranslation } from 'app/i18n'
-import { useText, interpolate, nationalities } from 'app/utils'
+import { interpolate, nationalities } from 'app/utils'
 import {
   Autocomplete,
   H2,
@@ -23,8 +23,7 @@ const ApplicationForm = ({
   loading: boolean
   onSubmit: (data: any) => void
 }) => {
-  const t = useTranslation('pages')
-  const getText = useText()
+  const t = useTranslation('form')
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -34,61 +33,57 @@ const ApplicationForm = ({
 
   return (
     <>
-      <H2>{t('volunteer.application')}</H2>
+      <H2>{t('title')}</H2>
       <form onSubmit={handleSubmit}>
         <Stack spacing={{ xs: 2, md: 4 }}>
           <Fieldset>
-            <TextInput label={getText('first-name')} name="fname" required />
-            <TextInput label={getText('last-name')} name="lname" required />
+            <TextInput label={t('first-name')} name="fname" required />
+            <TextInput label={t('last-name')} name="lname" required />
           </Fieldset>
           <Fieldset>
             <Select
               defaultValue="female"
-              label={getText('volunteer_gender')}
+              label={t('gender')}
               name="gender"
               options={[
-                { label: getText('volunteer_gender-f'), value: 'female' },
-                { label: getText('volunteer_gender-m'), value: 'male' },
-                { label: getText('volunteer_gender-x'), value: 'other' },
+                { label: t('gender.female'), value: 'female' },
+                { label: t('gender.male'), value: 'male' },
+                { label: t('gender.other'), value: 'other' },
               ]}
             />
-            <TextInput label={getText('volunteer_birthyear')} name="birth" />
+            <TextInput label={t('dob')} name="birth" />
           </Fieldset>
           <TextInput
-            hint={getText('volunteer_about-hint')}
-            label={getText('volunteer_about')}
+            hint={t('about.hint')}
+            label={t('about')}
             minRows={2}
             multiline
             name="about"
             required
           />
           <TextInput
-            hint={getText('volunteer_timeframe-hint')}
-            label={getText('volunteer_timeframe')}
+            hint={t('timeframe.hint')}
+            label={t('timeframe')}
             minRows={2}
             multiline
             name="timeframe"
           />
           <Fieldset>
-            <TextInput label={getText('email')} name="email" required />
-            <TextInput label={getText('phone')} name="phone" />
+            <TextInput label={t('email')} name="email" required />
+            <TextInput label={t('phone')} name="phone" />
           </Fieldset>
           <Autocomplete
-            label={getText('volunteer_nationality')}
+            label={t('nationality')}
             options={nationalities}
             name="nationality"
           />
           <Fieldset>
-            <Checkbox label={getText('volunteer_car')} name="car" value="yes" />
-            <Checkbox
-              label={getText('volunteer_driving-license')}
-              name="driver"
-              value="yes"
-            />
+            <Checkbox label={t('car')} name="car" value="yes" />
+            <Checkbox label={t('driver')} name="driver" value="yes" />
           </Fieldset>
         </Stack>
         <P variant="body2">
-          {interpolate(getText('volunteer_mandatory'), {
+          {interpolate(t('mandatory'), {
             $1: <strong>*</strong>,
           })}
         </P>
@@ -98,15 +93,13 @@ const ApplicationForm = ({
           size="large"
           type="submit"
         >
-          {loading
-            ? getText('volunteer_submitting')
-            : getText('volunteer_submit')}
+          {loading ? t('submitting') : t('submit')}
         </Button>
       </form>
       {error && (
         <P>
-          {interpolate(getText('volunteer_error_message'), {
-            $1: <strong>{getText('volunteer_error_title')}</strong>,
+          {interpolate(t('error.body'), {
+            $1: <strong>{t('error.title')}</strong>,
             $2: <A href="mailto:volunteer@annsjon.org" />,
           })}
         </P>
