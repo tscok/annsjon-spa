@@ -1,15 +1,14 @@
-import { useText, interpolate } from 'app/utils'
+import { interpolate } from 'app/utils'
 import { H2, P } from 'app/ui'
+import { useTranslation } from 'app/i18n'
 
 const ApplicationSent = ({ applicant }: { applicant: string }) => {
-  const getText = useText()
+  const t = useTranslation('form')
 
   return (
     <>
-      <H2>
-        {getText('thank-you')}, {applicant}!
-      </H2>
-      <P>{interpolate(getText('volunteer_confirmation'), { $1: ' ' })}</P>
+      <H2>{interpolate(t('thanks'), { $1: applicant })}</H2>
+      <P>{t('success')}</P>
     </>
   )
 }

@@ -1,3 +1,30 @@
+type Form = Keys<
+  | 'about.hint'
+  | 'about'
+  | 'car'
+  | 'dob'
+  | 'driver'
+  | 'email'
+  | 'error.body'
+  | 'error.title'
+  | 'first-name'
+  | 'gender.female'
+  | 'gender.male'
+  | 'gender.other'
+  | 'gender'
+  | 'last-name'
+  | 'mandatory'
+  | 'nationality'
+  | 'phone'
+  | 'submit'
+  | 'submitting'
+  | 'success'
+  | 'thanks'
+  | 'timeframe.hint'
+  | 'timeframe'
+  | 'title'
+>
+
 type Pages = Keys<
   | 'home'
   | 'iba'
@@ -42,6 +69,7 @@ type Startpage = Keys<
 type Keys<K extends string> = Record<K, string>
 
 export type Dictionary = {
+  form: Form
   pages: Pages
   startpage: Startpage
   site: Site
