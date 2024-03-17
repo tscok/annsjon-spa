@@ -13,10 +13,12 @@ With a lot of static content and text heavy pages I wanted to build something fa
 - [Vite] - transpiling and bundling
 - [React] - templating and routing
 - [MDX] - page content formatting
-- [Skeleton] - Responsive boilerplate
+- [MUI] - component library
+- [Fontsource] - font library
 
 [Node]: https://nodejs.org/en/
 [Vite]: https://vitejs.dev/
 [React]: https://react.dev/
 [MDX]: https://mdxjs.com/
-[Skeleton]: http://getskeleton.com/
+[MUI]: https://mui.com/
+[Fontsource]: https://fontsource.org/
