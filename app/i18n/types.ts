@@ -43,7 +43,7 @@ type Pages = Keys<
   | 'result'
 >
 
-type Site = Keys<'title'>
+type Site = Keys<'title' | 'design'>
 
 type Startpage = Keys<
   | 'tagline'

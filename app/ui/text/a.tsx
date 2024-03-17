@@ -6,6 +6,7 @@ export const A = ({
   children,
   color,
   href = '',
+  onClick,
   title,
   underline = 'always',
 }: PropsWithChildren<Omit<LinkProps, 'ref'>>) => {
@@ -32,6 +33,17 @@ export const A = ({
     return (
       <Link href={href} sx={styles}>
         {href.replace('mailto:', '')}
+      </Link>
+    )
+  }
+  if (onClick) {
+    return (
+      <Link
+        onClick={onClick}
+        sx={{ ...styles, cursor: 'pointer' }}
+        underline={underline}
+      >
+        {children}
       </Link>
     )
   }

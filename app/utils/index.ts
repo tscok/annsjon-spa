@@ -1,5 +1,6 @@
 export * from './interpolate'
 export * from './nationalities'
+export * from './use-language'
 export * from './use-previous'
 export * from './use-routes'
 export * from './use-xhr'

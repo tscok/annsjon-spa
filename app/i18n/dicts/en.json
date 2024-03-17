@@ -26,7 +26,7 @@
     "title": "Application"
   },
   "pages": {
-    "home": "Start page",
+    "home": "Home",
     "iba": "IBA",
     "guide": "Watcher's Guide",
     "projects": "Projects",
@@ -63,6 +63,7 @@
     "directions.body2": "Explore the area with "
   },
   "site": {
-    "title": "Lake Ånnsjön Bird Observatory"
+    "title": "Lake Ånnsjön Bird Observatory",
+    "design": "Design and development by "
   }
 }

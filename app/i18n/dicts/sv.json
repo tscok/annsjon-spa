@@ -26,7 +26,7 @@
     "title": "Ansökan"
   },
   "pages": {
-    "home": "Startsida",
+    "home": "Hem",
     "iba": "Fågelskydd",
     "guide": "Skådarguide",
     "projects": "Projekt",
@@ -63,6 +63,7 @@
     "directions.body2": "Utforska platsen med "
   },
   "site": {
-    "title": "Ånnsjöns Fågelstation"
+    "title": "Ånnsjöns Fågelstation",
+    "design": "Design och utveckling av "
   }
 }

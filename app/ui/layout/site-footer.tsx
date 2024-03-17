@@ -1,10 +1,13 @@
 import { A, Image, PageSection } from '..'
-import { useRoutes } from 'app/utils'
+import { useLanguage, useRoutes } from 'app/utils'
 import { Avatar, Divider, Stack, Typography } from '../mui'
 
 import logotype from 'app/assets/faf_logo_white.svg'
+import { useTranslation } from 'app/i18n'
 
 export const SiteFooter = () => {
+  const t = useTranslation('site')
+  const { nextLanguage, setLanguage } = useLanguage()
   const routes = useRoutes()
 
   return (
@@ -34,13 +37,17 @@ export const SiteFooter = () => {
           </Stack>
           <Stack spacing={1}>
             <Stack alignItems="center" direction="row">
-              <A color="common.white" underline="hover">
+              <A
+                color="common.white"
+                underline="hover"
+                onClick={() => setLanguage(nextLanguage.locale)}
+              >
                 <Typography
                   component="span"
                   variant="body2"
                   sx={{ fontWeight: 500 }}
                 >
-                  English
+                  {nextLanguage.name}
                 </Typography>
               </A>
               <Divider
@@ -70,7 +77,7 @@ export const SiteFooter = () => {
               variant="caption"
               sx={{ fontWeight: 500 }}
             >
-              Design och utveckling av{' '}
+              {t('design')}
               <A
                 color="common.white"
                 href="https://www.linkedin.com/in/mr-mike/"

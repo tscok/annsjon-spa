@@ -3,16 +3,18 @@ import { alpha, AppBar, Box, Divider, IconButton, Toolbar } from '../mui'
 import { SiteTitle } from './site-title'
 import { TabsNav } from '../navigation'
 import { Emoji } from '../misc/emoji'
-import { useRoutes } from 'app/utils'
+import { useLanguage, useRoutes } from 'app/utils'
+import { useTranslation } from 'app/i18n'
 
 export const SiteHeader = () => {
+  const t = useTranslation('site')
+  const { nextLanguage, setLanguage } = useLanguage()
   const { pathname } = useLocation()
   const routes = useRoutes()
+
   const mainRoutes = routes.filter(
     (route) => !['/', '/iba', '/reports'].includes(route.path)
   )
-
-  const handleChangeLocale = () => {}
 
   return (
     <AppBar
@@ -26,7 +28,7 @@ export const SiteHeader = () => {
       }}
     >
       <Toolbar>
-        <SiteTitle>Ånnsjöns Fågelstation</SiteTitle>
+        <SiteTitle>{t('title')}</SiteTitle>
         <Box sx={{ flexGrow: 1 }} />
         <TabsNav pathname={pathname} routes={mainRoutes} />
         <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
@@ -39,9 +41,9 @@ export const SiteHeader = () => {
           <IconButton
             color="inherit"
             disableRipple
-            onClick={handleChangeLocale}
+            onClick={() => setLanguage(nextLanguage.locale)}
           >
-            <Emoji>'🇬🇧'</Emoji>
+            <Emoji>{nextLanguage.emoji}</Emoji>
           </IconButton>
         </Box>
       </Toolbar>
