@@ -1,14 +1,20 @@
 import { useState } from 'react'
 
+const params = {
+  method: 'POST',
+  url: '/service.php',
+  async: true,
+} as const
+
 export const useXhr = () => {
   const [error, setError] = useState(false)
   const [loading, setLoading] = useState(false)
-  const [response, setResponse] = useState(undefined)
+  const [response, setResponse] = useState<string | undefined>(undefined)
 
-  const postRequest = (data) => {
+  const postRequest = (data: FormData) => {
     const xhr = new XMLHttpRequest()
 
-    xhr.open('POST', '/service.php', true)
+    xhr.open(params.method, params.url, params.async)
     setLoading(true)
 
     xhr.onreadystatechange = () => {
@@ -23,5 +29,5 @@ export const useXhr = () => {
     xhr.send(data)
   }
 
-  return [error, loading, postRequest, response]
+  return { error, loading, postRequest, response }
 }

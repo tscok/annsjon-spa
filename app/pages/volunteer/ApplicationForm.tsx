@@ -21,7 +21,7 @@ const ApplicationForm = ({
 }: {
   error: boolean
   loading: boolean
-  onSubmit: (data: any) => void
+  onSubmit: (data: FormData) => Promise<void>
 }) => {
   const t = useTranslation('form')
 

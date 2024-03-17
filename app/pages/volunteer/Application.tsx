@@ -1,19 +1,13 @@
-import { useXhr } from 'app/utils'
+import { useSendForm } from 'app/utils'
 import ApplicationForm from './ApplicationForm'
 import ApplicationSent from './ApplicationSent'
 
 export const Application = () => {
-  const [error, loading, postRequest, responseText] = useXhr()
+  const { error, loading, response, sendForm } = useSendForm()
 
-  if (typeof responseText === 'string') {
-    return <ApplicationSent applicant={responseText} />
-  }
-
-  return (
-    <ApplicationForm
-      error={error as boolean}
-      loading={loading as boolean}
-      onSubmit={postRequest as (data: any) => void}
-    />
+  return typeof response === 'string' ? (
+    <ApplicationSent applicant={response} />
+  ) : (
+    <ApplicationForm error={error} loading={loading} onSubmit={sendForm} />
   )
 }
