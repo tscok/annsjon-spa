@@ -1,6 +1,6 @@
 {
   "pages": {
-    "home": "Home",
+    "home": "Start page",
     "iba": "IBA",
     "guide": "Watcher's Guide",
     "projects": "Projects",
@@ -16,11 +16,10 @@
     "contact": "Contact"
   },
   "startpage": {
-    "hero.h1": "Lake\u00a0Ånnsjön Bird\u00a0Observatory",
-    "hero.h2": "Birds and people in a unique environment",
-    "title.events": "Events",
-    "title.guide": "Watcher's Guide",
-    "title.projects": "Projects",
+    "tagline": "Birds and people in a unique environment",
+    "section-title.staff": "Staff wanted",
+    "section-title.guides": "Watcher's Guide",
+    "section-title.projects": "Projects",
     "hogasen.body": "The Greate snipe arrives to the mountains surrounding Lake Ånnsjön in mid May. They begin playing immediately and does so very intensively until mid June. After that most of…",
     "storulvan.body": "Among the more common species are Willow Grouse, Ptarmigan, Bluethroat and at higher altitude Dotterel and Snow Bunting. Golden Eagle and Gyr Falcon are rare, while Merlin…",
     "handol.body": "Along the river Handölan, through the village Handöl, there's a green, deciduous forest with a rich birdlife. Common species here are Garden Warbler, Blackcap, Icterine…",
@@ -31,6 +30,12 @@
     "survey.body": "Every spring we conduct survey projects on Lake Ånnsjön and the surrounding mires and mountains.",
     "ringing.title": "Ringing",
     "ringing.body": "We annually ring between 2000-4000 passerines in the area of Handöl and in the Enan river delta.",
-    "read-more": "Read more"
+    "read-more": "Read more",
+    "directions.title": "How to get here",
+    "directions.body1": "The Observatory is situated in the tiny village of Handöl in Jämtland County, not far from the Norwegian border. The best way to get here is by train, for directions see our ",
+    "directions.body2": "Explore the area with "
+  },
+  "site": {
+    "title": "Lake Ånnsjön Bird Observatory"
   }
 }

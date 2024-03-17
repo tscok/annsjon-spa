@@ -15,15 +15,18 @@
     "url": "git+https://github.com/tscok/annsjon-spa.git"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource-variable/inter": "^5.0.17",
+    "@fontsource/lusitana": "^5.0.8",
     "@mdx-js/rollup": "^3.0.1",
-    "prop-types": "^15.7.2",
+    "@mui/material": "^5.15.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",
     "remark-gfm": "^4.0.0"
   },
   "devDependencies": {
-    "@emotion/react": "^11.11.3",
     "@rollup/plugin-dynamic-import-vars": "^2.1.2",
     "@types/mdx": "^2.0.11",
     "@types/react": "^18.2.61",

@@ -1,15 +1,14 @@
 import { Suspense, lazy } from 'react'
 import { useLocation } from 'react-router-dom'
-import type { MDXProps } from 'mdx/types'
+import type { MDXContent } from 'mdx/types'
 import { useLanguageContext } from '../site/LanguageContext'
-
-type MDXComponentType = (props: MDXProps) => JSX.Element
+import { MdxComponents } from '../ui'
 
 type Glob<T> = Record<string, () => Promise<T>>
 
-const modules = import.meta.glob('./mdx/**/*.mdx') as Glob<MDXComponentType>
+const modules = import.meta.glob('./mdx/**/*.mdx') as Glob<MDXContent>
 
-const dynamic = (fn: () => Promise<any>) => lazy<MDXComponentType>(fn)
+const dynamic = (fn: () => Promise<any>) => lazy<MDXContent>(fn)
 
 export const Page = () => {
   const { isEnglish } = useLanguageContext()
@@ -24,8 +23,8 @@ export const Page = () => {
   const Content = dynamic(modules[fileName] || modules[notFound])
 
   return (
-    <Suspense fallback="Loading…">
-      <Content />
+    <Suspense>
+      <Content components={MdxComponents} />
     </Suspense>
   )
 }
