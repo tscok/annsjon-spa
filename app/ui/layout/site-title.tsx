@@ -3,7 +3,7 @@ import { Link as RouterLink } from 'react-router-dom'
 import { Avatar, Link, Stack, Typography } from '../mui'
 import { Image } from '../misc/figure'
 
-import imageSrc from '../../assets/svg/faf_logo.svg'
+import imageSrc from 'app/assets/svg/faf_logo.svg'
 
 export const SiteTitle = ({ children }: PropsWithChildren) => (
   <Link component={RouterLink} to="/" underline="none">

@@ -1,5 +1,5 @@
 import { Link as RouterLink } from 'react-router-dom'
-import { Route } from '../../types'
+import { Route } from 'app/types'
 import { ListItemText, MenuList, MenuItem } from '../mui'
 
 export const SideNav = ({

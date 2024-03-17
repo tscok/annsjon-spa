@@ -3,7 +3,7 @@ import { alpha, AppBar, Box, Divider, IconButton, Toolbar } from '../mui'
 import { SiteTitle } from './site-title'
 import { TabsNav } from '../navigation'
 import { Emoji } from '../misc/emoji'
-import { useRoutes } from '../../utils'
+import { useRoutes } from 'app/utils'
 
 export const SiteHeader = () => {
   const { pathname } = useLocation()

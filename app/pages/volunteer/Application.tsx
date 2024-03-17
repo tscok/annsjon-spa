@@ -1,4 +1,4 @@
-import { useXhr } from '../../utils'
+import { useXhr } from 'app/utils'
 import ApplicationForm from './ApplicationForm'
 import ApplicationSent from './ApplicationSent'
 

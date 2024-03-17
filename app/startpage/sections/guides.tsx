@@ -2,9 +2,9 @@ import imagehHogasen from '../../../assets/images/dbeckasin3_steve-dahlfors.jpg'
 import imageStorulvan from '../../../assets/images/blahake_steve-dahlfors.jpg'
 import imageHandol from '../../../assets/images/bergfink_steve-dahlfors.jpg'
 import imageAnn from '../../../assets/images/brushane_steve-dahlfors.jpg'
-import { useTranslation } from '../../i18n'
-import { A, BackgroundImage, H5, P, PageSection } from '../../ui'
-import { Grid } from '../../ui/mui'
+import { useTranslation } from 'app/i18n'
+import { A, BackgroundImage, H5, P, PageSection } from 'app/ui'
+import { Grid } from 'app/ui/mui'
 
 export const Guides = () => {
   const t = useTranslation('startpage')

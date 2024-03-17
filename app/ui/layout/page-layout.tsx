@@ -1,5 +1,5 @@
 import { Outlet, useLocation } from 'react-router-dom'
-import { useRoutes } from '../../utils'
+import { useRoutes } from 'app/utils'
 import { SideNav } from '../navigation'
 import { Box } from '../mui'
 

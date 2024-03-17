@@ -1,6 +1,6 @@
-import { useTranslation } from '../../i18n'
-import { PageSection } from '../../ui'
-import { Typography } from '../../ui/mui'
+import { useTranslation } from 'app/i18n'
+import { PageSection } from 'app/ui'
+import { Typography } from 'app/ui/mui'
 
 export const Tagline = () => {
   const t = useTranslation('startpage')
