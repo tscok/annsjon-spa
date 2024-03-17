@@ -1,8 +1,8 @@
 import { A, Image, PageSection } from '..'
-import { useRoutes } from '../../utils'
+import { useRoutes } from 'app/utils'
 import { Avatar, Divider, Stack, Typography } from '../mui'
 
-import imageSrc from '../../assets/svg/faf_logo_white.svg'
+import imageSrc from 'app/assets/svg/faf_logo_white.svg'
 
 export const SiteFooter = () => {
   const routes = useRoutes()

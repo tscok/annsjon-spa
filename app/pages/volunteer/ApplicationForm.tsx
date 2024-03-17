@@ -1,6 +1,6 @@
 import { FormEvent } from 'react'
-import { useTranslation } from '../../i18n'
-import { useText, interpolate, nationalities } from '../../utils'
+import { useTranslation } from 'app/i18n'
+import { useText, interpolate, nationalities } from 'app/utils'
 import {
   Autocomplete,
   H2,

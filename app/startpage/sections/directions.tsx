@@ -1,8 +1,8 @@
-import { A, BackgroundImage } from '../../ui'
-import { Box, Grid, Typography } from '../../ui/mui'
-import { useTranslation } from '../../i18n'
+import { A, BackgroundImage } from 'app/ui'
+import { Box, Grid, Typography } from 'app/ui/mui'
+import { useTranslation } from 'app/i18n'
 
-import imageSrc from '../../assets/road_mikael_carlsson.jpg'
+import imageSrc from 'app/assets/road_mikael_carlsson.jpg'
 
 export const Directions = () => {
   const t = useTranslation('startpage')

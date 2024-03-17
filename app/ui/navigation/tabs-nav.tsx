@@ -1,6 +1,6 @@
 import { Link as RouterLink } from 'react-router-dom'
 import { Tab, Tabs } from '../mui'
-import { Route } from '../../types'
+import { Route } from 'app/types'
 import { sans } from '../theme/fonts'
 
 export const TabsNav = ({

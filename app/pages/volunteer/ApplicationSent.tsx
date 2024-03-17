@@ -1,5 +1,5 @@
-import { useText, interpolate } from '../../utils'
-import { H2, P } from '../../ui'
+import { useText, interpolate } from 'app/utils'
+import { H2, P } from 'app/ui'
 
 const ApplicationSent = ({ applicant }: { applicant: string }) => {
   const getText = useText()

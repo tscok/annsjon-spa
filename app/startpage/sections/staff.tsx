@@ -1,9 +1,9 @@
 import { Suspense, lazy } from 'react'
 import type { MDXContent } from 'mdx/types'
-import { useLanguageContext } from '../../site/LanguageContext'
-import { useTranslation } from '../../i18n'
-import { BackgroundImage, MdxComponents, PageSection } from '../../ui'
-import { Grid } from '../../ui/mui'
+import { useLanguageContext } from 'app/site/LanguageContext'
+import { useTranslation } from 'app/i18n'
+import { BackgroundImage, MdxComponents, PageSection } from 'app/ui'
+import { Grid } from 'app/ui/mui'
 
 import imageSrc from '../../../assets/images/brushane_thomas-holmberg.jpg'
 

@@ -2,9 +2,9 @@ import imageGreatSnipe from '../../../assets/images/old/projects_great-snipe.jpg
 import imageCensus from '../../../assets/images/old/projects_census.jpg'
 import imageRinging from '../../../assets/images/old/projects_ringing.jpg'
 
-import { useTranslation } from '../../i18n'
-import { BackgroundImage, H5, P, PageSection } from '../../ui'
-import { Stack } from '../../ui/mui'
+import { useTranslation } from 'app/i18n'
+import { BackgroundImage, H5, P, PageSection } from 'app/ui'
+import { Stack } from 'app/ui/mui'
 
 export const Projects = () => {
   const t = useTranslation('startpage')
