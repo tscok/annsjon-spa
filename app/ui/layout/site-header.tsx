@@ -5,16 +5,16 @@ import Box from '@mui/material/Box'
 import Divider from '@mui/material/Divider'
 import IconButton from '@mui/material/IconButton'
 import Toolbar from '@mui/material/Toolbar'
-import { SiteTitle } from './site-title'
+import { useLanguage } from 'app/language/use-language'
+import { useDictionary } from 'app/i18n/use-dictionary'
+import { useRoutes } from 'app/utils/use-routes'
 import { TabsNav } from '../navigation/tabs-nav'
 import { Emoji } from '../misc/emoji'
-import { useLanguage } from 'app/utils/use-language'
-import { useRoutes } from 'app/utils/use-routes'
-import { useTranslation } from 'app/i18n'
+import { SiteTitle } from './site-title'
 
 export const SiteHeader = () => {
-  const t = useTranslation('site')
-  const { nextLanguage, setLanguage } = useLanguage()
+  const t = useDictionary('site')
+  const { changeLanguage, nextLanguage } = useLanguage()
   const { pathname } = useLocation()
   const routes = useRoutes()
 
@@ -44,11 +44,7 @@ export const SiteHeader = () => {
             variant="middle"
             sx={{ height: '2rem', mx: 1, alignSelf: 'center' }}
           />
-          <IconButton
-            color="inherit"
-            disableRipple
-            onClick={() => setLanguage(nextLanguage.locale)}
-          >
+          <IconButton color="inherit" disableRipple onClick={changeLanguage}>
             <Emoji>{nextLanguage.emoji}</Emoji>
           </IconButton>
         </Box>

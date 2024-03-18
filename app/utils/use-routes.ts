@@ -1,8 +1,8 @@
-import { useTranslation } from '../i18n'
-import { Route } from '../types'
+import { useDictionary } from 'app/i18n/use-dictionary'
+import { Route } from 'app/types'
 
 export const useRoutes = (): Route[] => {
-  const t = useTranslation('pages')
+  const t = useDictionary('pages')
 
   return [
     {

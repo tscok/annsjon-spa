@@ -1,9 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-
-import { LanguageProvider } from './utils/use-language'
-import { Router } from './router'
+import { LanguageProvider } from './language/provider'
+import { I18nProvider } from './i18n/provider'
 import { ThemeProvider } from './ui/theme/theme-provider'
+import { Router } from './router'
 
 const domNode = document.getElementById('root')
 const root = createRoot(domNode as HTMLElement)
@@ -11,9 +11,11 @@ const root = createRoot(domNode as HTMLElement)
 root.render(
   <StrictMode>
     <LanguageProvider>
-      <ThemeProvider>
-        <Router />
-      </ThemeProvider>
+      <I18nProvider>
+        <ThemeProvider>
+          <Router />
+        </ThemeProvider>
+      </I18nProvider>
     </LanguageProvider>
   </StrictMode>
 )

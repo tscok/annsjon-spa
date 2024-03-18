@@ -1,8 +1,8 @@
 import { Suspense, lazy } from 'react'
 import { useLocation } from 'react-router-dom'
 import type { MDXContent } from 'mdx/types'
-import { useLanguage } from 'app/utils/use-language'
 import { MdxComponents } from 'app/ui/mdx'
+import { useLanguage } from 'app/language/use-language'
 
 type Glob<T> = Record<string, () => Promise<T>>
 

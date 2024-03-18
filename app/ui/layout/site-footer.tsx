@@ -2,25 +2,20 @@ import Avatar from '@mui/material/Avatar'
 import Divider from '@mui/material/Divider'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
-import { useLanguage } from 'app/utils/use-language'
+import { useDictionary } from 'app/i18n/use-dictionary'
+import { useLanguage } from 'app/language/use-language'
 import { useRoutes } from 'app/utils/use-routes'
 import { FooterNav } from '../navigation/footer-nav'
 import { A } from '../text/a'
 import { Image } from '../image/image'
 import { PageSection } from './page-section'
-
 import logotype from 'app/assets/faf_logo_white.svg'
-import { useTranslation } from 'app/i18n'
 
 const LanguageAndCookies = () => {
-  const { nextLanguage, setLanguage } = useLanguage()
+  const { nextLanguage, changeLanguage } = useLanguage()
   return (
     <>
-      <A
-        color="common.white"
-        underline="hover"
-        onClick={() => setLanguage(nextLanguage.locale)}
-      >
+      <A color="common.white" underline="hover" onClick={changeLanguage}>
         <Typography component="span" variant="body2" sx={{ fontWeight: 500 }}>
           {nextLanguage.name}
         </Typography>
@@ -47,7 +42,7 @@ const LanguageAndCookies = () => {
 }
 
 export const SiteFooter = () => {
-  const t = useTranslation('site')
+  const t = useDictionary('site')
   const routes = useRoutes()
 
   return (
