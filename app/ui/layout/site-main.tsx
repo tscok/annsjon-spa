@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react'
-import { Box } from '../mui'
+import Box from '@mui/material/Stack'
 
 export const SiteMain = ({ children }: PropsWithChildren) => {
   // TODO: useMediaQuery to toggle between 64 and 48

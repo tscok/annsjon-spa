@@ -1,6 +1,7 @@
-import { FormGroup, Typography } from '@mui/material'
+import FormControlLabel from '@mui/material/FormControlLabel'
+import FormGroup from '@mui/material/FormGroup'
 import MuiCheckbox from '@mui/material/Checkbox'
-import { FormControlLabel } from '../mui'
+import Typography from '@mui/material/Typography'
 
 export function Checkbox({
   label,

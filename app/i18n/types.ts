@@ -13,7 +13,7 @@ type Form = Keys<
   | 'gender.other'
   | 'gender'
   | 'last-name'
-  | 'mandatory'
+  | 'mandatory-fields'
   | 'nationality'
   | 'phone'
   | 'submit'

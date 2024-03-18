@@ -1,5 +1,8 @@
-import { A, BackgroundImage } from 'app/ui'
-import { Box, Grid, Typography } from 'app/ui/mui'
+import Box from '@mui/material/Box'
+import Grid from '@mui/material/Unstable_Grid2'
+import Typography from '@mui/material/Typography'
+import { A } from 'app/ui/text/a'
+import { BackgroundImage } from 'app/ui/image/background-image'
 import { useTranslation } from 'app/i18n'
 
 export const Directions = () => {

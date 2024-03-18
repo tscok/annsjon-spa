@@ -1,5 +1,5 @@
 import { Locale } from 'app/types'
-import { useLanguage } from 'app/utils'
+import { useLanguage } from 'app/utils/use-language'
 import { Dictionary, TranslateFn } from './types'
 
 import en from './dicts/en.json'

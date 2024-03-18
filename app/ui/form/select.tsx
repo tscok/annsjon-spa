@@ -1,19 +1,27 @@
-import { MenuItem, TextField } from '@mui/material'
+import { PropsWithChildren } from 'react'
+import MuiMenuItem, { MenuItemProps } from '@mui/material/MenuItem'
+import TextField from '@mui/material/TextField'
 
-type SelectProps = {
+export const Select = ({
+  children,
+  defaultValue,
+  label,
+  name,
+}: PropsWithChildren<{
   defaultValue: string
   label: string
   name: string
-  options?: { label: string; value: string }[]
-  required?: boolean
-}
-
-export const Select = ({ options, ...props }: SelectProps) => (
-  <TextField {...props} fullWidth InputLabelProps={{ shrink: true }} select>
-    {options?.map((option) => (
-      <MenuItem key={option.value} value={option.value}>
-        {option.label}
-      </MenuItem>
-    ))}
+}>) => (
+  <TextField
+    defaultValue={defaultValue}
+    fullWidth
+    InputLabelProps={{ shrink: true }}
+    label={label}
+    name={name}
+    select
+  >
+    {children}
   </TextField>
 )
+
+export const Option = (props: MenuItemProps) => <MuiMenuItem {...props} />

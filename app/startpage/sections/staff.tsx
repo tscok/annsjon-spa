@@ -1,9 +1,11 @@
 import { Suspense, lazy } from 'react'
 import type { MDXContent } from 'mdx/types'
-import { useLanguage } from 'app/utils'
+import Grid from '@mui/material/Unstable_Grid2'
+import { useLanguage } from 'app/utils/use-language'
 import { useTranslation } from 'app/i18n'
-import { BackgroundImage, MdxComponents, PageSection } from 'app/ui'
-import { Grid } from 'app/ui/mui'
+import { PageSection } from 'app/ui/layout/page-section'
+import { BackgroundImage } from 'app/ui/image/background-image'
+import { MdxComponents } from 'app/ui/mdx'
 
 type Glob<T> = Record<string, () => Promise<T>>
 

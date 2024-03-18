@@ -1,7 +1,10 @@
 import { PropsWithChildren } from 'react'
 import { Link as RouterLink } from 'react-router-dom'
-import { Avatar, Link, Stack, Typography } from '../mui'
-import { Image } from '../misc/figure'
+import Avatar from '@mui/material/Avatar'
+import Link from '@mui/material/Link'
+import Stack from '@mui/material/Stack'
+import Typography from '@mui/material/Typography'
+import { Image } from '../image/image'
 
 import logotype from 'app/assets/faf_logo.svg'
 

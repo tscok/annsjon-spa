@@ -1,22 +1,22 @@
 import { PropsWithChildren } from 'react'
-import { Typography } from '../mui'
+import Typography from '@mui/material/Typography'
 
-export const H2 = ({ children }: PropsWithChildren) => (
-  <Typography variant="h2">{children}</Typography>
+export const H2 = (props: PropsWithChildren) => (
+  <Typography {...props} variant="h2" />
 )
 
-export const H3 = ({ children }: PropsWithChildren) => (
-  <Typography variant="h3">{children}</Typography>
+export const H3 = (props: PropsWithChildren) => (
+  <Typography {...props} variant="h3" />
 )
 
-export const H4 = ({ children }: PropsWithChildren) => (
-  <Typography variant="h4">{children}</Typography>
+export const H4 = (props: PropsWithChildren) => (
+  <Typography {...props} variant="h4" />
 )
 
-export const H5 = ({ children }: PropsWithChildren) => (
-  <Typography variant="h5">{children}</Typography>
+export const H5 = (props: PropsWithChildren) => (
+  <Typography {...props} variant="h5" />
 )
 
-export const H6 = ({ children }: PropsWithChildren) => (
-  <Typography variant="h6">{children}</Typography>
+export const H6 = (props: PropsWithChildren) => (
+  <Typography {...props} variant="h6" />
 )

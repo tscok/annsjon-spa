@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react'
-import { Typography } from '../mui'
+import Typography from '@mui/material/Typography'
 
 export const Blockquote = ({ children }: PropsWithChildren) => (
   <Typography

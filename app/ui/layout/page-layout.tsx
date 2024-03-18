@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from 'react-router-dom'
-import { useRoutes } from 'app/utils'
-import { SideNav } from '../navigation'
-import { Box } from '../mui'
+import Box from '@mui/material/Box'
+import { useRoutes } from 'app/utils/use-routes'
+import { SideNav } from '../navigation/side-nav'
 
 export const PageLayout = () => {
   const { pathname } = useLocation()

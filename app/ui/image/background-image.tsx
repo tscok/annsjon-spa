@@ -1,21 +1,5 @@
 import { PropsWithChildren } from 'react'
-import { Box, Typography } from '../mui'
-
-export const Figure = ({
-  caption,
-  children,
-}: PropsWithChildren<{ caption: string }>) => (
-  <Box component="figure" sx={{ my: 3, mx: 0 }}>
-    {children}
-    <Typography component="figcaption" variant="caption">
-      {caption}
-    </Typography>
-  </Box>
-)
-
-export const Image = ({ alt = '', src }: { alt?: string; src: string }) => (
-  <img alt={alt} src={src} style={{ width: '100%', display: 'block' }} />
-)
+import Box from '@mui/material/Box'
 
 export const BackgroundImage = ({
   children,

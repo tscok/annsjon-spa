@@ -14,7 +14,7 @@
     "gender.other": "Annat",
     "gender": "Kön",
     "last-name": "Efternamn",
-    "mandatory": "Fält markerade med stjärna (*) är obligatoriska.",
+    "mandatory-fields": "Fält markerade med stjärna (*) är obligatoriska.",
     "nationality": "Nationalitet",
     "phone": "Telefonnummer",
     "submit": "Skicka",

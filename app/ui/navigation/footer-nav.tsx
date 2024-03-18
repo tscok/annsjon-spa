@@ -1,6 +1,6 @@
-import { A } from '..'
-import { Typography } from '../mui'
+import Typography from '@mui/material/Typography'
 import { Route } from 'app/types'
+import { A } from '../text/a'
 
 export const FooterNav = ({ routes }: { routes: Route[] }) =>
   routes.map((route) => (

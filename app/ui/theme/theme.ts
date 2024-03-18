@@ -1,5 +1,5 @@
 import type { Theme } from '@mui/material'
-import { createTheme } from '../mui'
+import createTheme from '@mui/material/styles/createTheme'
 import { sans, serif } from './fonts'
 
 const defaultTheme = createTheme()

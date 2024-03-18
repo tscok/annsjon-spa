@@ -1,4 +1,4 @@
-import { useSendForm } from 'app/utils'
+import { useSendForm } from 'app/utils/use-send-form'
 import ApplicationForm from './ApplicationForm'
 import ApplicationSent from './ApplicationSent'
 

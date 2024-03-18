@@ -1,6 +1,6 @@
 import { PropsWithChildren } from 'react'
 import { Link as RouterLink } from 'react-router-dom'
-import { type LinkProps, Link } from '../mui'
+import Link, { LinkProps } from '@mui/material/Link'
 
 export const A = ({
   children,

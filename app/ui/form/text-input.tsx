@@ -1,14 +1,12 @@
-import { TextField } from '../mui'
+import MuiTextField, { TextFieldProps } from '@mui/material/TextField'
 
-type TextInputProps = {
-  hint?: string
-  label: string
-  minRows?: number
-  multiline?: boolean
-  name: string
-  required?: boolean
-}
+export const TextField = (props: TextFieldProps) => (
+  <MuiTextField {...props} autoComplete="off" fullWidth />
+)
 
-export const TextInput = ({ hint, ...props }: TextInputProps) => (
-  <TextField {...props} autoComplete="off" fullWidth helperText={hint} />
+export const TextArea = ({
+  readOnly,
+  ...props
+}: TextFieldProps & { readOnly?: boolean }) => (
+  <TextField {...props} InputProps={{ readOnly }} minRows={2} multiline />
 )
