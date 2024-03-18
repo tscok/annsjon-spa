@@ -1,12 +1,12 @@
 import Stack from '@mui/material/Stack'
-import { useTranslation } from 'app/i18n'
+import { useDictionary } from 'app/i18n/use-dictionary'
 import { PageSection } from 'app/ui/layout/page-section'
 import { BackgroundImage } from 'app/ui/image/background-image'
 import { H5 } from 'app/ui/text/heading'
 import { P } from 'app/ui/text/p'
 
 export const Projects = () => {
-  const t = useTranslation('startpage')
+  const t = useDictionary('startpage')
 
   return (
     <PageSection title={t('section-title.projects')}>

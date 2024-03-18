@@ -75,4 +75,4 @@ export type Dictionary = {
   site: Site
 }
 
-export type TranslateFn<T> = <K extends keyof T>(key: K) => T[K]
+export type TranslateFn<T> = <K extends keyof T>(key: K) => T[K] | K

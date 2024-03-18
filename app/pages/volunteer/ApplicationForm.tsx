@@ -1,6 +1,6 @@
 import { FormEvent } from 'react'
 import Stack from '@mui/material/Stack'
-import { useTranslation } from 'app/i18n'
+import { useDictionary } from 'app/i18n/use-dictionary'
 import { interpolate } from 'app/utils/interpolate'
 import { nationalities } from 'app/utils/nationalities'
 import {
@@ -26,7 +26,7 @@ const ApplicationForm = ({
   loading: boolean
   onSubmit: (data: FormData) => Promise<void>
 }) => {
-  const t = useTranslation('form')
+  const t = useDictionary('form')
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()

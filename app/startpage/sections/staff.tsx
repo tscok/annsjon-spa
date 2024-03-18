@@ -1,8 +1,8 @@
 import { Suspense, lazy } from 'react'
 import type { MDXContent } from 'mdx/types'
 import Grid from '@mui/material/Unstable_Grid2'
-import { useLanguage } from 'app/utils/use-language'
-import { useTranslation } from 'app/i18n'
+import { useLanguage } from 'app/language/use-language'
+import { useDictionary } from 'app/i18n/use-dictionary'
 import { PageSection } from 'app/ui/layout/page-section'
 import { BackgroundImage } from 'app/ui/image/background-image'
 import { MdxComponents } from 'app/ui/mdx'
@@ -15,7 +15,7 @@ const dynamic = (fn: () => Promise<any>) => lazy<MDXContent>(fn)
 
 export const Staff = () => {
   const { locale } = useLanguage()
-  const t = useTranslation('startpage')
+  const t = useDictionary('startpage')
 
   const fileName = `./mdx/staff-${locale}.mdx`
   const Content = dynamic(modules[fileName])

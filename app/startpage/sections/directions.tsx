@@ -1,12 +1,13 @@
 import Box from '@mui/material/Box'
 import Grid from '@mui/material/Unstable_Grid2'
 import Typography from '@mui/material/Typography'
-import { A } from 'app/ui/text/a'
+import { useDictionary } from 'app/i18n/use-dictionary'
 import { BackgroundImage } from 'app/ui/image/background-image'
-import { useTranslation } from 'app/i18n'
+import { A } from 'app/ui/text/a'
 
 export const Directions = () => {
-  const t = useTranslation('startpage')
+  const t = useDictionary('startpage')
+
   return (
     <BackgroundImage position="50% 80%" src="/images/road_mikael-carlsson.jpg">
       <Box

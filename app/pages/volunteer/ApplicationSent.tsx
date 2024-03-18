@@ -1,10 +1,10 @@
+import { useDictionary } from 'app/i18n/use-dictionary'
 import { interpolate } from 'app/utils/interpolate'
 import { H2 } from 'app/ui/text/heading'
 import { P } from 'app/ui/text/p'
-import { useTranslation } from 'app/i18n'
 
 const ApplicationSent = ({ applicant }: { applicant: string }) => {
-  const t = useTranslation('form')
+  const t = useDictionary('form')
 
   return (
     <>
