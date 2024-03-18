@@ -1,7 +1,0 @@
-export * from './interpolate'
-export * from './nationalities'
-export * from './use-language'
-export * from './use-previous'
-export * from './use-routes'
-export * from './use-send-form'
-export * from './use-xhr'

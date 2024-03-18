@@ -1,7 +1,11 @@
 import MuiButton, { ButtonProps } from '@mui/material/Button'
 
-export const Button = ({ children, ...props }: ButtonProps) => (
-  <MuiButton variant="contained" {...props}>
-    {children}
-  </MuiButton>
+export const SubmitButton = (props: ButtonProps) => (
+  <MuiButton
+    {...props}
+    disableElevation
+    size="large"
+    type="submit"
+    variant="contained"
+  />
 )

@@ -1,5 +1,6 @@
 import { Link as RouterLink } from 'react-router-dom'
-import { Tab, Tabs } from '../mui'
+import Tab from '@mui/material/Tab'
+import Tabs from '@mui/material/Tabs'
 import { Route } from 'app/types'
 import { sans } from '../theme/fonts'
 

@@ -1,5 +1,6 @@
-import { interpolate } from 'app/utils'
-import { H2, P } from 'app/ui'
+import { interpolate } from 'app/utils/interpolate'
+import { H2 } from 'app/ui/text/heading'
+import { P } from 'app/ui/text/p'
 import { useTranslation } from 'app/i18n'
 
 const ApplicationSent = ({ applicant }: { applicant: string }) => {

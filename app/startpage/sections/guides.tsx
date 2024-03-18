@@ -1,6 +1,10 @@
 import { useTranslation } from 'app/i18n'
-import { A, BackgroundImage, H5, P, PageSection } from 'app/ui'
-import { Grid } from 'app/ui/mui'
+import { PageSection } from 'app/ui/layout/page-section'
+import Grid from '@mui/material/Unstable_Grid2'
+import { A } from 'app/ui/text/a'
+import { BackgroundImage } from 'app/ui/image/background-image'
+import { H5 } from 'app/ui/text/heading'
+import { P } from 'app/ui/text/p'
 
 export const Guides = () => {
   const t = useTranslation('startpage')

@@ -1,18 +1,21 @@
 import { FormEvent } from 'react'
+import Stack from '@mui/material/Stack'
 import { useTranslation } from 'app/i18n'
-import { interpolate, nationalities } from 'app/utils'
+import { interpolate } from 'app/utils/interpolate'
+import { nationalities } from 'app/utils/nationalities'
 import {
   Autocomplete,
-  H2,
-  P,
-  TextInput,
-  Fieldset,
   Checkbox,
-  Button,
-  A,
+  Fieldset,
+  Option,
   Select,
-} from 'app/ui'
-import { Stack } from 'app/ui/mui'
+  SubmitButton,
+  TextArea,
+  TextField,
+} from 'app/ui/form'
+import { A } from 'app/ui/text/a'
+import { H2 } from 'app/ui/text/heading'
+import { P } from 'app/ui/text/p'
 
 const ApplicationForm = ({
   error,
@@ -37,40 +40,31 @@ const ApplicationForm = ({
       <form onSubmit={handleSubmit}>
         <Stack spacing={{ xs: 2, md: 4 }}>
           <Fieldset>
-            <TextInput label={t('first-name')} name="fname" required />
-            <TextInput label={t('last-name')} name="lname" required />
+            <TextField label={t('first-name')} name="fname" required />
+            <TextField label={t('last-name')} name="lname" required />
           </Fieldset>
           <Fieldset>
-            <Select
-              defaultValue="female"
-              label={t('gender')}
-              name="gender"
-              options={[
-                { label: t('gender.female'), value: 'female' },
-                { label: t('gender.male'), value: 'male' },
-                { label: t('gender.other'), value: 'other' },
-              ]}
-            />
-            <TextInput label={t('dob')} name="birth" />
+            <Select defaultValue="female" label={t('gender')} name="gender">
+              <Option value="female">{t('gender.female')}</Option>
+              <Option value="male">{t('gender.male')}</Option>
+              <Option value="other">{t('gender.other')}</Option>
+            </Select>
+            <TextField label={t('dob')} name="birth" />
           </Fieldset>
-          <TextInput
-            hint={t('about.hint')}
+          <TextArea
+            helperText={t('about.hint')}
             label={t('about')}
-            minRows={2}
-            multiline
             name="about"
             required
           />
-          <TextInput
-            hint={t('timeframe.hint')}
+          <TextArea
+            helperText={t('timeframe.hint')}
             label={t('timeframe')}
-            minRows={2}
-            multiline
             name="timeframe"
           />
           <Fieldset>
-            <TextInput label={t('email')} name="email" required />
-            <TextInput label={t('phone')} name="phone" />
+            <TextField label={t('email')} name="email" required />
+            <TextField label={t('phone')} name="phone" />
           </Fieldset>
           <Autocomplete
             label={t('nationality')}
@@ -82,19 +76,10 @@ const ApplicationForm = ({
             <Checkbox label={t('driver')} name="driver" value="yes" />
           </Fieldset>
         </Stack>
-        <P variant="body2">
-          {interpolate(t('mandatory'), {
-            $1: <strong>*</strong>,
-          })}
-        </P>
-        <Button
-          disabled={error || loading}
-          disableElevation
-          size="large"
-          type="submit"
-        >
+        <P variant="body2">{t('mandatory-fields')}</P>
+        <SubmitButton disabled={error || loading}>
           {loading ? t('submitting') : t('submit')}
-        </Button>
+        </SubmitButton>
       </form>
       {error && (
         <P>

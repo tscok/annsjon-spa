@@ -1,6 +1,6 @@
+import Typography from '@mui/material/Typography'
 import { useTranslation } from 'app/i18n'
-import { PageSection } from 'app/ui'
-import { Typography } from 'app/ui/mui'
+import { PageSection } from 'app/ui/layout/page-section'
 
 export const Tagline = () => {
   const t = useTranslation('startpage')

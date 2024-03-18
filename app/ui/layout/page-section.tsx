@@ -1,5 +1,6 @@
 import { PropsWithChildren } from 'react'
-import { Box, Typography } from '../mui'
+import Box from '@mui/material/Box'
+import Typography from '@mui/material/Typography'
 
 export const PageSection = ({
   children,

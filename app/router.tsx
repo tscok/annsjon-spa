@@ -1,7 +1,8 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { PageLayout } from './ui/layout/page-layout'
+import { SiteLayout } from './ui/layout/site-layout'
 import { Application, Page } from './pages'
-import { StartPage } from './startpage'
-import { PageLayout, SiteLayout } from './ui'
+import { StartPage } from './startpage/startpage'
 
 const config = createBrowserRouter([
   {
