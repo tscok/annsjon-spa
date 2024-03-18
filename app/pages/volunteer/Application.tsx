@@ -1,13 +1,26 @@
+import { useState } from 'react'
 import { useSendForm } from 'app/utils/use-send-form'
-import ApplicationForm from './ApplicationForm'
-import ApplicationSent from './ApplicationSent'
+import { ApplicationError } from './application-error'
+import { ApplicationForm } from './application-form'
+import { ApplicationSent } from './application-sent'
+import { parseData } from './parseData'
 
 export const Application = () => {
   const { error, loading, response, sendForm } = useSendForm()
+  const [formData, setFormData] = useState<FormData | undefined>()
 
-  return typeof response === 'string' ? (
-    <ApplicationSent applicant={response} />
-  ) : (
-    <ApplicationForm error={error} loading={loading} onSubmit={sendForm} />
-  )
+  const handleSubmit = (data: FormData) => {
+    setFormData(data)
+    sendForm(data)
+  }
+
+  if (typeof response === 'string') {
+    return <ApplicationSent applicant={response} />
+  }
+
+  if (error && formData) {
+    return <ApplicationError formData={parseData(formData)} />
+  }
+
+  return <ApplicationForm loading={loading} onSubmit={handleSubmit} />
 }

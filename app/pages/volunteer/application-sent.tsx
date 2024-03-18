@@ -3,7 +3,7 @@ import { interpolate } from 'app/utils/interpolate'
 import { H2 } from 'app/ui/text/heading'
 import { P } from 'app/ui/text/p'
 
-const ApplicationSent = ({ applicant }: { applicant: string }) => {
+export const ApplicationSent = ({ applicant }: { applicant: string }) => {
   const t = useDictionary('form')
 
   return (
@@ -13,5 +13,3 @@ const ApplicationSent = ({ applicant }: { applicant: string }) => {
     </>
   )
 }
-
-export default ApplicationSent
