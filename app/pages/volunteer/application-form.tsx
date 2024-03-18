@@ -1,8 +1,6 @@
 import { FormEvent } from 'react'
 import Stack from '@mui/material/Stack'
 import { useDictionary } from 'app/i18n/use-dictionary'
-import { interpolate } from 'app/utils/interpolate'
-import { nationalities } from 'app/utils/nationalities'
 import {
   Autocomplete,
   Checkbox,
@@ -13,25 +11,22 @@ import {
   TextArea,
   TextField,
 } from 'app/ui/form'
-import { A } from 'app/ui/text/a'
 import { H2 } from 'app/ui/text/heading'
 import { P } from 'app/ui/text/p'
+import { nationalities } from './nationalities'
 
-const ApplicationForm = ({
-  error,
+export const ApplicationForm = ({
   loading,
   onSubmit,
 }: {
-  error: boolean
   loading: boolean
-  onSubmit: (data: FormData) => Promise<void>
+  onSubmit: (data: FormData) => void
 }) => {
   const t = useDictionary('form')
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    const formData = new FormData(event.currentTarget)
-    onSubmit(formData)
+    onSubmit(new FormData(event.currentTarget))
   }
 
   return (
@@ -77,20 +72,10 @@ const ApplicationForm = ({
           </Fieldset>
         </Stack>
         <P variant="body2">{t('mandatory-fields')}</P>
-        <SubmitButton disabled={error || loading}>
+        <SubmitButton disabled={loading}>
           {loading ? t('submitting') : t('submit')}
         </SubmitButton>
       </form>
-      {error && (
-        <P>
-          {interpolate(t('error.body'), {
-            $1: <strong>{t('error.title')}</strong>,
-            $2: <A href="mailto:volunteer@annsjon.org" />,
-          })}
-        </P>
-      )}
     </>
   )
 }
-
-export default ApplicationForm

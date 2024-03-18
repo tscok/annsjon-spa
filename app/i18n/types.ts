@@ -6,6 +6,8 @@ type Form = Keys<
   | 'driver'
   | 'email'
   | 'error.body'
+  | 'error.copyData'
+  | 'error.formData'
   | 'error.title'
   | 'first-name'
   | 'gender.female'
