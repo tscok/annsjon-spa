@@ -3,7 +3,6 @@ import { useSendForm } from 'app/utils/use-send-form'
 import { ApplicationError } from './application-error'
 import { ApplicationForm } from './application-form'
 import { ApplicationSent } from './application-sent'
-import { parseData } from './parseData'
 
 export const Application = () => {
   const { error, loading, response, sendForm } = useSendForm()
@@ -19,7 +18,7 @@ export const Application = () => {
   }
 
   if (error && formData) {
-    return <ApplicationError formData={parseData(formData)} />
+    return <ApplicationError formData={formData} />
   }
 
   return <ApplicationForm loading={loading} onSubmit={handleSubmit} />

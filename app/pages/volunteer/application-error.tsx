@@ -5,8 +5,9 @@ import { TextArea } from 'app/ui/form/text-input'
 import { H2, H5 } from 'app/ui/text/heading'
 import { P } from 'app/ui/text/p'
 import { A } from 'app/ui/text/a'
+import { parseData } from './parseData'
 
-export const ApplicationError = ({ formData }: { formData: string }) => {
+export const ApplicationError = ({ formData }: { formData: FormData }) => {
   const t = useDictionary('form')
 
   return (
@@ -19,7 +20,7 @@ export const ApplicationError = ({ formData }: { formData: string }) => {
       </P>
       <Stack spacing={2}>
         <H5>{t('error.formData')}</H5>
-        <TextArea defaultValue={formData} />
+        <TextArea defaultValue={parseData(formData)} />
       </Stack>
     </>
   )
