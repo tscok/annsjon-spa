@@ -61,6 +61,7 @@ const typography: Partial<Theme['typography']> = {
 }
 
 const palette: Partial<Theme['palette']> = {
+  ...defaultTheme.palette,
   mode: 'light',
   background: {
     ...defaultTheme.palette.background,

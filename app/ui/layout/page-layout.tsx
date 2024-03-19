@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from 'react-router-dom'
 import Box from '@mui/material/Box'
-import { useRoutes } from 'app/utils/use-routes'
 import { SideNav } from '../navigation/side-nav'
+import { useRoutes } from 'app/utils/use-routes'
 
 export const PageLayout = () => {
   const { pathname } = useLocation()
@@ -12,21 +12,20 @@ export const PageLayout = () => {
   return (
     <Box
       sx={{
+        display: { xs: 'block', md: 'grid' },
+        gap: 6,
+        gridTemplateColumns: '1fr 640px 1fr',
+        px: { xs: '1rem', sm: '3rem', md: 0 },
         pt: 6,
         pb: 12,
-        mx: 2,
-        display: { md: 'grid' },
-        gap: 5,
-        gridTemplateColumns: '1fr 640px 1fr',
       }}
     >
-      <Box component="aside">
+      <aside>
         {route?.children && <SideNav pathname={pathname} route={route} />}
-      </Box>
-      <Box component="article">
+      </aside>
+      <article>
         <Outlet />
-      </Box>
-      <Box component="aside"></Box>
+      </article>
     </Box>
   )
 }
