@@ -31,7 +31,9 @@ export const SiteFooter = () => {
             spacing={1}
           >
             {routes.map((route) => (
-              <FooterButton to={route.path}>{route.name}</FooterButton>
+              <FooterButton key={route.path} to={route.path}>
+                {route.name}
+              </FooterButton>
             ))}
           </Stack>
           <Stack
