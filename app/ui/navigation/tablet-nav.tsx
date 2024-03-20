@@ -4,7 +4,7 @@ import Tabs from '@mui/material/Tabs'
 import { Route } from 'app/types'
 import { sans } from '../theme/fonts'
 
-export const TabsNav = ({
+export const TabletNav = ({
   pathname,
   routes,
 }: {
@@ -36,9 +36,10 @@ export const TabsNav = ({
           sx={{
             color: 'text.primary',
             fontFamily: sans,
-            fontSize: '0.875rem',
+            fontSize: '0.7625rem',
+            minWidth: 0,
             textTransform: 'uppercase',
-            px: { md: 1, lg: 2 },
+            px: { md: 1.5, lg: 2 },
           }}
           value={route.path}
         />

@@ -1,47 +1,18 @@
 import Avatar from '@mui/material/Avatar'
-import Divider from '@mui/material/Divider'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
+import logotype from 'app/assets/faf_logo_white.svg'
 import { useDictionary } from 'app/i18n/use-dictionary'
 import { useLanguage } from 'app/language/use-language'
 import { useRoutes } from 'app/utils/use-routes'
-import { FooterNav } from '../navigation/footer-nav'
-import { A } from '../text/a'
+import { VerticalDivider } from '../misc/vertical-divider'
 import { Image } from '../image/image'
+import { A } from '../text/a'
 import { PageSection } from './page-section'
-import logotype from 'app/assets/faf_logo_white.svg'
-
-const LanguageAndCookies = () => {
-  const { nextLanguage, changeLanguage } = useLanguage()
-  return (
-    <>
-      <A color="common.white" underline="hover" onClick={changeLanguage}>
-        <Typography component="span" variant="body2" sx={{ fontWeight: 500 }}>
-          {nextLanguage.name}
-        </Typography>
-      </A>
-      <Divider
-        flexItem
-        orientation="vertical"
-        variant="middle"
-        sx={{
-          height: '1rem',
-          mx: 1,
-          alignSelf: 'center',
-          borderColor: 'common.white',
-          opacity: 0.5,
-        }}
-      />
-      <A color="common.white" href="/cookies" underline="hover">
-        <Typography component="span" variant="body2" sx={{ fontWeight: 500 }}>
-          Cookies
-        </Typography>
-      </A>
-    </>
-  )
-}
+import { FooterButton } from '../misc/footer-button'
 
 export const SiteFooter = () => {
+  const { nextLanguage, changeLanguage } = useLanguage()
   const t = useDictionary('site')
   const routes = useRoutes()
 
@@ -57,31 +28,41 @@ export const SiteFooter = () => {
             alignItems="center"
             component="nav"
             direction={{ xs: 'column', md: 'row' }}
-            spacing={2}
+            spacing={1}
           >
-            <FooterNav routes={routes} />
+            {routes.map((route) => (
+              <FooterButton to={route.path}>{route.name}</FooterButton>
+            ))}
           </Stack>
           <Stack
             spacing={1}
             sx={{ mt: 4, alignItems: { xs: 'center', lg: 'start' } }}
           >
             <Stack alignItems="center" direction="row">
-              <LanguageAndCookies />
+              <FooterButton onClick={changeLanguage} size="small">
+                {nextLanguage.name}
+              </FooterButton>
+              <VerticalDivider light />
+              <FooterButton size="small" to="/cookies">
+                Cookies
+              </FooterButton>
             </Stack>
-            <Typography
-              color="rgba(255, 255, 255, 0.75)"
-              variant="caption"
-              sx={{ fontWeight: 500 }}
-            >
-              {t('design')}
-              <A
+            <div>
+              <Typography
                 color="common.white"
-                href="https://www.linkedin.com/in/mr-mike/"
-                underline="always"
+                sx={{ fontWeight: 400, ml: 0.5, opacity: 0.75 }}
+                variant="caption"
               >
-                Mikael Carlsson
-              </A>
-            </Typography>
+                {t('design')}
+                <A
+                  color="inherit"
+                  href="https://www.linkedin.com/in/mr-mike/"
+                  underline="hover"
+                >
+                  Mikael Carlsson
+                </A>
+              </Typography>
+            </div>
           </Stack>
         </Stack>
         <Avatar

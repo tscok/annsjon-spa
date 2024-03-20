@@ -24,7 +24,13 @@ export const A = ({
   }
   if (href?.startsWith('http')) {
     return (
-      <Link href={href} rel="noopener noreferrer" sx={styles} target="_blank">
+      <Link
+        href={href}
+        rel="noopener noreferrer"
+        sx={styles}
+        target="_blank"
+        underline={underline}
+      >
         {children}
       </Link>
     )

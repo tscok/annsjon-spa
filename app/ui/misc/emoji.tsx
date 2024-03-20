@@ -3,7 +3,7 @@ import Box from '@mui/material/Box'
 
 export const Emoji = ({
   children,
-  fontSize = 'inherit',
+  fontSize = '1.5rem',
 }: PropsWithChildren<{ fontSize?: string }>) => (
   <Box
     sx={{

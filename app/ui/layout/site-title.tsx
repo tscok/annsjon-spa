@@ -8,10 +8,14 @@ import { Image } from '../image/image'
 
 import logotype from 'app/assets/faf_logo.svg'
 
+const size = { sm: 40, lg: 56 }
+
 export const SiteTitle = ({ children }: PropsWithChildren) => (
   <Link component={RouterLink} to="/" underline="none">
     <Stack alignItems="center" direction="row" spacing={1}>
-      <Avatar sx={{ backgroundColor: 'transparent', width: 56, height: 56 }}>
+      <Avatar
+        sx={{ backgroundColor: 'transparent', width: size, height: size }}
+      >
         <Image alt="FÅF logotype" src={logotype} />
       </Avatar>
       <Typography
