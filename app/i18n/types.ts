@@ -1,3 +1,5 @@
+type ErrorBoundary = Keys<'status' | 'title' | 'body' | 'link'>
+
 type Form = Keys<
   | 'about.hint'
   | 'about'
@@ -71,6 +73,7 @@ type Startpage = Keys<
 type Keys<K extends string> = Record<K, string>
 
 export type Dictionary = {
+  errorBoundary: ErrorBoundary
   form: Form
   pages: Pages
   startpage: Startpage
