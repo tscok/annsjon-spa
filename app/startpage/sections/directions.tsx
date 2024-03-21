@@ -27,7 +27,7 @@ export const Directions = () => {
               variant="body1"
               sx={{ color: 'common.white', my: '1.25rem', fontWeight: 500 }}
             >
-              {t('directions.body1')}
+              {t('directions.body')}
               <A color="white" href="/volunteer/information">
                 FAQ
               </A>
@@ -36,7 +36,7 @@ export const Directions = () => {
               variant="body2"
               sx={{ color: 'common.white', fontWeight: 500 }}
             >
-              {t('directions.body2')}
+              {t('directions.map')}
               <A
                 color="white"
                 href="https://www.google.se/maps/place/63%C2%B015'30.5%22N+12%C2%B026'51.0%22E/@60.3825553,1.0879701,4.66z/data=!4m2!3m1!1s0x0:0x0"

@@ -55,6 +55,7 @@ type Startpage = Keys<
   | 'section-title.guides'
   | 'section-title.projects'
   | 'hogasen.body'
+  | 'storlien.body'
   | 'storulvan.body'
   | 'handol.body'
   | 'ann.body'
@@ -66,8 +67,8 @@ type Startpage = Keys<
   | 'ringing.body'
   | 'read-more'
   | 'directions.title'
-  | 'directions.body1'
-  | 'directions.body2'
+  | 'directions.body'
+  | 'directions.map'
 >
 
 type Keys<K extends string> = Record<K, string>

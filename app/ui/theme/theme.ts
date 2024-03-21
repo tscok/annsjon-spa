@@ -50,6 +50,7 @@ const typography: Partial<Theme['typography']> = {
   body2: {
     ...defaultTheme.typography.body2,
     fontFamily: sans,
+    fontSize: '0.9rem',
     fontWeight: 400,
   },
   caption: {
