@@ -25,6 +25,10 @@ export const Staff = () => {
       <Grid container columnSpacing={4}>
         <Grid md={6} display={{ xs: 'none', md: 'flex' }}>
           <BackgroundImage
+            creditProps={{
+              content: `${t('photo')} Thomas Holmberg`,
+              variant: 'light',
+            }}
             height={280}
             position="50% 80%"
             src="/images/brushane_thomas-holmberg.jpg"
