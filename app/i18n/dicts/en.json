@@ -1,4 +1,10 @@
 {
+  "errorBoundary": {
+    "status": "Oops!",
+    "title": "An unexpected error occurred",
+    "body": "Please contact $1 with a detailed description of how you ended up here, so we can fix this. Thank you!",
+    "link": "Get me out of here"
+  },
   "form": {
     "about.hint": "Tell us a bit about yourself and any previous experience with birds.",
     "about": "Presentation",

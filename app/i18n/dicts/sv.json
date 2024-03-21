@@ -1,4 +1,10 @@
 {
+  "errorBoundary": {
+    "status": "Hoppsan!",
+    "title": "Ett oväntat fel uppstod",
+    "body": "Vänligen kontakta $1 med en detaljerad beskrivning av hur du hamnade här, så att vi kan fixa detta. Tack!",
+    "link": "Ta mig härifrån"
+  },
   "form": {
     "about.hint": "Berätta lite om dig själv och tidigare erfarenhet med fåglar.",
     "about": "Presentation",
