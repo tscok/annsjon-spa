@@ -69,6 +69,7 @@ type Startpage = Keys<
   | 'directions.title'
   | 'directions.body'
   | 'directions.map'
+  | 'photo'
 >
 
 type Keys<K extends string> = Record<K, string>
