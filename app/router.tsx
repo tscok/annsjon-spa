@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { Page } from './pages'
+import { Page } from './pages/page'
 import { StartPage } from './startpage/startpage'
 import { Form } from './pages/volunteer/form'
 import { FormSent } from './pages/volunteer/form-sent'
