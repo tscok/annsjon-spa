@@ -56,6 +56,7 @@
     "section-title.guides": "Watcher's Guide",
     "section-title.projects": "Projects",
     "hogasen.body": "The Greate snipe arrives to the mountains surrounding Lake Ånnsjön in mid May. They begin playing immediately and does so very intensively until mid June. After that most of…",
+    "storlien.body": "For those interested in birds, Storlien is best known for the Great snipe lek located on Skurdalshöjden. It is easiest to reach if you follow the lift street, Bånggårdsliften …",
     "storulvan.body": "Among the more common species are Willow Grouse, Ptarmigan, Bluethroat and at higher altitude Dotterel and Snow Bunting. Golden Eagle and Gyr Falcon are rare, while Merlin…",
     "handol.body": "Along the river Handölan, through the village Handöl, there's a green, deciduous forest with a rich birdlife. Common species here are Garden Warbler, Blackcap, Icterine…",
     "ann.body": "On the mires by Lake Ånnsjön typical species are Whimbrel, Golden Plover, Wood Sandpiper, Redshank and Yellow Wagtail. Other common species include Curlew, Greenshank…",
@@ -65,10 +66,10 @@
     "survey.body": "Every spring we conduct survey projects on Lake Ånnsjön and the surrounding mires and mountains.",
     "ringing.title": "Ringing",
     "ringing.body": "We annually ring between 2000-4000 passerines in the area of Handöl and in the Enan river delta.",
-    "read-more": "Read more",
+    "read-more": "Read\u00a0more",
     "directions.title": "How to get here",
-    "directions.body1": "The Observatory is situated in the tiny village of Handöl in Jämtland County, not far from the Norwegian border. The best way to get here is by train, for directions see our ",
-    "directions.body2": "Explore the area with "
+    "directions.body": "The Observatory is situated in the tiny village of Handöl in Jämtland County, not far from the Norwegian border. The best way to get here is by train, for directions see our ",
+    "directions.map": "Explore the area with "
   },
   "site": {
     "title": "Lake Ånnsjön Bird Observatory",

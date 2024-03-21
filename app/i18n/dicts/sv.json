@@ -56,8 +56,9 @@
     "section-title.guides": "Vår skådarguide",
     "section-title.projects": "Våra projekt",
     "hogasen.body": "Dubbelbeckasinerna anländer till Ånnsjö\u00adfjällen omkring 15 maj, och börjar spela omedelbart. Spelet pågår intensivt någon vecka in i juni. Därefter är de flesta honor…",
+    "storlien.body": "För den fågelintresserade är Storlien mest känt för den Dubbelbeckasin\u00adspelplats som ligger på Skurdals\u00adhöjden. Den nås enklast om man följer den liftgata, Bånggårdsliften, som…",
     "storulvan.body": "Här kan man se ripor av bägge arterna, blåhake och på högre höjd fjällpipare och snösparv. Både kungsörn och jaktfalk ses ibland vid Storulvån, men fjällvråk…",
-    "handol.body": "Längs älven Handölans lopp genom Handöl sträcker sig ett lummigt, löv\u00adskogs\u00addominerat område med ett rikt fågelliv. Här hittar man bl.a. trädgårds\u00adsångare, svarthätta…",
+    "handol.body": "Längs älven Handölans lopp genom Handöl sträcker sig ett lummigt, lövskogs\u00addominerat område med ett rikt fågelliv. Här hittar man bl.a. trädgårds\u00adsångare, svarthätta…",
     "ann.body": "På myrarna vid sjön är småspov, ljungpipare, grönbena, rödbena och gulärla karaktärsfåglar. Storspov, gluttsnäppa och enkel\u00adbeckasin förekommer också…",
     "great-snipe.title": "Dubbelbeckasin",
     "great-snipe.body": "Tillsammans med forskare från Lunds universitet studerar vi dubbel\u00adbeckasinens flyttningar.",
@@ -65,10 +66,10 @@
     "survey.body": "Vi inventerar regelbundet Ånnsjön och omkring\u00adliggande myrar samt kalfjäll i området Ånnsjön-Storlien.",
     "ringing.title": "Ringmärkning",
     "ringing.body": "Varje år bedriver vi standardiserad ring\u00admärkning av tättingar i Handöl och Enans delta.",
-    "read-more": "Läs mer",
+    "read-more": "Läs\u00a0mer",
     "directions.title": "Hitta hit",
-    "directions.body1": "Fågelstationen ligger i den lilla byn Handöl i västra Jämtland, inte långt ifrån norska gränsen. Hit tar man sig lättast med tåg, för vägbeskrivning se vår ",
-    "directions.body2": "Utforska platsen med "
+    "directions.body": "Fågelstationen ligger i den lilla byn Handöl i västra Jämtland, inte långt ifrån norska gränsen. Hit tar man sig lättast med tåg, för vägbeskrivning se vår ",
+    "directions.map": "Utforska platsen med "
   },
   "site": {
     "title": "Ånnsjöns Fågelstation",
