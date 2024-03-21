@@ -1,16 +1,22 @@
 export const parseData = (data: FormData) => {
   const params = Object.fromEntries(data)
+  return formatData(params)
+}
+
+type ObjectLike = Record<string, string | FormDataEntryValue>
+
+export function formatData<T extends ObjectLike>(data: T) {
   return [
-    `First name: ${params.fname ?? ''}`,
-    `Last name: ${params.lname ?? ''}`,
-    `Gender: ${params.gender ?? ''}`,
-    `Year of Birth: ${params.birth ?? ''}`,
-    `Email: ${params.email ?? ''}`,
-    `Phone: ${params.phone ?? ''}`,
-    `Nationality: ${params.nationality ?? ''}`,
-    `Arrives by car: ${params.car ?? 'no'}`,
-    `Driving license: ${params.driver ?? 'no'}`,
-    `\r\nTimeframe:\r\n${params.timeframe ?? ''}`,
-    `\r\nPresentation:\r\n${params.about ?? ''}`,
+    `First name: ${data.fname ?? ''}`,
+    `Last name: ${data.lname ?? ''}`,
+    `Gender: ${data.gender ?? ''}`,
+    `Year of Birth: ${data.birth ?? ''}`,
+    `Email: ${data.email ?? ''}`,
+    `Phone: ${data.phone ?? ''}`,
+    `Nationality: ${data.nationality ?? ''}`,
+    `Arrives by car: ${data.car ?? 'no'}`,
+    `Driving license: ${data.driver ?? 'no'}`,
+    `\r\nTimeframe:\r\n${data.timeframe ?? ''}`,
+    `\r\nPresentation:\r\n${data.about ?? ''}`,
   ].join('\r\n')
 }

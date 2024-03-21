@@ -33,7 +33,10 @@ export const SideNav = ({
         <div key={child.path}>
           <MenuItem
             component={RouterLink}
-            selected={pathname === child.path}
+            selected={
+              pathname === child.path ||
+              (pathname.startsWith(child.path) && !child.children)
+            }
             to={child.path}
           >
             <ListItemText disableTypography>
