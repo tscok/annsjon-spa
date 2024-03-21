@@ -1,8 +1,3 @@
-export const parseData = (data: FormData) => {
-  const params = Object.fromEntries(data)
-  return formatData(params)
-}
-
 type ObjectLike = Record<string, string | FormDataEntryValue>
 
 export function formatData<T extends ObjectLike>(data: T) {
