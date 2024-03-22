@@ -11,8 +11,8 @@ import {
   TextArea,
   TextField,
 } from 'app/ui/form'
-import { P } from 'app/ui/text/p'
 import { H2 } from 'app/ui/text/heading'
+import { Span } from 'app/ui/text/span'
 import { nationalities } from './nationalities'
 
 export const Form = () => {
@@ -37,6 +37,7 @@ export const Form = () => {
         <TextArea
           helperText={t('about.hint')}
           label={t('about')}
+          minRows={3}
           name="about"
           required
         />
@@ -59,8 +60,10 @@ export const Form = () => {
           <Checkbox label={t('driver')} name="driver" value="yes" />
         </Fieldset>
       </Stack>
-      <P variant="body2">{t('mandatory-fields')}</P>
-      <SubmitButton>{t('submit')}</SubmitButton>
+      <Stack direction="row" justifyContent="space-between" mt={2}>
+        <Span small>{t('mandatory-fields')}</Span>
+        <SubmitButton>{t('submit')}</SubmitButton>
+      </Stack>
     </RouterForm>
   )
 }

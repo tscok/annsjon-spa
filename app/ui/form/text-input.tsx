@@ -6,7 +6,8 @@ export const TextField = (props: TextFieldProps) => (
 
 export const TextArea = ({
   readOnly,
+  minRows = 2,
   ...props
 }: TextFieldProps & { readOnly?: boolean }) => (
-  <TextField {...props} InputProps={{ readOnly }} minRows={2} multiline />
+  <TextField {...props} InputProps={{ readOnly }} minRows={minRows} multiline />
 )
