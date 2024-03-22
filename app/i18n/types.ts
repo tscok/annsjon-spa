@@ -7,10 +7,6 @@ type Form = Keys<
   | 'dob'
   | 'driver'
   | 'email'
-  | 'error.body'
-  | 'error.copyData'
-  | 'error.formData'
-  | 'error.title'
   | 'first-name'
   | 'gender.female'
   | 'gender.male'
@@ -21,12 +17,19 @@ type Form = Keys<
   | 'nationality'
   | 'phone'
   | 'submit'
-  | 'submitting'
-  | 'success'
-  | 'thanks'
   | 'timeframe.hint'
   | 'timeframe'
   | 'title'
+>
+
+type FormSent = Keys<
+  | 'title'
+  | 'alert.error'
+  | 'alert.success'
+  | 'fallback.title'
+  | 'fallback.body'
+  | 'fallback.label'
+  | 'meanwhile'
 >
 
 type Pages = Keys<
@@ -77,6 +80,7 @@ type Keys<K extends string> = Record<K, string>
 export type Dictionary = {
   errorBoundary: ErrorBoundary
   form: Form
+  formSent: FormSent
   pages: Pages
   startpage: Startpage
   site: Site
