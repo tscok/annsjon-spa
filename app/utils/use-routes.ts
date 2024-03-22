@@ -57,8 +57,8 @@ export const useRoutes = (): Route[] => {
       name: t('volunteer'),
       path: '/volunteer',
       children: [
-        { name: t('volunteer.mountainfit'), path: '/volunteer/mountainfit' },
         { name: t('volunteer.application'), path: '/volunteer/application' },
+        { name: t('volunteer.mountainfit'), path: '/volunteer/mountainfit' },
         { name: t('volunteer.information'), path: '/volunteer/information' },
       ],
     },
