@@ -1,32 +1,29 @@
 import { PropsWithChildren } from 'react'
 import Box from '@mui/material/Box'
+import { alpha } from '@mui/material/styles'
 import Typography from '@mui/material/Typography'
+import { theme } from '../theme/theme'
 
 export const PageSection = ({
+  bgColor,
   children,
-  color,
   title,
 }: PropsWithChildren<{
-  color?: string | boolean
+  bgColor?: 'dark' | 'light'
   title?: string
 }>) => {
   let backgroundColor = 'transparent'
 
-  if (typeof color === 'boolean') {
-    backgroundColor = 'rgba(243, 246, 249, 0.6)'
+  if (bgColor === 'dark') {
+    backgroundColor = 'primary.dark'
   }
 
-  if (typeof color === 'string') {
-    backgroundColor = color
+  if (bgColor === 'light') {
+    backgroundColor = alpha(theme.palette.primary.main, 0.05)
   }
+
   return (
-    <Box
-      sx={{
-        backgroundColor,
-        pt: 6,
-        pb: 6,
-      }}
-    >
+    <Box sx={{ backgroundColor, pt: 6, pb: 6 }}>
       {title && (
         <Box sx={{ mb: 6, textAlign: 'center' }}>
           <Typography variant="h6">{title}</Typography>

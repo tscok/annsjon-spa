@@ -11,7 +11,7 @@ export const PageLayout = () => {
 
   return (
     <PageContainer>
-      <aside>
+      <aside style={{ minWidth: 200 }}>
         {route?.children && <SideNav pathname={pathname} route={route} />}
       </aside>
       <article>

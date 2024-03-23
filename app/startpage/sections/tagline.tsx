@@ -1,12 +1,12 @@
 import Typography from '@mui/material/Typography'
-import { useTranslation } from 'app/i18n'
+import { useDictionary } from 'app/i18n/use-dictionary'
 import { PageSection } from 'app/ui/layout/page-section'
 
 export const Tagline = () => {
-  const t = useTranslation('startpage')
+  const t = useDictionary('startpage')
 
   return (
-    <PageSection color="primary.main">
+    <PageSection bgColor="dark">
       <Typography
         color="common.white"
         component="div"

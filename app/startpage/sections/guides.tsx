@@ -88,7 +88,7 @@ export const Guides = () => {
   const t = useDictionary('startpage')
 
   return (
-    <PageSection color title={t('section-title.guides')}>
+    <PageSection bgColor="light" title={t('section-title.guides')}>
       <GuidesGrid />
     </PageSection>
   )
