@@ -15,7 +15,12 @@ function uppercase(text: string) {
   return text.slice(0, 1).toUpperCase() + text.slice(1)
 }
 
-export function getFallbackValue(data: Record<InputName, string>) {
+function parseData<T extends string>(data: FormData) {
+  return Object.fromEntries(data) as Record<T, string>
+}
+
+export function getFallback(formData: FormData) {
+  const data = parseData<InputName>(formData)
   const fields = [
     ['First name', data.fname],
     ['Last name', data.lname],

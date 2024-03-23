@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { LanguageProvider } from './language/provider'
 import { I18nProvider } from './i18n/provider'
 import { ThemeProvider } from './ui/theme/theme-provider'
+import { FormProvider } from './form/provider'
 import { Router } from './router'
 
 const domNode = document.getElementById('root')
@@ -13,7 +14,9 @@ root.render(
     <LanguageProvider>
       <I18nProvider>
         <ThemeProvider>
-          <Router />
+          <FormProvider>
+            <Router />
+          </FormProvider>
         </ThemeProvider>
       </I18nProvider>
     </LanguageProvider>
