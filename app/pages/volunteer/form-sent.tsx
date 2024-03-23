@@ -8,13 +8,14 @@ import { useLoaderData } from 'react-router-dom'
 import { LoaderResponse } from 'app/utils/send-form-loader'
 import { A } from 'app/ui/text/a'
 import { TextArea } from 'app/ui/form'
-import { formatData } from './parseData'
 import { P } from 'app/ui/text/p'
+import { getFallbackValue } from './getFallbackValue'
 
 export const FormSent = () => {
   const t = useDictionary('formSent')
   const t2 = useDictionary('pages')
   const { data, error } = useLoaderData() as LoaderResponse
+  const fallbackValue = getFallbackValue(data)
 
   if (error) {
     return (
@@ -31,10 +32,7 @@ export const FormSent = () => {
         </P>
         <Card>
           <CardContent sx={{ backgroundColor: 'background.default' }}>
-            <TextArea
-              defaultValue={formatData(data)}
-              label={t('fallback.label')}
-            />
+            <TextArea value={fallbackValue} label={t('fallback.label')} />
           </CardContent>
         </Card>
       </>
