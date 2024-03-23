@@ -1,23 +1,26 @@
+import { Navigate } from 'react-router-dom'
 import Alert from '@mui/material/Alert'
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import { useDictionary } from 'app/i18n/use-dictionary'
 import { interpolate } from 'app/utils/interpolate'
 import { H2, H4 } from 'app/ui/text/heading'
-import { useLoaderData } from 'react-router-dom'
-import { LoaderResponse } from 'app/utils/send-form-loader'
 import { A } from 'app/ui/text/a'
 import { TextArea } from 'app/ui/form'
 import { P } from 'app/ui/text/p'
-import { getFallbackValue } from './getFallbackValue'
+import { useForm } from 'app/form/use-form'
+import { getFallback } from './get-fallback'
 
 export const FormSent = () => {
   const t = useDictionary('formSent')
   const t2 = useDictionary('pages')
-  const { data, error } = useLoaderData() as LoaderResponse
-  const fallbackValue = getFallbackValue(data)
+  const { error, data } = useForm()
 
-  if (error) {
+  if (!data) {
+    return <Navigate replace to="/volunteer/application" />
+  }
+
+  if (error && data) {
     return (
       <>
         <H2>{t('title')}</H2>
@@ -32,7 +35,10 @@ export const FormSent = () => {
         </P>
         <Card>
           <CardContent sx={{ backgroundColor: 'background.default' }}>
-            <TextArea value={fallbackValue} label={t('fallback.label')} />
+            <TextArea
+              defaultValue={getFallback(data)}
+              label={t('fallback.label')}
+            />
           </CardContent>
         </Card>
       </>
@@ -41,7 +47,7 @@ export const FormSent = () => {
 
   return (
     <>
-      <H2>{interpolate(t('title'), { $1: data.fname })}</H2>
+      <H2>{t('title')}</H2>
       <Alert severity="success" sx={{ mb: 4 }}>
         {t('alert.success')}
       </Alert>

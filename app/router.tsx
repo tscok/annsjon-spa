@@ -6,7 +6,6 @@ import { FormSent } from './pages/volunteer/form-sent'
 import { ErrorBoundary } from './ui/layout/error-boundary'
 import { PageLayout } from './ui/layout/page-layout'
 import { SiteLayout } from './ui/layout/site-layout'
-import { sendFormLoader } from './utils/send-form-loader'
 
 const config = createBrowserRouter([
   {
@@ -27,7 +26,6 @@ const config = createBrowserRouter([
           {
             path: '/volunteer/application/sent',
             element: <FormSent />,
-            loader: sendFormLoader,
           },
           {
             path: '/*',

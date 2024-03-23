@@ -28,7 +28,7 @@
   },
   "formSent": {
     "title": "Ansökan",
-    "alert.error": "Din ansökan kunde inte skickas på grund av tekniska problem. Vänligen överväg att ansöka via e-post istället, se information nedan.",
+    "alert.error": "Din ansökan kunde inte skickas på grund av tekniska problem. Vänligen skicka din ansökan via e-post istället, se information nedan.",
     "alert.success": "Din ansökan har skickats! Vår rekryterare granskar den och återkommer till dig inom kort.",
     "fallback.title": "Ansök via e-post",
     "fallback.body": "Kopiera din data nedan och mejla till $1 med rubriken \"Volontär på Ånnsjöns fågelstation\".",

@@ -1,6 +1,8 @@
-import { Form as RouterForm } from 'react-router-dom'
+import { FormEvent } from 'react'
+import { useNavigate } from 'react-router-dom'
 import Stack from '@mui/material/Stack'
 import { useDictionary } from 'app/i18n/use-dictionary'
+import { useForm } from 'app/form/use-form'
 import {
   Autocomplete,
   Checkbox,
@@ -17,9 +19,17 @@ import { nationalities } from './nationalities'
 
 export const Form = () => {
   const t = useDictionary('form')
+  const navigate = useNavigate()
+  const { loading, onSubmit } = useForm()
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    await onSubmit(new FormData(event.currentTarget))
+    navigate('/volunteer/application/sent', { replace: true })
+  }
 
   return (
-    <RouterForm action="/volunteer/application/sent" replace>
+    <form onSubmit={handleSubmit}>
       <H2>{t('title')}</H2>
       <Stack spacing={{ xs: 2, md: 4 }}>
         <Fieldset>
@@ -62,8 +72,8 @@ export const Form = () => {
       </Stack>
       <Stack direction="row" justifyContent="space-between" mt={2}>
         <Span small>{t('mandatory-fields')}</Span>
-        <SubmitButton>{t('submit')}</SubmitButton>
+        <SubmitButton disabled={loading}>{t('submit')}</SubmitButton>
       </Stack>
-    </RouterForm>
+    </form>
   )
 }
