@@ -20,7 +20,7 @@ const fallbackLocale: Locale = 'sv'
 export const LanguageProvider = ({ children }: PropsWithChildren) => {
   const storedLocale = getStoredLocale()
   const [locale, setLocale] = useState<Locale>(storedLocale ?? fallbackLocale)
-  const [allowCookies, setAllowCookies] = useState(!!storedLocale ?? false)
+  const [allowCookies, setAllowCookies] = useState(!!storedLocale)
 
   const updateLocale = useCallback(
     (newLocale: Locale, saveCookie?: boolean) => {
