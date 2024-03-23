@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <BackgroundImage
       creditProps={{
-        content: `${t('photo')} Steve Dahlfors`,
+        content: `${t('credit.photo')} Steve Dahlfors`,
         placement: 'right',
         variant: 'light',
       }}

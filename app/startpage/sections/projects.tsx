@@ -18,8 +18,8 @@ export const Projects = () => {
               src="/images/great-snipe_bjorn-isaksson.jpg"
             />
           </div>
-          <H5>{t('great-snipe.title')}</H5>
-          <P>{t('great-snipe.body')}</P>
+          <H5>{t('project.great-snipe.title')}</H5>
+          <P>{t('project.great-snipe.body')}</P>
         </article>
         <article>
           <div style={{ marginBottom: '30px' }}>
@@ -28,8 +28,8 @@ export const Projects = () => {
               src="/images/survey_malte-busch.jpg"
             />
           </div>
-          <H5>{t('survey.title')}</H5>
-          <P>{t('survey.body')}</P>
+          <H5>{t('project.survey.title')}</H5>
+          <P>{t('project.survey.body')}</P>
         </article>
         <article>
           <div style={{ marginBottom: '30px' }}>
@@ -38,8 +38,8 @@ export const Projects = () => {
               src="/images/ringing_mikael-carlsson.jpg"
             />
           </div>
-          <H5>{t('ringing.title')}</H5>
-          <P>{t('ringing.body')}</P>
+          <H5>{t('project.ringing.title')}</H5>
+          <P>{t('project.ringing.body')}</P>
         </article>
       </Stack>
     </PageSection>

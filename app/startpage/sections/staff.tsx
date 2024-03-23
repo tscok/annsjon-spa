@@ -26,7 +26,7 @@ export const Staff = () => {
         <Grid md={6} display={{ xs: 'none', md: 'flex' }}>
           <BackgroundImage
             creditProps={{
-              content: `${t('photo')} Thomas Holmberg`,
+              content: `${t('credit.photo')} Thomas Holmberg`,
               variant: 'light',
             }}
             height={280}
