@@ -57,7 +57,7 @@ export const Form = () => {
           name="timeframe"
         />
         <Fieldset>
-          <TextField label={t('email')} name="email" required />
+          <TextField label={t('email')} name="email" required type="email" />
           <TextField label={t('phone')} name="phone" />
         </Fieldset>
         <Autocomplete

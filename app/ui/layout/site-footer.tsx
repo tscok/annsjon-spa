@@ -17,7 +17,7 @@ export const SiteFooter = () => {
   const routes = useRoutes()
 
   return (
-    <PageSection color="primary.dark">
+    <PageSection bgColor="dark">
       <Stack
         alignItems="center"
         direction={{ xs: 'column', lg: 'row' }}
