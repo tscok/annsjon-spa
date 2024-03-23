@@ -45,7 +45,7 @@ export const SiteHeader = () => {
         {isMobile ? (
           <MobileNav
             nextLanguage={nextLanguage}
-            onChangeLanguage={changeLanguage}
+            onChangeLanguage={() => changeLanguage()}
             pathname={pathname}
             routes={routes}
           />
@@ -54,7 +54,7 @@ export const SiteHeader = () => {
         )}
         <Box alignItems="center" sx={{ display: { xs: 'none', sm: 'flex' } }}>
           <VerticalDivider />
-          <IconButton color="inherit" onClick={changeLanguage}>
+          <IconButton color="inherit" onClick={() => changeLanguage()}>
             <Emoji>{nextLanguage.emoji}</Emoji>
           </IconButton>
         </Box>

@@ -11,16 +11,16 @@ const dictionaries: Record<Locale, () => Promise<Dictionary>> = {
 
 export const I18nProvider = ({ children }: PropsWithChildren) => {
   const [dictionary, setDictionary] = useState<Dictionary | undefined>()
-  const { locale } = useLanguage()
+  const { language } = useLanguage()
 
   const changeDictionary = useCallback(async () => {
-    const dict = await dictionaries[locale]()
+    const dict = await dictionaries[language.locale]()
     setDictionary(dict)
-  }, [locale])
+  }, [language.locale])
 
   useEffect(() => {
     changeDictionary()
-  }, [locale])
+  }, [language.locale])
 
   if (!dictionary) return null
 

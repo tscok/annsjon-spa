@@ -11,12 +11,12 @@ const modules = import.meta.glob('./mdx/**/*.mdx') as Glob<MDXContent>
 const dynamic = (fn: () => Promise<any>) => lazy<MDXContent>(fn)
 
 export const Page = () => {
-  const { locale } = useLanguage()
+  const { language } = useLanguage()
   const { pathname } = useLocation()
 
   const slug = pathname.slice(1)
-  const fileName = `./mdx/${slug}-${locale}.mdx`
-  const notFound = `./mdx/not-found-${locale}.mdx`
+  const fileName = `./mdx/${slug}-${language.locale}.mdx`
+  const notFound = `./mdx/not-found-${language.locale}.mdx`
 
   const Content = dynamic(modules[fileName] || modules[notFound])
 
