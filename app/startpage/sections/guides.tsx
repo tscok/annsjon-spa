@@ -25,7 +25,8 @@ export const GuidesGrid = () => {
         </div>
         <H5>Högåsen</H5>
         <P variant={variant}>
-          {t('hogasen.body')} <A href="/guide/hogasen">{t('read-more')}</A>
+          {t('guide.hogasen')}{' '}
+          <A href="/guide/hogasen">{t('guide.read-more')}</A>
         </P>
       </Grid>
       <Grid sm={6}>
@@ -38,7 +39,8 @@ export const GuidesGrid = () => {
         </div>
         <H5>Storulvån</H5>
         <P variant={variant}>
-          {t('storulvan.body')} <A href="/guide/storulvan">{t('read-more')}</A>
+          {t('guide.storulvan')}{' '}
+          <A href="/guide/storulvan">{t('guide.read-more')}</A>
         </P>
       </Grid>
       <Grid sm={6}>
@@ -51,7 +53,7 @@ export const GuidesGrid = () => {
         </div>
         <H5>Handöl</H5>
         <P variant={variant}>
-          {t('handol.body')} <A href="/guide/handol">{t('read-more')}</A>
+          {t('guide.handol')} <A href="/guide/handol">{t('guide.read-more')}</A>
         </P>
       </Grid>
       <Grid sm={6}>
@@ -63,7 +65,7 @@ export const GuidesGrid = () => {
         </div>
         <H5>Ånn</H5>
         <P variant={variant}>
-          {t('ann.body')} <A href="/guide/ann">{t('read-more')}</A>
+          {t('guide.ann')} <A href="/guide/ann">{t('guide.read-more')}</A>
         </P>
       </Grid>
       {!isHomepage && (
@@ -76,7 +78,8 @@ export const GuidesGrid = () => {
           </div>
           <H5>Storlien</H5>
           <P variant={variant}>
-            {t('storlien.body')} <A href="/guide/storlien">{t('read-more')}</A>
+            {t('guide.storlien')}{' '}
+            <A href="/guide/storlien">{t('guide.read-more')}</A>
           </P>
         </Grid>
       )}
