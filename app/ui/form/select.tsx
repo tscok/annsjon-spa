@@ -15,7 +15,7 @@ export const Select = ({
   name: string
 }>) => (
   <FormControl fullWidth>
-    <InputLabel id="select-label">Age</InputLabel>
+    <InputLabel id="select-label">{label}</InputLabel>
     <MuiSelect
       defaultValue={defaultValue}
       labelId="select-label"
