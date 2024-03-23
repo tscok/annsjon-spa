@@ -56,8 +56,8 @@ export const Form = () => {
           name="nationality"
         />
         <Fieldset>
-          <Checkbox label={t('car')} name="car" value="yes" />
-          <Checkbox label={t('driver')} name="driver" value="yes" />
+          <Checkbox label={t('car')} name="car" />
+          <Checkbox label={t('driver')} name="driver" />
         </Fieldset>
       </Stack>
       <Stack direction="row" justifyContent="space-between" mt={2}>

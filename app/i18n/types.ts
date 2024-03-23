@@ -1,6 +1,6 @@
 type ErrorBoundary = Keys<'status' | 'title' | 'body' | 'link'>
 
-export type Form = Keys<
+type Form = Keys<
   | 'about.hint'
   | 'about'
   | 'car'
