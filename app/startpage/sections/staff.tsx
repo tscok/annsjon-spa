@@ -14,10 +14,10 @@ const modules = import.meta.glob('./mdx/**/*.mdx') as Glob<MDXContent>
 const dynamic = (fn: () => Promise<any>) => lazy<MDXContent>(fn)
 
 export const Staff = () => {
-  const { locale } = useLanguage()
+  const { language } = useLanguage()
   const t = useDictionary('startpage')
 
-  const fileName = `./mdx/staff-${locale}.mdx`
+  const fileName = `./mdx/staff-${language.locale}.mdx`
   const Content = dynamic(modules[fileName])
 
   return (

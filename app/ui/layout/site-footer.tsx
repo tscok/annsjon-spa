@@ -41,7 +41,7 @@ export const SiteFooter = () => {
             sx={{ mt: 4, alignItems: { xs: 'center', lg: 'start' } }}
           >
             <Stack alignItems="center" direction="row">
-              <FooterButton onClick={changeLanguage} size="small">
+              <FooterButton onClick={() => changeLanguage()} size="small">
                 {nextLanguage.name}
               </FooterButton>
               <VerticalDivider light />
