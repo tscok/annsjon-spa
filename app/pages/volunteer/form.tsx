@@ -70,7 +70,12 @@ export const Form = () => {
           <Checkbox label={t('driver')} name="driver" />
         </Fieldset>
       </Stack>
-      <Stack direction="row" justifyContent="space-between" mt={2}>
+      <Stack
+        direction={{ xs: 'column', md: 'row' }}
+        justifyContent="space-between"
+        mt={2}
+        spacing={{ xs: 2 }}
+      >
         <Span small>{t('mandatory-fields')}</Span>
         <SubmitButton disabled={loading}>{t('submit')}</SubmitButton>
       </Stack>
