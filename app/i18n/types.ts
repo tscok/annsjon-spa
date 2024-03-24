@@ -60,7 +60,6 @@ type Startpage = Keys<
   | 'guide.ann'
   | 'guide.handol'
   | 'guide.hogasen'
-  | 'guide.read-more'
   | 'guide.storlien'
   | 'guide.storulvan'
   | 'project.great-snipe.body'

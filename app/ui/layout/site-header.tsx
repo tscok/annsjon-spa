@@ -54,7 +54,11 @@ export const SiteHeader = () => {
         )}
         <Box alignItems="center" sx={{ display: { xs: 'none', sm: 'flex' } }}>
           <VerticalDivider />
-          <IconButton color="inherit" onClick={() => changeLanguage()}>
+          <IconButton
+            aria-label="change language"
+            color="inherit"
+            onClick={() => changeLanguage()}
+          >
             <Emoji>{nextLanguage.emoji}</Emoji>
           </IconButton>
         </Box>

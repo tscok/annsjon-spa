@@ -29,6 +29,7 @@ export const TabletNav = ({
     >
       {routes.map((route) => (
         <Tab
+          aria-label={route.name}
           key={route.path}
           component={RouterLink}
           to={route.path}

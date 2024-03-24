@@ -10,6 +10,9 @@ export const FooterButton = (props: ButtonProps & { to?: string }) => (
       color: 'common.white',
       minWidth: 0,
       textTransform: 'none',
+      '&:hover': {
+        backgroundColor: 'rgba(255, 255, 255, 0.1)',
+      },
     }}
     variant="text"
   />

@@ -23,8 +23,13 @@ export const SideNav = ({
 
   return (
     <MenuList>
-      <MenuItem component={RouterLink} to={route.path}>
+      <MenuItem
+        aria-labelledby="side-nav-current-route"
+        component={RouterLink}
+        to={route.path}
+      >
         <ListItemText
+          id="side-nav-current-route"
           primary={route.name}
           primaryTypographyProps={{ fontWeight: 700 }}
         />
@@ -32,6 +37,7 @@ export const SideNav = ({
       {route.children?.map((child) => (
         <div key={child.path}>
           <MenuItem
+            aria-labelledby="side-nav-second-level-route"
             component={RouterLink}
             selected={
               pathname === child.path ||
@@ -39,7 +45,7 @@ export const SideNav = ({
             }
             to={child.path}
           >
-            <ListItemText disableTypography>
+            <ListItemText id="side-nav-second-level-route" disableTypography>
               <Typography noWrap>{child.name}</Typography>
             </ListItemText>
           </MenuItem>
@@ -48,12 +54,16 @@ export const SideNav = ({
               {child.children?.map(({ name, path }) => (
                 <MenuItem
                   key={path}
+                  aria-labelledby="side-nav-third-level-route"
                   component={RouterLink}
                   selected={pathname === path}
                   to={path}
                   sx={{ pl: 4 }}
                 >
-                  <ListItemText primary={name} />
+                  <ListItemText
+                    id="side-nav-third-level-route"
+                    primary={name}
+                  />
                 </MenuItem>
               ))}
             </MenuList>

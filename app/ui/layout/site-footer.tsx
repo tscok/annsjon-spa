@@ -31,7 +31,11 @@ export const SiteFooter = () => {
             spacing={1}
           >
             {routes.map((route) => (
-              <FooterButton key={route.path} to={route.path}>
+              <FooterButton
+                aria-label={route.name}
+                key={route.path}
+                to={route.path}
+              >
                 {route.name}
               </FooterButton>
             ))}
@@ -41,11 +45,19 @@ export const SiteFooter = () => {
             sx={{ mt: 4, alignItems: { xs: 'center', lg: 'start' } }}
           >
             <Stack alignItems="center" direction="row">
-              <FooterButton onClick={() => changeLanguage()} size="small">
+              <FooterButton
+                aria-label="change language"
+                onClick={() => changeLanguage()}
+                size="small"
+              >
                 {nextLanguage.name}
               </FooterButton>
               <VerticalDivider light />
-              <FooterButton size="small" to="/cookies">
+              <FooterButton
+                aria-label="about cookies"
+                size="small"
+                to="/cookies"
+              >
                 Cookies
               </FooterButton>
             </Stack>

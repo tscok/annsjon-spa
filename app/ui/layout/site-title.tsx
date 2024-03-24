@@ -11,7 +11,13 @@ import logotype from 'app/assets/faf_logo.svg'
 const size = { sm: 40, lg: 56 }
 
 export const SiteTitle = ({ children }: PropsWithChildren) => (
-  <Link component={RouterLink} to="/" underline="none">
+  <Link
+    aria-label="homepage link"
+    aria-labelledby="site-title"
+    component={RouterLink}
+    to="/"
+    underline="none"
+  >
     <Stack alignItems="center" direction="row" spacing={1}>
       <Avatar
         sx={{ backgroundColor: 'transparent', width: size, height: size }}
@@ -19,6 +25,7 @@ export const SiteTitle = ({ children }: PropsWithChildren) => (
         <Image alt="FÅF logotype" src={logotype} />
       </Avatar>
       <Typography
+        id="site-title"
         sx={{
           color: 'common.black',
           userSelect: 'none',

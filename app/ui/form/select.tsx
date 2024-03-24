@@ -1,7 +1,7 @@
 import { PropsWithChildren } from 'react'
 import FormControl from '@mui/material/FormControl'
 import InputLabel from '@mui/material/InputLabel'
-import MenuItem, { MenuItemProps } from '@mui/material/MenuItem'
+import MenuItem from '@mui/material/MenuItem'
 import MuiSelect from '@mui/material/Select'
 
 export const Select = ({
@@ -15,10 +15,11 @@ export const Select = ({
   name: string
 }>) => (
   <FormControl fullWidth>
-    <InputLabel id="select-label">{label}</InputLabel>
+    <InputLabel id={`select-${name}-label`}>{label}</InputLabel>
     <MuiSelect
       defaultValue={defaultValue}
-      labelId="select-label"
+      id={`select-${name}`}
+      labelId={`select-${name}-label`}
       label={label}
       name={name}
       variant="outlined"
@@ -28,4 +29,11 @@ export const Select = ({
   </FormControl>
 )
 
-export const Option = (props: MenuItemProps) => <MenuItem {...props} />
+export const Option = ({
+  children,
+  value,
+}: PropsWithChildren<{ value: string }>) => (
+  <MenuItem id={`${value}-option`} value={value}>
+    {children}
+  </MenuItem>
+)
