@@ -38,6 +38,7 @@ export const FormSent = () => {
             <TextArea
               defaultValue={getFallback(data)}
               label={t('fallback.label')}
+              name="fallback"
             />
           </CardContent>
         </Card>

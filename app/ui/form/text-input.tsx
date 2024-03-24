@@ -9,6 +9,7 @@ type TextFieldProps = {
 }
 
 type TextAreaProps = TextFieldProps & {
+  defaultValue?: string
   helperText?: string
   minRows?: number
 }
