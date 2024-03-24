@@ -7,39 +7,43 @@ const languages: Record<Locale, Language> = {
   sv: { emoji: '🇸🇪', locale: 'sv', name: 'Svenska' },
 }
 
-function getStoredLocale() {
+function getLocalStorageLocale() {
   return window.localStorage.getItem('locale') as Locale | null
 }
 
-function setStoredLocale(newLocale: Locale) {
+function setLocalStorageLocale(newLocale: Locale) {
   window.localStorage.setItem('locale', newLocale)
 }
 
 const fallbackLocale: Locale = 'sv'
 
 export const LanguageProvider = ({ children }: PropsWithChildren) => {
-  const storedLocale = getStoredLocale()
+  const storedLocale = getLocalStorageLocale()
+  const [cookiesEnabled, setCookiesEnabled] = useState(!!storedLocale)
   const [locale, setLocale] = useState<Locale>(storedLocale ?? fallbackLocale)
-  const [allowCookies, setAllowCookies] = useState(!!storedLocale)
+
+  const enableCookies = useCallback(() => {
+    setCookiesEnabled(true)
+    setLocalStorageLocale(locale)
+  }, [locale])
 
   const updateLocale = useCallback(
-    (newLocale: Locale, saveCookie?: boolean) => {
-      if (saveCookie) {
-        setAllowCookies(true)
-        setStoredLocale(newLocale)
+    (newLocale: Locale) => {
+      if (cookiesEnabled) {
+        setLocalStorageLocale(newLocale)
       }
       setLocale(newLocale)
     },
-    [locale]
+    [cookiesEnabled, locale]
   )
 
   const language = locale === 'sv' ? languages.sv : languages.en
   const nextLanguage = locale === 'sv' ? languages.en : languages.sv
 
   const value = {
-    changeLanguage: (saveCookie?: boolean) =>
-      updateLocale(nextLanguage.locale, saveCookie),
-    allowCookies,
+    changeLanguage: () => updateLocale(nextLanguage.locale),
+    cookiesEnabled,
+    enableCookies,
     language,
     nextLanguage,
   }

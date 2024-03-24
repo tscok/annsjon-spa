@@ -1,4 +1,11 @@
 {
+  "cookieDialog": {
+    "title": "We use cookies",
+    "body.pt1": "In order for you to experience this website at its best we use cookies and similar technologies to store and/or retrieve certain information on your device.",
+    "body.pt2": "With your permission we use a permanent cookie to store language settings.",
+    "reject": "Deny",
+    "allow": "Allow"
+  },
   "errorBoundary": {
     "status": "Oops!",
     "title": "An unexpected error occurred",

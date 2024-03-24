@@ -1,3 +1,5 @@
+type CookieDialog = Keys<'title' | 'body.pt1' | 'body.pt2' | 'reject' | 'allow'>
+
 type ErrorBoundary = Keys<'status' | 'title' | 'body' | 'link'>
 
 type Form = Keys<
@@ -77,6 +79,7 @@ type Startpage = Keys<
 type Keys<K extends string> = Record<K, string>
 
 export type Dictionary = {
+  cookieDialog: CookieDialog
   errorBoundary: ErrorBoundary
   form: Form
   formSent: FormSent
