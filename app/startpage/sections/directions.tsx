@@ -7,6 +7,7 @@ import { A } from 'app/ui/text/a'
 
 export const Directions = () => {
   const t = useDictionary('startpage')
+  const t2 = useDictionary('pages')
 
   return (
     <BackgroundImage position="50% 80%" src="/images/road_mikael-carlsson.jpg">
@@ -20,7 +21,11 @@ export const Directions = () => {
         <Grid container columnSpacing={4}>
           <Grid md={6}></Grid>
           <Grid md={6}>
-            <Typography variant="h3" sx={{ color: 'common.white' }}>
+            <Typography
+              component="div"
+              variant="h3"
+              sx={{ color: 'common.white' }}
+            >
               {t('directions.title')}
             </Typography>
             <Typography
@@ -29,7 +34,7 @@ export const Directions = () => {
             >
               {t('directions.body')}
               <A color="white" href="/volunteer/information">
-                FAQ
+                {t2('volunteer.information')}
               </A>
             </Typography>
             <Typography

@@ -33,7 +33,10 @@ export const MobileNav = ({
 
   return (
     <>
-      <IconButton onClick={() => setOpen(true)}>
+      <IconButton
+        aria-label="open navigation menu"
+        onClick={() => setOpen(true)}
+      >
         <MenuIcon />
       </IconButton>
       <Drawer anchor="right" open={open} onClose={() => setOpen(false)}>
@@ -52,12 +55,14 @@ export const MobileNav = ({
                   }
                 >
                   <ListItemButton
+                    aria-labelledby="mobile-nav-main-route"
                     component={RouterLink}
                     onClick={() => setOpen(false)}
                     selected={route.path !== '/' && pathname === route.path}
                     to={route.path}
                   >
                     <ListItemText
+                      id="mobile-nav-main-route"
                       primary={route.name}
                       primaryTypographyProps={{ fontWeight: 500 }}
                     />
@@ -73,13 +78,17 @@ export const MobileNav = ({
                       {route.children.map((child) => (
                         <ListItemButton
                           key={child.path}
+                          aria-labelledby="mobile-nav-sub-route"
                           component={RouterLink}
                           onClick={() => setOpen(false)}
                           selected={pathname === child.path}
                           sx={{ pl: 4 }}
                           to={child.path}
                         >
-                          <ListItemText primary={child.name} />
+                          <ListItemText
+                            id="mobile-nav-sub-route"
+                            primary={child.name}
+                          />
                         </ListItemButton>
                       ))}
                     </List>
@@ -91,11 +100,15 @@ export const MobileNav = ({
           <Divider />
           <List component="div">
             <ListItem disablePadding>
-              <ListItemButton onClick={onChangeLanguage}>
+              <ListItemButton
+                aria-labelledby="mobile-nav-change-language"
+                onClick={onChangeLanguage}
+              >
                 <ListItemIcon sx={{ color: 'inherit', minWidth: '32px' }}>
                   <Emoji>{nextLanguage.emoji}</Emoji>
                 </ListItemIcon>
                 <ListItemText
+                  id="mobile-nav-change-language"
                   primary={nextLanguage.name}
                   primaryTypographyProps={{ fontWeight: 500 }}
                 />

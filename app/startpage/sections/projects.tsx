@@ -1,9 +1,7 @@
 import Stack from '@mui/material/Stack'
 import { useDictionary } from 'app/i18n/use-dictionary'
 import { PageSection } from 'app/ui/layout/page-section'
-import { BackgroundImage } from 'app/ui/image/background-image'
-import { H5 } from 'app/ui/text/heading'
-import { P } from 'app/ui/text/p'
+import { MediaCard } from 'app/ui/misc/media-card'
 
 export const Projects = () => {
   const t = useDictionary('startpage')
@@ -11,36 +9,30 @@ export const Projects = () => {
   return (
     <PageSection title={t('section-title.projects')}>
       <Stack direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 2, sm: 4 }}>
-        <article>
-          <div style={{ marginBottom: '30px' }}>
-            <BackgroundImage
-              height={150}
-              src="/images/great-snipe_bjorn-isaksson.jpg"
-            />
-          </div>
-          <H5>{t('project.great-snipe.title')}</H5>
-          <P>{t('project.great-snipe.body')}</P>
-        </article>
-        <article>
-          <div style={{ marginBottom: '30px' }}>
-            <BackgroundImage
-              height={150}
-              src="/images/survey_malte-busch.jpg"
-            />
-          </div>
-          <H5>{t('project.survey.title')}</H5>
-          <P>{t('project.survey.body')}</P>
-        </article>
-        <article>
-          <div style={{ marginBottom: '30px' }}>
-            <BackgroundImage
-              height={150}
-              src="/images/ringing_mikael-carlsson.jpg"
-            />
-          </div>
-          <H5>{t('project.ringing.title')}</H5>
-          <P>{t('project.ringing.body')}</P>
-        </article>
+        <MediaCard
+          ariaLabel="project link"
+          id="great-snipe-project"
+          body={t('project.great-snipe.body')}
+          media={{ src: '/images/great-snipe_bjorn-isaksson.jpg' }}
+          title={t('project.great-snipe.title')}
+          to="/projects"
+        />
+        <MediaCard
+          ariaLabel="project link"
+          id="survey-project"
+          body={t('project.survey.body')}
+          media={{ src: '/images/survey_malte-busch.jpg' }}
+          title={t('project.survey.title')}
+          to="/projects"
+        />
+        <MediaCard
+          ariaLabel="project link"
+          id="ringing-project"
+          body={t('project.ringing.body')}
+          media={{ src: '/images/ringing_mikael-carlsson.jpg' }}
+          title={t('project.ringing.title')}
+          to="/projects"
+        />
       </Stack>
     </PageSection>
   )
