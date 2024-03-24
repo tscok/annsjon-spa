@@ -37,7 +37,7 @@ export const Form = () => {
           <TextField label={t('last-name')} name="lname" required />
         </Fieldset>
         <Fieldset>
-          <Select defaultValue="female" label={t('gender')} name="gender">
+          <Select label={t('gender')} name="gender">
             <Option value="female">{t('gender.female')}</Option>
             <Option value="male">{t('gender.male')}</Option>
             <Option value="other">{t('gender.other')}</Option>
@@ -58,7 +58,7 @@ export const Form = () => {
         />
         <Fieldset>
           <TextField label={t('email')} name="email" required type="email" />
-          <TextField label={t('phone')} name="phone" />
+          <TextField label={t('phone')} name="phone" type="tel" />
         </Fieldset>
         <Autocomplete
           label={t('nationality')}
