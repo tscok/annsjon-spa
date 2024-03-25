@@ -1,4 +1,11 @@
 {
+  "cookieDialog": {
+    "title": "Vi använder kakor",
+    "body.pt1": "För att du ska kunna uppleva denna webbplats på bästa sätt använder vi cookies och liknande teknologier för att lagra och/eller hämta viss information på din enhet.",
+    "body.pt2": "Med ditt tillstånd använder vi en permanent cookie för att lagra språkinställningar.",
+    "reject": "Neka",
+    "allow": "Godkänn"
+  },
   "errorBoundary": {
     "status": "Hoppsan!",
     "title": "Ett oväntat fel uppstod",

@@ -47,7 +47,7 @@ export const SiteFooter = () => {
             <Stack alignItems="center" direction="row">
               <FooterButton
                 aria-label="change language"
-                onClick={() => changeLanguage()}
+                onClick={changeLanguage}
                 size="small"
               >
                 {nextLanguage.name}

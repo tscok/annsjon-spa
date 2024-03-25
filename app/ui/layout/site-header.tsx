@@ -45,19 +45,19 @@ export const SiteHeader = () => {
         {isMobile ? (
           <MobileNav
             nextLanguage={nextLanguage}
-            onChangeLanguage={() => changeLanguage()}
+            onChangeLanguage={changeLanguage}
             pathname={pathname}
             routes={routes}
           />
         ) : (
           <TabletNav pathname={pathname} routes={mainRoutes} />
         )}
-        <Box alignItems="center" sx={{ display: { xs: 'none', sm: 'flex' } }}>
+        <Box alignItems="center" display="flex">
           <VerticalDivider />
           <IconButton
             aria-label="change language"
             color="inherit"
-            onClick={() => changeLanguage()}
+            onClick={changeLanguage}
           >
             <Emoji>{nextLanguage.emoji}</Emoji>
           </IconButton>
