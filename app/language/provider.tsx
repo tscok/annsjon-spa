@@ -1,4 +1,4 @@
-import { PropsWithChildren, useCallback, useState } from 'react'
+import { PropsWithChildren, useCallback, useEffect, useState } from 'react'
 import { LanguageContext } from './context'
 import { Language, Locale } from 'app/types'
 
@@ -23,8 +23,8 @@ export const LanguageProvider = ({ children }: PropsWithChildren) => {
   const [locale, setLocale] = useState<Locale>(storedLocale ?? fallbackLocale)
 
   const enableCookies = useCallback(() => {
-    setCookiesEnabled(true)
     setLocalStorageLocale(locale)
+    setCookiesEnabled(true)
   }, [locale])
 
   const updateLocale = useCallback(
@@ -36,6 +36,11 @@ export const LanguageProvider = ({ children }: PropsWithChildren) => {
     },
     [cookiesEnabled, locale]
   )
+
+  useEffect(() => {
+    // set HTML `lang` attribute
+    document.documentElement.lang = locale
+  }, [locale])
 
   const language = locale === 'sv' ? languages.sv : languages.en
   const nextLanguage = locale === 'sv' ? languages.en : languages.sv
