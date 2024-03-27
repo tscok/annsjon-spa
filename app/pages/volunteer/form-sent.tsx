@@ -1,7 +1,5 @@
 import { Navigate } from 'react-router-dom'
 import Alert from '@mui/material/Alert'
-import Card from '@mui/material/Card'
-import CardContent from '@mui/material/CardContent'
 import { useDictionary } from 'app/i18n/use-dictionary'
 import { interpolate } from 'app/utils/interpolate'
 import { H2, H4 } from 'app/ui/text/heading'
@@ -33,15 +31,11 @@ export const FormSent = () => {
             $1: <A href="mailto:volunteer@annsjon.org" />,
           })}
         </P>
-        <Card>
-          <CardContent sx={{ backgroundColor: 'background.default' }}>
-            <TextArea
-              defaultValue={getFallback(data)}
-              label={t('fallback.label')}
-              name="fallback"
-            />
-          </CardContent>
-        </Card>
+        <TextArea
+          defaultValue={getFallback(data)}
+          label={t('fallback.label')}
+          name="fallback"
+        />
       </>
     )
   }
