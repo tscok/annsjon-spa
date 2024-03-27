@@ -37,7 +37,7 @@ export const A = ({
   }
   if (href.startsWith('mailto:')) {
     return (
-      <Link href={href} sx={styles}>
+      <Link href={href} sx={styles} underline={underline}>
         {href.replace('mailto:', '')}
       </Link>
     )

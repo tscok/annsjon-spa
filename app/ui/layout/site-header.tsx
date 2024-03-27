@@ -52,7 +52,7 @@ export const SiteHeader = () => {
         ) : (
           <TabletNav pathname={pathname} routes={mainRoutes} />
         )}
-        <Box alignItems="center" display="flex">
+        <Box alignItems="center" display={{ xs: 'none', sm: 'flex' }}>
           <VerticalDivider />
           <IconButton
             aria-label="change language"

@@ -81,7 +81,7 @@
     "tagline": "Birds and people in a unique environment"
   },
   "site": {
-    "title": "Lake Ånnsjön Bird Observatory",
-    "design": "Design and development by "
+    "title": "Lake Ånnsjön Bird\u00a0Observatory",
+    "webmaster": "Webmaster $1"
   }
 }
