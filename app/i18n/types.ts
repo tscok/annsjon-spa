@@ -52,7 +52,7 @@ type Pages = Keys<
   | 'result'
 >
 
-type Site = Keys<'title' | 'design'>
+type Site = Keys<'title' | 'webmaster'>
 
 type Startpage = Keys<
   | 'credit.photo'

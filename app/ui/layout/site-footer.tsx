@@ -10,6 +10,7 @@ import { Image } from '../image/image'
 import { A } from '../text/a'
 import { PageSection } from './page-section'
 import { FooterButton } from '../misc/footer-button'
+import { interpolate } from 'app/utils/interpolate'
 
 export const SiteFooter = () => {
   const { nextLanguage, changeLanguage } = useLanguage()
@@ -40,10 +41,7 @@ export const SiteFooter = () => {
               </FooterButton>
             ))}
           </Stack>
-          <Stack
-            spacing={1}
-            sx={{ mt: 4, alignItems: { xs: 'center', lg: 'start' } }}
-          >
+          <Stack sx={{ mt: 4, alignItems: { xs: 'center', lg: 'start' } }}>
             <Stack alignItems="center" direction="row">
               <FooterButton
                 aria-label="change language"
@@ -64,17 +62,20 @@ export const SiteFooter = () => {
             <div>
               <Typography
                 color="common.white"
-                sx={{ fontWeight: 400, ml: 0.5, opacity: 0.75 }}
                 variant="caption"
+                sx={{ ml: 0.5 }}
               >
-                {t('design')}
-                <A
-                  color="inherit"
-                  href="https://www.linkedin.com/in/mr-mike/"
-                  underline="hover"
-                >
-                  Mikael Carlsson
-                </A>
+                {interpolate(t('webmaster'), {
+                  $1: (
+                    <A
+                      color="inherit"
+                      href="https://www.linkedin.com/in/mr-mike/"
+                      underline="hover"
+                    >
+                      Mikael Carlsson
+                    </A>
+                  ),
+                })}
               </Typography>
             </div>
           </Stack>
