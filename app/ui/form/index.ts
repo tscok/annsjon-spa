@@ -1,6 +1,4 @@
 export * from './autocomplete'
-export * from './button'
 export * from './checkbox'
 export * from './fieldset'
 export * from './select'
-export * from './text-input'
