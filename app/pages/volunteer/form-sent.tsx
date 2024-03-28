@@ -1,10 +1,10 @@
 import { Navigate } from 'react-router-dom'
 import Alert from '@mui/material/Alert'
+import TextField from '@mui/material/TextField'
 import { useDictionary } from 'app/i18n/use-dictionary'
 import { interpolate } from 'app/utils/interpolate'
 import { H2, H4 } from 'app/ui/text/heading'
 import { A } from 'app/ui/text/a'
-import { TextArea } from 'app/ui/form'
 import { P } from 'app/ui/text/p'
 import { useForm } from 'app/form/use-form'
 import { getFallback } from './get-fallback'
@@ -31,9 +31,13 @@ export const FormSent = () => {
             $1: <A href="mailto:volunteer@annsjon.org" />,
           })}
         </P>
-        <TextArea
+        <TextField
+          autoComplete="off"
           defaultValue={getFallback(data)}
+          fullWidth
+          id="fallback-text-area"
           label={t('fallback.label')}
+          multiline
           name="fallback"
         />
       </>
