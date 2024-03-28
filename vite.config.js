@@ -24,4 +24,13 @@ export default defineConfig({
       exclude: '',
     }),
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          mui: ['@mui/material', '@mui/icons-material'],
+        },
+      },
+    },
+  },
 })
