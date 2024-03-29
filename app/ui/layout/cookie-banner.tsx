@@ -26,7 +26,7 @@ export const CookieBanner = () => {
 
   return (
     <TrapFocus open disableAutoFocus disableEnforceFocus>
-      <Fade appear={false} in={open}>
+      <Fade appear={false} in={open} mountOnEnter unmountOnExit>
         <Paper
           role="dialog"
           aria-modal="false"
