@@ -73,7 +73,6 @@ type Startpage = Keys<
   | 'section-title.guides'
   | 'section-title.projects'
   | 'section-title.staff'
-  | 'tagline'
 >
 
 type Keys<K extends string> = Record<K, string>
