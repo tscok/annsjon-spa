@@ -47,7 +47,13 @@ export const MediaCard = ({
       }}
     />
     <CardContent sx={{ px: 0 }}>
-      <Typography id={id} variant="h5">
+      <Typography
+        id={id}
+        variant="h5"
+        sx={{
+          textDecoration: { xs: 'underline', md: 'none' },
+        }}
+      >
         {title}
       </Typography>
       <Typography component="p" sx={{ mt: 2 }}>
