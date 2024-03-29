@@ -33,8 +33,8 @@ export const SiteFooter = () => {
           >
             {routes.map((route) => (
               <FooterButton
-                aria-label={route.name}
                 key={route.path}
+                aria-label={route.name}
                 to={route.path}
               >
                 {route.name}
