@@ -21,8 +21,18 @@ export const SideNav = ({
     return <Breadcrumbs pathname={pathname} route={route} />
   }
 
+  // site-header height + page-container paddingTop
+  const SIDENAV_TOP_POSITION = 'calc(65px + (6 * 8px))'
+
   return (
-    <MenuList>
+    <MenuList
+      sx={{
+        borderRight: '1px solid',
+        borderColor: 'divider',
+        position: 'sticky',
+        top: SIDENAV_TOP_POSITION,
+      }}
+    >
       <MenuItem
         aria-labelledby="side-nav-current-route"
         component={RouterLink}
