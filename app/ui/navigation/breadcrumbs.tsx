@@ -1,7 +1,6 @@
 import { Link as RouterLink } from 'react-router-dom'
 import Button from '@mui/material/Button'
 import MuiBreadcrumbs from '@mui/material/Breadcrumbs'
-import { useDictionary } from 'app/i18n/use-dictionary'
 import { Route } from 'app/types'
 import { getBreadcrumbs } from 'app/utils/get-breadcrumbs'
 
@@ -13,13 +12,13 @@ export const Breadcrumbs = ({
   route: Route
 }) => {
   const breadcrumbs = getBreadcrumbs(route, pathname)
-  const t = useDictionary('pages')
+
+  if (breadcrumbs.length === 1) {
+    return null
+  }
 
   return (
-    <MuiBreadcrumbs aria-label="breadcrumb" sx={{ mb: 2, ml: -1 }}>
-      <Button component={RouterLink} sx={{ textTransform: 'none' }} to="/">
-        {t('home')}
-      </Button>
+    <MuiBreadcrumbs aria-label="breadcrumb" maxItems={3} sx={{ mb: 2, ml: -1 }}>
       {breadcrumbs.map((route, index) => {
         const isLast = index === breadcrumbs.length - 1
 
