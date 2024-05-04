@@ -42,6 +42,13 @@ export const A = ({
       </Link>
     )
   }
+  if (href.startsWith('+')) {
+    return (
+      <Link href={`tel:${href}`} underline={underline}>
+        {children}
+      </Link>
+    )
+  }
   if (onClick) {
     return (
       <Link
