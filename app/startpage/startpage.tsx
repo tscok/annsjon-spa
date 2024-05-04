@@ -1,9 +1,9 @@
-import { Directions, Guides, Hero, Projects, Staff } from './sections'
+import { Directions, Events, Guides, Hero, Projects } from './sections'
 
 export const StartPage = () => (
   <>
     <Hero />
-    <Staff />
+    <Events />
     <Guides />
     <Projects />
     <Directions />

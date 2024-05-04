@@ -72,7 +72,16 @@ type Startpage = Keys<
   | 'project.survey.title'
   | 'section-title.guides'
   | 'section-title.projects'
-  | 'section-title.staff'
+  | 'section-title.events'
+  | 'event.open-house.title'
+  | 'event.open-house.body'
+  | 'event.open-house.link'
+  | 'event.survey.title'
+  | 'event.survey.body'
+  | 'event.survey.link'
+  | 'event.ringing.title'
+  | 'event.ringing.body'
+  | 'event.ringing.link'
 >
 
 type Keys<K extends string> = Record<K, string>
