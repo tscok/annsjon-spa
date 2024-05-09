@@ -31,11 +31,7 @@ export const Accommodation = () => (
               {accommodator.email && (
                 <ListItem disableGutters disablePadding>
                   <ListItemText
-                    secondary={
-                      <A href={`mailto:${accommodator.email}`}>
-                        {accommodator.email}
-                      </A>
-                    }
+                    secondary={<A href={`mailto:${accommodator.email}`} />}
                   />
                 </ListItem>
               )}
