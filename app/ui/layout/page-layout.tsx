@@ -1,4 +1,5 @@
 import { Outlet, useLocation } from 'react-router-dom'
+import Box from '@mui/material/Box'
 import { useRoutes } from 'app/utils/use-routes'
 import { SideNav } from '../navigation/side-nav'
 import { PageContainer } from './page-container'
@@ -11,12 +12,12 @@ export const PageLayout = () => {
 
   return (
     <PageContainer>
-      <aside style={{ minWidth: 200 }}>
+      <Box component="aside" sx={{ maxWidth: { xs: 150, lg: '100%' } }}>
         {route?.children && <SideNav pathname={pathname} route={route} />}
-      </aside>
-      <article>
+      </Box>
+      <Box component="article">
         <Outlet />
-      </article>
+      </Box>
     </PageContainer>
   )
 }

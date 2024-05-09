@@ -2,7 +2,6 @@ import { Link as RouterLink } from 'react-router-dom'
 import ListItemText from '@mui/material/ListItemText'
 import MenuList from '@mui/material/MenuList'
 import MenuItem from '@mui/material/MenuItem'
-import Typography from '@mui/material/Typography'
 import { Theme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { Route } from 'app/types'
@@ -53,10 +52,11 @@ export const SideNav = ({
               pathname === child.path ||
               (pathname.startsWith(child.path) && !child.children)
             }
+            sx={{ whiteSpace: 'normal' }}
             to={child.path}
           >
-            <ListItemText id="side-nav-second-level-route" disableTypography>
-              <Typography noWrap>{child.name}</Typography>
+            <ListItemText id="side-nav-second-level-route">
+              {child.name}
             </ListItemText>
           </MenuItem>
           {pathname.startsWith(child.path) && child.children && (
