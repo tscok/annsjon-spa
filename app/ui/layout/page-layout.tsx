@@ -12,7 +12,7 @@ export const PageLayout = () => {
 
   return (
     <PageContainer>
-      <Box component="aside" sx={{ maxWidth: { xs: 150, lg: '100%' } }}>
+      <Box component="aside" sx={{ maxWidth: { md: 150, lg: 1 } }}>
         {route?.children && <SideNav pathname={pathname} route={route} />}
       </Box>
       <Box component="article">

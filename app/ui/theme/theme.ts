@@ -71,4 +71,8 @@ const palette: Partial<Theme['palette']> = {
   },
 }
 
-export const theme = createTheme({ palette, typography })
+export const theme = createTheme({
+  mixins: defaultTheme.mixins,
+  palette,
+  typography,
+})

@@ -1,14 +1,15 @@
 import { useLocation } from 'react-router-dom'
-import { alpha, Theme } from '@mui/material/styles'
+import { Theme } from '@mui/material/styles'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
+import Divider from '@mui/material/Divider'
 import IconButton from '@mui/material/IconButton'
 import Toolbar from '@mui/material/Toolbar'
 import useMediaQuery from '@mui/material/useMediaQuery'
+import useScrollTrigger from '@mui/material/useScrollTrigger'
 import { useLanguage } from 'app/language/use-language'
 import { useDictionary } from 'app/i18n/use-dictionary'
 import { useRoutes } from 'app/utils/use-routes'
-import { useHeaderStyles } from 'app/utils/use-header-styles'
 import { MobileNav } from '../navigation/mobile-nav'
 import { TabletNav } from '../navigation/tablet-nav'
 import { Emoji } from '../misc/emoji'
@@ -21,7 +22,7 @@ export const SiteHeader = () => {
   const { pathname } = useLocation()
   const routes = useRoutes()
   const isMobile = useMediaQuery<Theme>((theme) => theme.breakpoints.down('md'))
-  const { border, opacity } = useHeaderStyles(pathname)
+  const trigger = useScrollTrigger({ disableHysteresis: true, threshold: 0 })
 
   const mainRoutes = routes.filter(
     (route) => !['/', '/iba', '/reports'].includes(route.path)
@@ -32,11 +33,8 @@ export const SiteHeader = () => {
       elevation={0}
       position="sticky"
       sx={{
-        backdropFilter: 'blur(8px)',
-        backgroundColor: (theme) => alpha(theme.palette.common.white, opacity),
-        borderBottom: border,
-        borderColor: 'divider',
-        transition: 'all 150ms ease-in-out',
+        backgroundColor: 'background.paper',
+        boxShadow: trigger ? '0px 2px 14px -2px rgba(0,0,0,0.1)' : 'none',
       }}
     >
       <Toolbar>
@@ -63,6 +61,7 @@ export const SiteHeader = () => {
           </IconButton>
         </Box>
       </Toolbar>
+      <Divider sx={{ mt: '-1px' }} />
     </AppBar>
   )
 }

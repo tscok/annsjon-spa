@@ -11,7 +11,6 @@ export const Hero = () => {
         variant: 'light',
       }}
       height={380}
-      margin="-64px 0 0"
       src="/images/annsjon1_steve-dahlfors.jpg"
     />
   )

@@ -7,6 +7,9 @@ import useMediaQuery from '@mui/material/useMediaQuery'
 import { Route } from 'app/types'
 import { Breadcrumbs } from './breadcrumbs'
 
+// site-header height + page-container paddingTop
+const sideNavTop = 64 + 48
+
 export const SideNav = ({
   pathname,
   route,
@@ -20,16 +23,13 @@ export const SideNav = ({
     return <Breadcrumbs pathname={pathname} route={route} />
   }
 
-  // site-header height + page-container paddingTop
-  const SIDENAV_TOP_POSITION = 'calc(65px + (6 * 8px))'
-
   return (
     <MenuList
       sx={{
         borderRight: '1px solid',
         borderColor: 'divider',
         position: 'sticky',
-        top: SIDENAV_TOP_POSITION,
+        top: `${sideNavTop}px`,
       }}
     >
       <MenuItem
