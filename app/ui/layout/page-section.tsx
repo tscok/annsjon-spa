@@ -23,12 +23,12 @@ export const PageSection = ({
   }
 
   return (
-    <Box sx={{ backgroundColor, pt: 6, pb: 6 }}>
+    <Box sx={{ backgroundColor, py: 4 }}>
       {title && (
         <Typography
-          component="div"
+          component="h2"
+          sx={{ mb: 4, textAlign: 'center' }}
           variant="h6"
-          sx={{ mb: 6, textAlign: 'center' }}
         >
           {title}
         </Typography>
