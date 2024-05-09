@@ -2,11 +2,13 @@ import { Link as RouterLink } from 'react-router-dom'
 import ListItemText from '@mui/material/ListItemText'
 import MenuList from '@mui/material/MenuList'
 import MenuItem from '@mui/material/MenuItem'
-import Typography from '@mui/material/Typography'
 import { Theme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { Route } from 'app/types'
 import { Breadcrumbs } from './breadcrumbs'
+
+// site-header height + page-container paddingTop
+const sideNavTop = 64 + 48
 
 export const SideNav = ({
   pathname,
@@ -21,16 +23,13 @@ export const SideNav = ({
     return <Breadcrumbs pathname={pathname} route={route} />
   }
 
-  // site-header height + page-container paddingTop
-  const SIDENAV_TOP_POSITION = 'calc(65px + (6 * 8px))'
-
   return (
     <MenuList
       sx={{
         borderRight: '1px solid',
         borderColor: 'divider',
         position: 'sticky',
-        top: SIDENAV_TOP_POSITION,
+        top: `${sideNavTop}px`,
       }}
     >
       <MenuItem
@@ -53,10 +52,11 @@ export const SideNav = ({
               pathname === child.path ||
               (pathname.startsWith(child.path) && !child.children)
             }
+            sx={{ whiteSpace: 'normal' }}
             to={child.path}
           >
-            <ListItemText id="side-nav-second-level-route" disableTypography>
-              <Typography noWrap>{child.name}</Typography>
+            <ListItemText id="side-nav-second-level-route">
+              {child.name}
             </ListItemText>
           </MenuItem>
           {pathname.startsWith(child.path) && child.children && (

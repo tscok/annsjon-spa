@@ -58,7 +58,7 @@ export const Events = () => {
         >
           {t('event.survey.body')}{' '}
           {interpolate(t('event.survey.link'), {
-            $1: <A href="mailto:info@annsjon.org">info@annsjon.org</A>,
+            $1: <A href="mailto:info@annsjon.org" />,
           })}
         </EventItem>
         <EventItem
