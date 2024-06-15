@@ -1,5 +1,5 @@
 export * from './directions'
-export * from './events'
+export * from './intro'
 export * from './guides'
 export * from './hero'
 export * from './projects'

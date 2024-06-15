@@ -77,16 +77,11 @@
     "project.survey.title": "Surveys",
     "section-title.guides": "Watcher's Guide",
     "section-title.projects": "Projects",
-    "section-title.events": "Events",
-    "event.open-house.title": "Open House, June 1st",
-    "event.open-house.body": "Bring your friends to Ånnsjön when the bird life is at its most exuberant. We help with the species identification at Ånnsjön's bird towers and hides during the morning hours, offer a picture show in the evening and guide you to a Great snipe lek at midnight.",
-    "event.open-house.link": "Agenda and information",
-    "event.survey.title": "Wetland bird survey, June 2-16",
-    "event.survey.body": "We are looking for bird enthusiasts who are familiar with the common marsh birds in the area near the mountains. No previous survey experience is needed. Accomodation at the bird observatory in Handöl.",
-    "event.survey.link": "For more information, contact us at $1.",
-    "event.ringing.title": "Bird ringing, July 1st - August 31",
-    "event.ringing.body": "We are looking for ringers and assistants for our net catching projects in July and August. As a ringer, you have your own license, assistant license or extensive experience in ringing at a bird observatory or equivalent. Assistants do not need any previous experience.",
-    "event.ringing.link": "Apply here"
+    "event.open-house": "Open House",
+    "event.survey": "Wetland bird survey",
+    "event.ringing": "Bird ringing",
+    "event.season-end": "Late Summer Week",
+    "events.title": "Events"
   },
   "site": {
     "title": "Lake Ånnsjön Bird\u00a0Observatory",

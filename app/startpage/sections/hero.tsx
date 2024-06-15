@@ -10,7 +10,7 @@ export const Hero = () => {
         placement: 'right',
         variant: 'light',
       }}
-      height={380}
+      height={320}
       src="/images/annsjon1_steve-dahlfors.jpg"
     />
   )
