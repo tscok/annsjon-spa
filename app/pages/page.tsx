@@ -1,14 +1,10 @@
-import { Suspense, lazy } from 'react'
+import { Suspense } from 'react'
 import { useLocation } from 'react-router-dom'
-import type { MDXContent } from 'mdx/types'
 import { MdxComponents } from 'app/ui/mdx'
 import { useLanguage } from 'app/language/use-language'
+import { MdxGlob, dynamic } from 'app/utils/dynamic-mdx'
 
-type Glob<T> = Record<string, () => Promise<T>>
-
-const modules = import.meta.glob('./mdx/**/*.mdx') as Glob<MDXContent>
-
-const dynamic = (fn: () => Promise<any>) => lazy<MDXContent>(fn)
+const mdx = import.meta.glob('./mdx/**/*.mdx') as MdxGlob
 
 export const Page = () => {
   const { language } = useLanguage()
@@ -18,7 +14,7 @@ export const Page = () => {
   const fileName = `./mdx/${slug}-${language.locale}.mdx`
   const notFound = `./mdx/not-found-${language.locale}.mdx`
 
-  const Content = dynamic(modules[fileName] || modules[notFound])
+  const Content = dynamic(mdx[fileName] || mdx[notFound])
 
   return (
     <Suspense>

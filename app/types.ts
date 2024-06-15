@@ -7,3 +7,5 @@ export type Language = {
   locale: Locale
   name: 'English' | 'Svenska'
 }
+
+export type DateRange = { from: string; to?: string }

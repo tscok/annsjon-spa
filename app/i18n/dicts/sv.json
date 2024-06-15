@@ -77,16 +77,11 @@
     "project.survey.title": "Inventering",
     "section-title.guides": "Vår skådarguide",
     "section-title.projects": "Våra projekt",
-    "section-title.events": "Aktuellt",
-    "event.open-house.title": "Ånnsjödagen, 1 juni",
-    "event.open-house.body": "Ta med dina vänner till Ånnsjön när fågellivet är som mest sprudlande. Vi hjälper till med artbestämningen vid Ånnsjöns fågeltorn och gömslen under morgontimmarna, bjuder på bildvisning under kvällen och guidar er till en dubbelbeckasinlek vid midnatt.",
-    "event.open-house.link": "Program och information",
-    "event.survey.title": "Våtmarksinventering, 2-16 juni",
-    "event.survey.body": "Vi söker fågelintresserade som är välbekanta med de vanligt förekommande myrfåglarna i det fjällnära området. Ingen tidigare inventeringsvana behövs. Vi bor på fågelstationen i Handöl och inventerar våtmarker i omgivningarna.",
-    "event.survey.link": "För mer information, skriv till $1.",
-    "event.ringing.title": "Ringmärkning, 1 juli - 31 augusti",
-    "event.ringing.body": "Vi söker ringmärkare och assistenter till våra nätfångstprojekt i juli och augusti. Som ringmärkare har du egen licens, medhjälparlicens eller stor erfarenhet av ringmärkning på fågelstation eller motsvarande. Assistenter behöver inte ha tidigare erfarenhet av nätfångst eller ringmärkning.",
-    "event.ringing.link": "Till intresseanmälan"
+    "event.open-house": "Ånnsjödagen / Öppet hus",
+    "event.survey": "Våtmarksinventering",
+    "event.ringing": "Ringmärkning",
+    "event.season-end": "Sensommarvecka",
+    "events.title": "Aktiviteter"
   },
   "site": {
     "title": "Ånnsjöns fågelstation",

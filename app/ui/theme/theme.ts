@@ -66,7 +66,7 @@ const palette: Partial<Theme['palette']> = {
   mode: 'light',
   background: {
     ...defaultTheme.palette.background,
-    default: 'rgb(240, 245, 250)',
+    default: 'rgb(243, 243, 243)',
     paper: 'rgb(255, 255, 255)',
   },
 }
