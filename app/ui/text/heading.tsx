@@ -1,19 +1,7 @@
 import { PropsWithChildren } from 'react'
 import Typography, { TypographyProps } from '@mui/material/Typography'
 
-function createId(str: string) {
-  return str
-    .toLowerCase()
-    .replace(/[åä]/g, 'a')
-    .replace(/[ö]/g, 'o')
-    .replace(/[?]/g, '')
-    .replace(/\s-\s/g, '-')
-    .replace(/\s/g, '-')
-}
-
-const Heading = (props: TypographyProps) => (
-  <Typography {...props} id={props.id ?? createId(props.children as string)} />
-)
+const Heading = (props: TypographyProps) => <Typography {...props} />
 
 export const H2 = (props: PropsWithChildren) => (
   <Heading {...props} variant="h2" />

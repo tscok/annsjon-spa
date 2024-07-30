@@ -29,12 +29,12 @@ export const Intro = () => {
     {
       date: { from: '2024-06-02', to: '2024-06-16' },
       title: t('event.survey'),
-      href: '/volunteer',
+      href: '/projects/surveys',
     },
     {
       date: { from: '2024-07-01', to: '2024-08-31' },
       title: t('event.ringing'),
-      href: '/volunteer',
+      href: '/projects/ringing',
     },
     // {
     //   date: { from: '2024-09-1', to: '2024-09-07' },
