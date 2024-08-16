@@ -3,62 +3,56 @@ import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
+import { MediaCardType } from 'app/types'
 
-type MediaProps = {
-  height?: number
-  position?: string
-  src: string
+type MediaCardProps<T extends string> = MediaCardType<T> & {
+  ariaLabel: string
 }
 
-export const MediaCard = ({
+export function MediaCard<T extends string>({
   ariaLabel,
   body,
   id,
   media,
   title,
   to,
-}: {
-  ariaLabel: string
-  body: string
-  id: string
-  media: MediaProps
-  title: string
-  to: string
-}) => (
-  <Card
-    aria-label={ariaLabel}
-    aria-labelledby={id}
-    component={RouterLink}
-    elevation={0}
-    square
-    sx={{
-      flex: 1,
-      textDecoration: 'none',
-      '&:hover h5': { textDecoration: 'underline' },
-    }}
-    to={to}
-  >
-    <CardMedia
-      component="div"
-      image={media.src}
+}: MediaCardProps<T>) {
+  return (
+    <Card
+      aria-label={ariaLabel}
+      aria-labelledby={id}
+      component={RouterLink}
+      elevation={0}
+      square
       sx={{
-        backgroundPosition: media.position,
-        height: media.height ?? 150,
+        flex: 1,
+        textDecoration: 'none',
+        '&:hover h5': { textDecoration: 'underline' },
       }}
-    />
-    <CardContent sx={{ px: 0 }}>
-      <Typography
-        id={id}
-        variant="h5"
+      to={to}
+    >
+      <CardMedia
+        component="div"
+        image={media.src}
         sx={{
-          textDecoration: { xs: 'underline', md: 'none' },
+          backgroundPosition: media.position,
+          height: media.height ?? 150,
         }}
-      >
-        {title}
-      </Typography>
-      <Typography component="p" sx={{ mt: 2 }}>
-        {body}
-      </Typography>
-    </CardContent>
-  </Card>
-)
+      />
+      <CardContent sx={{ px: 0 }}>
+        <Typography
+          id={id}
+          variant="h5"
+          sx={{
+            textDecoration: { xs: 'underline', md: 'none' },
+          }}
+        >
+          {title}
+        </Typography>
+        <Typography component="p" sx={{ mt: 2 }}>
+          {body}
+        </Typography>
+      </CardContent>
+    </Card>
+  )
+}

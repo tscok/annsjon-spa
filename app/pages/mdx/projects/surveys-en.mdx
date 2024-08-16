@@ -1,4 +1,6 @@
 import { Figure, Image } from 'app/ui/image'
+import { Divider } from 'app/ui/misc/divider'
+import { ProjectsGrid } from 'app/ui/misc/projects-grid'
 import { VolunteerCollapsible } from 'app/ui/misc/volunteer-collapsible'
 import Requirements from '../volunteer/requirements/surveys-en.mdx'
 
@@ -29,3 +31,7 @@ A dozen or so bogs and wetlands around Lake Ånnsjön and Storlien have been inv
 <VolunteerCollapsible expanded>
   <Requirements />
 </VolunteerCollapsible>
+
+<Divider>OTHER PROJECTS</Divider>
+
+<ProjectsGrid exclude="surveys" />

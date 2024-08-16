@@ -1,4 +1,6 @@
 import { Figure, Image } from 'app/ui/image'
+import { Divider } from 'app/ui/misc/divider'
+import { ProjectsGrid } from 'app/ui/misc/projects-grid'
 import { VolunteerCollapsible } from 'app/ui/misc/volunteer-collapsible'
 import Requirements from '../volunteer/requirements/ringing-en.mdx'
 
@@ -17,3 +19,7 @@ The long-term goal is to document existing populations and their fluctuations in
 <VolunteerCollapsible expanded>
   <Requirements />
 </VolunteerCollapsible>
+
+<Divider>OTHER PROJECTS</Divider>
+
+<ProjectsGrid exclude="ringing" />

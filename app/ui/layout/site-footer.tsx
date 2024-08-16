@@ -5,7 +5,7 @@ import logotype from 'app/assets/faf_logo_white.svg'
 import { useDictionary } from 'app/i18n/use-dictionary'
 import { useLanguage } from 'app/language/use-language'
 import { useRoutes } from 'app/utils/use-routes'
-import { VerticalDivider } from '../misc/vertical-divider'
+import { Divider } from '../misc/divider'
 import { Image } from '../image/image'
 import { A } from '../text/a'
 import { PageSection } from './page-section'
@@ -50,7 +50,7 @@ export const SiteFooter = () => {
               >
                 {nextLanguage.name}
               </FooterButton>
-              <VerticalDivider light />
+              <Divider light vertical />
               <FooterButton
                 aria-label="about cookies"
                 size="small"

@@ -7,7 +7,7 @@ export const Projects = () => {
 
   return (
     <PageSection title={t('section-title.projects')}>
-      <ProjectsGrid />
+      <ProjectsGrid columns={3} />
     </PageSection>
   )
 }
