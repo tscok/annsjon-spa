@@ -1,4 +1,6 @@
 import { Figure, Image } from 'app/ui/image'
+import { Divider } from 'app/ui/misc/divider'
+import { ProjectsGrid } from 'app/ui/misc/projects-grid'
 import { VolunteerCollapsible } from 'app/ui/misc/volunteer-collapsible'
 import Requirements from '../volunteer/requirements/surveys-sv.mdx'
 
@@ -29,3 +31,7 @@ Ett dussintal myrar och våtmarker runt Ånnsjön och Storlien har inventerats v
 <VolunteerCollapsible expanded>
   <Requirements />
 </VolunteerCollapsible>
+
+<Divider>ÖVRIGA PROJEKT</Divider>
+
+<ProjectsGrid exclude="surveys" />
