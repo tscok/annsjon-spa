@@ -1,18 +1,7 @@
 import { useDictionary } from 'app/i18n/use-dictionary'
+import { MediaCardType } from 'app/types'
 
-type Guide = {
-  body: string
-  id: string
-  media: {
-    position?: string
-    src: string
-  }
-  name: GuideName
-  title: string
-  to: string
-}
-
-const guides: Guide[] = [
+const guides: MediaCardType<GuideName>[] = [
   {
     body: 'guide.ann',
     id: 'guide-ann',
@@ -70,7 +59,7 @@ const guides: Guide[] = [
 
 export type GuideName = 'ann' | 'handol' | 'hogasen' | 'storlien' | 'storulvan'
 
-export function useGuides(excludeName?: GuideName) {
+export function useGuides(excludeName?: GuideName): MediaCardType<GuideName>[] {
   const t = useDictionary('startpage')
 
   return guides
