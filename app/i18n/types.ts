@@ -96,3 +96,5 @@ export type Dictionary = {
 }
 
 export type TranslateFn<T> = <K extends keyof T>(key: K) => T[K] | K
+
+export type I18nKey<N extends keyof Dictionary> = keyof Dictionary[N]
