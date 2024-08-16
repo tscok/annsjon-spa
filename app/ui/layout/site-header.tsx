@@ -2,7 +2,7 @@ import { useLocation } from 'react-router-dom'
 import { Theme } from '@mui/material/styles'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
-import Divider from '@mui/material/Divider'
+import MuiDivider from '@mui/material/Divider'
 import IconButton from '@mui/material/IconButton'
 import Toolbar from '@mui/material/Toolbar'
 import useMediaQuery from '@mui/material/useMediaQuery'
@@ -13,7 +13,7 @@ import { useRoutes } from 'app/utils/use-routes'
 import { MobileNav } from '../navigation/mobile-nav'
 import { TabletNav } from '../navigation/tablet-nav'
 import { Emoji } from '../misc/emoji'
-import { VerticalDivider } from '../misc/vertical-divider'
+import { Divider } from '../misc/divider'
 import { SiteTitle } from './site-title'
 
 export const SiteHeader = () => {
@@ -51,7 +51,7 @@ export const SiteHeader = () => {
           <TabletNav pathname={pathname} routes={mainRoutes} />
         )}
         <Box alignItems="center" display={{ xs: 'none', sm: 'flex' }}>
-          <VerticalDivider />
+          <Divider vertical />
           <IconButton
             aria-label="change language"
             color="inherit"
@@ -61,7 +61,7 @@ export const SiteHeader = () => {
           </IconButton>
         </Box>
       </Toolbar>
-      <Divider sx={{ mt: '-1px' }} />
+      <MuiDivider sx={{ mt: '-1px' }} />
     </AppBar>
   )
 }
