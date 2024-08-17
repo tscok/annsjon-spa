@@ -6,19 +6,21 @@ import { interpolate } from 'app/utils/interpolate'
 import { H2, H4 } from 'app/ui/text/heading'
 import { A } from 'app/ui/text/a'
 import { P } from 'app/ui/text/p'
-import { useForm } from 'app/form/use-form'
-import { getFallback } from './get-fallback'
+import { useForm, isEmptyForm } from 'app/form/use-form'
+// import { getFallback } from './get-fallback'
+import { FormState } from './form-state'
 
 export const FormSent = () => {
   const t = useDictionary('formSent')
   const t2 = useDictionary('pages')
-  const { error, data } = useForm()
+  const { state, status } = useForm<FormState>()
+  const noData = isEmptyForm(state)
 
-  if (!data) {
+  if (noData) {
     return <Navigate replace to="/volunteer/application" />
   }
 
-  if (error && data) {
+  if (status === 'error' && noData) {
     return (
       <>
         <H2>{t('title')}</H2>
@@ -33,7 +35,7 @@ export const FormSent = () => {
         </P>
         <TextField
           autoComplete="off"
-          defaultValue={getFallback(data)}
+          defaultValue={'' /** TODO: Parse `state` to string */}
           fullWidth
           id="fallback-text-area"
           label={t('fallback.label')}

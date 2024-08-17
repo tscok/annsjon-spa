@@ -15,7 +15,11 @@
   "form": {
     "about.hint": "Berätta lite om dig själv och tidigare erfarenhet med fåglar.",
     "about": "Presentation",
+    "arrival": "Ankomst",
+    "arrival.hint": "Ange startdatum för din vistelse",
     "car": "Medför bil",
+    "departure": "Avresa",
+    "departure.hint": "Ange slutdatum för din vistelse",
     "dob": "Födelseår",
     "driver": "Har körkort",
     "email": "E-post",
@@ -29,8 +33,6 @@
     "nationality": "Nationalitet",
     "phone": "Telefonnummer",
     "submit": "Skicka ansökan",
-    "timeframe.hint": "Ange ungefär när du skulle vilja jobba hos oss och hur länge.",
-    "timeframe": "Tidsram",
     "title": "Ansökan"
   },
   "formSent": {

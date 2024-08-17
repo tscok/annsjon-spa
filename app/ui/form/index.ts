@@ -1,4 +1,5 @@
 export * from './autocomplete'
 export * from './checkbox'
+export * from './date-picker'
 export * from './fieldset'
 export * from './select'

@@ -1,31 +1,46 @@
+import dayjs from 'dayjs'
 import { FormEvent } from 'react'
-import { useNavigate } from 'react-router-dom'
+// import { useNavigate } from 'react-router-dom'
 import Button from '@mui/material/Button'
 import MenuItem from '@mui/material/MenuItem'
 import Stack from '@mui/material/Stack'
 import TextField from '@mui/material/TextField'
 import { useDictionary } from 'app/i18n/use-dictionary'
 import { useForm } from 'app/form/use-form'
-import { Autocomplete, Checkbox, Fieldset, Select } from 'app/ui/form'
+import {
+  Checkbox,
+  DatePicker,
+  Fieldset,
+  Select,
+  toDate,
+  toValue,
+} from 'app/ui/form'
 import { H2 } from 'app/ui/text/heading'
 import { Span } from 'app/ui/text/span'
-import { nationalities } from './nationalities'
+import { FormState, Gender } from './form-state'
 
 export const Form = () => {
   const t = useDictionary('form')
-  const navigate = useNavigate()
-  const { loading, onSubmit } = useForm()
+  // const navigate = useNavigate()
+  const { onChange, onSubmit, state, status } = useForm<FormState>()
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    await onSubmit(new FormData(event.currentTarget))
-    navigate('/volunteer/application/sent', { replace: true })
+    await onSubmit()
+    // navigate('/volunteer/application/sent', { replace: true })
+  }
+
+  const today = dayjs()
+  // TODO: Create useEvents to get dates across app
+  const project = {
+    start: dayjs('2024-07-01'),
+    end: dayjs('2024-08-31'),
   }
 
   return (
     <form onSubmit={handleSubmit}>
       <H2>{t('title')}</H2>
-      <Stack spacing={{ xs: 2, md: 4 }}>
+      <Stack spacing={{ xs: 2, md: 3 }}>
         <Fieldset>
           <TextField
             autoComplete="off"
@@ -33,6 +48,7 @@ export const Form = () => {
             id="fname-text-field"
             label={t('first-name')}
             name="fname"
+            onChange={(event) => onChange('firstName', event.target.value)}
             required
           />
           <TextField
@@ -41,21 +57,29 @@ export const Form = () => {
             id="lname-text-field"
             label={t('last-name')}
             name="lname"
+            onChange={(event) => onChange('lastName', event.target.value)}
             required
           />
         </Fieldset>
         <Fieldset>
-          <Select label={t('gender')} name="gender">
+          <Select
+            label={t('gender')}
+            name="gender"
+            onChange={(value) => onChange('gender', value as Gender)}
+          >
             <MenuItem value="female">{t('gender.female')}</MenuItem>
             <MenuItem value="male">{t('gender.male')}</MenuItem>
             <MenuItem value="other">{t('gender.other')}</MenuItem>
           </Select>
-          <TextField
-            autoComplete="off"
-            fullWidth
-            id="dob-text-field"
+          <DatePicker
+            format="YYYY"
             label={t('dob')}
-            name="birth"
+            maxDate={today.subtract(15, 'years')}
+            name="dob"
+            id="dob-text-field"
+            onChange={(value) => onChange('birthyear', toValue(value, 'YYYY'))}
+            value={toDate(state.birthyear)}
+            views={['year']}
           />
         </Fieldset>
         <TextField
@@ -67,18 +91,38 @@ export const Form = () => {
           minRows={3}
           multiline
           name="about"
+          onChange={(event) => onChange('about', event.target.value)}
           required
+          value={state.about}
         />
-        <TextField
-          autoComplete="off"
-          fullWidth
-          helperText={t('timeframe.hint')}
-          id="timeframe-text-area"
-          label={t('timeframe')}
-          minRows={2}
-          multiline
-          name="timeframe"
-        />
+        <Fieldset>
+          <DatePicker
+            helperText={t('arrival.hint')}
+            id="arrival-date-picker"
+            label={t('arrival')}
+            maxDate={project.end}
+            minDate={project.start.isAfter(today) ? project.start : today}
+            name="arrival"
+            onChange={(value) => onChange('arrival', toValue(value))}
+            required
+            value={toDate(state.arrival)}
+          />
+          <DatePicker
+            helperText={t('departure.hint')}
+            id="departure-date-picker"
+            label={t('departure')}
+            maxDate={project.end}
+            minDate={
+              dayjs(state.arrival).isAfter(project.start)
+                ? dayjs(state.arrival).add(1, 'day')
+                : project.start
+            }
+            name="departure"
+            onChange={(value) => onChange('departure', toValue(value))}
+            required
+            value={toDate(state.departure)}
+          />
+        </Fieldset>
         <Fieldset>
           <TextField
             autoComplete="off"
@@ -86,8 +130,10 @@ export const Form = () => {
             id="email-text-field"
             label={t('email')}
             name="email"
+            onChange={(event) => onChange('email', event.target.value)}
             required
             type="email"
+            value={state.email}
           />
           <TextField
             autoComplete="off"
@@ -95,17 +141,24 @@ export const Form = () => {
             id="phone-text-field"
             label={t('phone')}
             name="phone"
+            onChange={(event) => onChange('phone', event.target.value)}
             type="tel"
+            value={state.phone}
           />
         </Fieldset>
-        <Autocomplete
-          label={t('nationality')}
-          options={nationalities}
-          name="nationality"
-        />
         <Fieldset>
-          <Checkbox label={t('car')} name="car" />
-          <Checkbox label={t('driver')} name="driver" />
+          <Checkbox
+            label={t('car')}
+            name="car"
+            onChange={(value) => onChange('arrivesByCar', value)}
+            value={state.arrivesByCar}
+          />
+          <Checkbox
+            label={t('driver')}
+            name="driver"
+            onChange={(value) => onChange('drivingLicense', value)}
+            value={state.drivingLicense}
+          />
         </Fieldset>
       </Stack>
       <Stack
@@ -116,7 +169,7 @@ export const Form = () => {
       >
         <Span small>{t('mandatory-fields')}</Span>
         <Button
-          disabled={loading}
+          disabled={status === 'loading'}
           size="large"
           type="submit"
           variant="contained"

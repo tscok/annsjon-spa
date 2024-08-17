@@ -15,7 +15,11 @@
   "form": {
     "about.hint": "Tell us a bit about yourself and any previous experience with birds.",
     "about": "Presentation",
+    "arrival": "Arrival",
+    "arrival.hint": "Enter start date for your visit",
     "car": "Arrives by car",
+    "departure": "Departure",
+    "departure.hint": "Enter end date for your visit",
     "dob": "Year of Birth",
     "driver": "Has driving license",
     "email": "Email",
@@ -29,8 +33,6 @@
     "nationality": "Nationality",
     "phone": "Phone number",
     "submit": "Send application",
-    "timeframe.hint": "Estimate when you would like to volunteer and for how long.",
-    "timeframe": "Timeframe",
     "title": "Application"
   },
   "formSent": {

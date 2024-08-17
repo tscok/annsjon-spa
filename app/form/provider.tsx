@@ -1,29 +1,41 @@
 import { PropsWithChildren, useState } from 'react'
-import { defaultState, FormContext, State } from './context'
+import { FormContext, FormStatus } from './context'
+import { OnChange } from './types'
 
-export const FormProvider = ({ children }: PropsWithChildren) => {
-  const [state, setState] = useState(defaultState)
+function toFormData<T extends object>(state: T) {
+  const formData = new FormData()
+  Object.entries(state).forEach(([key, value]) => formData.append(key, value))
+  return formData
+}
 
-  const update = (update: Partial<State>) =>
-    setState((prev) => ({ ...prev, ...update }))
+export function FormProvider<T extends object>({
+  children,
+  initialState,
+}: PropsWithChildren<{ initialState: T }>) {
+  const [state, setState] = useState<T>(initialState)
+  const [status, setStatus] = useState<FormStatus>('idle')
 
-  const onSubmit = async (data: FormData) => {
-    const options = { body: data, method: 'post' }
+  const onChange: OnChange<T> = (key, value) => {
+    setState((prevState) => ({ ...prevState, [key]: value }))
+  }
+
+  const onSubmit = async () => {
     try {
-      update({ ...defaultState, loading: true })
+      setStatus('loading')
+      const options = { body: toFormData(state), method: 'post' }
       const response = await fetch('/service.php', options)
       const responseText = (await response.text()) as string | false
       if (response.status === 200 && !!responseText) {
-        update({ loading: false, success: true, data })
+        setStatus('success')
       } else {
-        update({ loading: false, error: true, data })
+        setStatus('error')
       }
     } catch (e) {
-      update({ loading: false, error: true, data })
+      setStatus('error')
     }
   }
 
-  const value = { onSubmit, ...state }
+  const value = { onChange, onSubmit, state, status }
 
   return <FormContext.Provider value={value}>{children}</FormContext.Provider>
 }

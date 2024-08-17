@@ -5,7 +5,11 @@ type ErrorBoundary = Keys<'status' | 'title' | 'body' | 'link'>
 type Form = Keys<
   | 'about.hint'
   | 'about'
+  | 'arrival'
+  | 'arrival.hint'
   | 'car'
+  | 'departure'
+  | 'departure.hint'
   | 'dob'
   | 'driver'
   | 'email'
@@ -19,8 +23,6 @@ type Form = Keys<
   | 'nationality'
   | 'phone'
   | 'submit'
-  | 'timeframe.hint'
-  | 'timeframe'
   | 'title'
 >
 

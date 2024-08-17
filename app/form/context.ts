@@ -1,21 +1,13 @@
 import { createContext } from 'react'
+import { OnChange } from './types'
 
-type FormContextProps = State & {
-  onSubmit: (data: FormData) => Promise<void>
+export type FormContextType<T extends object> = {
+  onChange: OnChange<T>
+  onSubmit: () => Promise<void>
+  state: T
+  status: FormStatus
 }
 
-export type State = {
-  data: FormData | undefined
-  error: boolean
-  loading: boolean
-  success: boolean
-}
+export type FormStatus = 'error' | 'loading' | 'success' | 'idle'
 
-export const defaultState: State = {
-  data: undefined,
-  error: false,
-  loading: false,
-  success: false,
-}
-
-export const FormContext = createContext<FormContextProps | null>(null)
+export const FormContext = createContext<FormContextType<object> | null>(null)
