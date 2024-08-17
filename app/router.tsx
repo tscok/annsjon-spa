@@ -21,18 +21,28 @@ const config = createBrowserRouter([
         },
         children: [
           {
-            path: '/volunteer/application',
             lazy: async () => {
-              let { Form } = await import('./pages/volunteer/form')
-              return { Component: Form }
+              let { Application } = await import(
+                './pages/volunteer/application'
+              )
+              return { Component: Application }
             },
-          },
-          {
-            path: '/volunteer/application/sent',
-            lazy: async () => {
-              let { FormSent } = await import('./pages/volunteer/form-sent')
-              return { Component: FormSent }
-            },
+            children: [
+              {
+                path: 'volunteer/application',
+                lazy: async () => {
+                  let { Form } = await import('./pages/volunteer/form')
+                  return { Component: Form }
+                },
+              },
+              {
+                path: '/volunteer/application/sent',
+                lazy: async () => {
+                  let { FormSent } = await import('./pages/volunteer/form-sent')
+                  return { Component: FormSent }
+                },
+              },
+            ],
           },
           {
             path: '/*',
