@@ -1,7 +1,6 @@
 import { FormEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Button from '@mui/material/Button'
-import MenuItem from '@mui/material/MenuItem'
 import Stack from '@mui/material/Stack'
 import TextField from '@mui/material/TextField'
 import { useDictionary } from 'app/i18n/use-dictionary'
@@ -54,12 +53,13 @@ export const Form = () => {
             label={t('gender')}
             name="gender"
             onChange={(value) => onUpdate('gender', value)}
+            options={[
+              { label: t('gender.female'), value: 'female' },
+              { label: t('gender.male'), value: 'male' },
+              { label: t('gender.other'), value: 'other' },
+            ]}
             value={state.gender}
-          >
-            <MenuItem value="female">{t('gender.female')}</MenuItem>
-            <MenuItem value="male">{t('gender.male')}</MenuItem>
-            <MenuItem value="other">{t('gender.other')}</MenuItem>
-          </Select>
+          />
           <TextField
             autoComplete="off"
             fullWidth
