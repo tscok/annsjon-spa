@@ -1,29 +1,32 @@
 import { PropsWithChildren, useState } from 'react'
-import { defaultState, FormContext, State } from './context'
+import { FormContext, FormStatus } from './context'
 
 export const FormProvider = ({ children }: PropsWithChildren) => {
-  const [state, setState] = useState(defaultState)
+  const [state, setState] = useState<FormData>()
+  const [status, setStatus] = useState<FormStatus>('idle')
 
-  const update = (update: Partial<State>) =>
-    setState((prev) => ({ ...prev, ...update }))
+  const _update = (update: { data?: FormData; status: FormStatus }) => {
+    if (update.data) setState(update.data)
+    setStatus(update.status)
+  }
 
   const onSubmit = async (data: FormData) => {
     const options = { body: data, method: 'post' }
     try {
-      update({ ...defaultState, loading: true })
+      _update({ data, status: 'loading' })
       const response = await fetch('/service.php', options)
       const responseText = (await response.text()) as string | false
       if (response.status === 200 && !!responseText) {
-        update({ loading: false, success: true, data })
+        _update({ status: 'success' })
       } else {
-        update({ loading: false, error: true, data })
+        _update({ status: 'error' })
       }
     } catch (e) {
-      update({ loading: false, error: true, data })
+      _update({ status: 'error' })
     }
   }
 
-  const value = { onSubmit, ...state }
+  const value = { onSubmit, data: state, status }
 
   return <FormContext.Provider value={value}>{children}</FormContext.Provider>
 }

@@ -14,7 +14,7 @@ import { nationalities } from './nationalities'
 export const Form = () => {
   const t = useDictionary('form')
   const navigate = useNavigate()
-  const { loading, onSubmit } = useForm()
+  const { status, onSubmit } = useForm()
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -116,7 +116,7 @@ export const Form = () => {
       >
         <Span small>{t('mandatory-fields')}</Span>
         <Button
-          disabled={loading}
+          disabled={status === 'loading'}
           size="large"
           type="submit"
           variant="contained"

@@ -12,13 +12,13 @@ import { getFallback } from './get-fallback'
 export const FormSent = () => {
   const t = useDictionary('formSent')
   const t2 = useDictionary('pages')
-  const { error, data } = useForm()
+  const { status, data } = useForm()
 
   if (!data) {
     return <Navigate replace to="/volunteer/application" />
   }
 
-  if (error && data) {
+  if (status === 'error' && data) {
     return (
       <>
         <H2>{t('title')}</H2>

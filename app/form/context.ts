@@ -1,21 +1,11 @@
 import { createContext } from 'react'
 
-type FormContextProps = State & {
-  onSubmit: (data: FormData) => Promise<void>
-}
-
-export type State = {
+type FormContextProps = {
   data: FormData | undefined
-  error: boolean
-  loading: boolean
-  success: boolean
+  onSubmit: (data: FormData) => Promise<void>
+  status: FormStatus
 }
 
-export const defaultState: State = {
-  data: undefined,
-  error: false,
-  loading: false,
-  success: false,
-}
+export type FormStatus = 'error' | 'idle' | 'loading' | 'success'
 
 export const FormContext = createContext<FormContextProps | null>(null)
