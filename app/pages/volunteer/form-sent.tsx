@@ -8,17 +8,14 @@ import { A } from 'app/ui/text/a'
 import { P } from 'app/ui/text/p'
 import { useForm } from 'app/form/use-form'
 import { getFallback } from './get-fallback'
+import { FormState } from './form-state'
 
 export const FormSent = () => {
   const t = useDictionary('formSent')
   const t2 = useDictionary('pages')
-  const { status, data } = useForm()
+  const { state, status } = useForm<FormState>()
 
-  if (!data) {
-    return <Navigate replace to="/volunteer/application" />
-  }
-
-  if (status === 'error' && data) {
+  if (status === 'error') {
     return (
       <>
         <H2>{t('title')}</H2>
@@ -33,7 +30,7 @@ export const FormSent = () => {
         </P>
         <TextField
           autoComplete="off"
-          defaultValue={getFallback(data)}
+          defaultValue={getFallback(state)}
           fullWidth
           id="fallback-text-area"
           label={t('fallback.label')}
@@ -44,19 +41,23 @@ export const FormSent = () => {
     )
   }
 
-  return (
-    <>
-      <H2>{t('title')}</H2>
-      <Alert severity="success" sx={{ mb: 4 }}>
-        {t('alert.success')}
-      </Alert>
-      <P>
-        {interpolate(t('meanwhile'), {
-          $1: (
-            <A href="/volunteer/information">{t2('volunteer.information')}</A>
-          ),
-        })}
-      </P>
-    </>
-  )
+  if (status === 'success') {
+    return (
+      <>
+        <H2>{t('title')}</H2>
+        <Alert severity="success" sx={{ mb: 4 }}>
+          {t('alert.success')}
+        </Alert>
+        <P>
+          {interpolate(t('meanwhile'), {
+            $1: (
+              <A href="/volunteer/information">{t2('volunteer.information')}</A>
+            ),
+          })}
+        </P>
+      </>
+    )
+  }
+
+  return <Navigate replace to="/volunteer/application" />
 }

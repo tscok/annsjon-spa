@@ -10,11 +10,12 @@ import { Autocomplete, Checkbox, Fieldset, Select } from 'app/ui/form'
 import { H2 } from 'app/ui/text/heading'
 import { Span } from 'app/ui/text/span'
 import { nationalities } from './nationalities'
+import { FormState } from './form-state'
 
 export const Form = () => {
   const t = useDictionary('form')
   const navigate = useNavigate()
-  const { status, onSubmit } = useForm()
+  const { onSubmit, onUpdate, state, status } = useForm<FormState>()
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -33,7 +34,9 @@ export const Form = () => {
             id="fname-text-field"
             label={t('first-name')}
             name="fname"
+            onChange={(event) => onUpdate('fname', event.target.value)}
             required
+            value={state.fname}
           />
           <TextField
             autoComplete="off"
@@ -41,11 +44,18 @@ export const Form = () => {
             id="lname-text-field"
             label={t('last-name')}
             name="lname"
+            onChange={(event) => onUpdate('lname', event.target.value)}
             required
+            value={state.lname}
           />
         </Fieldset>
         <Fieldset>
-          <Select label={t('gender')} name="gender">
+          <Select
+            label={t('gender')}
+            name="gender"
+            onChange={(value) => onUpdate('gender', value)}
+            value={state.gender}
+          >
             <MenuItem value="female">{t('gender.female')}</MenuItem>
             <MenuItem value="male">{t('gender.male')}</MenuItem>
             <MenuItem value="other">{t('gender.other')}</MenuItem>
@@ -56,6 +66,8 @@ export const Form = () => {
             id="dob-text-field"
             label={t('dob')}
             name="birth"
+            onChange={(event) => onUpdate('birth', event.target.value)}
+            value={state.birth}
           />
         </Fieldset>
         <TextField
@@ -67,7 +79,9 @@ export const Form = () => {
           minRows={3}
           multiline
           name="about"
+          onChange={(event) => onUpdate('about', event.target.value)}
           required
+          value={state.about}
         />
         <TextField
           autoComplete="off"
@@ -78,6 +92,8 @@ export const Form = () => {
           minRows={2}
           multiline
           name="timeframe"
+          onChange={(event) => onUpdate('timeframe', event.target.value)}
+          value={state.timeframe}
         />
         <Fieldset>
           <TextField
@@ -86,8 +102,10 @@ export const Form = () => {
             id="email-text-field"
             label={t('email')}
             name="email"
+            onChange={(event) => onUpdate('email', event.target.value)}
             required
             type="email"
+            value={state.email}
           />
           <TextField
             autoComplete="off"
@@ -95,17 +113,31 @@ export const Form = () => {
             id="phone-text-field"
             label={t('phone')}
             name="phone"
+            onChange={(event) => onUpdate('phone', event.target.value)}
             type="tel"
+            value={state.phone}
           />
         </Fieldset>
         <Autocomplete
           label={t('nationality')}
-          options={nationalities}
           name="nationality"
+          onChange={(value) => onUpdate('nationality', value)}
+          options={nationalities}
+          value={state.nationality}
         />
         <Fieldset>
-          <Checkbox label={t('car')} name="car" />
-          <Checkbox label={t('driver')} name="driver" />
+          <Checkbox
+            checked={state.car}
+            label={t('car')}
+            name="car"
+            onChange={(value) => onUpdate('car', value)}
+          />
+          <Checkbox
+            checked={state.driver}
+            label={t('driver')}
+            name="driver"
+            onChange={(value) => onUpdate('driver', value)}
+          />
         </Fieldset>
       </Stack>
       <Stack

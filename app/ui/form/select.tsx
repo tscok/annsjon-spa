@@ -8,10 +8,14 @@ export const Select = ({
   defaultValue = '',
   label,
   name,
+  onChange,
+  value,
 }: PropsWithChildren<{
   defaultValue?: string
   label: string
   name: string
+  onChange?: (value: string) => void
+  value?: string
 }>) => (
   <FormControl fullWidth>
     <InputLabel id={`select-${name}-label`}>{label}</InputLabel>
@@ -21,6 +25,8 @@ export const Select = ({
       labelId={`select-${name}-label`}
       label={label}
       name={name}
+      onChange={(event) => onChange?.(event.target.value)}
+      value={value}
       variant="outlined"
     >
       {children}
