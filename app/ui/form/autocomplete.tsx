@@ -20,18 +20,13 @@ export const Autocomplete = ({
 }: AutocompleteProps) => (
   <MuiAutocomplete
     disablePortal
-    id={name}
+    id={`${name}-autocomplete`}
     fullWidth
+    onChange={(_, value) => onChange?.(value ?? '')}
     options={options}
     renderInput={(params) => (
-      <TextField
-        {...params}
-        label={label}
-        name={name}
-        onChange={(event) => onChange?.(event.target.value)}
-        required={required}
-        value={value}
-      />
+      <TextField {...params} label={label} name={name} required={required} />
     )}
+    value={value || null}
   />
 )
