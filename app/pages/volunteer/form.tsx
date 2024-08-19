@@ -1,20 +1,26 @@
 import { FormEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Button from '@mui/material/Button'
-import MenuItem from '@mui/material/MenuItem'
 import Stack from '@mui/material/Stack'
-import TextField from '@mui/material/TextField'
 import { useDictionary } from 'app/i18n/use-dictionary'
 import { useForm } from 'app/form/use-form'
-import { Autocomplete, Checkbox, Fieldset, Select } from 'app/ui/form'
+import {
+  Autocomplete,
+  Checkbox,
+  Fieldset,
+  Select,
+  TextArea,
+  TextField,
+} from 'app/ui/form'
 import { H2 } from 'app/ui/text/heading'
 import { Span } from 'app/ui/text/span'
 import { nationalities } from './nationalities'
+import { FormState } from './form-state'
 
 export const Form = () => {
   const t = useDictionary('form')
   const navigate = useNavigate()
-  const { loading, onSubmit } = useForm()
+  const { onSubmit, onUpdate, state, status } = useForm<FormState>()
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -28,84 +34,99 @@ export const Form = () => {
       <Stack spacing={{ xs: 2, md: 4 }}>
         <Fieldset>
           <TextField
-            autoComplete="off"
-            fullWidth
             id="fname-text-field"
             label={t('first-name')}
             name="fname"
+            onChange={(value) => onUpdate('fname', value)}
             required
+            value={state.fname}
           />
           <TextField
-            autoComplete="off"
-            fullWidth
             id="lname-text-field"
             label={t('last-name')}
             name="lname"
+            onChange={(value) => onUpdate('lname', value)}
             required
+            value={state.lname}
           />
         </Fieldset>
         <Fieldset>
-          <Select label={t('gender')} name="gender">
-            <MenuItem value="female">{t('gender.female')}</MenuItem>
-            <MenuItem value="male">{t('gender.male')}</MenuItem>
-            <MenuItem value="other">{t('gender.other')}</MenuItem>
-          </Select>
+          <Select
+            label={t('gender')}
+            name="gender"
+            onChange={(value) => onUpdate('gender', value)}
+            options={[
+              { label: t('gender.female'), value: 'female' },
+              { label: t('gender.male'), value: 'male' },
+              { label: t('gender.other'), value: 'other' },
+            ]}
+            value={state.gender}
+          />
           <TextField
-            autoComplete="off"
-            fullWidth
             id="dob-text-field"
             label={t('dob')}
             name="birth"
+            onChange={(value) => onUpdate('birth', value)}
+            value={state.birth}
           />
         </Fieldset>
-        <TextField
-          autoComplete="off"
-          fullWidth
+        <TextArea
           helperText={t('about.hint')}
           id="about-text-area"
           label={t('about')}
-          minRows={3}
-          multiline
           name="about"
+          onChange={(value) => onUpdate('about', value)}
           required
+          value={state.about}
         />
-        <TextField
-          autoComplete="off"
-          fullWidth
+        <TextArea
           helperText={t('timeframe.hint')}
           id="timeframe-text-area"
           label={t('timeframe')}
           minRows={2}
-          multiline
           name="timeframe"
+          onChange={(value) => onUpdate('timeframe', value)}
+          value={state.timeframe}
         />
         <Fieldset>
           <TextField
-            autoComplete="off"
-            fullWidth
             id="email-text-field"
             label={t('email')}
             name="email"
+            onChange={(value) => onUpdate('email', value)}
             required
             type="email"
+            value={state.email}
           />
           <TextField
-            autoComplete="off"
-            fullWidth
             id="phone-text-field"
             label={t('phone')}
             name="phone"
+            onChange={(value) => onUpdate('phone', value)}
             type="tel"
+            value={state.phone}
           />
         </Fieldset>
         <Autocomplete
           label={t('nationality')}
-          options={nationalities}
           name="nationality"
+          onChange={(value) => onUpdate('nationality', value)}
+          options={nationalities}
+          value={state.nationality}
         />
         <Fieldset>
-          <Checkbox label={t('car')} name="car" />
-          <Checkbox label={t('driver')} name="driver" />
+          <Checkbox
+            checked={state.car}
+            label={t('car')}
+            name="car"
+            onChange={(value) => onUpdate('car', value)}
+          />
+          <Checkbox
+            checked={state.driver}
+            label={t('driver')}
+            name="driver"
+            onChange={(value) => onUpdate('driver', value)}
+          />
         </Fieldset>
       </Stack>
       <Stack
@@ -116,7 +137,7 @@ export const Form = () => {
       >
         <Span small>{t('mandatory-fields')}</Span>
         <Button
-          disabled={loading}
+          disabled={status === 'loading'}
           size="large"
           type="submit"
           variant="contained"
