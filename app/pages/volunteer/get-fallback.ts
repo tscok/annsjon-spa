@@ -1,14 +1,14 @@
 import { FormState } from './form-state'
 
-function uppercase(text: string = ''): string {
-  return text.slice(0, 1).toUpperCase() + text.slice(1)
+function uppercase(text: string): string {
+  return text[0].toUpperCase() + text.slice(1)
 }
 
 export function getFallback(state: FormState) {
   const fields = [
     ['First name', state.fname],
     ['Last name', state.lname],
-    ['Gender', uppercase(state.gender)],
+    ['Gender', state.gender ? uppercase(state.gender) : ''],
     ['Year of Birth', state.birth],
     ['Email', state.email],
     ['Phone', state.phone],
