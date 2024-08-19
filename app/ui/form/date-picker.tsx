@@ -6,14 +6,16 @@ export function stringToDate(date?: string) {
 }
 
 export function dateToString(date: Dayjs | null, format?: string) {
-  return date?.format(format)
+  return date?.format(format ?? 'YYYY-MM-DD')
 }
 
 type DatePickerProps = {
   helperText?: string
   id: string
   label: string
-  name: string
+  name?: string
+  maxDate?: Dayjs
+  minDate?: Dayjs
   onChange?: (value: Dayjs | null) => void
   required?: boolean
   value?: Dayjs | null
