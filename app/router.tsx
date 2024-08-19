@@ -22,10 +22,8 @@ const config = createBrowserRouter([
         children: [
           {
             lazy: async () => {
-              let { Application } = await import(
-                './pages/volunteer/application'
-              )
-              return { Component: Application }
+              let { Providers } = await import('./pages/volunteer/providers')
+              return { Component: Providers }
             },
             children: [
               {
