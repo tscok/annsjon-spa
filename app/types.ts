@@ -10,6 +10,13 @@ export type Language = {
 
 export type DateRange = { from: string; to?: string }
 
+export type Event = {
+  dates: DateRange
+  href: string
+  id: string
+  title: string
+}
+
 export type MediaCardType<T extends string> = {
   body: string
   id: string

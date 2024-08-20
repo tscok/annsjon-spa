@@ -5,19 +5,13 @@ import Typography from '@mui/material/Typography'
 import ListItemAvatar from '@mui/material/ListItemAvatar'
 import ListItemButton from '@mui/material/ListItemButton'
 import ListItemText from '@mui/material/ListItemText'
-import { DateRange } from 'app/types'
 import { isHistory, isOngoing } from 'app/utils/dates'
 import { CalendarDates, DateIcon, MonthIcon } from './calendar-dates'
+import { Event } from 'app/types'
 
-export type EventItemProps = {
-  date: DateRange
-  href: string
-  title: string
-}
-
-export const EventItem = ({ date, href, title }: EventItemProps) => {
-  const dateHasPassed = isHistory(date)
-  const dateOngoing = isOngoing(date)
+export const EventItem = ({ dates, href, title }: Omit<Event, 'id'>) => {
+  const dateHasPassed = isHistory(dates)
+  const dateOngoing = isOngoing(dates)
 
   return (
     <ListItemButton
@@ -34,12 +28,12 @@ export const EventItem = ({ date, href, title }: EventItemProps) => {
               : 'primary.light',
           }}
         >
-          {date.to ? <MonthIcon /> : <DateIcon />}
+          {dates.to ? <MonthIcon /> : <DateIcon />}
         </Avatar>
       </ListItemAvatar>
       <ListItemText
         primary={<Typography fontWeight={500}>{title}</Typography>}
-        secondary={<CalendarDates from={date.from} to={date.to} />}
+        secondary={<CalendarDates from={dates.from} to={dates.to} />}
       />
       <ChevronRightSharpIcon />
     </ListItemButton>
