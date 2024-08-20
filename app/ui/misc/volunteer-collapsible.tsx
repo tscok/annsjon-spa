@@ -1,13 +1,33 @@
+import Button from '@mui/material/Button'
+import { Link as RouterLink } from 'react-router-dom'
 import { useDictionary } from 'app/i18n/use-dictionary'
 import { Collapsible, CollapsibleProps } from './collapsible'
-import { VolunteerButton } from './volunteer-button'
+import { ProjectName } from 'app/types'
 
-export const VolunteerCollapsible = ({ title, ...props }: CollapsibleProps) => {
+type VolunteerCollapsibleProps = CollapsibleProps & {
+  id: ProjectName
+}
+
+export const VolunteerCollapsible = ({
+  id,
+  title,
+  ...props
+}: VolunteerCollapsibleProps) => {
   const t = useDictionary('pages')
   return (
     <Collapsible
       {...props}
-      action={<VolunteerButton size="small" variant="contained" />}
+      action={
+        <Button
+          component={RouterLink}
+          disableElevation
+          size="small"
+          to={`/volunteer/application?${id}`}
+          variant="contained"
+        >
+          {t('volunteer.info.button')}
+        </Button>
+      }
       title={title ?? t('volunteer.info.title')}
     />
   )
