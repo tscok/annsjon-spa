@@ -23,12 +23,7 @@ export const Divider = ({ children, light, vertical }: DividerProps) => {
         flexItem
         orientation="vertical"
         variant="middle"
-        sx={{
-          height: '1rem',
-          mx: 1,
-          alignSelf: 'center',
-          ...getColorStyle(light),
-        }}
+        sx={{ mx: 1, ...getColorStyle(light) }}
       />
     )
   }
