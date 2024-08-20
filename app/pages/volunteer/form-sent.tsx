@@ -4,7 +4,7 @@ import { useDictionary } from 'app/i18n/use-dictionary'
 import { useForm } from 'app/form/use-form'
 import { interpolate } from 'app/utils/interpolate'
 import { TextArea } from 'app/ui/form'
-import { H2, H4 } from 'app/ui/text/heading'
+import { H4 } from 'app/ui/text/heading'
 import { A } from 'app/ui/text/a'
 import { P } from 'app/ui/text/p'
 import { getFallback } from './get-fallback'
@@ -18,7 +18,6 @@ export const FormSent = () => {
   if (status === 'error') {
     return (
       <>
-        <H2>{t('title')}</H2>
         <Alert severity="error" sx={{ mb: 4 }}>
           {t('alert.error')}
         </Alert>
@@ -41,7 +40,6 @@ export const FormSent = () => {
   if (status === 'success') {
     return (
       <>
-        <H2>{t('title')}</H2>
         <Alert severity="success" sx={{ mb: 4 }}>
           {t('alert.success')}
         </Alert>

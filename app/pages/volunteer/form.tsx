@@ -12,7 +12,6 @@ import {
   TextArea,
   TextField,
 } from 'app/ui/form'
-import { H2 } from 'app/ui/text/heading'
 import { Span } from 'app/ui/text/span'
 import { nationalities } from './nationalities'
 import { FormState } from './form-state'
@@ -30,7 +29,6 @@ export const Form = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <H2>{t('title')}</H2>
       <Stack spacing={{ xs: 2, md: 4 }}>
         <Fieldset>
           <TextField
