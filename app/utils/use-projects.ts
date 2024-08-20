@@ -1,5 +1,5 @@
 import { useDictionary } from 'app/i18n/use-dictionary'
-import { MediaCardType } from 'app/types'
+import { MediaCardType, ProjectName } from 'app/types'
 
 const projects: MediaCardType<ProjectName>[] = [
   {
@@ -27,8 +27,6 @@ const projects: MediaCardType<ProjectName>[] = [
     to: '/projects/ringing',
   },
 ]
-
-export type ProjectName = 'great-snipe' | 'surveys' | 'ringing'
 
 export function useProjects(
   excludeName?: ProjectName

@@ -1,6 +1,7 @@
 import Grid from '@mui/material/Unstable_Grid2'
 import { MediaCard } from './media-card'
-import { ProjectName, useProjects } from 'app/utils/use-projects'
+import { useProjects } from 'app/utils/use-projects'
+import { ProjectName } from 'app/types'
 
 export const ProjectsGrid = ({
   columns = 2,

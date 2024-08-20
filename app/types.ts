@@ -31,3 +31,5 @@ export type MediaType = {
   position?: string
   src: string
 }
+
+export type ProjectName = 'great-snipe' | 'surveys' | 'ringing'
