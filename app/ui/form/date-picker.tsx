@@ -1,37 +1,42 @@
 import { DatePicker as XDatePicker, DateView } from '@mui/x-date-pickers'
 import dayjs, { Dayjs } from 'dayjs'
 
+const DEFAULT_FORMAT = 'YYYY-MM-DD'
+
 export function stringToDate(date?: string) {
   return date ? dayjs(date) : null
 }
 
 export function dateToString(date: Dayjs | null, format?: string) {
-  return date?.format(format ?? 'YYYY-MM-DD')
+  return date?.format(format ?? DEFAULT_FORMAT)
 }
 
 type DatePickerProps = {
+  format?: string
   helperText?: string
   id: string
   label: string
   name?: string
   maxDate?: Dayjs
   minDate?: Dayjs
-  onChange?: (value: Dayjs | null) => void
+  onChange?: (value?: string) => void
   required?: boolean
-  value?: Dayjs | null
+  value?: string
   views?: DateView[]
 }
 
 export const DatePicker = ({
+  format,
   helperText,
   id,
   onChange,
   required,
+  value,
   ...props
 }: DatePickerProps) => (
   <XDatePicker
     {...props}
-    onChange={(value) => onChange?.(value)}
+    onChange={(date) => onChange?.(dateToString(date, format))}
     slotProps={{
       textField: {
         autoComplete: 'off',
@@ -41,9 +46,10 @@ export const DatePicker = ({
         required,
       },
     }}
+    value={stringToDate(value)}
   />
 )
 
 export const YearPicker = (props: DatePickerProps) => (
-  <DatePicker {...props} views={['year']} />
+  <DatePicker {...props} format="YYYY" maxDate={dayjs()} views={['year']} />
 )

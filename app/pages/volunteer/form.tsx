@@ -1,4 +1,3 @@
-import dayjs from 'dayjs'
 import { FormEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Button from '@mui/material/Button'
@@ -8,10 +7,8 @@ import { useForm } from 'app/form/use-form'
 import {
   Autocomplete,
   Checkbox,
-  dateToString,
   Fieldset,
   Select,
-  stringToDate,
   TextArea,
   TextField,
   YearPicker,
@@ -70,9 +67,8 @@ export const Form = () => {
             id="dob-year-picker"
             label={t('dob')}
             name="birth"
-            maxDate={dayjs().subtract(15, 'years')}
-            onChange={(value) => onUpdate('birth', dateToString(value, 'YYYY'))}
-            value={stringToDate(state.birth)}
+            onChange={(value) => onUpdate('birth', value)}
+            value={state.birth}
           />
         </Fieldset>
         <TextArea
