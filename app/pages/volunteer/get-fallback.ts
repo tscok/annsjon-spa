@@ -12,7 +12,7 @@ export function getFallback(state: FormState) {
     ['Year of Birth', state.birth],
     ['Email', state.email],
     ['Phone', state.phone],
-    ['Nationality', state.nationality],
+    ['Country', state.country],
     ['Arrives by car', state.car ? 'Yes' : 'No'],
     ['Driving license', state.driver ? 'Yes' : 'No'],
     ['\r\nTimeframe', `\r\n${state.timeframe}`],

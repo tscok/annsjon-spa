@@ -5,8 +5,8 @@ import Stack from '@mui/material/Stack'
 import { useDictionary } from 'app/i18n/use-dictionary'
 import { useForm } from 'app/form/use-form'
 import {
-  Autocomplete,
   Checkbox,
+  CountrySelect,
   Fieldset,
   Select,
   TextArea,
@@ -14,7 +14,6 @@ import {
 } from 'app/ui/form'
 import { H2 } from 'app/ui/text/heading'
 import { Span } from 'app/ui/text/span'
-import { nationalities } from './nationalities'
 import { FormState } from './form-state'
 
 export const Form = () => {
@@ -107,12 +106,11 @@ export const Form = () => {
             value={state.phone}
           />
         </Fieldset>
-        <Autocomplete
-          label={t('nationality')}
-          name="nationality"
-          onChange={(value) => onUpdate('nationality', value)}
-          options={nationalities}
-          value={state.nationality}
+        <CountrySelect
+          label={t('country')}
+          name="country"
+          onChange={(value) => onUpdate('country', value)}
+          placeholder={t('country.search')}
         />
         <Fieldset>
           <Checkbox

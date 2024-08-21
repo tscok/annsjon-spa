@@ -7,7 +7,7 @@ export type FormState = {
   timeframe: string
   email: string
   phone: string
-  nationality: string
+  country: string
   car: boolean
   driver: boolean
 }
@@ -21,7 +21,7 @@ export const formState: FormState = {
   timeframe: '',
   email: '',
   phone: '',
-  nationality: '',
+  country: '',
   car: false,
   driver: false,
 }
