@@ -4,6 +4,7 @@ import Button from '@mui/material/Button'
 import Stack from '@mui/material/Stack'
 import { useDictionary } from 'app/i18n/use-dictionary'
 import { useForm } from 'app/form/use-form'
+import { useLanguage } from 'app/language/use-language'
 import {
   Autocomplete,
   Checkbox,
@@ -21,6 +22,7 @@ import { FormState } from './form-state'
 export const Form = () => {
   const t = useDictionary('form')
   const navigate = useNavigate()
+  const { language } = useLanguage()
   const { onSubmit, onUpdate, state, status } = useForm<FormState>()
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -108,12 +110,14 @@ export const Form = () => {
             value={state.phone}
           />
         </Fieldset>
-        <Autocomplete
-          label={t('nationality')}
-          name="nationality"
-          onChange={(value) => onUpdate('nationality', value)}
-          options={nationalities}
-        />
+        {language.locale === 'en' && (
+          <Autocomplete
+            label={t('nationality')}
+            name="nationality"
+            onChange={(value) => onUpdate('nationality', value)}
+            options={nationalities}
+          />
+        )}
         <Fieldset>
           <Checkbox
             checked={state.car}
