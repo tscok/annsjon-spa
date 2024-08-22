@@ -1,18 +1,20 @@
 import { DatePicker as XDatePicker, DateView } from '@mui/x-date-pickers'
 import dayjs, { Dayjs } from 'dayjs'
 
-const DEFAULT_FORMAT = 'YYYY-MM-DD'
+type DateFormat = 'YYYY-MM-DD' | 'YYYY'
+
+const DEFAULT_FORMAT: DateFormat = 'YYYY-MM-DD'
 
 export function stringToDate(date?: string) {
   return date ? dayjs(date) : null
 }
 
-export function dateToString(date: Dayjs | null, format?: string) {
-  return date?.format(format ?? DEFAULT_FORMAT)
+export function dateToString(date: Dayjs | null, format: DateFormat) {
+  return date?.format(format)
 }
 
 type DatePickerProps = {
-  format?: string
+  format?: DateFormat
   helperText?: string
   id: string
   label: string
@@ -26,7 +28,7 @@ type DatePickerProps = {
 }
 
 export const DatePicker = ({
-  format,
+  format = DEFAULT_FORMAT,
   helperText,
   id,
   onChange,
