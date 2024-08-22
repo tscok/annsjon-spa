@@ -16,11 +16,7 @@ type TextAreaProps = TextFieldProps & {
   minRows?: number
 }
 
-export const TextField = ({
-  onChange,
-  value = '',
-  ...props
-}: TextFieldProps) => (
+export const TextField = ({ onChange, value, ...props }: TextFieldProps) => (
   <MuiTextField
     {...props}
     autoComplete="off"
@@ -33,7 +29,7 @@ export const TextField = ({
 export const TextArea = ({
   minRows = 3,
   onChange,
-  value = '',
+  value,
   ...props
 }: TextAreaProps) => (
   <MuiTextField

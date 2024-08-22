@@ -112,7 +112,6 @@ export const Form = () => {
           name="nationality"
           onChange={(value) => onUpdate('nationality', value)}
           options={nationalities}
-          value={state.nationality}
         />
         <Fieldset>
           <Checkbox

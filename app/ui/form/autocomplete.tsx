@@ -2,12 +2,11 @@ import MuiAutocomplete from '@mui/material/Autocomplete'
 import TextField from '@mui/material/TextField'
 
 type AutocompleteProps = {
-  name?: string
   label: string
+  name: string
   onChange?: (value: string) => void
   options: string[]
   required?: boolean
-  value?: string
 }
 
 export const Autocomplete = ({
@@ -16,17 +15,15 @@ export const Autocomplete = ({
   onChange,
   options,
   required,
-  value,
 }: AutocompleteProps) => (
   <MuiAutocomplete
     disablePortal
-    id={`${name}-autocomplete`}
     fullWidth
+    id={`${name}-autocomplete`}
     onChange={(_, value) => onChange?.(value ?? '')}
     options={options}
     renderInput={(params) => (
       <TextField {...params} label={label} name={name} required={required} />
     )}
-    value={value || null}
   />
 )
