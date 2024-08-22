@@ -11,6 +11,7 @@ import {
   Select,
   TextArea,
   TextField,
+  YearPicker,
 } from 'app/ui/form'
 import { H2 } from 'app/ui/text/heading'
 import { Span } from 'app/ui/text/span'
@@ -62,8 +63,8 @@ export const Form = () => {
             ]}
             value={state.gender}
           />
-          <TextField
-            id="dob-text-field"
+          <YearPicker
+            id="dob-year-picker"
             label={t('dob')}
             name="birth"
             onChange={(value) => onUpdate('birth', value)}
