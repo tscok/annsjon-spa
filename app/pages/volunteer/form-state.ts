@@ -1,7 +1,7 @@
 export type FormState = {
   fname: string
   lname: string
-  gender?: 'female' | 'male' | 'other'
+  gender: 'female' | 'male' | 'other' | null
   birth: string
   about: string
   timeframe: string
@@ -15,7 +15,7 @@ export type FormState = {
 export const formState: FormState = {
   fname: '',
   lname: '',
-  gender: undefined,
+  gender: null,
   birth: '',
   about: '',
   timeframe: '',
