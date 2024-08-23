@@ -141,7 +141,7 @@ export const Form = () => {
       >
         <Span small>{t('mandatory-fields')}</Span>
         <Button
-          disabled={status === 'loading'}
+          disabled={status !== 'idle'}
           size="large"
           type="submit"
           variant="contained"
