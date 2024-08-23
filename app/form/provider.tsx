@@ -1,6 +1,9 @@
 import { PropsWithChildren, useState } from 'react'
+import { FormClient } from 'app/api/form-client'
 import { FormContext, FormStatus } from './context'
 import { OnUpdate } from './types'
+
+const formClient = new FormClient()
 
 export function FormProvider<T extends object>({
   children,
@@ -13,16 +16,10 @@ export function FormProvider<T extends object>({
     setState((prevState) => ({ ...prevState, [key]: value }))
 
   const onSubmit = async (data: FormData) => {
-    const options = { body: data, method: 'post' }
     try {
       setStatus('loading')
-      const response = await fetch('/service.php', options)
-      const responseText = (await response.text()) as string | false
-      if (response.status === 200 && !!responseText) {
-        setStatus('success')
-      } else {
-        setStatus('error')
-      }
+      const response = await formClient.submit(data)
+      setStatus(response.status === 200 ? 'success' : 'error')
     } catch (e) {
       setStatus('error')
     }
