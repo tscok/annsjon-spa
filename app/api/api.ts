@@ -2,11 +2,10 @@ export class Api {
   private async makeRequest(
     path: string,
     method: 'GET' | 'POST',
-    body?: unknown
+    body?: FormData
   ) {
     try {
-      const options = { method, body: JSON.stringify(body) }
-      const response = await fetch(path, options)
+      const response = await fetch(path, { method, body })
       const data = await response.json()
       return data
     } catch (error) {
@@ -14,7 +13,7 @@ export class Api {
     }
   }
 
-  post(path: string, payload: Record<string, unknown>) {
-    return this.makeRequest(path, 'POST', payload)
+  post(path: string, body: FormData) {
+    return this.makeRequest(path, 'POST', body)
   }
 }
