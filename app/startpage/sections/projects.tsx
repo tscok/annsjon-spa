@@ -6,7 +6,7 @@ export const Projects = () => {
   const t = useDictionary('startpage')
 
   return (
-    <PageSection title={t('section-title.projects')}>
+    <PageSection bgColor="light" title={t('section-title.projects')}>
       <ProjectsGrid columns={3} />
     </PageSection>
   )
