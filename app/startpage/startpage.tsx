@@ -4,8 +4,8 @@ export const StartPage = () => (
   <>
     <Hero />
     <Intro />
-    <Guides />
     <Projects />
+    <Guides />
     <Directions />
   </>
 )

@@ -1,8 +1,7 @@
 import { PropsWithChildren } from 'react'
 import Box from '@mui/material/Box'
-import { alpha } from '@mui/material/styles'
+import { alpha, Theme } from '@mui/material/styles'
 import Typography from '@mui/material/Typography'
-import { theme } from '../theme/theme'
 
 export const PageSection = ({
   bgColor,
@@ -12,14 +11,10 @@ export const PageSection = ({
   bgColor?: 'dark' | 'light'
   title?: string
 }>) => {
-  let backgroundColor = 'transparent'
-
-  if (bgColor === 'dark') {
-    backgroundColor = 'primary.dark'
-  }
-
-  if (bgColor === 'light') {
-    backgroundColor = alpha(theme.palette.primary.main, 0.05)
+  const backgroundColor = (theme: Theme) => {
+    if (bgColor === 'light') return alpha(theme.palette.primary.main, 0.05)
+    if (bgColor === 'dark') return 'info.main'
+    return 'transparent'
   }
 
   return (

@@ -6,7 +6,7 @@ export const Guides = () => {
   const t = useDictionary('startpage')
 
   return (
-    <PageSection bgColor="light" title={t('section-title.guides')}>
+    <PageSection title={t('section-title.guides')}>
       <GuidesGrid exclude="storlien" />
     </PageSection>
   )

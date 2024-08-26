@@ -14,17 +14,6 @@ export const useRoutes = (): Route[] => {
       path: '/iba',
     },
     {
-      name: t('guide'),
-      path: '/guide',
-      children: [
-        { name: 'Handöl', path: '/guide/handol' },
-        { name: 'Högåsen', path: '/guide/hogasen' },
-        { name: 'Storlien', path: '/guide/storlien' },
-        { name: 'Storulvån', path: '/guide/storulvan' },
-        { name: 'Ånn', path: '/guide/ann' },
-      ],
-    },
-    {
       name: t('projects'),
       path: '/projects',
       children: [
@@ -49,19 +38,30 @@ export const useRoutes = (): Route[] => {
       ],
     },
     {
-      name: t('reports'),
-      path: '/reports',
-      children: [
-        { name: t('reports.press-release'), path: '/reports/press-release' },
-      ],
-    },
-    {
       name: t('volunteer'),
       path: '/volunteer',
       children: [
         { name: t('volunteer.application'), path: '/volunteer/application' },
         { name: t('volunteer.mountainfit'), path: '/volunteer/mountainfit' },
         { name: t('volunteer.information'), path: '/volunteer/information' },
+      ],
+    },
+    {
+      name: t('guide'),
+      path: '/guide',
+      children: [
+        { name: 'Handöl', path: '/guide/handol' },
+        { name: 'Högåsen', path: '/guide/hogasen' },
+        { name: 'Storlien', path: '/guide/storlien' },
+        { name: 'Storulvån', path: '/guide/storulvan' },
+        { name: 'Ånn', path: '/guide/ann' },
+      ],
+    },
+    {
+      name: t('reports'),
+      path: '/reports',
+      children: [
+        { name: t('reports.press-release'), path: '/reports/press-release' },
       ],
     },
     { name: t('about'), path: '/about' },
