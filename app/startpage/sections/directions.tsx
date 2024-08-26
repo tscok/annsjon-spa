@@ -10,7 +10,7 @@ export const Directions = () => {
   const t2 = useDictionary('pages')
 
   return (
-    <BackgroundImage position="50% 80%" src="/images/road_mikael-carlsson.jpg">
+    <BackgroundImage position="50% 60%" src="/images/road_mikael-carlsson.jpg">
       <Box
         sx={{
           px: 6,
