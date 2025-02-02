@@ -22,25 +22,20 @@ export const Intro = () => {
 
   const events: EventItemProps[] = [
     {
-      date: { from: '2024-06-01' },
+      date: { from: '2025-06-07' },
       title: t('event.open-house'),
       href: '/events/open-house',
     },
     {
-      date: { from: '2024-06-02', to: '2024-06-16' },
+      date: { from: '2025-06-01', to: '2025-06-15' },
       title: t('event.survey'),
       href: '/projects/surveys',
     },
     {
-      date: { from: '2024-07-01', to: '2024-08-31' },
+      date: { from: '2025-06-30', to: '2025-09-15' },
       title: t('event.ringing'),
       href: '/projects/ringing',
     },
-    // {
-    //   date: { from: '2024-09-1', to: '2024-09-07' },
-    //   title: `${t('event.season-end')} ☀️🍂`,
-    //   href: '/events/season-end',
-    // },
   ]
 
   return (
